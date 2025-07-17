@@ -105,7 +105,7 @@ button {
     padding: 0;      /* removes default padding */
     cursor: pointer; /* makes button clickable */
     display: inline-block; /* proper alignment */
-    font-family: 'Lora', serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 a, button {
@@ -230,4 +230,14 @@ blockquote {
 
 .title-and-skip-button button {
     margin-left: 20px; /* adds space between the title and the button */
+}
+
+footer {
+    background-color: #292020;
+    color: #998b8b;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
