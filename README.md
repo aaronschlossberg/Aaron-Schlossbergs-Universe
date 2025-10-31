@@ -1,10 +1,12 @@
-# Aaron's Portfolio Website
+# Aaron Schlossberg's Portfolio Website
 
 ## Overview
 This is my personal portfolio website, built to showcase my background, skills, and selected projects. It also includes a contact section for professional outreach.
 
-## Live Demo
-[aaron-schlossberg-portfolio.netlify.app](https://aaron-schlossberg-portfolio.netlify.app/)
+## My Portfolio
+- Home: [https://aaron-schlossberg-portfolio.netlify.app/](https://aaron-schlossberg-portfolio.netlify.app/)
+- Projects: [https://aaron-schlossberg-portfolio.netlify.app/projects.html](https://aaron-schlossberg-portfolio.netlify.app/projects.html)
+- Contact: [https://aaron-schlossberg-portfolio.netlify.app/contact.html](https://aaron-schlossberg-portfolio.netlify.app/contact.html)
 
 ## Built With
 - HTML
