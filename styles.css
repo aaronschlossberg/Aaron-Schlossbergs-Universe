@@ -27,6 +27,51 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Media never overflows; keeps aspect ratio everywhere */
+img, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keep large standalone images at a normal readable width */
+main img, section img, article img, p > img, .content img {
+  display: block;
+  margin: 1.5rem auto;         /* center and add breathing room */
+  max-width: min(90%, 700px);  /* cap the visual width on large screens */
+  height: auto;                /* keep aspect ratio */
+  border-radius: 8px;          /* optional, for softer edges */
+}
+
+main img, section img, article img {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Make images act like images when dragged (esp. Safari/Chrome) */
+img { -webkit-user-drag: element; }
+
+/* 2) Your page/content/card containers */
+.container, .section, .card {
+  overflow: hidden;           /* prevents bleed */
+}
+
+/* Optional niceties */
+figure { margin: 1rem 0; }
+
+/* Reusable responsive media row: sits side-by-side when there's room, stacks on small screens */
+.media-row {
+  display: grid;
+  gap: 24px; /* space between items */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  max-width: 1200px; /* keeps the pair centered and not overly wide */
+  margin: 0 auto;
+}
+
+.media-row > * { 
+    width: 100%; /* make children fill their cell neatly */
+}  
+
 section {
     padding: 20px;
 }
@@ -139,18 +184,16 @@ header a:hover {
 }
 
 .image-container {
-    text-align: center; /* centers the images */
-    margin: 20px auto; /* adds space above and below the whole section */
-    /* padding-top: 10px;  */
-    /* adds extra space specifically above the images */
+    text-align: center; 
+    margin: 20px auto; 
 }
 
 .image-container img {
-    display: inline-block; /* aligns images side-by-side */
-    margin: 0 10px; /* adds spacing between images */
-    width: 350px; /* has consistent sizing */
+    display: inline-block; 
+    margin: 0 10px; 
+    width: 350px; 
     height: 350px;
-    object-fit: cover; /* has images well-framed */
+    object-fit: cover; 
 }
 
 .under-construction-img {
@@ -240,4 +283,143 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Layout container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* Section blocks */
+.section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+}
+
+/* Card pattern (used for highlights or any small panels) */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  padding: 1rem;
+}
+.card + .card { margin-top: 1rem; }
+
+/* Headlines & body rhythm to match JMV */
+h1, h2, h3 { margin: 0 0 .5rem 0; }
+h1 { font-size: clamp(28px, 4vw, 40px); }
+h2 { font-size: clamp(22px, 3vw, 30px); }
+h3 { font-size: clamp(18px, 2.2vw, 22px); }
+p { line-height: 1.7; }
+
+/* Simple responsive grid utility (used for highlights/images) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Quora highlight cards */
+.quora-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.quora-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+.quora-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.quora-card .info { padding: .75rem .9rem 1rem; }
+.quora-card .info h3 {
+  margin: 0 0 .35rem 0;
+  font-size: 1rem;
+}
+.quora-card .info p {
+  margin: 0;
+  font-size: .9rem;
+  opacity: .75;
+}
+
+.card h3, .card h4 { margin-top:.1rem; margin-bottom:.4rem; }
+.section h2 { margin-bottom:.6rem; }
+
+/* Keep HRs inside cards */
+.section hr { border: 0; border-top: 1px solid rgba(0,0,0,.15); width: 100%; margin: 1rem 0; }
+
+/* Nice spacing without <br> spam */
+.section p { margin: .6rem 0 0; }
+
+/* Lists that align cleanly */
+.section ul, .section ol { margin: .5rem 0 0 1.25rem; }
+
+/* Images/rows that never overflow */
+.image-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: .75rem;
+}
+.image-row img, .image-row video { width: 100%; height: auto; border-radius: 12px; display: block; }
+
+/* Optional: quick centering utility */
+.text-center { text-align: center; }
+
+/* Put these near the bottom of your CSS file */
+.f2r-pair {
+  display: flex; /* row layout */
+  flex-direction: row; /* side-by-side */
+  justify-content: center; /* center the row */
+  align-items: center; /* align baselines/heights nicely */
+  gap: 24px; /* space between the two images */
+  flex-wrap: nowrap; /* allow stack on small screens */
+  margin: 20px auto; /* center the whole block */
+  max-width: 500px; /* keep it from stretching too wide */
+}
+
+.f2r-pair img {
+  flex: 0 1 420px; /* even widths; shrink if needed */
+  max-width: 100%; /* don’t overflow their column */
+  height: auto; /* keep aspect ratio */
+  object-fit: contain; /* never crop */
+  display: block;
+}
+
+/* Optional: stack vertically on small screens */
+@media (max-width: 100%) {
+  .f2r-pair { flex-wrap: wrap; }
+  .f2r-pair img { flex-basis: min(95%, 520px); }
+}
+
+.full-bleed{
+  display:block;
+  width: min(100vw, 1160px); /* 1160px ≈ your image’s native width */
+  height:auto;
+  margin: 0 auto; /* center it */
+}
+
+/* Cropped thumbnail helper: keeps a 16:9 box and crops inside */
+.thumb {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  height: auto; /* height is implied by aspect-ratio */
+  border-radius: 12px; /* if you want rounded corners */
 }

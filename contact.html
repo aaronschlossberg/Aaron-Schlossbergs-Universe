@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Aaron's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/Me in CC old circular-2.png">
+    <link rel="icon" type="image/x-icon" href="/assets/me_nachi_falls_circular.png">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- connecting to the stylesheet --> 
     <script defer src="main.js"></script> <!-- connecting to the js --> 
@@ -118,16 +118,12 @@
             </a>
         </div>
     </section> 
-    <footer id="footer">
-        <h2> </h2>
-        <div class="footer-container">
-            <p>© 2025 | Aaron Schlossberg. <i>All rights reserved</i>.</p>
-            <nav>
-                <a href="index.html">Home</a> |
-                <a href="projects.html">Projects</a> |
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </footer>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+        .then(r => r.text())
+        .then(h => { document.getElementById('footer-placeholder').innerHTML = h; });
+    </script>
 </body>
 </html>
