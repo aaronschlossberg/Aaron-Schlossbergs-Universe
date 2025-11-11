@@ -277,13 +277,28 @@ blockquote {
 
 footer {
     background-color: #292020;
-    color: #998b8b;
+    color: white;
     text-align: center;
     padding: 1em 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
+/* Footer links: unvisited, visited, hover, active */
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: white;
+  text-decoration: none; /* optional: remove underlines */
+}
+
+/* Optional: hover effect to differentiate */
+footer a:hover {
+  opacity: 0.8; /* subtle fade effect */
+}
+
 
 /* Layout container */
 .container {
