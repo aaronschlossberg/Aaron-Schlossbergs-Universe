@@ -3,31 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aaronschlossberg.com</title>
-    <link rel="icon" type="image/png" href="assets/me_nachi_falls_circular.png">
+    <title>Aaron Schlossberg — Home</title>
+    <meta property="og:site_name" content="Aaron Schlossberg">
+    <meta name="application-name" content="Aaron Schlossberg">
+
+    <!-- Open Graph (helps Google pick YOUR name instead of Netlify) -->
+    <meta property="og:title" content="Aaron Schlossberg — Home">
+    <meta property="og:description" content="Aaron Schlossberg's Universe | Personal portfolio: projects, clubs, contact, and future ventures.">
+    <link rel="icon" type="image/png" href="/assets/me_nachi_falls_circular.png">
+
+    <!-- Link sharing preview image -->
+    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/og-aaron-portfolio.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://www.aaronschlossberg.com/">
+    <meta property="og:type" content="website">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css"> <!-- connecting to the stylesheet --> 
     <script defer src="main.js"></script> <!-- connecting to the js --> 
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Aaron Schlossberg's personal portfolio: projects, clubs, contact, and future ventures.">
-    <meta name="description" content="Aaron Schlossberg's personal portfolio: projects, clubs, contact, and future ventures.">
+    <meta name="description" content="Aaron Schlossberg's Universe: Personal portfolio; projects, clubs, contact, and future ventures.">
     <meta name="p:domain_verify" content="52b00b635022ac45300143d277f42d6d"/>
     <link rel="canonical" href="https://www.aaronschlossberg.com/">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Aaron Schlossberg",
+        "url": "https://www.aaronschlossberg.com/"
+    }
+    </script>
 </head>
 <body>
     <header>
         <h1><strong>Aaron Schlossberg</strong></h1>
         <nav>
             <ul>
-                <li><a href="index.html"><strong>Home</strong></a></li>
-                <li><a href="projects.html"><strong>Projects/Clubs</strong></a></li>
-                <li><a href="contact.html"><strong>Contact</strong></a></li>
+                <li><a href="/"><strong>Home</strong></a></li>
+                <li><a href="/projects"><strong>Projects/Clubs</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
             </ul>
         </nav>
     </header>
 
     <div class="image-container" style="padding-top: 0px;">
-        <img src="assets/me_nachi_falls_circular.png" style="width:160px; height:160px;" 
+        <img src="/assets/me_nachi_falls_circular.png" style="width:160px; height:160px;" 
         alt="Aaron at Nachi Falls in Nachikatsuura, Wakayama Prefecture, Japan, smiling in front of waterfall">
     </div>
 
@@ -50,8 +74,8 @@
         </p>
 
         <div class="media-row" style="padding-top: 0px;">
-            <img src="assets/Pathways_Academy_Building.jpg" alt="Pathways Academy of Technology and Design building image">
-            <img src="assets/Muhlenberg_College_campus.jpg" alt="Muhlenberg College campus image">
+            <img src="/assets/Pathways_Academy_Building.jpg" alt="Pathways Academy of Technology and Design building image">
+            <img src="/assets/Muhlenberg_College_campus.jpg" alt="Muhlenberg College campus image">
         </div>
      </section>
 
@@ -83,16 +107,16 @@
         <img src="assets/Aaron_and_Spider-Man.png" style="width:350px; height:350px;" 
         alt="Aaron at Disneyland with Spider-man">
 
-        <img src="assets/me_in_CC_boating_thumbs_up.png" style="width:350px; height:350px;" 
+        <img src="/assets/me_in_CC_boating_thumbs_up.png" style="width:350px; height:350px;" 
         alt="Aaron in Cape Cod, boating, giving a thumbs up">
 
-        <img src="assets/cocaine_poop_wizard.png" style="width:350px; height:350px;"
+        <img src="/assets/cocaine_poop_wizard.png" style="width:350px; height:350px;"
         alt="Aaron as the Cocaine Poop Wizard">
     </div>
 
     <div id="footer-placeholder"></div>
     <script>
-        fetch('footer.html')
+        fetch('/footer.html')
         .then(r => r.text())
         .then(h => { document.getElementById('footer-placeholder').innerHTML = h; });
     </script>
