@@ -13,9 +13,10 @@
     <meta property="og:type" content="video.other">
     <meta property="og:url" content="https://www.aaronschlossberg.com/projects/fencing-video">
     <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/Fencing_pic1.png">
+    <link rel="canonical" href="https://www.aaronschlossberg.com/projects/fencing-video">
 
     <link rel="icon" type="image/png" href="/assets/img/me_nachi_falls_circular.png">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Video structured data -->
     <script type="application/ld+json">
@@ -23,7 +24,7 @@
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": "Fencing Practice — Muhlenberg College Fencing Club",
-        "description": "A short fencing practice clip from the Muhlenberg College Fencing Club, filmed by coach Noah Katz, featuring a bout between Aaron Schlossberg and Benjamin Dicker.",
+        "description": "A short fencing practice clip from Muhlenberg College's Fencing Club, filmed by coach Noah Katz with calls made by coach Paul McAndrew, featuring a fencing bout between Aaron Schlossberg and Benjamin Dicker.",
         "thumbnailUrl": "https://www.aaronschlossberg.com/assets/img/Fencing_pic1.png",
         "uploadDate": "2025-11-19",
         "contentUrl": "https://www.aaronschlossberg.com/assets/img/Fencing_video.mp4",
@@ -32,17 +33,7 @@
     </script>
 </head>
 <body>
-
-    <header>
-        <h1>Fencing Practice — Video</h1>
-        <nav>
-            <ul>
-                <li><a href="/"><strong>Home</strong></a></li>
-                <li><a href="/projects"><strong>Projects/Clubs</strong></a></li>
-                <li><a href="/contact"><strong>Contact</strong></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main style="max-width: 900px; margin: 2rem auto; text-align: center;">
         <video controls preload="metadata" style="width:100%; max-width: 800px;">
@@ -51,13 +42,20 @@
         </video>
 
         <p style="margin-top: 1rem;">
-            A short fencing practice clip from the Muhlenberg College Fencing Club, filmed by coach Noah Katz, featuring a bout between <strong style="font-weight: normal";>Aaron Schlossberg</strong> and Benjamin Dicker.
+            A short fencing practice clip from Muhlenberg College's Fencing Club, filmed by coach Noah Katz with calls made by coach Paul McAndrew, featuring a fencing bout between <strong style="font-weight: normal";>Aaron Schlossberg</strong> and Benjamin Dicker.
         </p>
     </main>
 
+    <script>
+        (async () => {
+            const el = document.getElementById('header-placeholder');
+            el.innerHTML = await (await fetch('/_partials/header.html', {cache:'no-store'})).text();
+        })();
+    </script>
+
     <div id="footer-placeholder"></div>
     <script>
-        fetch('/footer.html')
+        fetch('/_partials/footer.html')
         .then(r => r.text())
         .then(h => { document.getElementById('footer-placeholder').innerHTML = h; });
     </script>
