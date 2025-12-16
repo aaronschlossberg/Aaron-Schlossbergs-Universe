@@ -23,8 +23,8 @@
     <meta property="og:type" content="website">
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css"> <!-- connecting to the stylesheet --> 
-    <script defer src="/main.js"></script> <!-- connecting to the js --> 
+    <link rel="stylesheet" href="/assets/css/main.css"> <!-- connecting to the stylesheet --> 
+    <script defer src="/assets/js/main.js"></script> <!-- connecting to the js --> 
     <meta name="robots" content="index, follow">
     <meta name="description" content="Aaron Schlossberg's Universe: Personal portfolio; projects, clubs, contact, and future ventures.">
     <meta name="p:domain_verify" content="52b00b635022ac45300143d277f42d6d"/>
@@ -40,16 +40,10 @@
     </script>
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="/"><strong>Home</strong></a></li>
-                <li><a href="/projects"><strong>Projects/Clubs</strong></a></li>
-                <li><a href="/contact"><strong>Contact</strong></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
+
+    <br>
+    <h1 style="text-align: center;">Contact Me</h1>
 
     <section id="contact">
         <h2>Get in Touch</h2>
@@ -57,7 +51,7 @@
         <!-- Add a wrapper around the buttons to use flexbox layout -->
         <div class="social-buttons">
             <!-- Gmail Button, opens my email in a new tab -->
-            <a href="mailto:aschloss04@gmail.com" target="_blank">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aschloss04@gmail.com&su=Hey%20Aaron&body=Hi%20there!" target="_blank">
                 <img src="/assets/img/social_media_logos/gmail_logo.png" alt="Gmail button" class="contact-icon">
             </a>
 
@@ -95,8 +89,7 @@
         </div>
     </section> 
 
-    <p style="text-align: center;"><b>Note</b>: When contacting me, please give me the context of who you are (such 
-        as your name, and how we know each other).</p>
+    <p style="text-align: center;"><b>Note</b>: When contacting me, please give me the context of who you are (such as your name, and how we know each other).</p>
     
     <hr style="width: 1100px"> <!-- —————————— -->
     
@@ -152,9 +145,16 @@
         </div>
     </section> 
 
+    <script>
+        (async () => {
+            const el = document.getElementById('header-placeholder');
+            el.innerHTML = await (await fetch('/_partials/header.html', {cache:'no-store'})).text();
+        })();
+    </script>
+
     <div id="footer-placeholder"></div>
     <script>
-        fetch('/footer.html')
+        fetch('/_partials/footer.html')
         .then(r => r.text())
         .then(h => { document.getElementById('footer-placeholder').innerHTML = h; });
     </script>
