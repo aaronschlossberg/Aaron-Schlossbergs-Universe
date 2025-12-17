@@ -651,58 +651,64 @@ body.iframe-page iframe {
 }
 
 .cta-button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.85rem 1.75rem;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.85rem 1.75rem;
 
-  font-family: inherit;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #ffffff;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
 
-  background: linear-gradient(135deg, #5a4668, #4a3858);
-  border-radius: 999px;
+    background: linear-gradient(135deg, #5a4668, #4a3858);
+    border-radius: 999px;
 
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    box-shadow:
+      0 8px 20px rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
 }
 
 .cta-button:hover,
 .cta-button:focus-visible {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 
-  background: linear-gradient(135deg, #6b5480, #5a4668);
+    background: linear-gradient(135deg, #6b5480, #5a4668);
 
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cta-button:active {
-  transform: translateY(0);
-  box-shadow:
-    0 6px 14px rgba(0, 0, 0, 0.25),
-    inset 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.25),
+        inset 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .back-chip {
-  position: fixed;
-  left: 16px;
-  bottom: 16px;
-  z-index: 10000;
-  padding: 10px 14px;
-  border-radius: 999px;
-  text-decoration: none;
-  background: rgba(0,0,0,0.65);
-  color: #fff;
-  backdrop-filter: blur(8px);
-  transition: transform 150ms ease;
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    z-index: 10000;
+    padding: 10px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    backdrop-filter: blur(8px);
+    transition: transform 150ms ease;
 }
 .back-chip:hover { transform: translateY(-2px); }
+
+#current-year {
+    display: inline;
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,4 +1,13 @@
-https://aaron-schlossberg-portfolio.netlify.app/* https://www.aaronschlossberg.com/:splat 301!
+# Delete bogus sitemap URLs (410 Gone)
+/projects/sitemap.xml                    /gone 410
+/contact/sitemap.xml                     /gone 410
+/projects/fencing-video/sitemap.xml      /gone 410
 
-/projects.html    /projects    301
-/contact.html     /contact     301
+# Legacy .html cleanup
+/projects.html                           /projects 301
+/contact.html                            /contact 301
+/projects/fencing-video.html             /projects/fencing-video 301
+/projects/f2r.html                       /projects/f2r 301
+
+# --- Netlify subdomain → canonical domain
+https://aaron-schlossberg-portfolio.netlify.app/*  https://www.aaronschlossberg.com/:splat 301!
