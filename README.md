@@ -1,12 +1,13 @@
 # Aaron Schlossberg's Universe (Portfolio Website)
 
 ## Overview
-This is "Aaron Schlossberg's Universe" my personal portfolio website, built to showcase my background, skills, and selected projects. It also includes a contact section for professional outreach.
+This is "Aaron Schlossberg's Universe"; my personal portfolio website, built to showcase my background, skills, and selected projects. It also includes a contact section for professional outreach.
 
 ## My Portfolio
 - Home: [https://www.aaronschlossberg.com/](https://www.aaronschlossberg.com/)
 - Projects: [https://www.aaronschlossberg.com/projects/](https://aaronschlossberg.com/projects/)
   - Fencing Club video page: [https://www.aaronschlossberg.com/projects/fencing-video/](https://www.aaronschlossberg.com/projects/fencing-video/)
+  - Fiction2Reality page: [https://www.aaronschlossberg.com/projects/f2r/](https://www.aaronschlossberg.com/projects/f2r/)
 - Contact: [https://www.aaronschlossberg.com/contact/](https://aaronschlossberg.com/contact/) 
 
 ## Built With
@@ -23,7 +24,8 @@ This is "Aaron Schlossberg's Universe" my personal portfolio website, built to s
 - Enhance the visual design and layout with advanced CSS.
 - Add interactice elements using more JavaScript. 
 - Continue to improve the formatting.
-- Add several more pages.
+- Add more site pages. 
+- Add several subdomains.
 - Embed a Google Maps map.
 
 ## Notes!
