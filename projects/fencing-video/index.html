@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[video name] — Video | [site name]</title>
+    <title>Fencing Practice — Video | Aaron Schlossberg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Basic SEO -->
-    <!-- <meta name="description" content="[page description]">
-    <meta property="og:site_name" content="[Open Graph site name]">
-    <meta property="og:title" content="[video name] — Video">
-    <meta property="og:description" content="[Open Graph description]">
+    <meta name="description" content="A short fencing practice video filmed and edited by Aaron Schlossberg.">
+    <meta property="og:site_name" content="Aaron Schlossberg">
+    <meta property="og:title" content="Fencing Practice — Video">
+    <meta property="og:description" content="Fencing practice clip from Muhlenberg College Fencing Club.">
     <meta property="og:type" content="video.other">
-    <meta property="og:url" content="[Open Graph URL/canonical link]">
-    <meta property="og:image" content="[Open Graph image link]">
-    <link rel="canonical" href="[canonical link]">
+    <meta property="og:url" content="https://www.aaronschlossberg.com/projects/fencing-video/">
+    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/Fencing_pic1.png">
+    <link rel="canonical" href="https://www.aaronschlossberg.com/projects/fencing-video/">
 
-    <link rel="icon" type="image/png" href="/assets/img/[image path]"> -->
+    <link rel="icon" type="image/png" href="/assets/img/me_nachi_falls_circular.png">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <script defer src="/assets/js/main.js"></script> 
+    <script defer src="/assets/js/main.js"></script> <!-- connecting to the js --> 
 
     <!-- Video structured data -->
-    <!-- <script type="application/ld+json">
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "VideoObject",
@@ -31,19 +31,19 @@
         "contentUrl": "https://www.aaronschlossberg.com/assets/img/Fencing_video.mp4",
         "embedUrl": "https://www.aaronschlossberg.com/assets/img/Fencing_video.mp4"
     }
-    </script> -->
+    </script>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <main style="max-width: 900px; margin: 2rem auto; text-align: center;">
         <video controls preload="metadata" style="width:100%; max-width: 800px;">
-            <source src="/assets/img/[video source]" type="video/mp4">
+            <source src="/assets/img/Fencing_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         <p style="margin-top: 1rem;">
-            [paragraph below the video]
+            A short fencing practice clip from Muhlenberg College's Fencing Club, filmed by coach Noah Katz with calls made by coach Paul McAndrew, featuring a fencing bout between <strong style="font-weight: normal";>Aaron Schlossberg</strong> and Benjamin Dicker.
         </p>
     </main>
 
@@ -61,7 +61,7 @@
             .then(h => {
                 document.getElementById('footer-placeholder').innerHTML = h;
 
-                // now that the footer exists in the DOM, set the year
+                // ✅ now that the footer exists in the DOM, set the year
                 if (typeof initFooter === "function") initFooter();
             })
         .catch(err => console.error("Error loading footer:", err));
