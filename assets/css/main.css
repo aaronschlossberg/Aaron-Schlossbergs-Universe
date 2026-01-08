@@ -452,12 +452,6 @@ p { line-height: 1.7; }
   margin: 0 0 16px;
 }
 
-.highlights-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
 @media (min-width: 640px) {
   .highlights-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -494,16 +488,15 @@ p { line-height: 1.7; }
   text-align: left;
 }
 
-.highlights-grid {
+.highlights-grid{
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
-}
 
-@media (min-width: 700px) {
-  .highlights-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  /* cards have a “real” width; grid shrinks/expands based on how many fit */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+
+  /* THIS is what centers the last row when it’s not full */
+  justify-content: center;
 }
 
 .quora-card {
