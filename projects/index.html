@@ -15,14 +15,16 @@
     <link rel="icon" type="image/png" href="/favicon.ico">
 
     <!-- Link sharing preview image -->
-    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-portfolio.png">
+    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://www.aaronschlossberg.com/projects/">
     <meta property="og:type" content="website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css"> 
     <script defer src="/assets/js/main.js"></script> 
     <meta name="robots" content="index, follow">
@@ -80,7 +82,7 @@
 
             <strong>Fiction2Reality (F2R)</strong>: <strong style="font-weight: normal">Fiction2Reality</strong> (F2R) is a creative project transforming fictional worlds into real, explorable spaces, starting with a digital stage, creating 3D-rendered models and videos, and ultimately building large-scale physical environments like Hogwarts and the Backrooms. The goal of F2R is to let people step inside the worlds they've only read about or seen on screen, turning imagination into reality. <br><br>
 
-            In places like Harry Potter World at Universal Studios, visitors can only see limited sections of the Hogwarts castle, just the outside and a few decorated rooms, and then there's a ride inside. But F2R envisions something far more immersive: a full, to-scale <em>Hogwarts</em> castle that people can actually explore. Imagine walking through the Great Hall, the Chamber of Secrets, the Room of Requirement, the spiral staircase to the Headmaster's office, or even the witch statue passage to Hogsmeade. Every corridor, secret room, and magical detail—moving stairs, talking portraits, hidden kitchens—would be brought to life as a fully explorable experience. <br><br>
+            In places like Harry Potter World at Universal Studios, visitors can only see limited sections of the Hogwarts castle, just the outside and a few decorated rooms, and then there's a ride inside. But F2R envisions something far more immersive: a full, to-scale <em>Hogwarts</em> castle that people can actually explore. Imagine walking through the Great Hall, the Chamber of Secrets, the Room of Requirement, the spiral staircase to the Headmaster's office, or even the witch statue passage to Hogsmeade. Every corridor, secret room, and magical detail; moving stairs, talking portraits, hidden kitchens, would be brought to life as a fully explorable experience. <br><br>
 
             At the same time, F2R also draws inspiration from 
             <a href="https://en.wikipedia.org/wiki/The_Backrooms" target="_blank" style="color:#0000EE;"><u>The Backrooms</u></a>, a fascinating fictional world that began with one image, and has since evolved into countless 
@@ -205,24 +207,6 @@
     </section>
     </div>
 
-    <script>
-        (async () => {
-            const el = document.getElementById('header-placeholder');
-            el.innerHTML = await (await fetch('/_partials/header.html', {cache:'no-store'})).text();
-        })();
-    </script>
-
     <div id="footer-placeholder"></div>
-    <script>
-        fetch('/_partials/footer.html', { cache: 'no-store' })
-            .then(r => r.text())
-            .then(h => {
-                document.getElementById('footer-placeholder').innerHTML = h;
-
-                // ✅ now that the footer exists in the DOM, set the year
-                if (typeof initFooter === "function") initFooter();
-            })
-        .catch(err => console.error("Error loading footer:", err));
-    </script>
 </body>
 </html>

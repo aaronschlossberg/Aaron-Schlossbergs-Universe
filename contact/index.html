@@ -15,14 +15,16 @@
     <link rel="icon" type="image/png" href="/favicon.ico"> 
 
     <!-- Link sharing preview image -->
-    <meta property="og:image" content="/assets/img/og-aaron-portfolio.png">
+    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://www.aaronschlossberg.com/contact/">
     <meta property="og:type" content="website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css"> 
     <script defer src="/assets/js/main.js"></script>  
     <meta name="robots" content="index, follow">
@@ -51,7 +53,7 @@
         <!-- Add a wrapper around the buttons to use flexbox layout -->
         <div class="social-buttons">
             <!-- Gmail Button, opens a draft to my email in a new tab -->
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aschloss04@gmail.com&su=Hey%20Aaron&body=Hi%20there!" target="_blank">
+            <a data-config-link="email" data-external href="#">
                 <img src="/assets/img/social_media_logos/gmail_logo.png" alt="Gmail button" class="contact-icon">
             </a>
 
@@ -61,28 +63,28 @@
             </button>
             
             <!-- Instagram Button, opens my Instagram in a new tab -->
-            <a href="https://www.instagram.com/aaron_schlossberg/" target="_blank">
+            <a data-config-link="instagram" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/instagram_logo.png" alt="Instagram button" class="contact-icon">
             </a>
     
             <!-- Facebook Button, opens my Facebook in a new tab -->
-            <a href="https://www.facebook.com/aaronschlossberg" target="_blank">
+            <a data-config-link="facebook" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/facebook_logo.png" alt="Facebook button" class="contact-icon">
             </a>
     
             <!-- Twitter/"X" Button, opens my Twitter/"X" in a new tab -->
-            <a href="https://x.com/aschloss04" target="_blank">
+            <a data-config-link="x" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/twitter_x_logo.png" alt="Twitter/X button" class="contact-icon">
             </a>
     
             <!-- LinkedIn Button, opens my LinkedIn in a new tab -->
-            <a href="https://www.linkedin.com/in/aaronschlossberg" target="_blank">
+            <a data-config-link="linkedin" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/linkedin_logo.png" alt="LinkedIn button" class="contact-icon">
             </a>
     
             <!-- Discord Button (Copies to Clipboard), and opens in new tab -->
             <button onclick="copyToClipboard('the_lord_helix', 'Discord username')">
-                <a href="https://discord.com/users/265196895511642112" target="_blank">
+                <a data-config-link="discord" data-external href="#" target="_blank" rel="noopener">
                     <img src="/assets/img/social_media_logos/discord_logo.png" alt="Discord button" class="contact-icon">
                 </a>
             </button>
@@ -97,70 +99,52 @@
         <!-- Add a wrapper around the buttons to use flexbox layout -->
         <div class="social-buttons"> 
             <!-- Quora Button, opens my Quora in a new tab -->
-            <a href="https://www.quora.com/profile/Aaron-Schlossberg-2" target="_blank">
+            <a data-config-link="quora" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/quora_logo.png" alt="Quora button" class="contact-icon">
             </a>
 
             <!-- Medium Button, opens my Medium in a new tab -->
-            <a href="https://aaron-schlossberg.medium.com/" target="_blank">
+            <a data-config-link="medium" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/medium_logo.png" alt="Medium button" class="contact-icon">
             </a> 
 
             <!-- Substack Button, opens my Substack in a new tab -->
-            <a href="https://substack.com/@aaronschlossberg" target="_blank">
+            <a data-config-link="substack" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/substack_logo.png" alt="Substack button" class="contact-icon">
             </a>
 
             <!-- Spotify Button, opens my Spotify in a new tab -->
-            <a href="https://open.spotify.com/user/moltriz" target="_blank">
+            <a data-config-link="spotify" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/spotify_logo.png" alt="Spotify button" class="contact-icon">
             </a>
 
             <!-- TikTok Button, open's my TikTok channel in a new tab -->
-            <a href="https://www.tiktok.com/@aaronschlossberg" target="_blank">
+            <a data-config-link="tiktok" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/TikTok_logo.png" alt="TikTok button" class="contact-icon">
             </a>
     
             <!-- Pinterest Button, opens my Pinterest in a new tab -->
-            <a href="https://www.pinterest.com/aaronschlossbergentrepreneur/" target="_blank">
+            <a data-config-link="pinterest" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/pinterest_logo.png" alt="Pinterest button" class="contact-icon">
             </a>
     
             <!-- Reddit Button, opens my Reddit in a new tab -->
-            <a href="https://www.reddit.com/user/seismic_entrepreneur/" target="_blank">
+            <a data-config-link="reddit" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/reddit_logo.png" alt="Reddit button" class="contact-icon">
             </a>
     
             <!-- YouTube Button, open's my YouTube channel in a new tab -->
-            <a href="https://www.youtube.com/@aaron.schlossberg" target="_blank">
+            <a data-config-link="youtube" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/youtube_logo.png" alt="YouTube button" class="contact-icon">
             </a>
 
             <!-- GitHub Button, open's my GitHub repositories in a new tab -->
-            <a href="https://github.com/aaronschlossberg?tab=repositories" target="_blank">
+            <a data-config-link="github" data-external href="#" target="_blank" rel="noopener">
                 <img src="/assets/img/social_media_logos/GitHub_logo_circular.png" alt="GitHub button" class="contact-icon">
             </a>
         </div>
     </section> 
 
-    <script>
-        (async () => {
-            const el = document.getElementById('header-placeholder');
-            el.innerHTML = await (await fetch('/_partials/header.html', {cache:'no-store'})).text();
-        })();
-    </script>
-
     <div id="footer-placeholder"></div>
-    <script>
-        fetch('/_partials/footer.html', { cache: 'no-store' })
-            .then(r => r.text())
-            .then(h => {
-                document.getElementById('footer-placeholder').innerHTML = h;
-
-                // ✅ now that the footer exists in the DOM, set the year
-                if (typeof initFooter === "function") initFooter();
-            })
-        .catch(err => console.error("Error loading footer:", err));
-    </script>
 </body>
 </html>

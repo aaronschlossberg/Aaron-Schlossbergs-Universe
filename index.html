@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="/favicon.ico">
 
     <!-- Link sharing preview image -->
-    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-portfolio.png">
+    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +21,9 @@
     <meta property="og:type" content="website">
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">  
     <script defer src="/assets/js/main.js"></script> 
     <meta name="robots" content="index, follow">
@@ -72,8 +74,8 @@
         </div>
      </section>
 
-        <!-- Goals -->
-        <section class="section" id="goals">
+    <!-- Goals -->
+    <section class="section" id="goals">
         <h2>Goals</h2>
         <p>
             Beyond business and technology, he has a profound desire to create meaningful change. He wants to contribute to solving global issues such as hunger and homelessness, while also working toward advancements like radical longevity. He doesn't concern himself with ideological debates or rigid political labels — he simply wants to <i>do what's right</i>. These lyrics of <i>Fly Like an Eagle</i> by Steve Miller Band resonate deeply with him: <br>
@@ -93,6 +95,7 @@
             Ultimately, he lives by these words of Alan Kay: "<i>The best way to predict the future is to invent it</i>." Aaron's overarching goal is simple yet ambitious: "<b>I want to leave the world at least 1% better than I joined it</b>." And through his <strong style="font-weight: normal";>entrepreneurial ventures</strong>, creative projects, and constant drive to innovate, he is determined and motivated to make that happen.
         </p>
     </section>
+
     <div id="highlights-placeholder"></div>
     </div>
 
@@ -107,34 +110,6 @@
         alt="Aaron as the Cocaine Poop Wizard">
     </div>
 
-    <script>
-        (async () => {
-            const el = document.getElementById('header-placeholder');
-            el.innerHTML = await (await fetch('/_partials/header.html', {cache:'no-store'})).text();
-        })();
-    </script>
-
     <div id="footer-placeholder"></div>
-    <script>
-        fetch('/_partials/footer.html', { cache: 'no-store' })
-            .then(r => r.text())
-            .then(h => {
-                document.getElementById('footer-placeholder').innerHTML = h;
-
-                // now that the footer exists in the DOM, set the year
-                if (typeof initFooter === "function") initFooter();
-            })
-        .catch(err => console.error("Error loading footer:", err));
-    </script>
-
-    <script>
-        // dynamically load the highlights.html content into the placeholder
-        fetch('/_partials/highlights.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('highlights-placeholder').innerHTML = data;
-            })
-            .catch(err => console.error('Error loading highlights:', err));
-    </script>
 </body>
 </html>
