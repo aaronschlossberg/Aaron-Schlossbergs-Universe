@@ -84,6 +84,12 @@ section p {
     text-align: left;
 }
 
+ul {
+    display: inline-block;
+    text-align: left;      /* keeps text aligned nicely */
+    margin: 0 auto;
+}
+
 p + ul {
     margin-top: 0;
 }
