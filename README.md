@@ -38,8 +38,7 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
   - "a view of the real world"/"formative experiences" (or whatever it will be called) 
   - /referrals/ 
   - /aaronstravels/ 
-  - /writing/ 
-  - 
+  - /writing/
 - Embed a Google Maps map.
 - Move "clubs/student organizations" stuff into new linked page to have more focus on the projects and ventures, and to have less all on one page. (And also my clubs/student orgs will be less relevant after college.) 
 - Link to other websites I've built. 
