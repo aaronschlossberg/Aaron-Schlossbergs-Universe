@@ -41,8 +41,7 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
   - /writing/
 - Embed a Google Maps map.
 - Move "clubs/student organizations" stuff into new linked page to have more focus on the projects and ventures, and to have less all on one page. (And also my clubs/student orgs will be less relevant after college.) 
-- Link to other websites I've built. 
-- 
+- Link to other websites I've built.
 
 ## Notes!
 This site is a _work-in-progress_, and will continue to evolve as I improve my front-end development skills. Feedback and suggestions are always welcome!
