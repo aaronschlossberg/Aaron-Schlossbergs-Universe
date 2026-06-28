@@ -53,6 +53,15 @@ async function loadPartials() {
     );
   }
 
+  const pageConstructionHost = document.getElementById("page-construction-placeholder");
+  if (pageConstructionHost) {
+    jobs.push(
+      loadText("/_partials/page-construction.html").then((html) => {
+        pageConstructionHost.innerHTML = html;
+      })
+    );
+  }
+
   // Don’t fail the whole page if one partial fails
   await Promise.allSettled(jobs);
 }
@@ -116,23 +125,90 @@ function copyToClipboard(text, type) {
 // Expose globally so existing onclick handlers keep working
 window.copyToClipboard = copyToClipboard;
 
+function initCarousels() {
+    document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+        const track = carousel.querySelector(".carousel-track");
+        const prev = carousel.querySelector(".carousel-btn-prev");
+        const next = carousel.querySelector(".carousel-btn-next");
+
+        if (!track || !prev || !next || track.dataset.carouselReady === "true") return;
+
+        const originalCards = Array.from(track.children);
+        if (originalCards.length <= 1) {
+            prev.style.display = "none";
+            next.style.display = "none";
+            return;
+        }
+
+        track.dataset.carouselReady = "true";
+
+        originalCards.forEach((card) => {
+            track.appendChild(card.cloneNode(true));
+        });
+
+        originalCards.slice().reverse().forEach((card) => {
+            track.insertBefore(card.cloneNode(true), track.firstChild);
+        });
+
+        const getOriginalWidth = () => track.scrollWidth / 3;
+
+        requestAnimationFrame(() => {
+        track.scrollLeft = getOriginalWidth();
+        });
+
+        function getStep() {
+            const card = track.querySelector(".quora-card");
+            if (!card) return 320;
+
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            return card.getBoundingClientRect().width + gap;
+        }
+
+        function keepInfinite() {
+        const originalWidth = getOriginalWidth();
+
+        if (track.scrollLeft >= originalWidth * 2) {
+            track.scrollLeft -= originalWidth;
+        } else if (track.scrollLeft <= 0) {
+            track.scrollLeft += originalWidth;
+        }
+        }
+
+        next.addEventListener("click", () => {
+            track.scrollBy({ left: getStep(), behavior: "smooth" });
+            setTimeout(keepInfinite, 450);
+        });
+
+        prev.addEventListener("click", () => {
+            track.scrollBy({ left: -getStep(), behavior: "smooth" });
+            setTimeout(keepInfinite, 450);
+        });
+
+        track.addEventListener("scroll", () => {
+            window.clearTimeout(track._carouselTimer);
+            track._carouselTimer = window.setTimeout(keepInfinite, 120);
+        });
+    });
+}
+
 /* ------------------------------------------------------------
   Init
 ------------------------------------------------------------ */
 async function init() {
-  // 1) Load header/footer/highlights first
-  await loadPartials();
+    // 1) Load header/footer/highlights first
+    await loadPartials();
+    initCarousels();
 
-  // 2) After footer is injected, set the year
-  initFooterYear();
+    // 2) After footer is injected, set the year
+    initFooterYear();
 
-  // 3) Load config once and apply all config links
-  try {
-    const config = await loadJSON("/data/config.json");
-    applyConfigLinks(config);
-  } catch (e) {
-    console.warn("Config load failed:", e);
-  }
+    // 3) Load config once and apply all config links
+    try {
+        const config = await loadJSON("/data/config.json");
+        applyConfigLinks(config);
+    } catch (e) {
+        console.warn("Config load failed:", e);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", init);

@@ -5,10 +5,28 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
 
 ## Website Contents
 - **Home**: [https://www.aaronschlossberg.com/](https://www.aaronschlossberg.com/)
+- **Education**: [https://www.aaronschlossberg.com/education/](https://www.aaronschlossberg.com/education/)
+  - **Hebrew Academy**: [https://www.aaronschlossberg.com/education/hebrew-academy/](https://www.aaronschlossberg.com/education/hebrew-academy/)
+  - **Pathways**: [https://www.aaronschlossberg.com/education/pathways/](https://www.aaronschlossberg.com/education/pathways/)
+  - **Muhlenberg**: [https://www.aaronschlossberg.com/education/muhlenberg/](https://www.aaronschlossberg.com/education/muhlenberg/)
+    - **Clubs**: [https://www.aaronschlossberg.com/education/muhlenberg/clubs/](https://www.aaronschlossberg.com/education/muhlenberg/clubs/)
+      - **Fencing Club video page**: [https://www.aaronschlossberg.com/projects/fencing-video/](https://www.aaronschlossberg.com/projects/fencing-video/)
+    - **Courses**: [https://www.aaronschlossberg.com/education/muhlenberg/courses/](https://www.aaronschlossberg.com/muhlenberg/courses/)
+    - **Experiences**: [https://www.aaronschlossberg.com/education/muhlenberg/experiences/](https://www.aaronschlossberg.com/education/muhlenberg/experiences/)
+    - **Highlights**: [https://www.aaronschlossberg.com/education/muhlenberg/highlights/](https://www.aaronschlossberg.com/education/muhlenberg/highlights/)
+  - **Lifelong Learning**: [https://www.aaronschlossberg.com/education/lifelong-learning/](https://www.aaronschlossberg.com/education/muhlenberg/lifelong-learning/)
 - **Projects**: [https://www.aaronschlossberg.com/projects/](https://aaronschlossberg.com/projects/)
-  - **Fencing Club video page**: [https://www.aaronschlossberg.com/projects/fencing-video/](https://www.aaronschlossberg.com/projects/fencing-video/)
   - **Fiction2Reality embedded page**: [https://www.aaronschlossberg.com/projects/f2r/](https://www.aaronschlossberg.com/projects/f2r/)
-- **Contact**: [https://www.aaronschlossberg.com/contact/](https://www.aaronschlossberg.com/contact/) 
+- **Writings**: [https://www.aaronschlossberg.com/writings](https://www.aaronschlossberg.com/writings)
+- **Resume**: [https://www.aaronschlossberg.com/resume](https://www.aaronschlossberg.com/resume)
+- **Contact**: [https://www.aaronschlossberg.com/contact/](https://www.aaronschlossberg.com/contact/)
+- **Images**: [https://www.aaronschlossberg.com/images/](https://www.aaronschlossberg.com/images/) 
+  - **Pictures of Me**: [https://www.aaronschlossberg.com/images/pictures-of-me/](https://www.aaronschlossberg.com/images/pictures-of-me/)
+  - **Photos I've Taken**: [https://www.aaronschlossberg.com/images/photos-ive-taken/](https://www.aaronschlossberg.com/images/photos-ive-taken/) 
+  - **Travel**: [https://www.aaronschlossberg.com/images/travel/](https://www.aaronschlossberg.com/images/travel/)
+  - **Art**: [https://www.aaronschlossberg.com/images/art/](https://www.aaronschlossberg.com/images/art/)
+  - **Things I Love**: [https://www.aaronschlossberg.com/images/art/](https://www.aaronschlossberg.com/images/art/)
+  - **Memes**: [https://www.aaronschlossberg.com/images/memes/](https://www.aaronschlossberg.com/images/memes/)
 
 ## Built With
 - HTML
@@ -26,11 +44,8 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
 - Add interactive elements using more JavaScript. 
 - Continue to improve the formatting.
 - Add more pages (and perhaps some subdomains, as well). 
-  - /resume/
   - /compendium/
-  - /art/
-  - /picturesofme/ or images.aaronschlossberg.com (split up into pages) 
-  - favoritequotes.aaronschlossberg.com (split into pages and sections) 
+  - quotes page
   - "for recruiters" page, with an embedded résumé, project summaries, skills, contact, links to GitHub, TikTok, LinkedIn, etc...
   - /interests/ 
   - /fandoms/ 
@@ -38,9 +53,7 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
   - "a view of the real world"/"formative experiences" (or whatever it will be called) 
   - /referrals/ 
   - /aaronstravels/ 
-  - /writing/
 - Embed a Google Maps map.
-- Move "clubs/student organizations" stuff into new linked page to have more focus on the projects and ventures, and to have less all on one page. (And also my clubs/student orgs will be less relevant after college.) 
 - Link to other websites I've built.
 
 ## Notes!
