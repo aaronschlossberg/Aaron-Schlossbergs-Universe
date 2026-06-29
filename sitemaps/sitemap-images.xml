@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>
+            https://www.aaronschlossberg.com/
+        </loc>
+        <lastmod>2026-06-29</lastmod>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/me_nachi_falls_circular.png
+            </image:loc>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>
+            https://www.aaronschlossberg.com/education/
+        </loc>
+        <lastmod>2026-06-29</lastmod>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/education/education_with_chalkboard_and_desk.jpg
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/education/Hebrew_Academy_building.jpg
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/education/Pathways_Academy_Building.jpg
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/education/Muhlenberg_College_campus.jpg
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/education/Lifelong_Learning_visual.png
+            </image:loc>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>
+            https://www.aaronschlossberg.com/projects/
+        </loc>
+        <lastmod>2026-06-29</lastmod>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/Mayvene_brain_logo.png
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/login_page.png
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/Hogwarts_image.png
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/Backrooms_testing_in_Blender.png
+            </image:loc>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>
+            https://www.aaronschlossberg.com/images/pictures-of-me/
+        </loc>
+        <lastmod>2026-06-29</lastmod>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/aaron_and_kane_parsons_backrooms_afterparty.jpeg
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/me_in_CC_boating_thumbs_up.png
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/cocaine_poop_wizard.png
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/little_aaron_spider-man_and_esther.jpg
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/Aaron_and_Spider-Man.png
+            </image:loc>
+        </image:image>
+    </url>
+
+    <!-- <url>
+        <loc>
+            https://www.aaronschlossberg.com/placehold.co/
+        </loc>
+        <lastmod>2026-06-29</lastmod>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/placehold.co/
+            </image:loc>
+        </image:image>
+    </url> -->
+</urlset>

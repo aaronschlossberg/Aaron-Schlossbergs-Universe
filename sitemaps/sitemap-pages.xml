@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+    xmlns:fo="http://www.w3.org/1999/XSL/Format" 
+    xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+    <url>
+        <loc>https://www.aaronschlossberg.com/</loc>
+        <lastmod>2026-06-27T20:03:42+00:00</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/education/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/hebrew-academy/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/pathways/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/pokemon-club/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/harry-potter-club/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-video/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/mbga/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/mac/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/israeli-dance/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/wall-street-club/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/jewelry-making-club/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/courses/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/experiences/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/muhlenberg/highlights/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/education/lifelong-learning/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <url>
+          <loc>https://www.aaronschlossberg.com/projects/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/projects/f2r/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/writings/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <url>
+          <loc>https://www.aaronschlossberg.com/resume/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/contact/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/images/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/images/pictures-of-me/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/images/photos-ive-taken/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/images/travel/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/images/art/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/images/things-i-love/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <!-- <url>
+          <loc>https://www.aaronschlossberg.com/images/memes/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url> -->
+    <url>
+          <loc>https://www.aaronschlossberg.com/site-map/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+          <loc>https://www.aaronschlossberg.com/README.md/</loc>
+          <lastmod>2026-06-22</lastmod>
+    </url>
+</urlset>
