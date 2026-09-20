@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Reminder: Edit site-wide Head values in /data/config.json, page-specific values in /data/pages.json, and shared markup here. Then run `npm run heads`; `npm run build` checks every source page against it.
+-->
+
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="author" content="{{AUTHOR}}">
+<meta name="application-name" content="{{APPLICATION_NAME}}">
+<meta name="theme-color" content="{{THEME_COLOR}}">
+<meta name="robots" content="{{ROBOTS}}">
+<meta name="p:domain_verify" content="{{PINTEREST_DOMAIN_VERIFY}}">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+{{CANONICAL}}
+
+<!-- Open Graph/link-sharing preview -->
+<meta property="og:site_name" content="{{SITE_NAME}}">
+<meta property="og:locale" content="{{OG_LOCALE}}">
+<meta property="og:title" content="{{SOCIAL_TITLE}}">
+<meta property="og:description" content="{{SOCIAL_DESCRIPTION}}">
+<meta property="og:type" content="{{OG_TYPE}}">
+<meta property="og:url" content="{{PAGE_URL}}">
+<meta property="og:image" content="{{IMAGE_URL}}">
+<meta property="og:image:secure_url" content="{{IMAGE_URL}}">
+<meta property="og:image:type" content="{{IMAGE_TYPE}}">
+<meta property="og:image:width" content="{{IMAGE_WIDTH}}">
+<meta property="og:image:height" content="{{IMAGE_HEIGHT}}">
+<meta property="og:image:alt" content="{{IMAGE_ALT}}">
+{{OPEN_GRAPH_EXTENSIONS}}
+
+<!-- Twitter/"X" Card -->
+<meta name="twitter:card" content="{{TWITTER_CARD}}">
+<meta name="twitter:site" content="{{X_HANDLE}}">
+<meta name="twitter:creator" content="{{X_HANDLE}}">
+<meta name="twitter:title" content="{{SOCIAL_TITLE}}">
+<meta name="twitter:description" content="{{SOCIAL_DESCRIPTION}}">
+<meta name="twitter:image" content="{{IMAGE_URL}}">
+<meta name="twitter:image:alt" content="{{IMAGE_ALT}}">
+
+<!-- Lora font: regular, semibold, bold, and matching italics -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
+{{EXTRA_STYLES}}
+
+<script type="application/ld+json">
+{{JSON_LD}}
+</script>
+
+<script defer src="/assets/js/main.js"></script>
+{{EXTRA_SCRIPTS}}

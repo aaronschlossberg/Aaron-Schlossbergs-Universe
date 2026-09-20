@@ -1,57 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Aaron Schlossberg's Universe</title>
-    <meta property="og:site_name" content="Aaron Schlossberg‘s Universe">
-    <meta name="application-name" content="Aaron Schlossberg">
-    
-    <!-- Open Graph info -->
-    <meta property="og:title" content="Aaron Schlossberg — Projects">
-    <meta property="og:description" content="Aaron Schlossberg's Universe | Personal portfolio of self, projects, contact, ventures, and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.aaronschlossberg.com/projects/">
-    <link rel="icon" type="image/png" href="/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link sharing preview image -->
-    <meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Picture of Aaron Schlossberg smiling in front of Nachi Falls in Japan, with a circular crop. Name 'Aaron Schlossberg' and title 'Computer Scientist, Entrepreneur, Writer' are displayed in the image, along with 'Aaron Schlossberg's Universe' and 'aaronschlossberg.com'.">
-    <meta name="twitter:card" content="summary_large_image">
+<!-- Reminder: Edit site-wide Head values in /data/config.json, page-specific values in /data/pages.json, and shared markup here. Then run `npm run heads`; `npm run build` checks every source page against it.
+-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/main.css"> 
-    <script defer src="/assets/js/main.js"></script> 
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Aaron Schlossberg's Universe | Personal portfolio of self, projects, contact, ventures, and more.">
-    <meta name="p:domain_verify" content="52b00b635022ac45300143d277f42d6d"/>
-    <link rel="canonical" href="https://www.aaronschlossberg.com/projects/">
+<title>Projects | Aaron Schlossberg’s Universe</title>
+<meta name="description" content="Explore Aaron Schlossberg’s projects in technology, entrepreneurship, knowledge systems, storytelling, worldbuilding, and immersive experiences.">
+<meta name="author" content="Aaron L. Schlossberg">
+<meta name="application-name" content="Aaron Schlossberg’s Universe">
+<meta name="theme-color" content="#8a2f3f">
+<meta name="robots" content="index, follow">
+<meta name="p:domain_verify" content="52b00b635022ac45300143d277f42d6d">
 
-    <script type="application/ld+json">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="canonical" href="https://www.aaronschlossberg.com/projects/">
+
+<!-- Open Graph/link-sharing preview -->
+<meta property="og:site_name" content="Aaron Schlossberg’s Universe">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Projects by Aaron Schlossberg">
+<meta property="og:description" content="Explore Aaron Schlossberg’s projects in technology, entrepreneurship, knowledge systems, storytelling, worldbuilding, and immersive experiences.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.aaronschlossberg.com/projects/">
+<meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
+<meta property="og:image:secure_url" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Aaron Schlossberg smiling at Nachi Falls beside the name and branding for Aaron Schlossberg’s Universe.">
+
+<!-- Twitter/"X" Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aschloss04">
+<meta name="twitter:creator" content="@aschloss04">
+<meta name="twitter:title" content="Projects by Aaron Schlossberg">
+<meta name="twitter:description" content="Explore Aaron Schlossberg’s projects in technology, entrepreneurship, knowledge systems, storytelling, worldbuilding, and immersive experiences.">
+<meta name="twitter:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
+<meta name="twitter:image:alt" content="Aaron Schlossberg smiling at Nachi Falls beside the name and branding for Aaron Schlossberg’s Universe.">
+
+<!-- Lora font: regular, semibold, bold, and matching italics -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "@id": "https://www.aaronschlossberg.com/projects/#breadcrumbs",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.aaronschlossberg.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Projects",
-                "item": "https://www.aaronschlossberg.com/projects/"
-            }
-        ]
+      "@type": "Person",
+      "@id": "https://www.aaronschlossberg.com/#person",
+      "name": "Aaron L. Schlossberg",
+      "alternateName": "Aaron Schlossberg",
+      "url": "https://www.aaronschlossberg.com/about-me/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.aaronschlossberg.com/#website",
+      "url": "https://www.aaronschlossberg.com/",
+      "name": "Aaron Schlossberg’s Universe",
+      "alternateName": "Aaron Schlossberg",
+      "description": "Computer scientist, entrepreneur, writer, and creator exploring technology, storytelling, knowledge, and imaginative worlds.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://www.aaronschlossberg.com/#person"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.aaronschlossberg.com/projects/#primaryimage",
+      "url": "https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png",
+      "contentUrl": "https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "Aaron Schlossberg smiling at Nachi Falls beside the name and branding for Aaron Schlossberg’s Universe."
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.aaronschlossberg.com/projects/#webpage",
+      "url": "https://www.aaronschlossberg.com/projects/",
+      "name": "Projects by Aaron Schlossberg",
+      "description": "Explore Aaron Schlossberg’s projects in technology, entrepreneurship, knowledge systems, storytelling, worldbuilding, and immersive experiences.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.aaronschlossberg.com/#website"
+      },
+      "creator": {
+        "@id": "https://www.aaronschlossberg.com/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.aaronschlossberg.com/projects/#primaryimage"
+      },
+      "breadcrumb": {
+        "@id": "https://www.aaronschlossberg.com/projects/#breadcrumbs"
+      },
+      "about": {
+        "@id": "https://www.aaronschlossberg.com/#person"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.aaronschlossberg.com/projects/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.aaronschlossberg.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "https://www.aaronschlossberg.com/projects/"
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
+
+<script defer src="/assets/js/main.js"></script>
 </head>
 <body>
     <div id="header-placeholder"></div>

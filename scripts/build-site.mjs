@@ -631,7 +631,7 @@ async function buildWritingsIndex() {
             year:
                 firstMetadataValue(
                     metadataSources,
-                    ["Year", "Published"]
+                    ["Year", "Published", "Originally Published"]
                 ),
 
             metadata: {

@@ -1,11 +1,6 @@
-/* ==========================================================
-   REUSABLE UTILITY CLASSES
-   ========================================================== */
+/* === Reusable Utility Classes === */
 
-/*
-   Visual text sizing only. These classes do not give the text
-   any semantic meaning, so they can be used on any element.
-*/
+/* Visual text sizing only; no semantic meaning. */
 .text-small {
     font-size: var(--text-size-small);
 }
