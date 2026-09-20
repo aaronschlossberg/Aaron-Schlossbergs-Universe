@@ -1,0 +1,350 @@
+{
+    "/": {
+        "title": "Aaron Schlossberg’s Universe",
+        "socialTitle": "Aaron Schlossberg’s Universe",
+        "description": "Explore Aaron L. Schlossberg’s work in computer science, entrepreneurship, writing, worldbuilding, education, art, and community building.",
+        "breadcrumbLabel": "Home",
+        "mainEntityId": "https://www.aaronschlossberg.com/#person",
+        "aboutPerson": true,
+        "personDetails": true
+    },
+    "/about-me/": {
+        "title": "About Aaron Schlossberg | Aaron Schlossberg’s Universe",
+        "socialTitle": "About Aaron Schlossberg",
+        "description": "Learn about Aaron Schlossberg’s background, interests, creative work, entrepreneurial projects, community leadership, and long-term vision.",
+        "breadcrumbLabel": "About Me",
+        "ogType": "profile",
+        "schemaType": "AboutPage",
+        "mainEntityId": "https://www.aaronschlossberg.com/#person",
+        "aboutPerson": true,
+        "personDetails": true,
+        "profile": {
+            "firstName": "Aaron",
+            "lastName": "Schlossberg"
+        }
+    },
+    "/contact/": {
+        "title": "Contact Aaron Schlossberg | Aaron Schlossberg’s Universe",
+        "socialTitle": "Contact Aaron L. Schlossberg",
+        "description": "Contact Aaron L. Schlossberg about web development, writing, creative projects, collaborations, opportunities, and other work.",
+        "breadcrumbLabel": "Contact",
+        "schemaType": "ContactPage",
+        "mainEntityId": "https://www.aaronschlossberg.com/#person",
+        "aboutPerson": true,
+        "extraScripts": [
+            "/assets/js/pages/contact.js"
+        ]
+    },
+    "/contact/thanks/": {
+        "title": "Message Sent | Aaron Schlossberg’s Universe",
+        "socialTitle": "Message Sent",
+        "description": "Confirmation that your message to Aaron Schlossberg was submitted successfully.",
+        "breadcrumbLabel": "Message Sent",
+        "robots": "noindex, follow",
+        "canonical": false
+    },
+    "/education/": {
+        "title": "Education | Aaron Schlossberg’s Universe",
+        "socialTitle": "Aaron Schlossberg’s Education",
+        "description": "Explore Aaron Schlossberg’s educational journey through Hebrew Academy, Pathways Academy, Muhlenberg College, and lifelong learning.",
+        "breadcrumbLabel": "Education",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true
+    },
+    "/education/hebrew-academy/": {
+        "title": "Hebrew Academy | Aaron Schlossberg’s Universe",
+        "socialTitle": "Aaron L. Schlossberg at Hebrew Academy",
+        "description": "This page about Aaron Schlossberg’s elementary and middle school education at Hebrew Academy is currently under construction.",
+        "breadcrumbLabel": "Hebrew Academy",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "aboutPerson": true
+    },
+    "/education/pathways-academy/": {
+        "title": "Pathways Academy | Aaron Schlossberg’s Universe",
+        "socialTitle": "Aaron L. Schlossberg at Pathways Academy of Technology and Design",
+        "description": "This page about Aaron Schlossberg’s education at Pathways Academy of Technology and Design is currently under construction.",
+        "breadcrumbLabel": "Pathways Academy",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "aboutPerson": true
+    },
+    "/education/muhlenberg/": {
+        "title": "Muhlenberg College | Aaron Schlossberg’s Universe",
+        "socialTitle": "Aaron L. Schlossberg at Muhlenberg College",
+        "description": "Explore Aaron Schlossberg’s Muhlenberg College experience, including academics, clubs, leadership, internships, campus involvement, and highlights.",
+        "breadcrumbLabel": "Muhlenberg College",
+        "aboutPerson": true
+    },
+    "/education/muhlenberg/clubs/": {
+        "title": "Clubs & Leadership | Aaron Schlossberg’s Universe",
+        "socialTitle": "Clubs & Leadership at Muhlenberg College",
+        "description": "Explore Aaron Schlossberg’s Muhlenberg College club leadership, including Pokémon, Harry Potter, fencing, board games, campus events, and more.",
+        "breadcrumbLabel": "Clubs & Leadership",
+        "aboutPerson": true
+    },
+    "/education/muhlenberg/clubs/fencing-video/": {
+        "title": "Fencing Practice Video | Aaron Schlossberg’s Universe",
+        "socialTitle": "Fencing Practice Video",
+        "description": "Watch a short fencing practice bout from the Muhlenberg College Fencing Club and learn about Aaron Schlossberg’s role in reviving the club.",
+        "breadcrumbLabel": "Fencing Practice Video",
+        "ogType": "video.other",
+        "mainEntityId": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-video/#video",
+        "aboutPerson": true,
+        "twitterCard": "summary",
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/fencing-club/Fencing_pic1.png",
+            "type": "image/png",
+            "width": 1024,
+            "height": 768,
+            "alt": "Two fencers practicing in a Muhlenberg College gym."
+        },
+        "video": {
+            "url": "https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/fencing-club/Fencing_video.mp4",
+            "type": "video/mp4",
+            "width": 1920,
+            "height": 1080
+        }
+    },
+    "/education/muhlenberg/courses/": {
+        "title": "Courses | Aaron Schlossberg’s Universe",
+        "socialTitle": "Muhlenberg College Courses",
+        "description": "This page about Aaron Schlossberg’s courses at Muhlenberg College is currently under construction.",
+        "breadcrumbLabel": "Courses",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "aboutPerson": true
+    },
+    "/education/muhlenberg/experiences/": {
+        "title": "Experiences | Aaron Schlossberg’s Universe",
+        "socialTitle": "Muhlenberg College Experiences",
+        "description": "This page about Aaron Schlossberg’s academic, professional, and campus experiences at Muhlenberg College is currently under construction.",
+        "breadcrumbLabel": "Experiences",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "aboutPerson": true
+    },
+    "/education/muhlenberg/highlights/": {
+        "title": "Highlights | Aaron Schlossberg’s Universe",
+        "socialTitle": "Muhlenberg College Highlights",
+        "description": "This page featuring highlights from Aaron Schlossberg’s time at Muhlenberg College is currently under construction.",
+        "breadcrumbLabel": "Highlights",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "aboutPerson": true
+    },
+    "/education/lifelong-learning/": {
+        "title": "Lifelong Learning | Aaron Schlossberg’s Universe",
+        "socialTitle": "Lifelong Learning",
+        "description": "This page about Aaron Schlossberg’s continuing education and self-directed learning is currently under construction.",
+        "breadcrumbLabel": "Lifelong Learning",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "aboutPerson": true
+    },
+    "/images/": {
+        "title": "Images | Aaron Schlossberg’s Universe",
+        "socialTitle": "Images from Aaron Schlossberg’s Universe",
+        "description": "Explore Aaron Schlossberg’s visual hub for personal photos, photography, artwork, travel images, and other image-based collections.",
+        "breadcrumbLabel": "Images",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true
+    },
+    "/images/pictures-of-me/": {
+        "title": "Pictures of Aaron Schlossberg | Aaron Schlossberg’s Universe",
+        "socialTitle": "Pictures of Aaron Schlossberg",
+        "description": "Browse pictures of Aaron Schlossberg from travel, creative projects, costumes, events, milestones, and everyday life.",
+        "breadcrumbLabel": "Pictures of Me",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true
+    },
+    "/projects/": {
+        "title": "Projects | Aaron Schlossberg’s Universe",
+        "socialTitle": "Projects by Aaron Schlossberg",
+        "description": "Explore Aaron Schlossberg’s projects in technology, entrepreneurship, knowledge systems, storytelling, worldbuilding, and immersive experiences.",
+        "breadcrumbLabel": "Projects",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true
+    },
+    "/projects/f2r/": {
+        "title": "Fiction2Reality Viewer | Aaron Schlossberg’s Universe",
+        "socialTitle": "Fiction2Reality Viewer",
+        "description": "View the Fiction2Reality website within Aaron Schlossberg’s Universe and explore the project’s work turning fictional worlds into visitable experiences.",
+        "breadcrumbLabel": "Fiction2Reality Viewer",
+        "aboutPerson": true
+    },
+    "/projects/info-sprawlings/": {
+        "title": "Info Sprawlings | Aaron Schlossberg’s Universe",
+        "socialTitle": "Info Sprawlings",
+        "description": "Explore connected, reusable explanations of software, concepts, people, places, projects, and other subjects across Aaron Schlossberg’s Universe.",
+        "breadcrumbLabel": "Info Sprawlings",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true,
+        "extraScripts": [
+            "/assets/js/search-engine.js",
+            "/assets/js/pages/info-sprawlings.js"
+        ]
+    },
+    "/projects/info-sprawlings/history/": {
+        "title": "How the Info Sprawlings Evolved | Aaron Schlossberg’s Universe",
+        "socialTitle": "How the Info Sprawlings Evolved",
+        "description": "Trace Info Sprawlings from a large private knowledge archive and the Knowledge Corp idea to a smaller, purposeful, connected knowledge web.",
+        "breadcrumbLabel": "History",
+        "ogType": "article",
+        "schemaType": "AboutPage",
+        "article": {
+            "published": "2026-08-22",
+            "modified": "2026-08-22"
+        }
+    },
+    "/projects/info-sprawlings/blender/": {
+        "title": "Blender | Info Sprawlings | Aaron Schlossberg’s Universe",
+        "socialTitle": "Blender | Info Sprawlings",
+        "description": "Learn what Blender is, how its major 3D workflows fit together, and how it connects to animation, rendering, Python, and Aaron Schlossberg’s projects.",
+        "breadcrumbLabel": "Blender",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/projects/info-sprawlings/blender/#article",
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/Backrooms_testing_in_Blender.png",
+            "type": "image/png",
+            "width": 2868,
+            "height": 1590,
+            "alt": "A yellow-walled Backrooms environment being developed in Blender."
+        },
+        "article": {
+            "published": "2026-08-21",
+            "modified": "2026-08-21"
+        }
+    },
+    "/resume/": {
+        "title": "Résumé | Aaron L. Schlossberg",
+        "socialTitle": "Aaron L. Schlossberg’s Résumé",
+        "description": "View Aaron L. Schlossberg’s résumé, including education, technical skills, leadership, creative work, projects, experience, and accomplishments.",
+        "breadcrumbLabel": "Résumé",
+        "ogType": "profile",
+        "schemaType": "ProfilePage",
+        "mainEntityId": "https://www.aaronschlossberg.com/#person",
+        "aboutPerson": true,
+        "profile": {
+            "firstName": "Aaron",
+            "lastName": "Schlossberg"
+        }
+    },
+    "/site-map/": {
+        "title": "Sitemap | Aaron Schlossberg’s Universe",
+        "socialTitle": "Sitemap | Aaron Schlossberg’s Universe",
+        "description": "Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.",
+        "breadcrumbLabel": "Sitemap",
+        "schemaType": "CollectionPage"
+    },
+    "/test/": {
+        "title": "Test Page | Aaron Schlossberg’s Universe",
+        "socialTitle": "Aaron Schlossberg’s Test Page",
+        "description": "A private testing page used to verify website embeds and presentation before public release.",
+        "breadcrumbLabel": "Test",
+        "robots": "noindex, nofollow",
+        "canonical": false,
+        "breadcrumbs": false
+    },
+    "/writings/": {
+        "title": "Writings | Aaron Schlossberg’s Universe",
+        "socialTitle": "Writings by Aaron L. Schlossberg",
+        "description": "Explore Aaron Schlossberg’s fiction, technical and explanatory writing, essays, scripts, copywriting, and other creative work.",
+        "breadcrumbLabel": "Writings",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true,
+        "extraScripts": [
+            "/assets/js/search-engine.js",
+            "/assets/js/pages/writings.js"
+        ]
+    },
+    "/writings/1080-paths-of-least-resistance/": {
+        "title": "1080 Paths of Least Resistance by Aaron L. Schlossberg",
+        "socialTitle": "1080 Paths of Least Resistance",
+        "description": "Read \"1080 Paths of Least Resistance\", a speculative-horror short story by Aaron L. Schlossberg set within a shifting, liminal complex.",
+        "socialDescription": "A speculative-horror short story by Aaron L. Schlossberg set within a shifting, liminal complex.",
+        "breadcrumbLabel": "1080 Paths of Least Resistance",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/1080-paths-of-least-resistance/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ]
+    },
+    "/writings/just-this-once/": {
+        "title": "Just This Once by Aaron L. Schlossberg",
+        "socialTitle": "Just This Once",
+        "description": "Read \"Just This Once\", a speculative-horror short story by Aaron L. Schlossberg about envy, temptation, and a mysterious stone.",
+        "socialDescription": "A mysterious stone turns wanting into something dangerous.",
+        "breadcrumbLabel": "Just This Once",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/just-this-once/#story",
+        "article": {},
+        "twitterCard": "summary",
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/writings/just-this-once/just-this-once-concept-art-aaron-schlossberg.png",
+            "type": "image/png",
+            "width": 640,
+            "height": 640,
+            "alt": "Concept art for Just This Once with two stones on dark plinths and figures representing coveted abilities."
+        },
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ]
+    },
+        "/writings/backrooms-and-liminal-spaces-original-introduction/": {
+        "title": "The Backrooms and Liminal Spaces: Original Introduction | Aaron Schlossberg’s Universe",
+        "socialTitle": "The Backrooms and Liminal Spaces: Original Introduction",
+        "description": "Read Aaron L. Schlossberg’s original 2024 introduction to the Backrooms and liminal spaces, preserved as the first version of a later expanded essay.",
+        "socialDescription": "The preserved original 2024 version of Aaron L. Schlossberg’s introduction to the Backrooms and liminal spaces.",
+        "breadcrumbLabel": "Original Backrooms Introduction",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/backrooms-and-liminal-spaces-original-introduction/#article",
+        "article": {
+            "published": "2024-08-12",
+            "modified": "2026-09-18"
+        },
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/writings/backrooms-and-liminal-spaces-original-introduction/original-backrooms-image.jpeg",
+            "type": "image/jpeg",
+            "width": 602,
+            "height": 452,
+            "alt": "The original yellow-room Backrooms photograph."
+        },
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ]
+    },
+    "/writings/backrooms-and-liminal-spaces-introduction/": {
+        "title": "The Backrooms and Liminal Spaces: Introduction | Aaron Schlossberg’s Universe",
+        "socialTitle": "The Backrooms and Liminal Spaces: Introduction",
+        "description": "Explore what liminal spaces are, how the Backrooms began and evolved, and why these familiar yet unsettling environments resonate so strongly.",
+        "socialDescription": "An introduction to liminal spaces, the history and evolution of the Backrooms, and the creators and communities surrounding them.",
+        "breadcrumbLabel": "The Backrooms and Liminal Spaces",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/backrooms-and-liminal-spaces-introduction/#article",
+        "article": {
+            "published": "2026-09-18",
+            "modified": "2026-09-18"
+        },
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/writings/backrooms-and-liminal-spaces-original-introduction/original-backrooms-image.jpeg",
+            "type": "image/jpeg",
+            "width": 602,
+            "height": 452,
+            "alt": "The original yellow-room Backrooms photograph."
+        },
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ]
+    },
+    "/gone/": {
+        "title": "410 Gone | Aaron Schlossberg’s Universe",
+        "socialTitle": "410 Gone",
+        "description": "This page has been permanently removed from Aaron Schlossberg’s Universe.",
+        "breadcrumbLabel": "Gone",
+        "robots": "noindex, nofollow",
+        "canonical": false,
+        "breadcrumbs": false
+    }
+}

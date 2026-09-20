@@ -1,45 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sitemap | Aaron Schlossberg's Universe</title>
-    <meta property="og:site_name" content="Aaron Schlossberg‘s Universe">
-    <meta name="application-name" content="Aaron Schlossberg">
-    <meta name="description" content="A human-friendly site map for Aaron Schlossberg's Universe.">
-    <link rel="canonical" href="https://www.aaronschlossberg.com/site-map/">
+<!-- Reminder: Edit site-wide Head values in /data/config.json, page-specific values in /data/pages.json, and shared markup here. Then run `npm run heads`; `npm run build` checks every source page against it.
+-->
 
-    <link rel="icon" type="image/png" href="/favicon.ico">
+<title>Sitemap | Aaron Schlossberg’s Universe</title>
+<meta name="description" content="Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.">
+<meta name="author" content="Aaron L. Schlossberg">
+<meta name="application-name" content="Aaron Schlossberg’s Universe">
+<meta name="theme-color" content="#8a2f3f">
+<meta name="robots" content="index, follow">
+<meta name="p:domain_verify" content="52b00b635022ac45300143d277f42d6d">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="canonical" href="https://www.aaronschlossberg.com/site-map/">
 
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script defer src="/assets/js/main.js"></script>
+<!-- Open Graph/link-sharing preview -->
+<meta property="og:site_name" content="Aaron Schlossberg’s Universe">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Sitemap | Aaron Schlossberg’s Universe">
+<meta property="og:description" content="Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.aaronschlossberg.com/site-map/">
+<meta property="og:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
+<meta property="og:image:secure_url" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Aaron Schlossberg smiling at Nachi Falls beside the name and branding for Aaron Schlossberg’s Universe.">
 
-    <script type="application/ld+json">
+<!-- Twitter/"X" Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aschloss04">
+<meta name="twitter:creator" content="@aschloss04">
+<meta name="twitter:title" content="Sitemap | Aaron Schlossberg’s Universe">
+<meta name="twitter:description" content="Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.">
+<meta name="twitter:image" content="https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png">
+<meta name="twitter:image:alt" content="Aaron Schlossberg smiling at Nachi Falls beside the name and branding for Aaron Schlossberg’s Universe.">
+
+<!-- Lora font: regular, semibold, bold, and matching italics -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "@id": "https://www.aaronschlossberg.com/site-map/#breadcrumbs",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.aaronschlossberg.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Sitemap",
-                "item": "https://www.aaronschlossberg.com/site-map/"
-            }
-        ]
+      "@type": "Person",
+      "@id": "https://www.aaronschlossberg.com/#person",
+      "name": "Aaron L. Schlossberg",
+      "alternateName": "Aaron Schlossberg",
+      "url": "https://www.aaronschlossberg.com/about-me/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.aaronschlossberg.com/#website",
+      "url": "https://www.aaronschlossberg.com/",
+      "name": "Aaron Schlossberg’s Universe",
+      "alternateName": "Aaron Schlossberg",
+      "description": "Computer scientist, entrepreneur, writer, and creator exploring technology, storytelling, knowledge, and imaginative worlds.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://www.aaronschlossberg.com/#person"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.aaronschlossberg.com/site-map/#primaryimage",
+      "url": "https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png",
+      "contentUrl": "https://www.aaronschlossberg.com/assets/img/og-aaron-schlossbergs-universe.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "Aaron Schlossberg smiling at Nachi Falls beside the name and branding for Aaron Schlossberg’s Universe."
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.aaronschlossberg.com/site-map/#webpage",
+      "url": "https://www.aaronschlossberg.com/site-map/",
+      "name": "Sitemap | Aaron Schlossberg’s Universe",
+      "description": "Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.aaronschlossberg.com/#website"
+      },
+      "creator": {
+        "@id": "https://www.aaronschlossberg.com/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.aaronschlossberg.com/site-map/#primaryimage"
+      },
+      "breadcrumb": {
+        "@id": "https://www.aaronschlossberg.com/site-map/#breadcrumbs"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.aaronschlossberg.com/site-map/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.aaronschlossberg.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sitemap",
+          "item": "https://www.aaronschlossberg.com/site-map/"
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
+
+<script defer src="/assets/js/main.js"></script>
 </head>
 
 <body>
@@ -149,6 +231,8 @@
                     <ul>
                         <li><a href="/writings/1080-paths-of-least-resistance/">1080 Paths of Least Resistance</a></li>
                         <li><a href="/writings/just-this-once/">Just This Once</a></li>
+                        <li><a href="/writings/backrooms-and-liminal-spaces-introduction/">The Backrooms and Liminal Spaces: Introduction</a></li>
+                        <li><a href="/writings/backrooms-and-liminal-spaces-original-introduction/">The Backrooms and Liminal Spaces: Original Introduction</a></li>
                     </ul>
                 </div>
 
@@ -209,6 +293,8 @@
                 <li><span class="text-small">/</span> <a href="/writings/">Writings</a></li>
                 <li><span class="text-small">├┤</span><a href="/writings/1080-paths-of-least-resistance/">1080 Paths of Least Resistance</a></li>
                 <li><span class="text-small">├┤</span><a href="/writings/just-this-once/">Just This Once</a></li>
+                <li><span class="text-small">├┤</span><a href="/writings/backrooms-and-liminal-spaces-original-introduction/">The Backrooms and Liminal Spaces: Introduction</a><span class="text-small">: The revised version of my introductory post on the “<a href="https://thebackroomsandliminalspaces.quora.com/" target="_blank" rel="noopener noreferrer nofollow">The Backrooms and Liminal Spaces</a>” Space on <a href="https://www.quora.com/profile/Aaron-L-Schlossberg/" target="_blank" rel="noopener noreferrer nofollow">Quora</a>.</span>
+                <li><span class="text-small">├┤</span><a href="/writings/backrooms-and-liminal-spaces-original-introduction/">The Backrooms and Liminal Spaces: Original Introduction</a><span class="text-small">: The preserved original 2024 version of my introductory post on the “<a href="https://thebackroomsandliminalspaces.quora.com/" target="_blank" rel="noopener noreferrer nofollow">The Backrooms and Liminal Spaces</a>” Space on <a href="https://www.quora.com/profile/Aaron-L-Schlossberg/" target="_blank" rel="noopener noreferrer nofollow">Quora</a>.</span></li>
                 <li><span class="text-small">/</span> <a href="/resume/">Resume</a></li>
                 <li><span class="text-small">/</span> <a href="/contact/">Contact</a><span class="text-small">: How to get in touch with me.</span></li>
                 <li><span class="text-small">/</span> <a href="/images/">Images</a></li>
