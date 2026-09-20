@@ -14,7 +14,7 @@
         "description": "Learn about Aaron Schlossberg’s background, interests, creative work, entrepreneurial projects, community leadership, and long-term vision.",
         "breadcrumbLabel": "About Me",
         "ogType": "profile",
-        "schemaType": "AboutPage",
+        "schemaType": "ProfilePage",
         "mainEntityId": "https://www.aaronschlossberg.com/#person",
         "aboutPerson": true,
         "personDetails": true,
