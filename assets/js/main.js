@@ -173,9 +173,9 @@ function initCarousels() {
             return;
         }
 
-        const originalItems = Array.from(track.children);
+        const items = Array.from(track.children);
 
-        if (originalItems.length <= 1) {
+        if (items.length <= 1) {
             prev.style.display = "none";
             next.style.display = "none";
             return;
@@ -183,43 +183,26 @@ function initCarousels() {
 
         track.dataset.carouselReady = "true";
 
-        originalItems.forEach((item) => {
-            track.appendChild(item.cloneNode(true));
-        });
-
-        originalItems
-            .slice()
-            .reverse()
-            .forEach((item) => {
-                track.insertBefore(item.cloneNode(true), track.firstChild);
-            });
-
-        const getOriginalWidth = () => track.scrollWidth / 3;
-
-        requestAnimationFrame(() => {
-            track.scrollLeft = getOriginalWidth();
-        });
-
         function getStep() {
-            const item = track.querySelector("[data-carousel-item]");
+            const item = items[0];
 
             if (!item) {
                 return 320;
             }
 
-            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            const gap =
+                parseFloat(getComputedStyle(track).gap) || 0;
 
             return item.getBoundingClientRect().width + gap;
         }
 
-        function keepInfinite() {
-            const originalWidth = getOriginalWidth();
+        function updateButtons() {
+            const maximum =
+                track.scrollWidth - track.clientWidth;
 
-            if (track.scrollLeft >= originalWidth * 2) {
-                track.scrollLeft -= originalWidth;
-            } else if (track.scrollLeft <= 0) {
-                track.scrollLeft += originalWidth;
-            }
+            prev.disabled = track.scrollLeft <= 1;
+            next.disabled =
+                track.scrollLeft >= maximum - 1;
         }
 
         next.addEventListener("click", () => {
@@ -227,8 +210,6 @@ function initCarousels() {
                 left: getStep(),
                 behavior: "smooth"
             });
-
-            setTimeout(keepInfinite, 450);
         });
 
         prev.addEventListener("click", () => {
@@ -236,20 +217,21 @@ function initCarousels() {
                 left: -getStep(),
                 behavior: "smooth"
             });
-
-            setTimeout(keepInfinite, 450);
         });
 
         track.addEventListener("scroll", () => {
             window.clearTimeout(track._carouselTimer);
-            track._carouselTimer = window.setTimeout(keepInfinite, 120);
+
+            track._carouselTimer =
+                window.setTimeout(updateButtons, 120);
         });
+
+        window.addEventListener("resize", updateButtons);
+        updateButtons();
     });
 }
 
-/* ------------------------------------------------------------
-  Init
------------------------------------------------------------- */
+/* Init */
 async function init() {
     // 1) Load header/footer/highlights first
     await loadPartials();

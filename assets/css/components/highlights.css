@@ -50,10 +50,10 @@
 
 .highlight-card .highlight-card__meta {
     margin: 0;
-    color: #666666;
+    color: #595959;
     font-size: 0.85rem;
     font-style: italic;
-    opacity: 0.75;
+    opacity: 1;
 }
 
 .highlight-card .highlight-card__meta strong {
@@ -106,6 +106,11 @@
 .carousel-btn:hover,
 .carousel-btn:focus-visible {
     transform: translateY(-50%) scale(1.06);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 .carousel-btn-prev {

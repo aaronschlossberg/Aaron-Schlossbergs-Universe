@@ -382,6 +382,101 @@ async function copyStaticSite() {
     }
 }
 
+async function htmlFilesIn(directory) {
+    const entries = await readdir(directory, {
+        withFileTypes: true
+    });
+    const files = [];
+
+    for (const entry of entries) {
+        const absolutePath = path.join(directory, entry.name);
+
+        if (entry.isDirectory()) {
+            files.push(...await htmlFilesIn(absolutePath));
+        } else if (
+            entry.isFile() &&
+            entry.name.endsWith(".html")
+        ) {
+            files.push(absolutePath);
+        }
+    }
+
+    return files;
+}
+
+function replaceActivePlaceholder(html, id, partial) {
+    const comments = [];
+
+    const protectedHtml = html.replace(
+        /<!--[\s\S]*?-->/g,
+        (comment) => {
+            const token =
+                `___HTML_COMMENT_${comments.length}___`;
+
+            comments.push(comment);
+            return token;
+        }
+    );
+
+    const pattern = new RegExp(
+        `<div\\s+id=["']${id}["']\\s*>\\s*</div>`,
+        "g"
+    );
+
+    return protectedHtml
+        .replace(pattern, partial.trim())
+        .replace(
+            /___HTML_COMMENT_(\d+)___/g,
+            (_, index) => comments[Number(index)]
+        );
+}
+
+async function renderOutputPartials() {
+    const partialDirectory =
+        path.join(SITE_ROOT, "_partials");
+
+    const partials = {
+        "header-placeholder": await readFile(
+            path.join(partialDirectory, "header.html"),
+            "utf8"
+        ),
+
+        "footer-placeholder": await readFile(
+            path.join(partialDirectory, "footer.html"),
+            "utf8"
+        ),
+
+        "highlights-placeholder": await readFile(
+            path.join(partialDirectory, "highlights.html"),
+            "utf8"
+        ),
+
+        "page-construction-placeholder": await readFile(
+            path.join(
+                partialDirectory,
+                "page-construction.html"
+            ),
+            "utf8"
+        )
+    };
+
+    const htmlFiles = await htmlFilesIn(OUTPUT_ROOT);
+
+    for (const filename of htmlFiles) {
+        let html = await readFile(filename, "utf8");
+
+        for (const [id, partial] of Object.entries(partials)) {
+            html = replaceActivePlaceholder(
+                html,
+                id,
+                partial
+            );
+        }
+
+        await writeFile(filename, html, "utf8");
+    }
+}
+
 async function buildWritingsIndex() {
     const [catalogHtml, configText] =
         await Promise.all([
@@ -1145,6 +1240,7 @@ async function buildSiteSearchIndex(
 }
 
 await copyStaticSite();
+await renderOutputPartials();
 
 const [
     writingsIndex,
