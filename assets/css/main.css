@@ -1,6 +1,7 @@
 /* MAIN STYLESHEET MANIFEST | CSS module imports */
 
 /* Core site foundations */
+@import url("core/fonts.css");
 @import url("core/variables.css");
 @import url("core/base.css");
 @import url("core/layout.css");

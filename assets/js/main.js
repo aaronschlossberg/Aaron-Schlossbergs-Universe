@@ -227,7 +227,6 @@ function initCarousels() {
         });
 
         window.addEventListener("resize", updateButtons);
-        updateButtons();
     });
 }
 

@@ -36,10 +36,9 @@
 <meta name="twitter:image" content="{{IMAGE_URL}}">
 <meta name="twitter:image:alt" content="{{IMAGE_ALT}}">
 
-<!-- Lora font: regular, semibold, bold, and matching italics -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap">
+<!-- Preload the two Lora faces needed for the first screen. -->
+<link rel="preload" href="/assets/fonts/lora-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/lora-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/main.css">
 {{EXTRA_STYLES}}
 
