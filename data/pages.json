@@ -244,15 +244,6 @@
         "breadcrumbLabel": "Sitemap",
         "schemaType": "CollectionPage"
     },
-    "/test/": {
-        "title": "Test Page | Aaron Schlossberg’s Universe",
-        "socialTitle": "Aaron Schlossberg’s Test Page",
-        "description": "A private testing page used to verify website embeds and presentation before public release.",
-        "breadcrumbLabel": "Test",
-        "robots": "noindex, nofollow",
-        "canonical": false,
-        "breadcrumbs": false
-    },
     "/writings/": {
         "title": "Writings | Aaron Schlossberg’s Universe",
         "socialTitle": "Writings by Aaron L. Schlossberg",
