@@ -7,7 +7,9 @@
 /projects.html                           /projects/ 301
 /contact.html                            /contact/ 301
 /projects/fencing-video.html             /projects/fencing-video/ 301
-/projects/f2r.html                       /projects/f2r/ 301
+/projects/f2r                            /projects/fiction2reality/ 301
+/projects/f2r/                           /projects/fiction2reality/ 301
+/projects/f2r.html                       /projects/fiction2reality/ 301
 
 # Info Sprawlings moved under Projects
 /info-sprawlings                         /projects/info-sprawlings/ 301

@@ -24,6 +24,24 @@ const jobs = [
         fit: "inside",
         quality: 80
     },
+    {
+        input: "assets/img/Backrooms_testing_in_Blender.png",
+        output: "assets/img/projects/fiction2reality/backrooms-blender-1280.webp",
+        width: 1280,
+        height: 720,
+        fit: "cover",
+        position: "centre",
+        quality: 82
+    },
+    {
+        input: "assets/img/projects/fiction2reality/fiction2reality-homepage.png",
+        output: "assets/img/projects/fiction2reality/fiction2reality-homepage-1280.webp",
+        width: 1280,
+        height: 720,
+        fit: "cover",
+        position: "centre",
+        quality: 82
+    },
     ...[
         "empty_company_card.jpeg",
         "entrepreneur_aaron_old.jpeg",

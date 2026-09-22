@@ -134,7 +134,7 @@ button {
     outline: none;
     background: none;
     cursor: pointer;
-    font-family: "DM Sans", sans-serif;
+    font-family: inherit;
     text-decoration: none;
 }
 

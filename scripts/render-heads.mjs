@@ -470,6 +470,10 @@ function render(
             esc(
                 config.pinterestDomainVerify
             ),
+        WEBSITE_LAUNCHES_VERIFICATION:
+            esc(
+                config.websiteLaunchesVerification
+            ),
         CANONICAL:
             page.canonical === false
                 ? ""

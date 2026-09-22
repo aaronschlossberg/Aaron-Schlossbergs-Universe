@@ -9,9 +9,9 @@
         "personDetails": true
     },
     "/about-me/": {
-        "title": "About Aaron Schlossberg | Aaron Schlossberg’s Universe",
-        "socialTitle": "About Aaron Schlossberg",
-        "description": "Learn about Aaron Schlossberg’s background, interests, creative work, entrepreneurial projects, community leadership, and long-term vision.",
+        "title": "About Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
+        "socialTitle": "About Aaron L. Schlossberg",
+        "description": "Learn about Aaron L. Schlossberg’s background, interests, creative work, entrepreneurial projects, community leadership, and long-term vision.",
         "breadcrumbLabel": "About Me",
         "ogType": "profile",
         "schemaType": "ProfilePage",
@@ -166,12 +166,19 @@
         "schemaType": "CollectionPage",
         "aboutPerson": true
     },
-    "/projects/f2r/": {
-        "title": "Fiction2Reality Viewer | Aaron Schlossberg’s Universe",
-        "socialTitle": "Fiction2Reality Viewer",
-        "description": "View the Fiction2Reality website within Aaron Schlossberg’s Universe and explore the project’s work turning fictional worlds into visitable experiences.",
-        "breadcrumbLabel": "Fiction2Reality Viewer",
-        "aboutPerson": true
+    "/projects/fiction2reality/": {
+        "title": "Fiction2Reality | Aaron Schlossberg’s Universe",
+        "socialTitle": "Fiction2Reality - Turning Fictional Worlds Real",
+        "description": "Explore Fiction2Reality, Aaron L. Schlossberg’s creative venture combining storytelling, 3D environments, film, and worldbuilding to reimagine fictional spaces.",
+        "breadcrumbLabel": "Fiction2Reality",
+        "schemaType": "AboutPage",
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/og-fiction2reality.png",
+            "type": "image/png",
+            "width": 1200,
+            "height": 630,
+            "alt": "Fiction2Reality branding with the F2R logo and the tagline Turning fictional spaces into real places."
+        }
     },
     "/projects/info-sprawlings/": {
         "title": "Info Sprawlings | Aaron Schlossberg’s Universe",
@@ -336,6 +343,17 @@
         },
         "extraScripts": [
             "/assets/js/pages/writing-piece.js"
+        ]
+    },
+    "/favorite-quotes/": {
+        "title": "Favorite Quotes | Aaron Schlossberg’s Universe",
+        "socialTitle": "Favorite Quotes",
+        "description": "Explore Aaron Schlossberg’s favorite meaningful, funny, memorable, and thought-provoking quotations from people, books, films, television, video games, and more.",
+        "breadcrumbLabel": "Favorite Quotes",
+        "schemaType": "CollectionPage",
+        "aboutPerson": true,
+        "extraScripts": [
+            "/assets/js/pages/favorite-quotes.js"
         ]
     },
     "/gone/": {

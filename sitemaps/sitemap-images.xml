@@ -58,7 +58,7 @@
         <loc>
             https://www.aaronschlossberg.com/projects/
         </loc>
-        <lastmod>2026-06-29</lastmod>
+        <lastmod>2026-09-20</lastmod>
 
         <image:image>
             <image:loc>
@@ -74,13 +74,44 @@
 
         <image:image>
             <image:loc>
-                https://www.aaronschlossberg.com/assets/img/Hogwarts_image.png
+                https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/f2r-logo.webp
             </image:loc>
         </image:image>
 
         <image:image>
             <image:loc>
-                https://www.aaronschlossberg.com/assets/img/Backrooms_testing_in_Blender.png
+                https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/backrooms-blender-1280.webp
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/fiction2reality-homepage-1280.webp
+            </image:loc>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>
+            https://www.aaronschlossberg.com/projects/fiction2reality/
+        </loc>
+        <lastmod>2026-09-20</lastmod>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/f2r-logo.webp
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/backrooms-blender-1280.webp
+            </image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://www.aaronschlossberg.com/assets/img/projects/fiction2reality/fiction2reality-homepage-1280.webp
             </image:loc>
         </image:image>
     </url>

@@ -1,0 +1,630 @@
+/* Fiction2Reality Project Page */
+.fiction2reality-page main {
+    padding-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+.fiction2reality-container {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.fiction2reality-container > .section {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+/* Hero */
+.fiction2reality-hero {
+    position: relative;
+    isolation: isolate;
+    padding:
+        clamp(2.5rem, 7vw, 5.5rem)
+        clamp(1.25rem, 5vw, 4.5rem);
+    border: 1px solid rgba(138, 47, 63, 0.2);
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(184, 90, 104, 0.2),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(138, 47, 63, 0.16),
+            transparent 38%
+        ),
+        linear-gradient(
+            135deg,
+            #fffaf9 0%,
+            #f7eeee 48%,
+            #f2e4e7 100%
+        );
+    text-align: center;
+}
+
+.fiction2reality-hero::after {
+    position: absolute;
+    inset: 1rem;
+    z-index: -1;
+    border: 1px solid rgba(138, 47, 63, 0.12);
+    border-radius: 12px;
+    content: "";
+    pointer-events: none;
+}
+
+.fiction2reality-eyebrow,
+.fiction2reality-kicker,
+.fiction2reality-stage-status {
+    color: var(--accent-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.fiction2reality-hero h1 {
+    margin: 0.45rem 0 1rem;
+    color: var(--ink);
+    font-size: clamp(2.5rem, 8vw, 5.25rem);
+    line-height: 1;
+}
+
+.fiction2reality-lead {
+    max-width: 820px;
+    margin: 0 auto;
+    color: #493d3f;
+    font-size: clamp(1.05rem, 2.2vw, 1.32rem);
+    line-height: 1.75;
+    text-align: center;
+}
+
+
+/* Buttons */
+.fiction2reality-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.75rem;
+}
+
+.fiction2reality-actions .cta-button,
+.fiction2reality-actions
+.fiction2reality-secondary-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: auto;
+    min-height: 48px;
+    margin: 0;
+}
+
+.fiction2reality-secondary-button {
+    padding: 0.78rem 1.45rem;
+    border: 2px solid var(--accent);
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--accent-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.fiction2reality-secondary-button:hover,
+.fiction2reality-secondary-button:focus-visible {
+    background: var(--accent);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* Shared section headings */
+.fiction2reality-section-heading {
+    max-width: 820px;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+}
+
+.fiction2reality-section-heading h2 {
+    margin-top: 0.35rem;
+}
+
+.fiction2reality-section-heading p:last-child {
+    text-align: center;
+}
+
+
+/* Intro and facts */
+.fiction2reality-intro-grid {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(270px, 0.85fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+}
+
+.fiction2reality-facts {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(138, 47, 63, 0.2);
+    border-radius: 14px;
+    background: #fffafa;
+}
+
+.fiction2reality-facts div {
+    padding: 1rem 1.1rem;
+}
+
+.fiction2reality-facts div + div {
+    border-top: 1px solid rgba(138, 47, 63, 0.15);
+}
+
+.fiction2reality-facts dt {
+    margin-bottom: 0.25rem;
+    color: var(--accent-dark);
+    font-weight: 700;
+}
+
+.fiction2reality-facts dd {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* Roadmap and role cards */
+.fiction2reality-stage-grid,
+.fiction2reality-role-grid {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fiction2reality-stage-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.fiction2reality-stage-grid li,
+.fiction2reality-role-grid li {
+    margin: 0;
+    border: 1px solid rgba(138, 47, 63, 0.18);
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fff9f9
+        );
+    text-align: left;
+}
+
+.fiction2reality-stage-grid li {
+    padding: 1.25rem;
+}
+
+.fiction2reality-stage-number {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: rgba(138, 47, 63, 0.28);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.fiction2reality-stage-grid h3,
+.fiction2reality-role-grid h3 {
+    color: var(--ink);
+}
+
+.fiction2reality-stage-grid p,
+.fiction2reality-role-grid p {
+    text-align: left;
+}
+
+.fiction2reality-centered-copy {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* Images */
+.fiction2reality-media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.fiction2reality-media-grid figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(138, 47, 63, 0.18);
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.fiction2reality-media-grid img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.fiction2reality-media-grid img.fiction2reality-media-logo {
+    padding: 1.25rem;
+    background: #000000;
+    object-fit: contain;
+}
+
+.fiction2reality-media-grid figcaption {
+    flex: 1;
+    padding: 0.9rem 1rem 1rem;
+    color: #574a4c;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+/* Aaron's role */
+.fiction2reality-role-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 950px;
+    margin: 1.5rem auto 0;
+}
+
+.fiction2reality-role-grid li {
+    padding: 1.15rem;
+}
+
+/* Related links */
+.fiction2reality-link-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.fiction2reality-link-grid a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    min-height: 170px;
+    padding: 1.2rem;
+    border: 1px solid rgba(138, 47, 63, 0.18);
+    border-radius: 14px;
+    background: #fffafa;
+    color: var(--ink);
+    text-decoration: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.fiction2reality-link-grid a:hover,
+.fiction2reality-link-grid a:focus-visible {
+    border-color: var(--accent);
+    box-shadow:
+        0 10px 24px
+        rgba(95, 31, 44, 0.14);
+    transform: translateY(-3px);
+}
+
+.fiction2reality-link-grid
+a > span:first-child,
+.fiction2reality-link-grid
+a > span:last-child {
+    color: var(--accent-dark);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.fiction2reality-link-grid
+a > span:first-child {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fiction2reality-link-grid strong {
+    flex: 1;
+    font-size: 1.08rem;
+    line-height: 1.5;
+}
+
+/* Final CTA */
+.fiction2reality-final-cta {
+    padding: clamp(2rem, 5vw, 3.5rem);
+    background:
+        linear-gradient(
+            135deg,
+            #3e2026,
+            var(--accent-dark)
+        );
+    color: #ffffff;
+    text-align: center;
+}
+
+.fiction2reality-final-cta h2,
+.fiction2reality-final-cta p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.fiction2reality-final-cta
+> p:not(.fiction2reality-kicker) {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fiction2reality-final-cta
+.fiction2reality-kicker {
+    color: #f5cbd2;
+}
+
+.fiction2reality-final-cta
+.cta-button {
+    background: #ffffff;
+    color: var(--accent-dark);
+}
+
+.fiction2reality-final-cta
+.fiction2reality-secondary-button {
+    border-color: #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.fiction2reality-final-cta
+.fiction2reality-secondary-button:hover,
+.fiction2reality-final-cta
+.fiction2reality-secondary-button:focus-visible {
+    background: #ffffff;
+    color: var(--accent-dark);
+}
+
+/* Responsive layouts */
+@media (min-width: 681px) and (max-width: 980px) {
+    .fiction2reality-media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fiction2reality-media-grid figure:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: calc(50% - 0.625rem);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 820px) {
+    .fiction2reality-intro-grid,
+    .fiction2reality-stage-grid,
+    .fiction2reality-link-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fiction2reality-link-grid a {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .fiction2reality-media-grid,
+    .fiction2reality-role-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fiction2reality-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .fiction2reality-actions .cta-button,
+    .fiction2reality-actions
+    .fiction2reality-secondary-button {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fiction2reality-secondary-button,
+    .fiction2reality-link-grid a {
+        transition: none;
+    }
+}
+
+/* Centered-content and full-width refinements */
+.fiction2reality-lead {
+    width: 100%;
+    max-width: none;
+}
+
+.fiction2reality-hero {
+    padding-bottom: clamp(2rem, 3vw, 2.75rem);
+}
+
+.fiction2reality-section-heading {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    padding-inline: clamp(0rem, 2vw, 1.5rem);
+}
+
+.fiction2reality-section-heading h2,
+.fiction2reality-section-heading p,
+.fiction2reality-centered-copy {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+}
+
+.fiction2reality-centered-copy {
+    box-sizing: border-box;
+    padding-inline: clamp(0rem, 2vw, 1.5rem);
+}
+
+
+/* Main introduction: prose first, facts underneath */
+.fiction2reality-intro-grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.fiction2reality-intro-grid > div,
+.fiction2reality-intro-grid > div p {
+    width: 100%;
+    max-width: none;
+}
+
+.fiction2reality-facts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    background: rgba(138, 47, 63, 0.18);
+}
+
+.fiction2reality-facts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    background: #fffafa;
+    text-align: center;
+}
+
+.fiction2reality-facts div + div {
+    border-top: 0;
+}
+
+.fiction2reality-facts dt,
+.fiction2reality-facts dd {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Center the contents of roadmap and role cards */
+.fiction2reality-stage-grid li,
+.fiction2reality-role-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fiction2reality-stage-grid h3,
+.fiction2reality-stage-grid p,
+.fiction2reality-role-grid h3,
+.fiction2reality-role-grid p {
+    width: 100%;
+    text-align: center;
+}
+
+.fiction2reality-role-grid {
+    width: 100%;
+    max-width: none;
+}
+
+/* Give every gallery image an identical, reliable 16:9 frame */
+.fiction2reality-media-frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000000;
+}
+
+.fiction2reality-media-grid
+.fiction2reality-media-frame > img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: none;
+}
+
+/* Keep the complete square logo centered inside the wide black frame. */
+.fiction2reality-media-grid
+.fiction2reality-media-frame
+> img.fiction2reality-media-logo {
+    background: #000000;
+    object-fit: contain;
+    object-position: center;
+    transform: translate(1%, 4%);
+}
+
+.fiction2reality-media-grid figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fiction2reality-media-grid figcaption > span {
+    display: block;
+    width: 100%;
+}
+
+.fiction2reality-media-grid figcaption a {
+    color: var(--accent-dark);
+    font-weight: 700;
+    text-underline-offset: 0.14em;
+}
+
+/* Center all text inside the related-link cards */
+.fiction2reality-link-grid a {
+    align-items: center;
+    text-align: center;
+}
+
+.fiction2reality-link-grid a > span,
+.fiction2reality-link-grid strong {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Let the final call-to-action subtitle use more of its box */
+.fiction2reality-final-cta
+> p:not(.fiction2reality-kicker) {
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* Facts become 2 × 2 on medium screens */
+@media (max-width: 1000px) {
+    .fiction2reality-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Facts stack on narrow phones */
+@media (max-width: 560px) {
+    .fiction2reality-facts {
+        grid-template-columns: 1fr;
+    }
+}

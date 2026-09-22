@@ -1,0 +1,168 @@
+/* Fiction2Reality project preview */
+.projects-f2r-showcase {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.projects-f2r-intro {
+    display: grid;
+    grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
+    gap: clamp(1.25rem, 4vw, 2.5rem);
+    align-items: center;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background:
+        linear-gradient(
+            135deg,
+            var(--card),
+            #fff7f8
+        );
+}
+
+.projects-f2r-logo-link {
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #000000;
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.projects-f2r-logo-link:hover,
+.projects-f2r-logo-link:focus-visible {
+    box-shadow: 0 10px 24px rgba(95, 31, 44, 0.22);
+    transform: translateY(-3px);
+}
+
+.projects-f2r-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 16px;
+}
+
+.projects-f2r-copy h3 {
+    margin-top: 0;
+    color: var(--ink);
+}
+
+.projects-f2r-copy p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Blender and website screenshots */
+.projects-f2r-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.projects-f2r-gallery figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--card);
+}
+
+.projects-f2r-gallery img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.projects-f2r-gallery .projects-f2r-website-image {
+    object-position: top center;
+}
+
+.projects-f2r-gallery figcaption {
+    flex: 1;
+    padding: 0.9rem 1rem 1rem;
+    color: #574a4c;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    text-align: center;
+}
+
+/* Project buttons */
+.projects-f2r-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.projects-f2r-actions .cta-button {
+    margin: 0;
+}
+
+.projects-f2r-secondary-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 0.78rem 1.45rem;
+    border: 2px solid var(--accent);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--accent-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.projects-f2r-secondary-button:hover,
+.projects-f2r-secondary-button:focus-visible {
+    background: var(--accent);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+    .projects-f2r-intro,
+    .projects-f2r-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-f2r-copy h3 {
+        text-align: center;
+    }
+
+    .projects-f2r-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .projects-f2r-actions .cta-button,
+    .projects-f2r-secondary-button {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projects-f2r-logo-link,
+    .projects-f2r-secondary-button {
+        transition: none;
+    }
+}

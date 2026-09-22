@@ -1,12 +1,11 @@
 # Roadmap
-
 **[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)** is an evolving personal website, portfolio, creative archive, and interconnected home for my projects, writings, experiences, images, and interests.
 
 This roadmap records planned improvements and possible future directions. It is a living document rather than a fixed release schedule, so priorities and page names may change as the website develops.
 
 For the website’s current contents, features, and development instructions, see [README.md](README.md).
 
-_Last updated: August 23, 2026_
+_Last updated: September 20, 2026_
 
 ## Guiding Principles + Polishing
 - Keep the existing website stable while expanding it.
@@ -22,7 +21,7 @@ _Last updated: August 23, 2026_
 ## Core Content Expansion
 - Continue expanding the Info Sprawlings knowledge system. + Explore a glossary or compendium layer within Info Sprawlings.
 - Publish additional fiction, essays, articles, reflections, and selected older writing. + Add suitable author’s notes, sources, footnotes, downloads, and sharing features.
-- Revamp the Projects page and create a fuller Fiction2Reality project page, and create a dedicated Mayvene project page.
+- Revamp the Projects page and create a dedicated Mayvene project page.
 - Expand the Images section with photography, travel pictures, artwork, and other curated image collections.
 - Continue developing the Hebrew Academy, Pathways Academy, Muhlenberg College, and Lifelong Learning pages and subpages.
 

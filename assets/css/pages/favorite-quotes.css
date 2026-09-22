@@ -1,0 +1,732 @@
+/* Favorite Quotes page */
+
+.favorite-quotes-page {
+    background:
+        radial-gradient(circle at 12% 9%, rgba(138, 47, 63, 0.12), transparent 24rem),
+        linear-gradient(180deg, #f8f4f5 0, #ffffff 31rem);
+}
+
+.favorite-quotes-shell {
+    width: min(1180px, calc(100% - 2rem));
+    margin-inline: auto;
+}
+
+.favorite-quotes-hero {
+    padding: clamp(1rem, 2.5vw, 2rem) 0 clamp(2.75rem, 6vw, 5rem);
+    text-align: center;
+}
+
+.favorite-quotes-hero .breadcrumbs {
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+    text-align: left;
+}
+
+.favorite-quotes-kicker {
+    margin: 0 0 0.65rem;
+    color: #8a2f3f;
+    font-family: "Lora", serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.favorite-quotes-hero h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(2.8rem, 8vw, 6.4rem);
+    line-height: 0.98;
+}
+
+.favorite-quotes-lede {
+    max-width: 760px;
+    margin: 1.25rem auto 0;
+    color: #4d4144;
+    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    line-height: 1.75;
+}
+
+.favorite-quotes-jump {
+    display: inline-flex;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.1rem;
+    border: 1px solid rgba(138, 47, 63, 0.35);
+    border-radius: 999px;
+    color: #732636;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.favorite-quotes-jump:hover {
+    background: #8a2f3f;
+    color: #ffffff;
+}
+
+.favorite-quotes-content {
+    padding-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+
+.favorite-quotes-panel {
+    margin-bottom: clamp(1.25rem, 3vw, 2rem);
+    padding: clamp(1.35rem, 3.5vw, 2.6rem);
+    border: 1px solid rgba(80, 50, 58, 0.13);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 18px 55px rgba(53, 31, 37, 0.08);
+}
+
+.favorite-quotes-section-heading {
+    max-width: 780px;
+    margin: 0 auto clamp(1.4rem, 3vw, 2.2rem);
+    text-align: center;
+}
+
+.favorite-quotes-section-heading h2 {
+    margin: 0;
+    color: #2d2225;
+    font-size: clamp(1.75rem, 4vw, 2.65rem);
+    line-height: 1.15;
+}
+
+.favorite-quotes-section-heading > p:last-child:not(.favorite-quotes-kicker) {
+    margin: 0.75rem auto 0;
+    color: #66575b;
+    line-height: 1.65;
+}
+
+.favorite-quotes-about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
+    max-width: 980px;
+    margin-inline: auto;
+}
+
+.favorite-quotes-about-grid p,
+.favorite-quotes-sourcing > p {
+    margin: 0;
+    color: #473b3e;
+    line-height: 1.78;
+}
+
+.favorite-quotes-featured-grid,
+.favorite-quotes-results {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.favorite-quote-card {
+    --quote-card-padding: clamp(1.15rem, 2.5vw, 1.65rem);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--quote-card-padding);
+    border: 1px solid rgba(138, 47, 63, 0.16);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #fcf8f9);
+    box-shadow: 0 9px 28px rgba(53, 31, 37, 0.06);
+    scroll-margin-top: 6rem;
+}
+
+.favorite-quote-card--wide {
+    grid-column: 1 / -1;
+}
+
+.favorite-quote-card:target {
+    border-color: #8a2f3f;
+    box-shadow: 0 0 0 4px rgba(138, 47, 63, 0.13), 0 15px 40px rgba(53, 31, 37, 0.1);
+}
+
+.favorite-quote-card__image {
+    width: calc(100% + var(--quote-card-padding) + var(--quote-card-padding));
+    max-height: 310px;
+    margin: calc(0rem - var(--quote-card-padding)) calc(0rem - var(--quote-card-padding)) 1.25rem;
+    border-radius: 18px 18px 0 0;
+    object-fit: cover;
+}
+
+.favorite-quote-card blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.favorite-quote-card__text {
+    margin: 0;
+    color: #2d2225;
+    font-size: clamp(1.08rem, 1.7vw, 1.28rem);
+    line-height: 1.72;
+}
+
+.favorite-quote-card__mark {
+    color: #8a2f3f;
+    font-size: 1.15em;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.favorite-quote-card__dialogue {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.favorite-quote-card__dialogue-line {
+    margin: 0;
+    color: #2d2225;
+    font-size: 1.06rem;
+    line-height: 1.65;
+}
+
+.favorite-quote-card__speaker {
+    font-family: "Lora", serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.favorite-quote-card__attribution {
+    margin: 1.2rem 0 0;
+    color: #3d3134;
+    font-family: "Lora", serif;
+    line-height: 1.55;
+}
+
+.favorite-quote-card__source {
+    margin: 0.35rem 0 0;
+    color: #6a5b5f;
+    font-family: "Lora", serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.favorite-quote-card__source a {
+    color: #6d2635;
+}
+
+.favorite-quote-card__note {
+    margin: 1.1rem 0 0;
+    padding: 0.9rem 1rem;
+    border-left: 4px solid #8a2f3f;
+    background: #f6ecef;
+    color: #493a3e;
+    line-height: 1.62;
+}
+
+.favorite-quote-card__note strong {
+    font-family: "Lora", serif;
+}
+
+.favorite-quote-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 1.1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.favorite-quote-card__tags li {
+    padding: 0.3rem 0.62rem;
+    border-radius: 999px;
+    background: #f2e6e9;
+    color: #69303d;
+    font-family: "Lora", serif;
+    font-size: 0.78rem;
+    line-height: 1.25;
+}
+
+.favorite-quote-card__actions {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 1.15rem;
+}
+
+.favorite-quote-card__link,
+.favorite-quotes-copy-results-link {
+    border: 0;
+    background: none;
+    color: #713044;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+}
+
+/* .favorite-quotes-collection-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+.favorite-quotes-collection-buttons button {
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(138, 47, 63, 0.3);
+    border-radius: 999px;
+    background: #ffffff;
+    color: #662635;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.favorite-quotes-collection-buttons button:hover,
+.favorite-quotes-collection-buttons button[aria-pressed="true"] {
+    border-color: #8a2f3f;
+    background: #8a2f3f;
+    color: #ffffff;
+} */
+
+.favorite-quotes-controls {
+    margin-bottom: 1.4rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid rgba(80, 50, 58, 0.14);
+    border-radius: 18px;
+    background: #faf7f8;
+}
+
+.favorite-quotes-search-field > label,
+.favorite-quotes-filter label {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #3c3033;
+    font-family: "Lora", serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.favorite-quotes-search-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.65rem;
+}
+
+.favorite-quotes-search-row input,
+.favorite-quotes-filter select {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.72rem 0.85rem;
+    border: 1px solid #bdaeb2;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2d2225;
+    font: inherit;
+}
+
+.favorite-quotes-search-row button,
+.favorite-quotes-reset,
+.favorite-quotes-empty button {
+    min-height: 46px;
+    padding: 0.7rem 1rem;
+    border: 1px solid #8a2f3f;
+    border-radius: 10px;
+    background: #8a2f3f;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+.favorite-quotes-search-row button:disabled {
+    border-color: #bbb0b3;
+    background: #d7cfd1;
+    cursor: not-allowed;
+}
+
+.favorite-quotes-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.favorite-quotes-control-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.favorite-quotes-featured-toggle {
+    display: inline-flex;
+    gap: 0.55rem;
+    align-items: center;
+    color: #3d3033;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+.favorite-quotes-featured-toggle input {
+    width: 1.05rem;
+    height: 1.05rem;
+    accent-color: #8a2f3f;
+}
+
+.favorite-quotes-reset {
+    border-color: #8a2f3f;
+    background: transparent;
+    color: #702a39;
+}
+
+.favorite-quotes-context-visual {
+    display: grid;
+    grid-template-columns: minmax(210px, 0.75fr) minmax(0, 1.25fr);
+    gap: clamp(1rem, 3vw, 2rem);
+    align-items: center;
+    margin: 1rem 0 1.5rem;
+    padding: 1rem;
+    border-radius: 18px;
+    background: #34262a;
+    color: #ffffff;
+}
+
+.favorite-quotes-context-visual[hidden] {
+    display: none;
+}
+
+.favorite-quotes-context-visual img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.favorite-quotes-context-visual h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(1.45rem, 3vw, 2.2rem);
+}
+
+.favorite-quotes-context-visual div > p:not(.favorite-quotes-kicker) {
+    margin: 0.65rem 0 0;
+    color: #f4e9ec;
+    line-height: 1.6;
+}
+
+.favorite-quotes-context-visual .favorite-quotes-kicker {
+    color: #efbdc8;
+}
+
+.favorite-quotes-context-visual a {
+    color: #ffffff;
+}
+
+.favorite-quotes-results-heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.favorite-quotes-results-count {
+    margin: 0;
+    color: #4f4145;
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+.favorite-quotes-empty {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.favorite-quotes-empty h3,
+.favorite-quotes-empty p {
+    margin-top: 0;
+}
+
+.favorite-quotes-loading,
+.favorite-quotes-noscript {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.favorite-quotes-sourcing > p {
+    max-width: 840px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.favorite-quotes-page button:focus-visible,
+.favorite-quotes-page input:focus-visible,
+.favorite-quotes-page select:focus-visible,
+.favorite-quotes-page a:focus-visible {
+    outline: 3px solid rgba(138, 47, 63, 0.35);
+    outline-offset: 3px;
+}
+
+@media (max-width: 780px) {
+    .favorite-quotes-about-grid,
+    .favorite-quotes-featured-grid,
+    .favorite-quotes-results,
+    .favorite-quotes-context-visual {
+        grid-template-columns: 1fr;
+    }
+
+    .favorite-quotes-filter-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .favorite-quote-card--wide {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .favorite-quotes-shell {
+        width: min(100% - 1rem, 1180px);
+    }
+
+    .favorite-quotes-panel {
+        border-radius: 16px;
+    }
+
+    .favorite-quotes-search-row,
+    .favorite-quotes-filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favorite-quotes-search-row button,
+    .favorite-quotes-reset {
+        width: 100%;
+    }
+
+    .favorite-quotes-control-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .favorite-quote-card,
+    .favorite-quotes-collection-buttons button,
+    .favorite-quotes-jump {
+        transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .favorite-quote-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 34px rgba(53, 31, 37, 0.1);
+    }
+}
+
+.favorite-quotes-page,
+.favorite-quotes-page button,
+.favorite-quotes-page input,
+.favorite-quotes-page select,
+.favorite-quotes-page textarea {
+    font-family: "Lora", serif;
+}
+
+.favorite-quotes-hero h1,
+.favorite-quotes-lede,
+.favorite-quotes-section-heading,
+.favorite-quotes-section-heading h2,
+.favorite-quotes-section-heading > p:last-child:not(.favorite-quotes-kicker) {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+}
+
+.favorite-quotes-lede {
+    padding-inline: clamp(0rem, 2vw, 1rem);
+    line-height: 1.5;
+}
+
+.favorite-quotes-section-heading {
+    margin-bottom: clamp(0.9rem, 2vw, 1.35rem);
+}
+
+.favorite-quotes-section-heading > p:last-child:not(.favorite-quotes-kicker) {
+    line-height: 1.45;
+}
+
+.favorite-quotes-about {
+    padding-block: clamp(1.15rem, 2.5vw, 1.75rem);
+}
+
+.favorite-quotes-about .favorite-quotes-section-heading {
+    margin-bottom: 0.75rem;
+}
+
+.favorite-quotes-about > div:last-child {
+    width: 100%;
+}
+
+.favorite-quotes-about > div:last-child p {
+    margin: 0.45rem 0 0;
+    line-height: 1.55;
+}
+
+.favorite-quotes-about > div:last-child p:first-child {
+    margin-top: 0;
+}
+
+.favorite-quotes-featured-grid,
+.favorite-quotes-results {
+    gap: 0.75rem;
+    align-items: start;
+}
+
+.favorite-quote-card {
+    --quote-card-padding: clamp(0.85rem, 1.8vw, 1.1rem);
+
+    align-self: start;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.favorite-quote-card__text {
+    font-size: clamp(0.94rem, 1.25vw, 1.06rem);
+    line-height: 1.42;
+}
+
+.favorite-quote-card__dialogue {
+    gap: 0.48rem;
+}
+
+.favorite-quote-card__dialogue-line {
+    font-size: 0.95rem;
+    line-height: 1.42;
+}
+
+.favorite-quote-card__attribution {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
+.favorite-quote-card__source {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+.favorite-quote-card__note {
+    margin-top: 0.65rem;
+    padding: 0.65rem 0.75rem;
+    line-height: 1.45;
+}
+
+.favorite-quote-card__tags {
+    gap: 0.32rem;
+    margin-top: 0.65rem;
+}
+
+.favorite-quote-card__tags li {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.72rem;
+}
+
+.favorite-quote-card__actions {
+    margin-top: 0.6rem;
+    padding-top: 0;
+}
+
+.favorite-quote-card__link,
+.favorite-quotes-copy-results-link {
+    font-size: 0.78rem;
+}
+
+.favorite-quotes-context-visual > div,
+.favorite-quotes-context-visual h3,
+.favorite-quotes-context-visual div > p {
+    text-align: center;
+}
+
+.favorite-quotes-page {
+    background: #ffffff;
+}
+
+.favorite-quotes-hero {
+    background:
+        radial-gradient(
+            circle at 12% 9%,
+            rgba(138, 47, 63, 0.12),
+            transparent 24rem
+        ),
+        linear-gradient(
+            180deg,
+            #f8f4f5 0%,
+            #ffffff 100%
+        );
+    background-repeat: no-repeat;
+}
+
+.favorite-quotes-content {
+    background: #ffffff;
+}
+
+.favorite-quotes-page,
+.favorite-quotes-page * {
+    font-family: "Lora", serif !important;
+}
+
+.favorite-quotes-control-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.favorite-quotes-results-heading {
+    margin: 0.45rem 0;
+}
+
+.favorite-quotes-featured-grid,
+.favorite-quotes-results {
+    grid-auto-flow: row dense;
+    grid-auto-rows: 8px;
+    gap: 0.75rem;
+    align-items: start;
+}
+
+.favorite-quote-card--wide {
+    grid-column: auto !important;
+}
+
+.favorite-quote-card {
+    align-self: start;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (max-width: 520px) {
+    .favorite-quotes-control-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .favorite-quotes-control-actions {
+        align-items: stretch;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .favorite-quotes-control-actions button {
+        width: 100%;
+    }
+}
