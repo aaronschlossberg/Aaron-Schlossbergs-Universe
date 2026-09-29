@@ -221,7 +221,7 @@
       "collections": [
         "being-different"
       ],
-      "featured": true,
+      "featured": false,
       "featuredOrder": 1,
       "visibility": "public",
       "verification": "needs-review",
@@ -291,7 +291,7 @@
       "collections": [
         "dreams-imagination"
       ],
-      "featured": true,
+      "featured": false,
       "featuredOrder": 3,
       "visibility": "public",
       "verification": "needs-review",
@@ -440,7 +440,7 @@
       "collections": [
         "time-memory-change"
       ],
-      "featured": true,
+      "featured": false,
       "featuredOrder": 7,
       "visibility": "public",
       "verification": "needs-review",
@@ -754,7 +754,7 @@
       "collections": [
         "courage-perseverance"
       ],
-      "featured": false,
+      "featured": true,
       "visibility": "public",
       "verification": "needs-review",
       "visualId": "hogwarts",

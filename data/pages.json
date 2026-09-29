@@ -24,7 +24,7 @@
         }
     },
     "/contact/": {
-        "title": "Contact Aaron Schlossberg | Aaron Schlossberg’s Universe",
+        "title": "Contact Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
         "socialTitle": "Contact Aaron L. Schlossberg",
         "description": "Contact Aaron L. Schlossberg about web development, writing, creative projects, collaborations, opportunities, and other work.",
         "breadcrumbLabel": "Contact",
@@ -224,7 +224,7 @@
         }
     },
     "/resume/": {
-        "title": "Résumé | Aaron L. Schlossberg",
+        "title": "Résumé | Aaron Schlossberg’s Universe",
         "socialTitle": "Aaron L. Schlossberg’s Résumé",
         "description": "View Aaron L. Schlossberg’s résumé, including education, technical skills, leadership, creative work, projects, experience, and accomplishments.",
         "breadcrumbLabel": "Résumé",

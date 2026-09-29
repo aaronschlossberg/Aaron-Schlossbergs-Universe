@@ -123,7 +123,7 @@ const SOURCE_URLS = {
     "Star Wars":
         "https://www.starwars.com/",
 
-    "Star Wars: Episode I – The Phantom Menace":
+    "Star Wars: Episode I — The Phantom Menace":
         "https://www.starwars.com/films/star-wars-episode-i-the-phantom-menace",
 
     "Stranger Things":
@@ -157,7 +157,7 @@ const SOURCE_URLS = {
         "https://en.wikipedia.org/wiki/The_Hunger_Games",
 
     "The Legend of Zelda: Ocarina of Time":
-        "https://www.zelda.com/about/",
+        "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time/",
 
     "The Lord of the Rings":
         "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings",
@@ -181,7 +181,7 @@ const SOURCE_URLS = {
         "https://en.wikipedia.org/wiki/The_Social_Network",
 
     "The Sopranos":
-        "https://www.hbo.com/the-sopranos",
+        "https://en.wikipedia.org/wiki/The_Sopranos/",
 
     "The Tempest":
         "https://en.wikipedia.org/wiki/The_Tempest",
@@ -207,7 +207,7 @@ const SOURCE_URLS = {
 
 const SPEAKER_URLS = {
     "Albert Einstein":
-        "https://www.britannica.com/biography/Albert-Einstein",
+        "https://en.wikipedia.org/wiki/Albert_Einstein",
 
     "Albus Dumbledore":
         "https://www.harrypotter.com/fact-file/characters-and-pets/albus-dumbledore",
@@ -219,10 +219,10 @@ const SPEAKER_URLS = {
         "https://en.wikipedia.org/wiki/Ana%C3%AFs_Nin",
 
     "Anton Chekhov":
-        "https://www.britannica.com/biography/Anton-Chekhov",
+        "https://en.wikipedia.org/wiki/Anton_Chekhov",
 
     "Arthur C. Clarke":
-        "https://www.britannica.com/biography/Arthur-C-Clarke",
+        "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
 
     "Aslan":
         "https://en.wikipedia.org/wiki/Aslan",
@@ -234,10 +234,10 @@ const SPEAKER_URLS = {
         "https://gravityfalls.fandom.com/wiki/Bill_Cipher",
 
     "Buckminster Fuller":
-        "https://www.bfi.org/about-fuller/biography/",
+        "https://en.wikipedia.org/wiki/Buckminster_Fuller",
 
     "C.S. Lewis":
-        "https://www.britannica.com/biography/C-S-Lewis",
+        "https://en.wikipedia.org/wiki/C._S._Lewis",
 
     "Captain America":
         "https://www.marvel.com/characters/captain-america-steve-rogers",
@@ -246,7 +246,7 @@ const SPEAKER_URLS = {
         "https://science.nasa.gov/people/carl-sagan/",
 
     "Cicero":
-        "https://www.britannica.com/biography/Cicero",
+        "https://en.wikipedia.org/wiki/Cicero",
 
     "Darth Vader":
         "https://www.starwars.com/databank/darth-vader",
