@@ -85,7 +85,7 @@
     },
     "/education/muhlenberg/clubs/fencing-video/": {
         "title": "Fencing Practice Video | Aaron Schlossberg’s Universe",
-        "socialTitle": "Fencing Practice Video",
+        "socialTitle": "Fencing Practice Video, Aaron L. Schlossberg",
         "description": "Watch a short fencing practice bout from the Muhlenberg College Fencing Club and learn about Aaron Schlossberg’s role in reviving the club.",
         "breadcrumbLabel": "Fencing Practice Video",
         "ogType": "video.other",
@@ -107,7 +107,7 @@
         }
     },
     "/education/muhlenberg/courses/": {
-        "title": "Courses | Aaron Schlossberg’s Universe",
+        "title": "Muhlenberg College Courses | Aaron Schlossberg’s Universe",
         "socialTitle": "Muhlenberg College Courses",
         "description": "This page about Aaron Schlossberg’s courses at Muhlenberg College is currently under construction.",
         "breadcrumbLabel": "Courses",
@@ -116,7 +116,7 @@
         "aboutPerson": true
     },
     "/education/muhlenberg/experiences/": {
-        "title": "Experiences | Aaron Schlossberg’s Universe",
+        "title": "Muhlenberg College Experiences | Aaron Schlossberg’s Universe",
         "socialTitle": "Muhlenberg College Experiences",
         "description": "This page about Aaron Schlossberg’s academic, professional, and campus experiences at Muhlenberg College is currently under construction.",
         "breadcrumbLabel": "Experiences",
@@ -125,7 +125,7 @@
         "aboutPerson": true
     },
     "/education/muhlenberg/highlights/": {
-        "title": "Highlights | Aaron Schlossberg’s Universe",
+        "title": "Muhlenberg College Highlights | Aaron Schlossberg’s Universe",
         "socialTitle": "Muhlenberg College Highlights",
         "description": "This page featuring highlights from Aaron Schlossberg’s time at Muhlenberg College is currently under construction.",
         "breadcrumbLabel": "Highlights",
@@ -160,7 +160,7 @@
     },
     "/projects/": {
         "title": "Projects | Aaron Schlossberg’s Universe",
-        "socialTitle": "Projects by Aaron Schlossberg",
+        "socialTitle": "Projects and Ventures by Aaron L. Schlossberg",
         "description": "Explore Aaron Schlossberg’s projects in technology, entrepreneurship, knowledge systems, storytelling, worldbuilding, and immersive experiences.",
         "breadcrumbLabel": "Projects",
         "schemaType": "CollectionPage",
@@ -168,7 +168,7 @@
     },
     "/projects/fiction2reality/": {
         "title": "Fiction2Reality | Aaron Schlossberg’s Universe",
-        "socialTitle": "Fiction2Reality - Turning Fictional Worlds Real",
+        "socialTitle": "Fiction2Reality: Turning Fictional Worlds Real",
         "description": "Explore Fiction2Reality, Aaron L. Schlossberg’s creative venture combining storytelling, 3D environments, film, and worldbuilding to reimagine fictional spaces.",
         "breadcrumbLabel": "Fiction2Reality",
         "schemaType": "AboutPage",
@@ -205,7 +205,7 @@
         }
     },
     "/projects/info-sprawlings/blender/": {
-        "title": "Blender | Info Sprawlings | Aaron Schlossberg’s Universe",
+        "title": "Blender: Info Sprawlings | Aaron Schlossberg’s Universe",
         "socialTitle": "Blender | Info Sprawlings",
         "description": "Learn what Blender is, how its major 3D workflows fit together, and how it connects to animation, rendering, Python, and Aaron Schlossberg’s projects.",
         "breadcrumbLabel": "Blender",
@@ -224,7 +224,7 @@
         }
     },
     "/resume/": {
-        "title": "Résumé | Aaron Schlossberg’s Universe",
+        "title": "Résumé Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
         "socialTitle": "Aaron L. Schlossberg’s Résumé",
         "description": "View Aaron L. Schlossberg’s résumé, including education, technical skills, leadership, creative work, projects, experience, and accomplishments.",
         "breadcrumbLabel": "Résumé",
@@ -236,13 +236,6 @@
             "firstName": "Aaron",
             "lastName": "Schlossberg"
         }
-    },
-    "/site-map/": {
-        "title": "Sitemap | Aaron Schlossberg’s Universe",
-        "socialTitle": "Sitemap | Aaron Schlossberg’s Universe",
-        "description": "Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.",
-        "breadcrumbLabel": "Sitemap",
-        "schemaType": "CollectionPage"
     },
     "/writings/": {
         "title": "Writings | Aaron Schlossberg’s Universe",
@@ -258,7 +251,7 @@
     },
     "/writings/1080-paths-of-least-resistance/": {
         "title": "1080 Paths of Least Resistance by Aaron L. Schlossberg",
-        "socialTitle": "1080 Paths of Least Resistance",
+        "socialTitle": "\"1080 Paths of Least Resistance\" by Aaron L. Schlossberg",
         "description": "Read \"1080 Paths of Least Resistance\", a speculative-horror short story by Aaron L. Schlossberg set within a shifting, liminal complex.",
         "socialDescription": "A speculative-horror short story by Aaron L. Schlossberg set within a shifting, liminal complex.",
         "breadcrumbLabel": "1080 Paths of Least Resistance",
@@ -271,7 +264,7 @@
     },
     "/writings/just-this-once/": {
         "title": "Just This Once by Aaron L. Schlossberg",
-        "socialTitle": "Just This Once",
+        "socialTitle": "\"Just This Once\" by Aaron L. Schlossberg",
         "description": "Read \"Just This Once\", a speculative-horror short story by Aaron L. Schlossberg about envy, temptation, and a mysterious stone.",
         "socialDescription": "A mysterious stone turns wanting into something dangerous.",
         "breadcrumbLabel": "Just This Once",
@@ -292,7 +285,7 @@
     },
         "/writings/backrooms-and-liminal-spaces-original-introduction/": {
         "title": "The Backrooms and Liminal Spaces: Original Introduction | Aaron Schlossberg’s Universe",
-        "socialTitle": "The Backrooms and Liminal Spaces: Original Introduction",
+        "socialTitle": "\"The Backrooms and Liminal Spaces: Original Introduction\" by Aaron L. Schlossberg",
         "description": "Read Aaron L. Schlossberg’s original 2024 introduction to the Backrooms and liminal spaces, preserved as the first version of a later expanded essay.",
         "socialDescription": "The preserved original 2024 version of Aaron L. Schlossberg’s introduction to the Backrooms and liminal spaces.",
         "breadcrumbLabel": "Original Backrooms Introduction",
@@ -315,7 +308,7 @@
     },
     "/writings/backrooms-and-liminal-spaces-introduction/": {
         "title": "The Backrooms and Liminal Spaces: Introduction | Aaron Schlossberg’s Universe",
-        "socialTitle": "The Backrooms and Liminal Spaces: Introduction",
+        "socialTitle": "\"The Backrooms and Liminal Spaces: Introduction\" by Aaron L. Schlossberg",
         "description": "Explore what liminal spaces are, how the Backrooms began and evolved, and why these familiar yet unsettling environments resonate so strongly.",
         "socialDescription": "An introduction to liminal spaces, the history and evolution of the Backrooms, and the creators and communities surrounding them.",
         "breadcrumbLabel": "The Backrooms and Liminal Spaces",
@@ -338,7 +331,7 @@
     },
     "/favorite-quotes/": {
         "title": "Favorite Quotes | Aaron Schlossberg’s Universe",
-        "socialTitle": "Favorite Quotes",
+        "socialTitle": "Favorite Quotes of Aaron L. Schlossberg",
         "description": "Explore Aaron Schlossberg’s favorite meaningful, funny, memorable, and thought-provoking quotations from people, books, films, television, video games, and more.",
         "breadcrumbLabel": "Favorite Quotes",
         "schemaType": "CollectionPage",
@@ -346,6 +339,13 @@
         "extraScripts": [
             "/assets/js/pages/favorite-quotes.js"
         ]
+    },
+    "/site-map/": {
+        "title": "Sitemap | Aaron Schlossberg’s Universe",
+        "socialTitle": "Sitemap | Aaron Schlossberg’s Universe",
+        "description": "Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.",
+        "breadcrumbLabel": "Sitemap",
+        "schemaType": "CollectionPage"
     },
     "/gone/": {
         "title": "410 Gone | Aaron Schlossberg’s Universe",
