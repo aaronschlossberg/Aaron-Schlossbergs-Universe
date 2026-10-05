@@ -4,6 +4,7 @@
     "scripts": {
         "heads": "node scripts/render-heads.mjs",
         "check:heads": "node scripts/render-heads.mjs --check",
+        "test:heads": "node --test scripts/test-heads.mjs",
         "validate": "node scripts/validate-site.mjs",
         "build": "npm run heads && npm run prepare:fonts && npm run optimize:images && npm run build:site && npm run build:css",
         "optimize:images": "node scripts/optimize-images.mjs",

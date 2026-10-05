@@ -1,22 +1,24 @@
 import { access, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { load } from "cheerio";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK = process.argv.includes("--check");
 const IGNORE = new Set([".git", "_site", "node_modules", "__MACOSX", "_partials"]);
 const EXEMPT = new Set(["google80eb4e64b20355ca.html"]);
-const COMMON_SCHEMA_TYPES = new Set([
-    "Person", "WebSite", "WebPage", "AboutPage", "ContactPage",
-    "CollectionPage", "ProfilePage", "BreadcrumbList", "ImageObject"
-]);
 
 const [config, pages, template] = await Promise.all([
     readFile(path.join(ROOT, "data/config.json"), "utf8").then(JSON.parse),
     readFile(path.join(ROOT, "data/pages.json"), "utf8").then(JSON.parse),
     readFile(path.join(ROOT, "_partials/head.html"), "utf8")
 ]);
+
+if (
+    config.googleAnalyticsId &&
+    !/^G-[A-Z0-9]+$/.test(config.googleAnalyticsId)
+) {
+    throw new Error("data/config.json needs a valid googleAnalyticsId, or omit it to disable Analytics.");
+}
 
 function esc(value) {
     return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;")
@@ -150,7 +152,6 @@ function breadcrumbNode(pathname, absoluteUrl) {
             pathname: current,
             name:
                 parent.breadcrumbLabel ||
-                parent.socialTitle ||
                 parent.title
         });
     }
@@ -167,57 +168,6 @@ function breadcrumbNode(pathname, absoluteUrl) {
             })
         )
     };
-}
-
-function preservedSchemaNodes(html) {
-    const $ = load(html);
-    const kept = [];
-    const seen = new Set();
-
-    $("script[type='application/ld+json']").each(
-        (_, script) => {
-            try {
-                const data = JSON.parse(
-                    $(script).text()
-                );
-
-                const nodes = Array.isArray(
-                    data?.["@graph"]
-                )
-                    ? data["@graph"]
-                    : [data];
-
-                for (const node of nodes) {
-                    const types = Array.isArray(
-                        node?.["@type"]
-                    )
-                        ? node["@type"]
-                        : [node?.["@type"]];
-
-                    const isSpecial = types.some(
-                        type =>
-                            type &&
-                            !COMMON_SCHEMA_TYPES.has(type)
-                    );
-
-                    if (!isSpecial) continue;
-
-                    const identity =
-                        node["@id"] ||
-                        JSON.stringify(node);
-
-                    if (!seen.has(identity)) {
-                        seen.add(identity);
-                        kept.push(node);
-                    }
-                }
-            } catch {
-                // Invalid old JSON-LD is not carried into the new head.
-            }
-        }
-    );
-
-    return kept;
 }
 
 function jsonLd(
@@ -267,9 +217,7 @@ function jsonLd(
         "@id":
             `${absoluteUrl}#webpage`,
         url: absoluteUrl,
-        name:
-            page.socialTitle ||
-            page.title,
+        name: page.title,
         description:
             page.description,
         inLanguage:
@@ -311,9 +259,7 @@ function jsonLd(
     }
 
     if (page.article) {
-        webpage.headline =
-            page.socialTitle ||
-            page.title;
+        webpage.headline = page.title;
 
         webpage.author = {
             "@id":
@@ -372,6 +318,16 @@ function jsonLd(
 
     graph.push(...normalizedExtra);
 
+    const ids = new Set();
+
+    for (const node of graph) {
+        if (!node["@id"]) continue;
+        if (ids.has(node["@id"])) {
+            throw new Error(`${pathname} duplicates the structured-data ID ${node["@id"]}.`);
+        }
+        ids.add(node["@id"]);
+    }
+
     return JSON.stringify(
         {
             "@context":
@@ -395,7 +351,7 @@ function ogExtensions(page) {
 
     if (page.article) {
         lines.push(
-            `<meta property="article:author" content="${config.baseUrl}/about-me/">`
+            `<meta property="article:author" content="${esc(pageUrl("/about-me/"))}">`
         );
 
         if (page.article.published) {
@@ -422,6 +378,23 @@ function ogExtensions(page) {
     }
 
     return lines.join("\n");
+}
+
+function analytics() {
+    if (!config.googleAnalyticsId) return "";
+
+    return `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(config.googleAnalyticsId)}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", ${JSON.stringify(config.googleAnalyticsId)});
+</script>`;
 }
 
 function render(
@@ -451,6 +424,7 @@ function render(
     };
 
     const values = {
+        ANALYTICS: analytics(),
         TITLE:
             esc(page.title),
         DESCRIPTION:
@@ -477,28 +451,18 @@ function render(
         CANONICAL:
             page.canonical === false
                 ? ""
-                : `<link rel="canonical" href="${absoluteUrl}">`,
+                : `<link rel="canonical" href="${esc(absoluteUrl)}">`,
         SITE_NAME:
             esc(config.siteName),
         OG_LOCALE:
             esc(config.ogLocale),
-        SOCIAL_TITLE:
-            esc(
-                page.socialTitle ||
-                page.title
-            ),
-        SOCIAL_DESCRIPTION:
-            esc(
-                page.socialDescription ||
-                page.description
-            ),
         OG_TYPE:
             esc(
                 page.ogType ||
                 "website"
             ),
         PAGE_URL:
-            absoluteUrl,
+            esc(absoluteUrl),
         IMAGE_URL:
             esc(image.url),
         IMAGE_TYPE:
@@ -539,26 +503,14 @@ function render(
                 .join("\n")
     };
 
-    let output = template;
-
-    for (
-        const [key, value] of
-        Object.entries(values)
-    ) {
-        output = output.replaceAll(
-            `{{${key}}}`,
-            String(value)
-        );
-    }
-
-    const unused =
-        output.match(/{{[A-Z_]+}}/g);
-
-    if (unused) {
-        throw new Error(
-            `Unresolved head tokens: ${unused.join(", ")}`
-        );
-    }
+    // A callback preserves literal dollar signs and only expands template tokens,
+    // never token-looking text inside the page's title or description.
+    const output = template.replace(/{{([A-Z_]+)}}/g, (token, key) => {
+        if (!Object.hasOwn(values, key)) {
+            throw new Error(`Unresolved head token: ${token}`);
+        }
+        return String(values[key]);
+    });
 
     return output
         .replace(/\n{3,}/g, "\n\n")
@@ -612,6 +564,27 @@ for (const pathname of pathnames) {
         );
     }
 
+    for (const field of ["socialTitle", "socialDescription"]) {
+        if (Object.hasOwn(page, field)) {
+            throw new Error(`${pathname}: remove ${field}; sharing titles and descriptions always use title and description.`);
+        }
+    }
+
+    for (const field of ["extraStyles", "extraScripts", "schemaNodes"]) {
+        if (page[field] !== undefined && !Array.isArray(page[field])) {
+            throw new Error(`${pathname}: ${field} must be an array.`);
+        }
+    }
+
+    for (const node of page.schemaNodes || []) {
+        const types = Array.isArray(node?.["@type"])
+            ? node["@type"]
+            : [node?.["@type"]];
+        if (!types.length || types.some(type => typeof type !== "string" || !type.trim())) {
+            throw new Error(`${pathname}: every schemaNodes entry needs an @type.`);
+        }
+    }
+
     for (
         const field of
         [
@@ -620,7 +593,7 @@ for (const pathname of pathnames) {
             "breadcrumbLabel"
         ]
     ) {
-        if (!page[field]?.trim()) {
+        if (typeof page[field] !== "string" || !page[field].trim()) {
             throw new Error(
                 `${pathname} needs ${field}.`
             );
@@ -703,6 +676,7 @@ for (
 }
 
 const changed = [];
+const updates = [];
 
 for (const file of files) {
     const pathname =
@@ -723,16 +697,11 @@ for (const file of files) {
         );
     }
 
-    const extraSchema =
-        Array.isArray(
-            pages[pathname].schemaNodes
-        )
-            ? pages[pathname].schemaNodes
-            : preservedSchemaNodes(html);
+    const extraSchema = pages[pathname].schemaNodes || [];
 
     const next = html.replace(
         /<head\b[^>]*>[\s\S]*?<\/head>/i,
-        `<head>\n${render(
+        () => `<head>\n${render(
             pathname,
             pages[pathname],
             extraSchema
@@ -744,13 +713,14 @@ for (const file of files) {
             path.relative(ROOT, file)
         );
 
-        if (!CHECK) {
-            await writeFile(
-                file,
-                next,
-                "utf8"
-            );
-        }
+        updates.push({ file, next });
+    }
+}
+
+// Render every page successfully before changing any source files.
+if (!CHECK) {
+    for (const { file, next } of updates) {
+        await writeFile(file, next, "utf8");
     }
 }
 

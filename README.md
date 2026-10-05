@@ -69,14 +69,73 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
 3. Install the dependencies:
 
    ```bash
-   npm ci```
+   npm ci
+   ```
 4. Build the website: `npm run build`
 5. Serve the generated `_site` directory using a local web server: `npx serve _site`
 6. Open the local address shown in the terminal. The source files should be processed through the build system rather than opened directly with a `file://` URL.
 
 ### Available Commands:
+- `npm run heads`: Rebuilds the entire `<head>` of every managed source page from the central configuration and template.
+- `npm run check:heads`: Checks that every source head matches the generated version without changing files. Exits with an error if any head is out of date.
+- `npm run test:heads`: Runs the head-generator regression tests in temporary fixtures.
 - `npm run validate`: Runs the website validator and reports structural, content, asset, and linking problems.
-- `npm run build`: Validates the source website, and then generates the deployable site in `_site`.
+- `npm run build`: Runs head generation first, prepares fonts and images, validates and generates `_site`, and bundles/minifies its CSS.
+
+### Managing the entire HTML head
+
+Every page head is generated. Edit the following central files instead of editing
+metadata directly in an HTML page; manual head edits are overwritten on the next
+`npm run heads` or `npm run build`.
+
+| File | What it controls |
+| --- | --- |
+| `data/pages.json` | Each page's title, description, breadcrumbs, indexing settings, schema type, share image, article/profile/video details, extra styles/scripts, and specialized structured data. |
+| `data/config.json` | Site name and URL, author, language/locale, default share image, theme color, verification values, social handle, and Google Analytics measurement ID. |
+| `_partials/head.html` | The complete shared head structure: charset, viewport, favicon, meta tags, canonical link, Open Graph, Twitter cards, font preloads, CSS, JSON-LD, and JavaScript. Add any future shared head tags here. |
+
+`title` is the only source for `<title>`, `og:title`, and `twitter:title`.
+`description` is the only source for the regular, Open Graph, and Twitter
+descriptions. Separate `socialTitle` and `socialDescription` fields have been
+removed; the generator rejects them to prevent accidental divergence.
+The generated WebPage structured-data name and description use the same fields.
+
+For example, change these two fields within the `/contact/` entry:
+
+```json
+"title": "Contact Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
+"description": "Contact Aaron L. Schlossberg about web development, writing, creative projects, collaborations, opportunities, and other work."
+```
+
+Then run `npm run heads` to update the source HTML, or `npm run build` to update
+the source HTML and produce the deployable `_site` output. There is no need to
+run both commands for a normal build. Neither command publishes the website;
+the updated source must still reach the repository used by Netlify.
+
+Page-specific images use the `image` object, falling back to the default image
+in `config.json`. Their URL, MIME type, dimensions, and alt text are regenerated,
+along with the page's Open Graph type/URL/locale/site name and any configured
+article, profile, or video tags. Twitter uses the same image and alt text.
+Use `extraStyles` and `extraScripts` for additional per-page CSS and deferred JS.
+
+Specialized JSON-LD for stories, articles, software, and the fencing video is
+stored in the page's `schemaNodes` array. The generator no longer recovers it
+from a previous HTML head, so even an empty head can be rebuilt completely.
+These nodes retain their work-specific titles and details, such as word counts,
+publication dates, and video upload information. Edit those details in
+`schemaNodes` when the underlying work changes.
+
+Google Analytics uses `googleAnalyticsId` in `config.json`. Remove that field or
+set it to an empty string to omit both Analytics scripts from all generated heads.
+
+The generator covers all 30 current site pages, including noindex pages.
+Shared HTML partials, build output, dependencies, and the Google verification
+HTML file are excluded. New content pages must have a matching `pages.json`
+entry. Existing noindex/canonical rules remain enforced, and every page must
+render successfully before the generator starts writing files.
+
+This manages the document's `<head>`, which contains browser metadata and
+resources. The visible navigation/header remains in `_partials/header.html`.
 
 ## Roadmap
 Development priorities, planned improvements, and possible future directions are tracked in [ROADMAP.md](ROADMAP.md).
