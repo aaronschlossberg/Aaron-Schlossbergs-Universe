@@ -77,7 +77,7 @@
         "aboutPerson": true
     },
     "/education/muhlenberg/clubs/": {
-        "title": "Clubs & Leadership | Aaron Schlossberg’s Universe",
+        "title": "Clubs & Leadership: Muhlenberg College | Aaron Schlossberg’s Universe",
         "socialTitle": "Clubs & Leadership at Muhlenberg College",
         "description": "Explore Aaron Schlossberg’s Muhlenberg College club leadership, including Pokémon, Harry Potter, fencing, board games, campus events, and more.",
         "breadcrumbLabel": "Clubs & Leadership",
@@ -224,7 +224,7 @@
         }
     },
     "/resume/": {
-        "title": "Résumé Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
+        "title": "Résumé of Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
         "socialTitle": "Aaron L. Schlossberg’s Résumé",
         "description": "View Aaron L. Schlossberg’s résumé, including education, technical skills, leadership, creative work, projects, experience, and accomplishments.",
         "breadcrumbLabel": "Résumé",
