@@ -215,8 +215,7 @@
                 </ol>
             </nav>
 
-            <div class="writing-piece-hero-inner">
-                <p class="writing-piece-kicker">Short Fiction &bull; Speculative Horror</p>
+            <div class="writing-piece-hero-inner" data-writing-search-tag="Short Fiction &bull; Speculative Horror">
                 <h1 id="piece-title">Just This Once</h1>
                 <p class="writing-piece-deck">
                     A mysterious stone turns wanting into something dangerous.
@@ -225,72 +224,82 @@
                     By <a href="/about-me/" rel="author">Aaron L. Schlossberg</a>
                 </p>
 
-                <dl class="writing-piece-meta">
-                    <div>
-                        <dt>Author</dt>
-                        <dd>Aaron L. Schlossberg</dd>
-                    </div>
-                    <div>
-                        <dt>Form</dt>
-                        <dd>Short story</dd>
-                    </div>
-                    <div>
-                        <dt>Year</dt>
-                        <dd><time datetime="2026">2026</time></dd>
-                    </div>
-                    <div>
-                        <dt>Status</dt>
-                        <dd>Accepted by <cite>MUSES</cite></dd>
-                    </div>
-                    <div>
-                        <dt>Word Count</dt>
-                        <dd>1,999 words</dd>
-                    </div>
-                    <div>
-                        <dt>Reading Time</dt>
-                        <dd>About 10 minutes</dd>
-                    </div>
-                    <div>
-                        <dt>PDF Length</dt>
-                        <dd>9 pages</dd>
-                    </div>
-                    <div>
-                        <dt>Genre</dt>
-                        <dd>Fiction &vert; Speculative horror</dd>
-                    </div>
-                </dl>
-
-                <!--
-                    When you have the exact publication date, replace the Year
-                    item above with:
-
-                    <div>
-                        <dt>Published</dt>
-                        <dd><time datetime="YYYY-MM-DD">Month Day, Year</time></dd>
-                    </div>
-                -->
-
                 <div class="writing-piece-actions">
-                    <a class="writings-button writings-button-primary" href="#read-story">
-                        Start Reading
-                    </a>
                     <a
-                        class="writings-button writings-button-secondary"
+                        class="writings-button writings-button-secondary writing-piece-icon-button"
                         href="/assets/files/writings/just-this-once-aaron-schlossberg.pdf"
                         download="just-this-once-aaron-schlossberg.pdf"
-                        type="application/pdf">
-                        Download PDF
+                        type="application/pdf"
+                        aria-label="Download PDF" title="Download PDF">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M12 3v12"></path>
+                            <path d="m7 10 5 5 5-5"></path>
+                            <path d="M5 16v4h14v-4"></path>
+                        </svg>
                     </a>
                     <button
-                        class="writings-button writings-button-secondary writing-share-trigger"
+                        class="writings-button writings-button-secondary writing-piece-icon-button writing-share-trigger"
                         type="button"
                         aria-haspopup="dialog"
                         aria-controls="writing-share-dialog"
                         data-share-open
-                        hidden>
-                        Share This Piece
+                        hidden
+                        aria-label="Share This Piece" title="Share This Piece">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M12 16V3"></path>
+                            <path d="m7 8 5-5 5 5"></path>
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path>
+                        </svg>
                     </button>
                 </div>
+
+                <details class="writing-piece-details">
+                    <summary>Piece details</summary>
+                    <dl class="writing-piece-meta">
+                        <div>
+                            <dt>Author</dt>
+                            <dd><a href="/about-me/" rel="author">Aaron L. Schlossberg</a></dd>
+                        </div>
+                        <div>
+                            <dt>Form</dt>
+                            <dd>Short story</dd>
+                        </div>
+                        <div>
+                            <dt>Year</dt>
+                            <dd><time datetime="2026">2026</time></dd>
+                        </div>
+                        <div>
+                            <dt>Status</dt>
+                            <dd>Accepted by <cite>MUSES</cite></dd>
+                        </div>
+                        <div>
+                            <dt>Word Count</dt>
+                            <dd>1,999 words</dd>
+                        </div>
+                        <div>
+                            <dt>Reading Time</dt>
+                            <dd>About 10 minutes</dd>
+                        </div>
+                        <div>
+                            <dt>PDF Length</dt>
+                            <dd>9 pages</dd>
+                        </div>
+                        <div>
+                            <dt>Genre</dt>
+                            <dd>Fiction &vert; Speculative horror</dd>
+                        </div>
+                    </dl>
+
+                    <!--
+                        When you have the exact publication date, replace the Year
+                        item above with:
+
+                        <div>
+                            <dt>Published</dt>
+                            <dd><time datetime="YYYY-MM-DD">Month Day, Year</time></dd>
+                        </div>
+                    -->
+                </details>
 
                 <section class="writing-piece-context" aria-labelledby="about-piece-title">
                     <h2 id="about-piece-title">Context: About This Piece</h2>
@@ -304,9 +313,8 @@
         <div class="container writing-piece-container">
             <article class="writing-piece-article" id="read-story" aria-labelledby="story-title">
                 <header class="writing-story-header">
-                    <p class="writing-story-label">Short Fiction</p>
                     <h2 id="story-title">Just This Once</h2>
-                    <p class="writing-story-author">by Aaron L. Schlossberg</p>
+                    <p class="writing-story-author">by <a href="/about-me/" rel="author">Aaron L. Schlossberg</a></p>
                 </header>
 
                 <div class="writing-story" data-reading-body data-search-body>

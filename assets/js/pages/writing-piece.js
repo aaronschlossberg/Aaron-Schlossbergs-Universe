@@ -302,6 +302,7 @@
 
         triggers.forEach((trigger) => {
             trigger.addEventListener("click", openDialog);
+            trigger.hidden = false;
         });
 
         closeControls.forEach((control) => {

@@ -648,10 +648,8 @@ async function buildWritingsIndex() {
                 .join(" ")
         );
 
-        const pageKicker = compactText(
-            $page(
-                ".writing-piece-kicker"
-            ).first().text()
+        const pageSearchTag = compactText(
+            $page("[data-writing-search-tag]").first().attr("data-writing-search-tag")
         );
 
         const pageGenre =
@@ -695,7 +693,7 @@ async function buildWritingsIndex() {
                             ).text()
                         )
                     ),
-                pageKicker,
+                pageSearchTag,
                 pageGenre
             ]),
 
