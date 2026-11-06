@@ -915,6 +915,15 @@
     gap: 1rem;
 }
 
+.info-connections-grid:where(:has(> [aria-labelledby="related-writing-title"])) {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+}
+
+.info-connections-grid > [aria-labelledby="related-writing-title"] {
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
 .info-connections-grid > section {
     padding: 1.2rem;
     border: 1px solid var(--info-line);
@@ -1024,7 +1033,7 @@
             repeat(2, minmax(0, 1fr));
     }
 
-    .info-connections-grid > section:first-child {
+    .info-connections-grid:where(:not(:has(> [aria-labelledby="related-writing-title"]))) > section:first-child {
         grid-column: 1 / -1;
     }
 }

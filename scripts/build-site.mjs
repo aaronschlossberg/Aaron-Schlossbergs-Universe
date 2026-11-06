@@ -9,6 +9,7 @@ import {
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { load } from "cheerio";
+import { renderRelatedWritings } from "./render-related-writings.mjs";
 
 const SCRIPT_DIRECTORY = path.dirname(
     fileURLToPath(import.meta.url)
@@ -507,6 +508,7 @@ async function buildWritingsIndex() {
     }
 
     const pieces = [];
+    const relatedPages = [];
     const seenIds = new Set();
     const seenUrls = new Set();
 
@@ -668,7 +670,7 @@ async function buildWritingsIndex() {
             );
         }
 
-        pieces.push({
+        const piece = {
             id,
             url,
             title,
@@ -742,6 +744,13 @@ async function buildWritingsIndex() {
             ),
 
             body
+        };
+
+        pieces.push(piece);
+        relatedPages.push({
+            piece,
+            file: path.join(OUTPUT_ROOT, path.relative(SITE_ROOT, pageFile)),
+            summary: pageDeck || cardSummary
         });
     }
 
@@ -770,6 +779,7 @@ async function buildWritingsIndex() {
         pieces
     };
 
+    await renderRelatedWritings(relatedPages, SITE_ORIGIN);
     await writeGeneratedIndex(
         "writings-search-index.json",
         index

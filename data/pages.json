@@ -473,6 +473,350 @@
             }
         ]
     },
+    "/writings/rip-rest-in-progress/": {
+        "title": "R.I.P. (Rest in Progress) by Aaron L. Schlossberg",
+        "description": "Rita and Ace visit a graveyard after dark and find headstones with dates that leave too much unsaid. R.I.P. (Rest in Progress) is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "R.I.P. (Rest in Progress)",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/#story",
+                "url": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/",
+                "name": "R.I.P. (Rest in Progress)",
+                "headline": "R.I.P. (Rest in Progress)",
+                "description": "Rita and Ace visit a graveyard after dark and find headstones with dates that leave too much unsaid.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Supernatural horror"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Supernatural horror"
+                ],
+                "wordCount": 981,
+                "timeRequired": "PT5M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "R.I.P. (Rest in Progress) PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/RIP-rest-in-progress-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/1080-rewires/": {
+        "title": "1080 Rewires by Aaron L. Schlossberg",
+        "description": "A repair order sends 1080 and Sal into a maze of yellow corridors where the route back won’t stay put. 1080 Rewires is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "1080 Rewires",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/1080-rewires/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/1080-rewires/#story",
+                "url": "https://www.aaronschlossberg.com/writings/1080-rewires/",
+                "name": "1080 Rewires",
+                "headline": "1080 Rewires",
+                "description": "A repair order sends 1080 and Sal into a maze of yellow corridors where the route back won’t stay put.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Speculative horror"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Speculative horror"
+                ],
+                "wordCount": 723,
+                "timeRequired": "PT4M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/1080-rewires/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "1080 Rewires PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/1080-rewires-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                },
+                "image": "https://www.aaronschlossberg.com/assets/img/writings/1080-rewires/1080-rewires-complex.png"
+            }
+        ],
+        "twitterCard": "summary",
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/writings/1080-rewires/1080-rewires-complex.png",
+            "width": 480,
+            "height": 360,
+            "alt": "Two figures in yellow protective suits walk through fluorescent-lit yellow rooms beside a red line on the carpet."
+        }
+    },
+    "/writings/elegant-eats/": {
+        "title": "Elegant Eats by Aaron L. Schlossberg",
+        "description": "Two figures in hyena masks storm a restaurant, bringing Cynthia face-to-face with a promise made ten years ago. Elegant Eats is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "Elegant Eats",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/elegant-eats/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/elegant-eats/#story",
+                "url": "https://www.aaronschlossberg.com/writings/elegant-eats/",
+                "name": "Elegant Eats",
+                "headline": "Elegant Eats",
+                "description": "Two figures in hyena masks storm a restaurant, bringing Cynthia face-to-face with a promise made ten years ago.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Suspense"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Suspense"
+                ],
+                "wordCount": 1020,
+                "timeRequired": "PT6M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/elegant-eats/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "Elegant Eats PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/elegant-eats-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/autumn/": {
+        "title": "Autumn by Aaron L. Schlossberg",
+        "description": "The fall of a single leaf looks different to the leaf, the squirrel beneath it, and the forest around them. Autumn is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "Autumn",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/autumn/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/autumn/#story",
+                "url": "https://www.aaronschlossberg.com/writings/autumn/",
+                "name": "Autumn",
+                "headline": "Autumn",
+                "description": "The fall of a single leaf looks different to the leaf, the squirrel beneath it, and the forest around them.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Literary fiction"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Literary fiction"
+                ],
+                "wordCount": 522,
+                "timeRequired": "PT3M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/autumn/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "Autumn PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/autumn-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/the-equation-of-quiet/": {
+        "title": "The Equation of Quiet by Aaron L. Schlossberg",
+        "description": "A figure in Lucas’s dreams tells him he owes the world a share of his voice, then leaves him to work out how much. The Equation of Quiet is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "The Equation of Quiet",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/#story",
+                "url": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/",
+                "name": "The Equation of Quiet",
+                "headline": "The Equation of Quiet",
+                "description": "A figure in Lucas’s dreams tells him he owes the world a share of his voice, then leaves him to work out how much.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Speculative fiction"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Speculative fiction"
+                ],
+                "wordCount": 1297,
+                "timeRequired": "PT7M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "The Equation of Quiet PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/the-equation-of-quiet-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/no-one-else-was-in-the-dream-where-it-happened/": {
+        "title": "No One Else Was in The Dream Where it Happened by Aaron L. Schlossberg",
+        "description": "Juniper starts keeping notes on his dreams when their doors, mirrors, and familiar faces begin to cross over. No One Else Was in The Dream Where it Happened is a flash fiction by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "No One Else Was in The Dream Where it Happened",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/#story",
+                "url": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/",
+                "name": "No One Else Was in The Dream Where it Happened",
+                "headline": "No One Else Was in The Dream Where it Happened",
+                "description": "Juniper starts keeping notes on his dreams when their doors, mirrors, and familiar faces begin to cross over.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Flash fiction",
+                    "Surreal fiction"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Surreal fiction"
+                ],
+                "wordCount": 644,
+                "timeRequired": "PT4M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "No One Else Was in The Dream Where it Happened PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/no-one-else-was-in-the-dream-where-it-happened-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/where-im-from/": {
+        "title": "Where I’m From by Aaron L. Schlossberg",
+        "description": "A fictional speaker traces where they come from through small objects, remembered sounds, and the things they almost said. Where I’m From is a persona poem by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "Where I’m From",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/where-im-from/#poem",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "CreativeWork",
+                "@id": "https://www.aaronschlossberg.com/writings/where-im-from/#poem",
+                "url": "https://www.aaronschlossberg.com/writings/where-im-from/",
+                "name": "Where I’m From",
+                "headline": "Where I’m From",
+                "description": "A fictional speaker traces where they come from through small objects, remembered sounds, and the things they almost said.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Persona poem",
+                    "Persona poetry"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Persona poetry"
+                ],
+                "wordCount": 434,
+                "timeRequired": "PT3M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/where-im-from/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "Where I’m From PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/where-im-from-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
     "/writings/backrooms-and-liminal-spaces-introduction/": {
         "title": "The Backrooms and Liminal Spaces: Introduction | Aaron Schlossberg’s Universe",
         "description": "Explore what liminal spaces are, how the Backrooms began and evolved, and why these familiar yet unsettling environments resonate so strongly.",

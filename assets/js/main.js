@@ -176,8 +176,8 @@ function initCarousels() {
         const items = Array.from(track.children);
 
         if (items.length <= 1) {
-            prev.style.display = "none";
-            next.style.display = "none";
+            prev.hidden = true;
+            next.hidden = true;
             return;
         }
 
@@ -200,6 +200,7 @@ function initCarousels() {
             const maximum =
                 track.scrollWidth - track.clientWidth;
 
+            prev.hidden = next.hidden = maximum <= 1;
             prev.disabled = track.scrollLeft <= 1;
             next.disabled =
                 track.scrollLeft >= maximum - 1;
@@ -207,26 +208,19 @@ function initCarousels() {
 
         next.addEventListener("click", () => {
             track.scrollBy({
-                left: getStep(),
-                behavior: "smooth"
+                left: getStep()
             });
         });
 
         prev.addEventListener("click", () => {
             track.scrollBy({
-                left: -getStep(),
-                behavior: "smooth"
+                left: -getStep()
             });
         });
 
-        track.addEventListener("scroll", () => {
-            window.clearTimeout(track._carouselTimer);
-
-            track._carouselTimer =
-                window.setTimeout(updateButtons, 120);
-        });
-
+        track.addEventListener("scroll", updateButtons, { passive: true });
         window.addEventListener("resize", updateButtons);
+        updateButtons();
     });
 }
 

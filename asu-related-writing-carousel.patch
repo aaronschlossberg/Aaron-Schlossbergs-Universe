@@ -1,0 +1,427 @@
+diff --git a/assets/css/components/highlights.css b/assets/css/components/highlights.css
+index 00269b2e20aaa2944b415d0325649d7cd02d947b..3215257a0e12cdbaa446c55d3c4e248e59448796 100644
+--- a/assets/css/components/highlights.css
++++ b/assets/css/components/highlights.css
+@@ -113,6 +113,10 @@
+     cursor: not-allowed;
+ }
+ 
++.carousel-btn[hidden] {
++    display: none;
++}
++
+ .carousel-btn-prev {
+     left: -14px;
+ }
+@@ -141,4 +145,4 @@
+         scroll-behavior: auto;
+         transition: none;
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/assets/css/pages/writing-piece.css b/assets/css/pages/writing-piece.css
+index 8a7550c255bb7ed8c2a3fea97153d442a0ecda76..0f7d5bac48988c834c048477d9b3444232698642 100644
+--- a/assets/css/pages/writing-piece.css
++++ b/assets/css/pages/writing-piece.css
+@@ -1005,6 +1005,79 @@ body.writing-share-open {
+     gap: 1rem;
+ }
+ 
++.writing-related-carousel .carousel-track {
++    --carousel-item-width: calc((100% - 2rem) / 3);
++
++    flex-wrap: nowrap;
++    justify-content: flex-start;
++    justify-content: safe center;
++    gap: 1rem;
++    margin: -4px -8px -12px;
++    scroll-padding-inline: 8px;
++    scroll-snap-type: x mandatory;
++}
++
++.writing-related-carousel .carousel-track:not([data-carousel-ready]) {
++    scrollbar-width: thin;
++    scroll-snap-type: none;
++}
++
++.writing-related-carousel .carousel-track:focus-visible {
++    outline: 2px solid var(--accent);
++    outline-offset: 2px;
++    border-radius: 12px;
++}
++
++.writing-related-carousel [data-carousel-item] {
++    box-sizing: border-box;
++    scroll-snap-align: start;
++    overflow-wrap: anywhere;
++}
++
++.writing-related-carousel .carousel-btn {
++    color: var(--accent-dark);
++}
++
++.writing-related-carousel .carousel-btn-prev {
++    left: -1.15rem;
++}
++
++.writing-related-carousel .carousel-btn-next {
++    right: -1.15rem;
++}
++
++.writing-related-carousel .writing-related-summary {
++    display: -webkit-box;
++    overflow: hidden;
++    -webkit-box-orient: vertical;
++    -webkit-line-clamp: 2;
++}
++
++.writing-related-carousel .writing-related-meta {
++    margin: 0.65rem 0 0.45rem;
++}
++
++.writing-related-carousel .writing-related-meta div {
++    display: flex;
++    flex-wrap: wrap;
++    align-items: baseline;
++    gap: 0 0.35rem;
++}
++
++.info-connections-grid > section:has(.writing-related-carousel--compact) {
++    min-width: 0;
++}
++
++.writing-related-carousel--compact .carousel-track {
++    --carousel-item-width: 100%;
++}
++
++.writing-related-carousel--compact .carousel-btn {
++    width: 2rem;
++    height: 2rem;
++    color: var(--info-blue-dark);
++}
++
+ .writing-related-card {
+     box-sizing: border-box;
+     display: flex;
+@@ -1170,6 +1243,10 @@ body.writing-share-open {
+     .writing-related-card {
+         flex-basis: calc((100% - 1rem) / 2);
+     }
++
++    .writing-related-carousel .writing-related-grid {
++        --carousel-item-width: calc((100% - 1rem) / 2);
++    }
+ }
+ 
+ @media (max-width: 600px) {
+@@ -1217,6 +1294,10 @@ body.writing-share-open {
+         min-height: 0;
+     }
+ 
++    .writing-related-carousel .writing-related-grid {
++        --carousel-item-width: 100%;
++    }
++
+     .writing-related-browse {
+         width: 100%;
+     }
+diff --git a/assets/js/main.js b/assets/js/main.js
+index 0066003c8adade4da93531b367d14aab9a4b2624..1cc74bbe19d79cffcc23d00fba138a950910f51e 100644
+--- a/assets/js/main.js
++++ b/assets/js/main.js
+@@ -176,8 +176,8 @@ function initCarousels() {
+         const items = Array.from(track.children);
+ 
+         if (items.length <= 1) {
+-            prev.style.display = "none";
+-            next.style.display = "none";
++            prev.hidden = true;
++            next.hidden = true;
+             return;
+         }
+ 
+@@ -200,6 +200,7 @@ function initCarousels() {
+             const maximum =
+                 track.scrollWidth - track.clientWidth;
+ 
++            prev.hidden = next.hidden = maximum <= 1;
+             prev.disabled = track.scrollLeft <= 1;
+             next.disabled =
+                 track.scrollLeft >= maximum - 1;
+@@ -207,26 +208,19 @@ function initCarousels() {
+ 
+         next.addEventListener("click", () => {
+             track.scrollBy({
+-                left: getStep(),
+-                behavior: "smooth"
++                left: getStep()
+             });
+         });
+ 
+         prev.addEventListener("click", () => {
+             track.scrollBy({
+-                left: -getStep(),
+-                behavior: "smooth"
++                left: -getStep()
+             });
+         });
+ 
+-        track.addEventListener("scroll", () => {
+-            window.clearTimeout(track._carouselTimer);
+-
+-            track._carouselTimer =
+-                window.setTimeout(updateButtons, 120);
+-        });
+-
++        track.addEventListener("scroll", updateButtons, { passive: true });
+         window.addEventListener("resize", updateButtons);
++        updateButtons();
+     });
+ }
+ 
+@@ -249,4 +243,4 @@ async function init() {
+     }
+ }
+ 
+-document.addEventListener("DOMContentLoaded", init);
+\ No newline at end of file
++document.addEventListener("DOMContentLoaded", init);
+diff --git a/data/pages.json b/data/pages.json
+index 4e93e067808b4ff8f03e2b4b41a719a318994ef7..d2fd8dd9ac7859c8aaa350ddbcc91b00ebaec194 100644
+--- a/data/pages.json
++++ b/data/pages.json
+@@ -515,7 +515,7 @@
+                 "encoding": {
+                     "@type": "MediaObject",
+                     "name": "R.I.P. (Rest in Progress) PDF",
+-                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/rip-rest-in-progress-aaron-schlossberg.pdf",
++                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/RIP-rest-in-progress-aaron-schlossberg.pdf",
+                     "encodingFormat": "application/pdf"
+                 }
+             }
+diff --git a/scripts/build-site.mjs b/scripts/build-site.mjs
+index 06c9f528cbbc00974d87de5ada89a8dc43b071da..e31e28a72fecb7e6e57745af9b621d4678a91b03 100644
+--- a/scripts/build-site.mjs
++++ b/scripts/build-site.mjs
+@@ -9,6 +9,7 @@ import {
+ import path from "node:path";
+ import { fileURLToPath } from "node:url";
+ import { load } from "cheerio";
++import { renderRelatedWritings } from "./render-related-writings.mjs";
+ 
+ const SCRIPT_DIRECTORY = path.dirname(
+     fileURLToPath(import.meta.url)
+@@ -507,6 +508,7 @@ async function buildWritingsIndex() {
+     }
+ 
+     const pieces = [];
++    const relatedPages = [];
+     const seenIds = new Set();
+     const seenUrls = new Set();
+ 
+@@ -668,7 +670,7 @@ async function buildWritingsIndex() {
+             );
+         }
+ 
+-        pieces.push({
++        const piece = {
+             id,
+             url,
+             title,
+@@ -742,6 +744,13 @@ async function buildWritingsIndex() {
+             ),
+ 
+             body
++        };
++
++        pieces.push(piece);
++        relatedPages.push({
++            piece,
++            file: path.join(OUTPUT_ROOT, path.relative(SITE_ROOT, pageFile)),
++            summary: pageDeck || cardSummary
+         });
+     }
+ 
+@@ -770,6 +779,7 @@ async function buildWritingsIndex() {
+         pieces
+     };
+ 
++    await renderRelatedWritings(relatedPages, SITE_ORIGIN);
+     await writeGeneratedIndex(
+         "writings-search-index.json",
+         index
+diff --git a/scripts/render-related-writings.mjs b/scripts/render-related-writings.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..063d2175a8a145d5457a7c92e787aef570a72b4a
+--- /dev/null
++++ b/scripts/render-related-writings.mjs
+@@ -0,0 +1,137 @@
++import { readFile, writeFile } from "node:fs/promises";
++import { load } from "cheerio";
++
++const SECTION = 'section[aria-labelledby="related-writing-title"]';
++const MAX_RECOMMENDATIONS = 6;
++
++function writingKey(href, origin) {
++    const url = new URL(href, origin);
++    return url.origin === origin
++        ? decodeURIComponent(url.pathname).replace(/\/(?:index\.html)?$/, "")
++        : url.href;
++}
++
++function labelKey(label) {
++    return label.toLowerCase().replace(/[^a-z0-9]/g, "");
++}
++
++function relatedScore(page, candidate) {
++    const sharedTags = candidate.tags.filter(tag => page.tags.includes(tag)).length;
++    const sameType = candidate.piece.types.some(type => page.piece.types.includes(type));
++    const sameGroup = candidate.groups.some(group => page.groups.includes(group));
++    const linksBack = candidate.picks.has(page.key);
++
++    return 2 * sharedTags + Number(sameType) + 4 * Number(sameGroup) + 3 * Number(linksBack);
++}
++
++function escapeHtml(value) {
++    const entities = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" };
++    return value.replace(/[&<>"]/g, character => entities[character]);
++}
++
++function recommendationCard({ piece, summary }, compact) {
++    const { Form, Genre, "Reading Time": readingTime } = piece.metadata;
++    const tags = [
++        Form,
++        Genre?.split(/[|•]/).at(-1).trim(),
++        ...piece.tags.map(tag => tag.replace(/^#/, "").replace(/([a-z])([A-Z])/g, "$1 $2"))
++    ].filter(Boolean);
++    const labels = Array.from(new Map(tags.map(tag => [labelKey(tag), tag])).values())
++        .slice(0, 2)
++        .map(escapeHtml);
++    const title = escapeHtml(piece.title);
++    const href = escapeHtml(piece.url);
++
++    if (compact) {
++        return `<a class="info-connection-card" data-carousel-item href="${href}">
++            <span>${labels.join(" · ")}</span>
++            <strong>${title}</strong>
++        </a>`;
++    }
++
++    const description = escapeHtml(summary);
++    return `<article class="writing-related-card" data-carousel-item>
++        <div class="writing-related-tags" aria-label="Writing types">${labels.map(label => `<span>${label}</span>`).join("")}</div>
++        <h3>${title}</h3>
++        <p class="writing-related-summary">${description}</p>
++        ${readingTime ? `<dl class="writing-related-meta"><div><dt>Reading Time</dt><dd>${escapeHtml(readingTime)}</dd></div></dl>` : ""}
++        <a class="writings-button writings-button-secondary writing-related-link" href="${href}" aria-label="Read ${title}">Read This Piece</a>
++    </article>`;
++}
++
++async function readPage(page, origin) {
++    const html = await readFile(page.file, "utf8");
++    const $ = load(html, { sourceCodeLocationInfo: true });
++    const section = $(SECTION).first();
++    const key = writingKey(page.piece.url, origin);
++    const picks = new Map();
++
++    section.find(".writing-related-card, .info-connection-card").each((_, element) => {
++        const card = $(element);
++        const href = card.attr("href") || card.find(".writing-related-link[href]").attr("href");
++        if (!href) return;
++
++        const target = writingKey(href, origin);
++        if (target !== key && !picks.has(target)) picks.set(target, card);
++    });
++
++    const tags = [...new Set(page.piece.tags.flatMap(tag => tag.split(/[|•]/).map(labelKey)))].filter(Boolean);
++    const groups = [page.piece.context, page.piece.project].map(labelKey).filter(Boolean);
++    return { ...page, html, $, section, key, picks, tags, groups };
++}
++
++export async function renderRelatedWritings(pages, origin) {
++    const documents = await Promise.all(pages.map(page => readPage(page, origin)));
++
++    for (const page of documents) {
++        const { $, html, file, picks } = page;
++        const extra = documents
++            .filter(candidate => candidate.key !== page.key && !picks.has(candidate.key))
++            .map(candidate => ({ candidate, score: relatedScore(page, candidate) }))
++            .sort((first, second) => second.score - first.score)
++            .slice(0, Math.max(0, MAX_RECOMMENDATIONS - picks.size));
++
++        if (!picks.size && !extra.length) continue;
++
++        const compact = page.section.parent().hasClass("info-connections-grid");
++        const section = page.section.length ? page.section : $(`<section class="writing-related" aria-labelledby="related-writing-title">
++            <div class="writing-related-heading"><h2 id="related-writing-title">Related Writing</h2></div>
++            <a class="writings-button writings-button-secondary writing-related-browse" href="/writings/">Browse All Writings</a>
++        </section>`);
++        const carousel = $(`<div class="carousel writing-related-carousel${compact ? " writing-related-carousel--compact" : ""}" data-carousel>
++            <button class="carousel-btn carousel-btn-prev" type="button" aria-label="Previous recommendation" aria-controls="related-writing-cards" hidden>‹</button>
++            <button class="carousel-btn carousel-btn-next" type="button" aria-label="Next recommendation" aria-controls="related-writing-cards" hidden>›</button>
++            <div class="carousel-track${compact ? "" : " writing-related-grid"}" id="related-writing-cards"
++                role="group" aria-label="Related writing recommendations" tabindex="0"></div>
++        </div>`);
++        const track = carousel.find(".carousel-track");
++
++        for (const card of picks.values()) {
++            track.append(card.clone().attr("data-carousel-item", ""));
++        }
++        for (const { candidate } of extra) {
++            track.append(recommendationCard(candidate, compact));
++        }
++
++        const grid = section.children(".writing-related-grid");
++        if (grid.length) {
++            grid.replaceWith(carousel);
++        } else {
++            section.children(".info-connection-card").remove();
++            section.children(".writing-related-heading, h3").first().after(carousel);
++        }
++
++        // Keep recommendations out of the source pages and preserve the rest of the built HTML.
++        const location = page.section[0]?.sourceCodeLocation;
++        if (location) {
++            const { startOffset, endOffset } = location;
++            await writeFile(file, html.slice(0, startOffset) + section.toString() + html.slice(endOffset), "utf8");
++        } else {
++            const container = $(".writing-piece-container, .info-detail-container, main").last()[0];
++            const end = container?.sourceCodeLocation?.endTag?.startOffset;
++            if (end !== undefined) {
++                await writeFile(file, html.slice(0, end) + section.toString() + "\n" + html.slice(end), "utf8");
++            }
++        }
++    }
++}
+diff --git a/writings/rip-rest-in-progress/index.html b/writings/rip-rest-in-progress/index.html
+index 7a947b4ff2433605b869a840bab2cc754ea915bd..7aae26d10bceede5c5e33ec9f99940b601c34342 100644
+--- a/writings/rip-rest-in-progress/index.html
++++ b/writings/rip-rest-in-progress/index.html
+@@ -173,7 +173,7 @@
+       "encoding": {
+         "@type": "MediaObject",
+         "name": "R.I.P. (Rest in Progress) PDF",
+-        "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/rip-rest-in-progress-aaron-schlossberg.pdf",
++        "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/RIP-rest-in-progress-aaron-schlossberg.pdf",
+         "encodingFormat": "application/pdf"
+       }
+     }
+@@ -206,7 +206,7 @@
+                 <p class="writing-piece-byline">By <a href="/about-me/" rel="author">Aaron L. Schlossberg</a></p>
+ 
+                 <div class="writing-piece-actions">
+-                    <a class="writings-button writings-button-secondary" href="/assets/files/writings/rip-rest-in-progress-aaron-schlossberg.pdf" download="RIP-rest-in-progress-aaron-schlossberg.pdf" type="application/pdf">
++                    <a class="writings-button writings-button-secondary" href="/assets/files/writings/RIP-rest-in-progress-aaron-schlossberg.pdf" download="RIP-rest-in-progress-aaron-schlossberg.pdf" type="application/pdf">
+                         Download PDF
+                     </a>
+                     <button
+@@ -358,7 +358,7 @@
+                 <h2 id="download-piece-title">Prefer the Original Page Layout?</h2>
+                 <p>The PDF preserves the original document layout.</p>
+                 <div class="writing-piece-actions">
+-                    <a class="writings-button writings-button-primary" href="/assets/files/writings/rip-rest-in-progress-aaron-schlossberg.pdf" download="RIP-rest-in-progress-aaron-schlossberg.pdf" type="application/pdf">
++                    <a class="writings-button writings-button-primary" href="/assets/files/writings/RIP-rest-in-progress-aaron-schlossberg.pdf" download="RIP-rest-in-progress-aaron-schlossberg.pdf" type="application/pdf">
+                         Download the PDF
+                     </a>
+                     <a class="writings-button writings-button-secondary" href="/writings/">
