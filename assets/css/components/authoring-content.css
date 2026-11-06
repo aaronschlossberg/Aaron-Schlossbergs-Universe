@@ -1,0 +1,39 @@
+.studio-prose pre {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 1.25rem 0;
+    padding: 0.95rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    background: var(--paper);
+}
+
+.studio-prose code {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.88em;
+}
+
+.studio-prose .studio-display-math {
+    overflow-x: auto;
+    margin: 1.4rem 0;
+    padding: 0.35rem 0;
+}
+
+.studio-general-page {
+    max-width: 65rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.studio-general-page header {
+    margin: 1.5rem auto 2rem;
+    text-align: center;
+}
+
+.studio-general-page .studio-prose {
+    max-width: 49rem;
+    margin-inline: auto;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}

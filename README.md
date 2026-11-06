@@ -128,7 +128,7 @@ publication dates, and video upload information. Edit those details in
 Google Analytics uses `googleAnalyticsId` in `config.json`. Remove that field or
 set it to an empty string to omit both Analytics scripts from all generated heads.
 
-The generator covers all 30 current site pages, including noindex pages.
+The generator covers every registered site page, including noindex pages.
 Shared HTML partials, build output, dependencies, and the Google verification
 HTML file are excluded. New content pages must have a matching `pages.json`
 entry. Existing noindex/canonical rules remain enforced, and every page must
@@ -136,6 +136,50 @@ render successfully before the generator starts writing files.
 
 This manages the document's `<head>`, which contains browser metadata and
 resources. The visible navigation/header remains in `_partials/header.html`.
+
+## Site Desk
+
+1. Open a terminal in the project folder. Run `node --version` to check for Node
+   20.18.1 or newer. Node 22 matches the Netlify build configuration.
+2. Run `npm ci`, then `npm run editor`. Open
+   [http://127.0.0.1:4175](http://127.0.0.1:4175). Leave that terminal running.
+3. Pick **Writing**, **Info Sprawling**, or **General page**. Fill in the title
+   and short description. **Page details** holds the URL slug and the fields
+   for the selected page type. For a **General page**, choose **Top level (/)** or
+   an existing registered **Parent page**. For example, selecting **Images**
+   and entering the slug `travel` creates `/images/travel/`. Reload the editor
+   to see newly registered parent pages.
+4. Compose in **Body**. The toolbar handles formatting and inserts. You can
+   use **⌘B**, **⌘I**, and **⌘U** on a Mac, with **Ctrl** on Windows or Linux.
+   Use **Image** or drop a JPG, PNG, WebP, or GIF into the editor, then add alt
+   text and an optional caption. **Footnote** accepts note text and an optional
+   source link. **Equation** takes LaTeX and previews it as you type.
+5. Click **Save draft** or press **⌘S** or **Ctrl+S**. Reopen it from **Your
+   pages**. **Preview** saves the current draft and opens a preview with
+   desktop and mobile widths. Drafts and their images are stored on this
+   computer under `.authoring/`.
+6. Click **Prepare for publish** when the page is ready. In another terminal
+   in the same folder, run `npm run build`. Review the generated page and the
+   Git diff, then commit the page’s changes and push to your Netlify branch.
+   After preparation, reopen the page in the desk to revise it. Its page type
+   and address are locked at that point.
+
+For a first practice run, make a short draft with a heading, an image with a
+caption, a footnote, and an equation like `x^2 + y^2 = r^2`. Save it, refresh
+the browser, reopen it, then check the footnote links in the mobile preview.
+
+**Prepare for publish** writes the editable JSON under `content/`, the
+public HTML and any images it uses, the metadata in `data/pages.json`, and
+the relevant listing and sitemap entries. Commit the editable JSON along with
+the generated files so you can reopen the page from another checkout.
+Writings also get a card on `/writings/`, and Info Sprawlings get a record in
+`data/info-sprawlings/` for their respective search indexes. For existing
+handwritten pages, continue editing their source files. The desk handles
+pages created through it.
+
+Run `npm run test:editor` to check the renderer and publishing workflow. Stop
+the editor with **Ctrl+C** in its terminal. Start it again with
+`npm run editor` whenever you want to write.
 
 ## Roadmap
 Development priorities, planned improvements, and possible future directions are tracked in [ROADMAP.md](ROADMAP.md).

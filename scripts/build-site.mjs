@@ -115,11 +115,14 @@ const SITE_FIELDS = [
 ];
 
 const EXCLUDED_ROOT_ENTRIES = new Set([
+    ".authoring",
     ".git",
     ".gitignore",
     ".github",
     ".vscode",
     "_site",
+    "authoring",
+    "content",
     "netlify.toml",
     "node_modules",
     "package-lock.json",

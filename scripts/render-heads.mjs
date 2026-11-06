@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK = process.argv.includes("--check");
 const IGNORE = new Set([".git", "_site", "node_modules", "__MACOSX", "_partials"]);
+const AUTHORING_ROOTS = new Set([".authoring", "authoring", "content"]);
 const EXEMPT = new Set(["google80eb4e64b20355ca.html"]);
 
 const [config, pages, template] = await Promise.all([
@@ -40,7 +41,8 @@ async function walk(directory = ROOT) {
     const files = [];
 
     for (const entry of await readdir(directory, { withFileTypes: true })) {
-        if (entry.isDirectory() && IGNORE.has(entry.name)) continue;
+        if (entry.isDirectory() && (IGNORE.has(entry.name)
+            || (directory === ROOT && AUTHORING_ROOTS.has(entry.name)))) continue;
 
         const full = path.join(directory, entry.name);
 

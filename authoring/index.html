@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Desk | Aaron Schlossberg’s Universe</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/core/fonts.css">
+    <link rel="stylesheet" href="/studio.css">
+    <script type="module" src="/studio.js"></script>
+</head>
+<body>
+    <header class="masthead">
+        <div class="brand">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <div>
+                <p class="eyebrow">Aaron Schlossberg’s Universe</p>
+                <h1>Site Desk</h1>
+            </div>
+        </div>
+        <span class="local-badge">Local editor</span>
+    </header>
+
+    <div class="workspace">
+        <aside class="library" aria-labelledby="library-title">
+            <div class="library-heading">
+                <h2 id="library-title">Your pages</h2>
+                <button id="new-draft" type="button" class="button button-small">+ New draft</button>
+            </div>
+            <p id="library-empty" class="muted">Saved drafts and prepared pages appear here.</p>
+            <ul id="documents" class="document-list"></ul>
+            <button id="delete-draft" type="button" class="button button-small draft-delete" hidden>Delete draft</button>
+        </aside>
+
+        <main class="work-area">
+            <div class="work-header">
+                <div>
+                    <p class="eyebrow" id="document-state">New draft</p>
+                    <p class="address" id="address">Your page address will appear here.</p>
+                </div>
+                <div class="actions">
+                    <button id="save-draft" class="button" type="button" title="Save draft (⌘S or Ctrl+S)">Save draft</button>
+                    <button id="preview-page" class="button" type="button">Preview</button>
+                    <button id="prepare-page" class="button button-primary" type="button">Prepare for publish</button>
+                </div>
+            </div>
+            <p class="status" id="status" role="status" aria-live="polite">Pick a page type and start writing.</p>
+
+            <section class="paper">
+                <form id="page-fields">
+                    <div class="fields-top">
+                        <label>
+                            Page type
+                            <select name="type">
+                                <option value="writing">Writing</option>
+                                <option value="info">Info Sprawling</option>
+                                <option value="page">General page</option>
+                            </select>
+                        </label>
+                        <label id="section-field" hidden>
+                            Parent page
+                            <select name="section">
+                                <option value="root">Top level (/)</option>
+                                <!-- parent-page-options -->
+                            </select>
+                        </label>
+                    </div>
+                    <label class="title-field">
+                        <span class="visually-hidden">Title</span>
+                        <input name="title" maxlength="180" placeholder="Your title">
+                    </label>
+                    <label class="subtitle-field">
+                        <span class="visually-hidden">Subtitle</span>
+                        <input name="subtitle" maxlength="240" placeholder="Add a subtitle (optional)">
+                    </label>
+                    <label class="description-field">
+                        Short description
+                        <textarea name="description" rows="2" maxlength="320" placeholder="A sentence for the page listing and search previews"></textarea>
+                    </label>
+                    <details class="page-settings" id="settings">
+                        <summary>Page details <span class="muted">Address, context, and tags</span></summary>
+                        <div class="field-grid">
+                            <label>
+                                URL slug
+                                <input name="slug" maxlength="80" placeholder="my-new-essay" spellcheck="false">
+                                <small class="muted">Lowercase letters, numbers, and hyphens.</small>
+                            </label>
+                            <label id="date-field">
+                                Publication date
+                                <input name="date" type="date">
+                                <small class="muted">Leave blank to use the day you prepare it.</small>
+                            </label>
+                            <label id="writing-type-field">
+                                Writing type
+                                <select name="writingType">
+                                    <option>Essay</option>
+                                    <option>Fiction</option>
+                                    <option>Nonfiction</option>
+                                    <option>Technical</option>
+                                    <option>Poetry</option>
+                                    <option>Script</option>
+                                    <option>Reflection</option>
+                                </select>
+                            </label>
+                            <label id="entity-field" hidden>
+                                Knowledge type
+                                <input name="entityType" maxlength="80" placeholder="Concept, software, person…">
+                            </label>
+                            <label id="tags-field">
+                                <span id="tags-label">Tags</span>
+                                <input name="tags" maxlength="450" placeholder="Separate each with a comma">
+                            </label>
+                            <label id="context-field" class="wide-field">
+                                Context
+                                <textarea name="context" rows="3" maxlength="4000" placeholder="Tell readers how this piece came to be"></textarea>
+                            </label>
+                            <label id="aliases-field" hidden>
+                                Aliases
+                                <input name="aliases" maxlength="450" placeholder="Separate each with a comma">
+                            </label>
+                            <label id="terms-field" hidden>
+                                Related terms
+                                <input name="relatedTerms" maxlength="450" placeholder="Separate each with a comma">
+                            </label>
+                            <label id="related-field" class="wide-field" hidden>
+                                Related links
+                                <textarea name="relatedLinks" rows="3" maxlength="2500" placeholder="Blender | /projects/info-sprawlings/blender/"></textarea>
+                                <small class="muted">One per line, with a label and URL separated by |.</small>
+                            </label>
+                        </div>
+                    </details>
+                </form>
+
+                <section class="composition" aria-labelledby="composition-title">
+                    <div class="composition-heading">
+                        <h2 id="composition-title">Body</h2>
+                        <span id="word-count" class="muted">0 words</span>
+                    </div>
+                    <div class="toolbar" id="toolbar" role="group" aria-label="Text formatting">
+                        <div class="tool-group">
+                            <button type="button" data-command="bold" title="Bold (⌘B or Ctrl+B)" aria-label="Bold" aria-pressed="false"><b>B</b></button>
+                            <button type="button" data-command="italic" title="Italic (⌘I or Ctrl+I)" aria-label="Italic" aria-pressed="false"><i>I</i></button>
+                            <button type="button" data-command="underline" title="Underline (⌘U or Ctrl+U)" aria-label="Underline" aria-pressed="false"><u>U</u></button>
+                            <button type="button" data-command="strike" aria-label="Strikethrough" title="Strikethrough" aria-pressed="false"><s>S</s></button>
+                            <button type="button" data-command="subscript" aria-label="Subscript" title="Subscript" aria-pressed="false">x₂</button>
+                            <button type="button" data-command="superscript" aria-label="Superscript" title="Superscript" aria-pressed="false">x²</button>
+                        </div>
+                        <div class="tool-group">
+                            <label class="visually-hidden" for="block-style">Paragraph style</label>
+                            <select id="block-style">
+                                <option value="paragraph">Paragraph</option>
+                                <option value="2">Heading 2</option>
+                                <option value="3">Heading 3</option>
+                                <option value="4">Heading 4</option>
+                            </select>
+                            <button class="tool-symbol" type="button" data-command="bulletList" aria-label="Bulleted list" title="Bulleted list" aria-pressed="false"><span class="tool-glyph" aria-hidden="true">•</span></button>
+                            <button class="tool-symbol" type="button" data-command="orderedList" aria-label="Numbered list" title="Numbered list" aria-pressed="false"><span aria-hidden="true">1.</span></button>
+                            <button class="tool-symbol" type="button" data-command="blockquote" aria-label="Block quote" title="Block quote" aria-pressed="false"><span class="tool-glyph" aria-hidden="true">“</span></button>
+                            <button class="tool-symbol" type="button" data-command="codeBlock" aria-label="Code block" title="Code block" aria-pressed="false"><code aria-hidden="true">&lt;/&gt;</code></button>
+                            <button class="tool-symbol" type="button" data-command="divider" aria-label="Divider" title="Divider"><span aria-hidden="true">—</span></button>
+                        </div>
+                        <div class="tool-group">
+                            <button class="tool-symbol" type="button" data-insert="link" aria-label="Insert link" title="Insert link"><u aria-hidden="true">Link</u></button>
+                            <button class="tool-symbol" type="button" data-insert="image" aria-label="Insert image" title="Insert image">
+                                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2.5" y="3.5" width="15" height="13" rx="2"/>
+                                    <circle cx="7" cy="7.5" r="1.25"/>
+                                    <path d="m3 14 4-4 3 3 3.5-4 3.5 4"/>
+                                </svg>
+                            </button>
+                            <button class="tool-symbol" type="button" data-insert="footnote" aria-label="Insert footnote" title="Insert footnote"><span aria-hidden="true">[1]</span></button>
+                            <button class="tool-symbol" type="button" data-insert="equation" aria-label="Insert equation" title="Insert equation"><span aria-hidden="true">E=mc²</span></button>
+                        </div>
+                        <div class="tool-group">
+                            <button class="tool-symbol" type="button" data-command="undo" aria-label="Undo" title="Undo"><span class="tool-glyph" aria-hidden="true">↶</span></button>
+                            <button class="tool-symbol" type="button" data-command="redo" aria-label="Redo" title="Redo"><span class="tool-glyph" aria-hidden="true">↷</span></button>
+                        </div>
+                    </div>
+                    <div id="editor"></div>
+                    <p class="editor-hint muted">Double-click an image, equation, or footnote to edit it. Use Shift+Enter for a line break.</p>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <dialog class="insert-dialog" id="insert-dialog" aria-labelledby="insert-title">
+        <form id="insert-form">
+            <h2 id="insert-title">Insert</h2>
+            <div class="insert-fields" data-fields="link" hidden>
+                <label>URL <input name="href" maxlength="2000" placeholder="https://example.com or /about-me/"></label>
+            </div>
+            <div class="insert-fields" data-fields="image" hidden>
+                <label>Image file <input name="file" type="file" accept="image/jpeg,image/png,image/webp,image/gif"></label>
+                <p class="muted" id="chosen-file"></p>
+                <label>Alt text <input name="alt" maxlength="300" placeholder="Describe what the image shows"></label>
+                <label>Caption <textarea name="caption" maxlength="800" rows="2" placeholder="Optional visible caption"></textarea></label>
+            </div>
+            <div class="insert-fields" data-fields="footnote" hidden>
+                <label>Note <textarea name="note" maxlength="3000" rows="4" placeholder="Write the footnote here"></textarea></label>
+                <label>Source URL <input name="source" maxlength="2000" placeholder="Optional link to the source"></label>
+            </div>
+            <div class="insert-fields" data-fields="equation" hidden>
+                <label>LaTeX <textarea name="latex" maxlength="2000" rows="3" placeholder="e.g. x^2 + y^2 = r^2"></textarea></label>
+                <label class="check-field"><input name="display" type="checkbox"> Display on its own line</label>
+                <div id="equation-example" class="equation-example" aria-label="Equation preview"></div>
+            </div>
+            <p id="insert-error" class="status" data-tone="error" role="status"></p>
+            <div class="dialog-actions">
+                <button type="button" class="button remove-insert" id="remove-insert" hidden>Remove</button>
+                <button type="button" class="button" id="cancel-insert">Cancel</button>
+                <button type="submit" class="button button-primary" id="submit-insert">Insert</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-title">
+        <div class="preview-tools">
+            <h2 id="preview-title">Page preview</h2>
+            <div class="actions">
+                <button type="button" class="button button-small" data-preview-size="desktop" aria-pressed="true">Desktop</button>
+                <button type="button" class="button button-small" data-preview-size="mobile" aria-pressed="false">Mobile</button>
+                <button type="button" class="button button-small" id="close-preview">Close</button>
+            </div>
+        </div>
+        <iframe id="preview-frame" title="Preview of your page" sandbox="allow-same-origin"></iframe>
+    </dialog>
+</body>
+</html>

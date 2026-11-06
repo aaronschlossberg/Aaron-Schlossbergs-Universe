@@ -12,6 +12,7 @@ const IGNORE_DIRS = new Set([
     "node_modules",
     "__MACOSX"
 ]);
+const AUTHORING_ROOTS = new Set([".authoring", "authoring", "content"]);
 
 const GENERATED_JSON = new Set([
     "assets/data/writings-search-index.json",
@@ -107,7 +108,8 @@ async function walk(dir) {
     ) {
         if (
             entry.isDirectory() &&
-            IGNORE_DIRS.has(entry.name)
+            (IGNORE_DIRS.has(entry.name) ||
+                (dir === ROOT && AUTHORING_ROOTS.has(entry.name)))
         ) {
             continue;
         }
