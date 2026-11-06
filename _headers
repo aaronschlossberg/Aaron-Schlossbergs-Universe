@@ -3,3 +3,6 @@
 
 /robots.txt
   Content-Type: text/plain
+
+/site.webmanifest
+  Content-Type: application/manifest+json
