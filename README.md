@@ -145,8 +145,8 @@ resources. The visible navigation/header remains in `_partials/header.html`.
    [http://127.0.0.1:4175](http://127.0.0.1:4175). Leave that terminal running.
 3. Pick **Writing**, **Info Sprawling**, or **General page**. Fill in the title
    and short description. **Page details** holds the URL slug and the fields
-   for the selected page type. For a **General page**, choose **Top level (/)** or
-   an existing registered **Parent page**. For example, selecting **Images**
+   for the selected page type. For a **General page**, search **Parent page** by
+   title or path, then choose a match or **Top level (/)**. Selecting **Images**
    and entering the slug `travel` creates `/images/travel/`. Reload the editor
    to see newly registered parent pages.
 4. Compose in **Body**. The toolbar handles formatting and inserts. You can

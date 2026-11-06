@@ -4,9 +4,11 @@ import { EditorState } from "@tiptap/pm/state";
 import {
     IMAGE_LIMIT, TYPES, editorExtensions, emptyBody, mathHtml, routeFor, safeHref, sectionPath, slugify
 } from "./editor-schema.mjs";
+import { createParentPicker } from "./parent-picker.js";
 
 const byId = id => document.getElementById(id);
 const fields = byId("page-fields").elements;
+const parentPicker = createParentPicker(byId("section-field"));
 const insertFields = byId("insert-form").elements;
 const insertDialog = byId("insert-dialog");
 const previewDialog = byId("preview-dialog");
@@ -107,7 +109,7 @@ function updateWordCount(instance) {
 function updatePageDetails() {
     const type = fields.type.value;
     const isInfo = type === "info";
-    byId("section-field").hidden = type !== "page";
+    parentPicker.update(type === "page", Boolean(active.route));
     byId("date-field").hidden = type === "page";
     byId("writing-type-field").hidden = type !== "writing";
     byId("context-field").hidden = type !== "writing";
@@ -217,6 +219,7 @@ function allowSwitch() {
 }
 
 byId("page-fields").addEventListener("input", event => {
+    if (!event.target.name) return;
     if (event.target === fields.slug) slugEdited = Boolean(fields.slug.value);
     if (event.target === fields.title && !slugEdited && !active.route) fields.slug.value = slugify(fields.title.value);
     if (event.target === fields.type && fields.type.value === "info") byId("settings").open = true;

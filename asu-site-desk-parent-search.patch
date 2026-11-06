@@ -1,0 +1,264 @@
+diff --git a/README.md b/README.md
+index f6808bb..f9ab87c 100644
+--- a/README.md
++++ b/README.md
+@@ -145,8 +145,8 @@ resources. The visible navigation/header remains in `_partials/header.html`.
+    [http://127.0.0.1:4175](http://127.0.0.1:4175). Leave that terminal running.
+ 3. Pick **Writing**, **Info Sprawling**, or **General page**. Fill in the title
+    and short description. **Page details** holds the URL slug and the fields
+-   for the selected page type. For a **General page**, choose **Top level (/)** or
+-   an existing registered **Parent page**. For example, selecting **Images**
++   for the selected page type. For a **General page**, search **Parent page** by
++   title or path, then choose a match or **Top level (/)**. Selecting **Images**
+    and entering the slug `travel` creates `/images/travel/`. Reload the editor
+    to see newly registered parent pages.
+ 4. Compose in **Body**. The toolbar handles formatting and inserts. You can
+diff --git a/authoring/app.js b/authoring/app.js
+index e3a9439..3c4a0cd 100644
+--- a/authoring/app.js
++++ b/authoring/app.js
+@@ -4,9 +4,11 @@ import { EditorState } from "@tiptap/pm/state";
+ import {
+     IMAGE_LIMIT, TYPES, editorExtensions, emptyBody, mathHtml, routeFor, safeHref, sectionPath, slugify
+ } from "./editor-schema.mjs";
++import { createParentPicker } from "./parent-picker.js";
+ 
+ const byId = id => document.getElementById(id);
+ const fields = byId("page-fields").elements;
++const parentPicker = createParentPicker(byId("section-field"));
+ const insertFields = byId("insert-form").elements;
+ const insertDialog = byId("insert-dialog");
+ const previewDialog = byId("preview-dialog");
+@@ -107,7 +109,7 @@ function updateWordCount(instance) {
+ function updatePageDetails() {
+     const type = fields.type.value;
+     const isInfo = type === "info";
+-    byId("section-field").hidden = type !== "page";
++    parentPicker.update(type === "page", Boolean(active.route));
+     byId("date-field").hidden = type === "page";
+     byId("writing-type-field").hidden = type !== "writing";
+     byId("context-field").hidden = type !== "writing";
+@@ -217,6 +219,7 @@ function allowSwitch() {
+ }
+ 
+ byId("page-fields").addEventListener("input", event => {
++    if (!event.target.name) return;
+     if (event.target === fields.slug) slugEdited = Boolean(fields.slug.value);
+     if (event.target === fields.title && !slugEdited && !active.route) fields.slug.value = slugify(fields.title.value);
+     if (event.target === fields.type && fields.type.value === "info") byId("settings").open = true;
+diff --git a/authoring/index.html b/authoring/index.html
+index 7b06141..05a59f9 100644
+--- a/authoring/index.html
++++ b/authoring/index.html
+@@ -57,13 +57,27 @@
+                                 <option value="page">General page</option>
+                             </select>
+                         </label>
+-                        <label id="section-field" hidden>
+-                            Parent page
+-                            <select name="section">
++                        <div id="section-field" class="parent-picker" hidden>
++                            <label for="parent-search">Parent page</label>
++                            <div class="parent-search-control">
++                                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
++                                    stroke-linecap="round" aria-hidden="true" focusable="false">
++                                    <circle cx="8.5" cy="8.5" r="5"/>
++                                    <path d="m12 12 4 4"/>
++                                </svg>
++                                <input id="parent-search" type="text" role="combobox"
++                                    aria-autocomplete="list" aria-expanded="false" aria-controls="parent-results"
++                                    autocomplete="off" spellcheck="false" placeholder="Search by title or path">
++                                <div class="parent-popup" hidden>
++                                    <ul id="parent-results" role="listbox" aria-label="Parent pages"></ul>
++                                    <p class="parent-empty muted" role="status" hidden>No matching pages.</p>
++                                </div>
++                            </div>
++                            <select name="section" hidden>
+                                 <option value="root">Top level (/)</option>
+                                 <!-- parent-page-options -->
+                             </select>
+-                        </label>
++                        </div>
+                     </div>
+                     <label class="title-field">
+                         <span class="visually-hidden">Title</span>
+diff --git a/authoring/parent-picker.js b/authoring/parent-picker.js
+new file mode 100644
+index 0000000..f1e2d9d
+--- /dev/null
++++ b/authoring/parent-picker.js
+@@ -0,0 +1,114 @@
++export function createParentPicker(field) {
++    const select = field.querySelector("select");
++    const search = field.querySelector("#parent-search");
++    const popup = field.querySelector(".parent-popup");
++    const results = field.querySelector("#parent-results");
++    const empty = field.querySelector(".parent-empty");
++    let activeIndex = -1;
++
++    function highlight(index) {
++        activeIndex = index;
++        const active = results.children[index];
++        for (const option of results.children) {
++            option.setAttribute("aria-selected", String(option === active));
++        }
++        if (active) {
++            search.setAttribute("aria-activedescendant", active.id);
++            active.scrollIntoView({ block: "nearest" });
++        } else {
++            search.removeAttribute("aria-activedescendant");
++        }
++    }
++
++    function showResults() {
++        const terms = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
++        const matches = [...select.options].filter(option => {
++            const label = option.text.toLowerCase();
++            return !option.disabled && terms.every(term => label.includes(term));
++        });
++        results.replaceChildren(...matches.map((option, index) => {
++            const item = document.createElement("li");
++            item.id = `parent-result-${index}`;
++            item.dataset.section = option.value;
++            item.setAttribute("role", "option");
++            item.textContent = option.text;
++            return item;
++        }));
++        popup.hidden = false;
++        results.hidden = matches.length === 0;
++        empty.hidden = matches.length > 0;
++        search.setAttribute("aria-expanded", String(matches.length > 0));
++        highlight(terms.length && matches.length ? 0 : matches.findIndex(option => option.value === select.value));
++    }
++
++    function open() {
++        search.value = "";
++        showResults();
++    }
++
++    function close() {
++        popup.hidden = true;
++        search.setAttribute("aria-expanded", "false");
++        search.removeAttribute("aria-activedescendant");
++        search.value = select.selectedOptions[0]?.text ?? "";
++        activeIndex = -1;
++    }
++
++    function choose(option) {
++        const value = option.dataset.section;
++        const changed = select.value !== value;
++        select.value = value;
++        close();
++        search.select();
++        if (changed) select.dispatchEvent(new Event("input", { bubbles: true }));
++    }
++
++    search.addEventListener("focus", open);
++    search.addEventListener("click", () => {
++        if (popup.hidden) open();
++    });
++    search.addEventListener("input", showResults);
++    search.addEventListener("blur", close);
++
++    search.addEventListener("keydown", event => {
++        if (event.isComposing || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
++        const { key } = event;
++        if (key === "ArrowDown" || key === "ArrowUp") {
++            event.preventDefault();
++            const forward = key === "ArrowDown";
++            if (popup.hidden) open();
++            const count = results.children.length;
++            if (count === 0) return;
++            if (activeIndex === -1) {
++                highlight(forward ? 0 : count - 1);
++            } else {
++                const next = activeIndex + (forward ? 1 : -1);
++                highlight(Math.max(0, Math.min(next, count - 1)));
++            }
++        } else if (key === "Enter" && !popup.hidden && activeIndex !== -1) {
++            event.preventDefault();
++            choose(results.children[activeIndex]);
++        } else if (key === "Escape" && !popup.hidden) {
++            event.preventDefault();
++            close();
++            search.select();
++        }
++    });
++
++    // Keep focus in the search field until the clicked option has been chosen.
++    results.addEventListener("mousedown", event => {
++        if (event.target.closest("[role=option]")) event.preventDefault();
++    });
++    results.addEventListener("click", event => {
++        const option = event.target.closest("[role=option]");
++        if (option) choose(option);
++    });
++
++    return {
++        update(visible, locked) {
++            field.hidden = !visible;
++            search.disabled = locked;
++            if (!visible || locked || popup.hidden) close();
++        }
++    };
++}
+diff --git a/authoring/studio.css b/authoring/studio.css
+index 1a3b62e..e09e953 100644
+--- a/authoring/studio.css
++++ b/authoring/studio.css
+@@ -167,6 +167,55 @@ input:not([type="checkbox"]), select, textarea {
+ }
+ input:disabled, select:disabled { background: var(--ground); opacity: 0.8; }
+ .fields-top select { width: auto; max-width: 100%; }
++.parent-picker {
++    display: flex;
++    flex: 1 1 19rem;
++    flex-wrap: wrap;
++    align-items: center;
++    gap: 0.5rem;
++    min-width: 0;
++    max-width: 31rem;
++}
++.parent-search-control { position: relative; flex: 1 1 14rem; min-width: 0; }
++.parent-search-control > svg {
++    position: absolute;
++    top: 50%;
++    left: 0.65rem;
++    width: 1rem;
++    height: 1rem;
++    color: var(--muted);
++    transform: translateY(-50%);
++    pointer-events: none;
++}
++#parent-search { padding-left: 2rem; }
++.parent-popup {
++    position: absolute;
++    z-index: 2;
++    inset: calc(100% + 0.3rem) 0 auto;
++    border: 1px solid var(--edge);
++    border-radius: 0.45rem;
++    background: var(--paper);
++    box-shadow: 0 8px 25px rgb(70 39 45 / 12%);
++}
++#parent-results {
++    max-height: min(15rem, 45vh);
++    overflow-y: auto;
++    margin: 0;
++    padding: 0.25rem;
++    list-style: none;
++}
++#parent-results li {
++    padding: 0.4rem 0.55rem;
++    border-radius: 0.3rem;
++    font-size: 0.83rem;
++    overflow-wrap: anywhere;
++    cursor: pointer;
++}
++#parent-results li[aria-selected="true"], #parent-results li:hover {
++    color: var(--accent-dark);
++    background: var(--wash);
++}
++.parent-empty { padding: 0.55rem 0.65rem; font-size: 0.83rem; }
+ textarea { resize: vertical; }
+ .title-field input, .subtitle-field input { padding-inline: 0.15rem; border-color: transparent; background: transparent; }
+ .title-field input { margin-top: 0.65rem; font: 700 clamp(1.75rem, 4.7vw, 2.8rem) / 1.2 var(--serif); }
