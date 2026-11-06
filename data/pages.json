@@ -887,6 +887,17 @@
         "breadcrumbLabel": "Sitemap",
         "schemaType": "CollectionPage"
     },
+    "/404.html": {
+        "title": "404 Page Not Found | Aaron Schlossberg’s Universe",
+        "description": "This page could not be found. Return to the homepage or browse the sitemap to find your way around Aaron Schlossberg’s Universe.",
+        "breadcrumbLabel": "Page not found",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "breadcrumbs": false,
+        "extraStyles": [
+            "/assets/css/pages/not-found.css"
+        ]
+    },
     "/gone/": {
         "title": "410 Gone | Aaron Schlossberg’s Universe",
         "description": "This page has been permanently removed from Aaron Schlossberg’s Universe.",
