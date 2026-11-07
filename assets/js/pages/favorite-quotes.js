@@ -2,6 +2,7 @@
     "use strict";
 
     const DATA_URL = "/assets/data/favorite-quotes.json";
+    let appendFormattedText;
 
     const ITALIC_SOURCE_TYPES = new Set([
         "book",
@@ -107,11 +108,9 @@
     ].filter(Boolean).join(" "));
 
     const appendQuotedText = (container, text) => {
-        container.append(
-            element("span", "favorite-quote-card__mark", "“"),
-            element("span", "italic-text", text),
-            element("span", "favorite-quote-card__mark", "”")
-        );
+        container.append(element("span", "favorite-quote-card__mark typography-quote", "“"));
+        appendFormattedText(container, text, { className: "italic-text" });
+        container.append(element("span", "favorite-quote-card__mark typography-quote", "”"));
     };
 
     const isExternalUrl = (url) => {
@@ -133,26 +132,7 @@
     ) => {
         if (!text) return;
 
-        const node = element(
-            url ? "a" : "span",
-            className,
-            text
-        );
-
-        if (url) {
-            node.href = url;
-
-            /*
-            * ASU links stay in the current tab.
-            * Outside websites open in a new tab.
-            */
-            if (isExternalUrl(url)) {
-                node.target = "_blank";
-                node.rel = "noopener noreferrer";
-            }
-        }
-
-        container.append(node);
+        appendFormattedText(container, text, { url, className, external: isExternalUrl(url) });
     };
 
     const appendDivider = (container) => {
@@ -361,7 +341,7 @@
                 );
 
                 const speaker = element(
-                    "strong",
+                    "span",
                     "favorite-quote-card__speaker"
                 );
 
@@ -980,12 +960,15 @@
         elements.empty.querySelector("button").hidden = true;
     };
 
-    fetch(DATA_URL)
+    const collection = fetch(DATA_URL)
         .then((response) => {
             if (!response.ok) throw new Error(`Quote data returned ${response.status}`);
             return response.json();
-        })
-        .then((data) => {
+        });
+
+    Promise.all([collection, import("/assets/js/quote-punctuation.mjs")])
+        .then(([data, typography]) => {
+            appendFormattedText = typography.appendFormattedText;
             state.data = data;
             readStateFromUrl();
             populateControls();

@@ -1,4 +1,6 @@
 .DS_Store
+/*.patch
+/*.diff
 node_modules/
 _site/
 /.authoring/

@@ -246,16 +246,6 @@ blockquote {
     margin-left: 20px;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 1em 0;
-    background-color: #292020;
-    color: white;
-    text-align: center;
-}
-
 /* Homepage profile picture */
 .image-container .home-profile-image {
     width: 160px;

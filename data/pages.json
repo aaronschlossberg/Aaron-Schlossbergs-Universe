@@ -21,6 +21,677 @@
             "lastName": "Schlossberg"
         }
     },
+    "/compendium/": {
+        "title": "Compendium | Aaron Schlossberg’s Universe",
+        "description": "Browse Aaron Schlossberg’s glossary of terms and ideas, from multipotentialite and liminal space to the Backrooms, Boots Theory, and more.",
+        "breadcrumbLabel": "Compendium",
+        "schemaType": "CollectionPage",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ]
+    },
+    "/compendium/anemoia/": {
+        "title": "Anemoia | Aaron Schlossberg’s Universe",
+        "description": "Nostalgia for a time you never lived through.",
+        "breadcrumbLabel": "Anemoia",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/astley-paradox/": {
+        "title": "The Astley Paradox | Aaron Schlossberg’s Universe",
+        "description": "An internet joke about asking Rick Astley for the film Up and treating either possible answer as a broken promise from his best-known song.",
+        "breadcrumbLabel": "The Astley Paradox",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/backrooms/": {
+        "title": "The Backrooms | Aaron Schlossberg’s Universe",
+        "description": "A fictional maze of seemingly endless rooms and corridors, often entered by slipping out of ordinary reality.",
+        "breadcrumbLabel": "The Backrooms",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/writings/backrooms-and-liminal-spaces-original-introduction/original-backrooms-image.jpeg",
+            "type": "image/jpeg",
+            "width": 602,
+            "height": 452,
+            "alt": "The original photograph of yellow rooms, beige carpet, and fluorescent lights associated with the Backrooms."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/boots-theory/": {
+        "title": "Boots Theory | Aaron Schlossberg’s Universe",
+        "description": "Sam Vimes’s idea that people with less money upfront can end up paying more over time because they can only afford goods that need frequent replacement.",
+        "breadcrumbLabel": "Boots Theory",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/byway/": {
+        "title": "Byway | Aaron Schlossberg’s Universe",
+        "description": "A smaller or less-traveled road, often away from a main route.",
+        "breadcrumbLabel": "Byway",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/byway.webp",
+            "type": "image/webp",
+            "width": 1100,
+            "height": 720,
+            "alt": "Connecticut Route 169 at dusk, shown in an archival road photograph."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/cognitive-bias/": {
+        "title": "Cognitive Bias | Aaron Schlossberg’s Universe",
+        "description": "A systematic tendency in thinking or judgment that can affect how people interpret information and make decisions.",
+        "breadcrumbLabel": "Cognitive Bias",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/cognitive-dissonance/": {
+        "title": "Cognitive Dissonance | Aaron Schlossberg’s Universe",
+        "description": "Psychological discomfort associated with holding conflicting beliefs or with acting in a way that conflicts with one’s beliefs.",
+        "breadcrumbLabel": "Cognitive Dissonance",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/cognitive-economy/": {
+        "title": "Cognitive Economy | Aaron Schlossberg’s Universe",
+        "description": "The use of mental categories or shortcuts to gain useful information while conserving limited attention and effort.",
+        "breadcrumbLabel": "Cognitive Economy",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/collective-unconscious/": {
+        "title": "Collective Unconscious | Aaron Schlossberg’s Universe",
+        "description": "Carl Jung’s proposed shared layer of the unconscious, containing inherited patterns he called archetypes.",
+        "breadcrumbLabel": "Collective Unconscious",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/compendium/": {
+        "title": "Compendium | Aaron Schlossberg’s Universe",
+        "description": "A concise collection of information about a subject or a range of subjects.",
+        "breadcrumbLabel": "Compendium",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/creepypasta/": {
+        "title": "Creepypasta | Aaron Schlossberg’s Universe",
+        "description": "A horror story that spreads online through copying, reposting, or retelling.",
+        "breadcrumbLabel": "Creepypasta",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/css/": {
+        "title": "CSS | Aaron Schlossberg’s Universe",
+        "description": "Cascading Style Sheets, the language used to control the presentation and layout of web content.",
+        "breadcrumbLabel": "CSS",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/deltarune/": {
+        "title": "Deltarune | Aaron Schlossberg’s Universe",
+        "description": "A role-playing game by Toby Fox that follows a group of characters through mysterious worlds, combining exploration, dialogue, and patterned battles.",
+        "breadcrumbLabel": "Deltarune",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/deltarune.webp",
+            "type": "image/webp",
+            "width": 960,
+            "height": 780,
+            "alt": "Kris, Susie, and Ralsei silhouetted in front of a fountain in Deltarune key art."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/disney/": {
+        "title": "Disney | Aaron Schlossberg’s Universe",
+        "description": "The entertainment company and brand associated with animation, films, characters, and themed destinations such as Disneyland and Walt Disney World.",
+        "breadcrumbLabel": "Disney",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/disney-world.webp",
+            "type": "image/webp",
+            "width": 720,
+            "height": 900,
+            "alt": "Cinderella Castle at Magic Kingdom in Walt Disney World, Florida."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/disney-world/": {
+        "title": "Disney World | Aaron Schlossberg’s Universe",
+        "description": "Walt Disney World Resort, the Disney resort near Orlando, Florida, with four theme parks and a wider collection of hotels and experiences.",
+        "breadcrumbLabel": "Disney World",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/disney-world.webp",
+            "type": "image/webp",
+            "width": 720,
+            "height": 900,
+            "alt": "Cinderella Castle at Magic Kingdom in Walt Disney World, Florida."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/disneyland/": {
+        "title": "Disneyland (California) | Aaron Schlossberg’s Universe",
+        "description": "Disney’s original theme park in Anaheim, California, which opened in 1955.",
+        "breadcrumbLabel": "Disneyland (California)",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/disneyland.webp",
+            "type": "image/webp",
+            "width": 1046,
+            "height": 900,
+            "alt": "Sleeping Beauty Castle at Disneyland in Anaheim, California."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/emoji/": {
+        "title": "Emoji | Aaron Schlossberg’s Universe",
+        "description": "A pictorial symbol used in digital text to express an idea, object, reaction, or emotion.",
+        "breadcrumbLabel": "Emoji",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/emoticon/": {
+        "title": "Emoticon | Aaron Schlossberg’s Universe",
+        "description": "An expression made from text characters, such as :-) or :-(, to suggest a face or convey a feeling.",
+        "breadcrumbLabel": "Emoticon",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/enshittification/": {
+        "title": "Enshittification | Aaron Schlossberg’s Universe",
+        "description": "Cory Doctorow’s term for the deterioration of a platform as its operators shift benefits away from users and partners toward extracting more value for themselves.",
+        "breadcrumbLabel": "Enshittification",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/expository-writing/": {
+        "title": "Expository Writing | Aaron Schlossberg’s Universe",
+        "description": "Writing that explains, informs, or clarifies a subject through organized information and examples.",
+        "breadcrumbLabel": "Expository Writing",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/felix-felicis/": {
+        "title": "Felix Felicis | Aaron Schlossberg’s Universe",
+        "description": "The luck-enhancing potion in Harry Potter, also known as Liquid Luck.",
+        "breadcrumbLabel": "Felix Felicis",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/forlornness/": {
+        "title": "Forlornness | Aaron Schlossberg’s Universe",
+        "description": "A feeling or appearance of loneliness, abandonment, or hopeless sadness.",
+        "breadcrumbLabel": "Forlornness",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/found-footage/": {
+        "title": "Found Footage | Aaron Schlossberg’s Universe",
+        "description": "A storytelling technique that presents a film as recordings recovered from within the story.",
+        "breadcrumbLabel": "Found Footage",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/03-kane-pixels-found-footage.png",
+            "type": "image/png",
+            "width": 480,
+            "height": 360,
+            "alt": "A Lifeform in a yellow room in Kane Pixels’s The Backrooms (Found Footage)."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/the-game/": {
+        "title": "The Game | Aaron Schlossberg’s Universe",
+        "description": "A mind game whose goal is to avoid thinking about the Game. Thinking about it counts as a loss, which players commonly announce.",
+        "breadcrumbLabel": "The Game",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/gift-economy/": {
+        "title": "Gift Economy | Aaron Schlossberg’s Universe",
+        "description": "A system in which goods or services circulate through giving and social relationships, often with expectations of reciprocity.",
+        "breadcrumbLabel": "Gift Economy",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/gordian-knot/": {
+        "title": "Gordian Knot | Aaron Schlossberg’s Universe",
+        "description": "An exceptionally difficult or tangled problem, named for the ancient story of Alexander the Great and an intricate knot.",
+        "breadcrumbLabel": "Gordian Knot",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/gordian-knot.webp",
+            "type": "image/webp",
+            "width": 1100,
+            "height": 860,
+            "alt": "A painting of Alexander the Great cutting the Gordian knot."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/halloweekend/": {
+        "title": "Halloweekend | Aaron Schlossberg’s Universe",
+        "description": "An informal name for a weekend of Halloween celebrations.",
+        "breadcrumbLabel": "Halloweekend",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/html/": {
+        "title": "HTML | Aaron Schlossberg’s Universe",
+        "description": "HyperText Markup Language, the language used to give web content its structure and meaning.",
+        "breadcrumbLabel": "HTML",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/javascript/": {
+        "title": "JavaScript | Aaron Schlossberg’s Universe",
+        "description": "A programming language widely used to add behavior and interactivity to websites.",
+        "breadcrumbLabel": "JavaScript",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/kane-parsons/": {
+        "title": "Kane Parsons | Aaron Schlossberg’s Universe",
+        "description": "A filmmaker and visual-effects artist, known online as Kane Pixels, whose Backrooms videos turn familiar spaces into unsettling fictional environments.",
+        "breadcrumbLabel": "Kane Parsons",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/aaron-and-kane-parsons.webp",
+            "type": "image/webp",
+            "width": 750,
+            "height": 1000,
+            "alt": "Aaron Schlossberg and Kane Parsons together at a Backrooms event."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/kenopsia/": {
+        "title": "Kenopsia | Aaron Schlossberg’s Universe",
+        "description": "The eerie feeling of being somewhere that’s usually busy when everyone is gone.",
+        "breadcrumbLabel": "Kenopsia",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/01-liminal-space-example.webp",
+            "type": "image/webp",
+            "width": 568,
+            "height": 370,
+            "alt": "An empty indoor shopping corridor with closed storefronts and fluorescent lighting."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/level-0/": {
+        "title": "Level 0 | Aaron Schlossberg’s Universe",
+        "description": "The familiar yellow-room setting that serves as the first area in many versions of the Backrooms. It is often called “The Lobby.”",
+        "breadcrumbLabel": "Level 0",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/writings/backrooms-and-liminal-spaces-original-introduction/original-backrooms-image.jpeg",
+            "type": "image/jpeg",
+            "width": 602,
+            "height": 452,
+            "alt": "The yellow rooms that inspired the familiar appearance of Level 0."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/liminal-space/": {
+        "title": "Liminal Space | Aaron Schlossberg’s Universe",
+        "description": "A place or state in between. In online photography and art, it often means a familiar place that feels strangely removed from its usual purpose.",
+        "breadcrumbLabel": "Liminal Space",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/01-liminal-space-example.webp",
+            "type": "image/webp",
+            "width": 568,
+            "height": 370,
+            "alt": "An empty indoor shopping corridor with closed storefronts and fluorescent lighting."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/luminary/": {
+        "title": "Luminary | Aaron Schlossberg’s Universe",
+        "description": "A person distinguished for their influence or achievements in a field. The word can also mean a source of light.",
+        "breadcrumbLabel": "Luminary",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/marvins-friend/": {
+        "title": "Marvin’s Friend | Aaron Schlossberg’s Universe",
+        "description": "The Lifeform encountered by Marvin Leigh in Kane Pixels’s Backrooms - Pitfalls, later jokingly called “Marvin’s Friend” in the series.",
+        "breadcrumbLabel": "Marvin’s Friend",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/pitfalls-lifeform-hallway.webp",
+            "type": "image/webp",
+            "width": 960,
+            "height": 720,
+            "alt": "A dim corridor from Marvin’s Lifeform encounter in Backrooms - Pitfalls."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/metanostalgia/": {
+        "title": "Metanostalgia | Aaron Schlossberg’s Universe",
+        "description": "Nostalgia for nostalgia itself, or longing for the way an experience once made you feel.",
+        "breadcrumbLabel": "Metanostalgia",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/multipotentialite/": {
+        "title": "Multipotentialite | Aaron Schlossberg’s Universe",
+        "description": "Someone who pursues several interests or creative paths, sometimes bringing them together in the same work.",
+        "breadcrumbLabel": "Multipotentialite",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/noclip/": {
+        "title": "Noclip | Aaron Schlossberg’s Universe",
+        "description": "To pass through walls or floors that would normally block a player in a game. In Backrooms stories, it means slipping out of ordinary reality.",
+        "breadcrumbLabel": "Noclip",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/nostalgia/": {
+        "title": "Nostalgia | Aaron Schlossberg’s Universe",
+        "description": "A wistful, often bittersweet longing for the past.",
+        "breadcrumbLabel": "Nostalgia",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/numinous/": {
+        "title": "Numinous | Aaron Schlossberg’s Universe",
+        "description": "Evoking a sense of sacred or mysterious presence, often with awe.",
+        "breadcrumbLabel": "Numinous",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/op-original-poster/": {
+        "title": "OP (Original Poster) | Aaron Schlossberg’s Universe",
+        "description": "The person who started an online post or discussion thread.",
+        "breadcrumbLabel": "OP (Original Poster)",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/op-overpowered/": {
+        "title": "OP (Overpowered) | Aaron Schlossberg’s Universe",
+        "description": "A description of a character, ability, item, or strategy whose power is unusually high compared with the challenge or its alternatives.",
+        "breadcrumbLabel": "OP (Overpowered)",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/philanthropy/": {
+        "title": "Philanthropy | Aaron Schlossberg’s Universe",
+        "description": "Efforts to promote other people’s well-being or the public good, often through giving money, time, expertise, or other resources.",
+        "breadcrumbLabel": "Philanthropy",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/pokedex/": {
+        "title": "Pokédex | Aaron Schlossberg’s Universe",
+        "description": "An encyclopedia within Pokémon games that records information about the Pokémon a Trainer encounters or catches.",
+        "breadcrumbLabel": "Pokédex",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/pokedex-rotom.webp",
+            "type": "image/webp",
+            "width": 547,
+            "height": 307,
+            "alt": "Official artwork of the red Rotom Phone shown in three orientations."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/pokemon/": {
+        "title": "Pokémon | Aaron Schlossberg’s Universe",
+        "description": "A franchise about discovering, befriending, training, and battling creatures called Pokémon, spanning video games, cards, animation, and more.",
+        "breadcrumbLabel": "Pokémon",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/pokemon-pikachu.webp",
+            "type": "image/webp",
+            "width": 475,
+            "height": 475,
+            "alt": "Official artwork of Pikachu, a yellow Pokémon with long ears and a lightning-shaped tail."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/question-and-answer-site/": {
+        "title": "Question-and-Answer Site | Aaron Schlossberg’s Universe",
+        "description": "A website organized around people asking questions and receiving answers from other users.",
+        "breadcrumbLabel": "Question-and-Answer Site",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/Mayvene_brain_logo.png",
+            "type": "image/png",
+            "width": 755,
+            "height": 680,
+            "alt": "The brain-shaped logo of Mayvene, Aaron Schlossberg’s question-and-answer project."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/reality-distortion-field/": {
+        "title": "Reality Distortion Field | Aaron Schlossberg’s Universe",
+        "description": "A phrase associated with Steve Jobs for persuasive confidence that can reshape how other people judge what is possible.",
+        "breadcrumbLabel": "Reality Distortion Field",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/sb-129/": {
+        "title": "SB-129 | Aaron Schlossberg’s Universe",
+        "description": "A SpongeBob SquarePants episode in which Squidward’s attempts to find peace take him through time and into a strangely empty space.",
+        "breadcrumbLabel": "SB-129",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/sb-129.webp",
+            "type": "image/webp",
+            "width": 1438,
+            "height": 1080,
+            "alt": "The SB-129 episode title card from SpongeBob SquarePants."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/sectumsempra/": {
+        "title": "Sectumsempra | Aaron Schlossberg’s Universe",
+        "description": "A harmful spell in Harry Potter that causes severe cuts to its target.",
+        "breadcrumbLabel": "Sectumsempra",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/specious/": {
+        "title": "Specious | Aaron Schlossberg’s Universe",
+        "description": "Superficially plausible, but actually wrong.",
+        "breadcrumbLabel": "Specious",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/spoonerism/": {
+        "title": "Spoonerism | Aaron Schlossberg’s Universe",
+        "description": "A mix-up in which the opening sounds of two words exchange places, often producing a humorous phrase.",
+        "breadcrumbLabel": "Spoonerism",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/static-front-end-website/": {
+        "title": "Static Front-End Website | Aaron Schlossberg’s Universe",
+        "description": "A website whose pages are delivered as prepared files, with HTML, CSS, JavaScript, and other assets handling what visitors see and use.",
+        "breadcrumbLabel": "Static Front-End Website",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/technical-writing/": {
+        "title": "Technical Writing | Aaron Schlossberg’s Universe",
+        "description": "Writing that helps a particular audience understand a technical subject or complete a technical task.",
+        "breadcrumbLabel": "Technical Writing",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/projects/fiction2reality/backrooms-blender-1280.webp",
+            "type": "image/webp",
+            "width": 1280,
+            "height": 720,
+            "alt": "A yellow Backrooms environment shown inside Blender."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/toby-fox/": {
+        "title": "Toby Fox | Aaron Schlossberg’s Universe",
+        "description": "A game creator and composer best known for Undertale and Deltarune.",
+        "breadcrumbLabel": "Toby Fox",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/torii/": {
+        "title": "Torii | Aaron Schlossberg’s Universe",
+        "description": "A traditional Japanese gate that marks an entrance or boundary associated with a Shinto shrine.",
+        "breadcrumbLabel": "Torii",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/torii.webp",
+            "type": "image/webp",
+            "width": 982,
+            "height": 578,
+            "alt": "The red torii gate of Itsukushima Shrine standing in the tidal waterfront."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/undertale/": {
+        "title": "Undertale | Aaron Schlossberg’s Universe",
+        "description": "A role-playing game by Toby Fox in which a human explores an underground world of monsters, with choices about fighting and showing mercy.",
+        "breadcrumbLabel": "Undertale",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/compendium/undertale.webp",
+            "type": "image/webp",
+            "width": 640,
+            "height": 480,
+            "alt": "A human character lying among flowers at the beginning of Undertale."
+        },
+        "generatedBy": "compendium"
+    },
+    "/compendium/worldbuilding/": {
+        "title": "Worldbuilding | Aaron Schlossberg’s Universe",
+        "description": "Creating a fictional setting and the details that make it feel like a place of its own, such as its geography, history, culture, or rules.",
+        "breadcrumbLabel": "Worldbuilding",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
+    "/compendium/xp-exp/": {
+        "title": "XP/EXP | Aaron Schlossberg’s Universe",
+        "description": "Common abbreviations for experience points, a game resource used to measure progress and often advance a character’s level or abilities.",
+        "breadcrumbLabel": "XP/EXP",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "generatedBy": "compendium"
+    },
     "/contact/": {
         "title": "Contact Aaron L. Schlossberg | Aaron Schlossberg’s Universe",
         "description": "Contact Aaron L. Schlossberg about web development, writing, creative projects, collaborations, opportunities, and other work.",
@@ -473,6 +1144,350 @@
             }
         ]
     },
+    "/writings/rip-rest-in-progress/": {
+        "title": "R.I.P. (Rest in Progress) by Aaron L. Schlossberg",
+        "description": "Rita and Ace visit a graveyard after dark and find headstones with dates that leave too much unsaid. R.I.P. (Rest in Progress) is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "R.I.P. (Rest in Progress)",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/#story",
+                "url": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/",
+                "name": "R.I.P. (Rest in Progress)",
+                "headline": "R.I.P. (Rest in Progress)",
+                "description": "Rita and Ace visit a graveyard after dark and find headstones with dates that leave too much unsaid.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Supernatural horror"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Supernatural horror"
+                ],
+                "wordCount": 981,
+                "timeRequired": "PT5M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/rip-rest-in-progress/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "R.I.P. (Rest in Progress) PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/RIP-rest-in-progress-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/1080-rewires/": {
+        "title": "1080 Rewires by Aaron L. Schlossberg",
+        "description": "A repair order sends 1080 and Sal into a maze of yellow corridors where the route back won’t stay put. 1080 Rewires is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "1080 Rewires",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/1080-rewires/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/1080-rewires/#story",
+                "url": "https://www.aaronschlossberg.com/writings/1080-rewires/",
+                "name": "1080 Rewires",
+                "headline": "1080 Rewires",
+                "description": "A repair order sends 1080 and Sal into a maze of yellow corridors where the route back won’t stay put.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Speculative horror"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Speculative horror"
+                ],
+                "wordCount": 723,
+                "timeRequired": "PT4M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/1080-rewires/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "1080 Rewires PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/1080-rewires-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                },
+                "image": "https://www.aaronschlossberg.com/assets/img/writings/1080-rewires/1080-rewires-complex.png"
+            }
+        ],
+        "twitterCard": "summary",
+        "image": {
+            "url": "https://www.aaronschlossberg.com/assets/img/writings/1080-rewires/1080-rewires-complex.png",
+            "width": 480,
+            "height": 360,
+            "alt": "Two figures in yellow protective suits walk through fluorescent-lit yellow rooms beside a red line on the carpet."
+        }
+    },
+    "/writings/elegant-eats/": {
+        "title": "Elegant Eats by Aaron L. Schlossberg",
+        "description": "Two figures in hyena masks storm a restaurant, bringing Cynthia face-to-face with a promise made ten years ago. Elegant Eats is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "Elegant Eats",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/elegant-eats/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/elegant-eats/#story",
+                "url": "https://www.aaronschlossberg.com/writings/elegant-eats/",
+                "name": "Elegant Eats",
+                "headline": "Elegant Eats",
+                "description": "Two figures in hyena masks storm a restaurant, bringing Cynthia face-to-face with a promise made ten years ago.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Suspense"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Suspense"
+                ],
+                "wordCount": 1020,
+                "timeRequired": "PT6M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/elegant-eats/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "Elegant Eats PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/elegant-eats-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/autumn/": {
+        "title": "Autumn by Aaron L. Schlossberg",
+        "description": "The fall of a single leaf looks different to the leaf, the squirrel beneath it, and the forest around them. Autumn is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "Autumn",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/autumn/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/autumn/#story",
+                "url": "https://www.aaronschlossberg.com/writings/autumn/",
+                "name": "Autumn",
+                "headline": "Autumn",
+                "description": "The fall of a single leaf looks different to the leaf, the squirrel beneath it, and the forest around them.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Literary fiction"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Literary fiction"
+                ],
+                "wordCount": 522,
+                "timeRequired": "PT3M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/autumn/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "Autumn PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/autumn-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/the-equation-of-quiet/": {
+        "title": "The Equation of Quiet by Aaron L. Schlossberg",
+        "description": "A figure in Lucas’s dreams tells him he owes the world a share of his voice, then leaves him to work out how much. The Equation of Quiet is a short story by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "The Equation of Quiet",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/#story",
+                "url": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/",
+                "name": "The Equation of Quiet",
+                "headline": "The Equation of Quiet",
+                "description": "A figure in Lucas’s dreams tells him he owes the world a share of his voice, then leaves him to work out how much.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Short story",
+                    "Speculative fiction"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Speculative fiction"
+                ],
+                "wordCount": 1297,
+                "timeRequired": "PT7M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/the-equation-of-quiet/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "The Equation of Quiet PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/the-equation-of-quiet-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/no-one-else-was-in-the-dream-where-it-happened/": {
+        "title": "No One Else Was in The Dream Where it Happened by Aaron L. Schlossberg",
+        "description": "Juniper starts keeping notes on his dreams when their doors, mirrors, and familiar faces begin to cross over. No One Else Was in The Dream Where it Happened is a flash fiction by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "No One Else Was in The Dream Where it Happened",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/#story",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "ShortStory",
+                "@id": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/#story",
+                "url": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/",
+                "name": "No One Else Was in The Dream Where it Happened",
+                "headline": "No One Else Was in The Dream Where it Happened",
+                "description": "Juniper starts keeping notes on his dreams when their doors, mirrors, and familiar faces begin to cross over.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Flash fiction",
+                    "Surreal fiction"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Surreal fiction"
+                ],
+                "wordCount": 644,
+                "timeRequired": "PT4M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "No One Else Was in The Dream Where it Happened PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/no-one-else-was-in-the-dream-where-it-happened-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
+    "/writings/where-im-from/": {
+        "title": "Where I’m From by Aaron L. Schlossberg",
+        "description": "A fictional speaker traces where they come from through small objects, remembered sounds, and the things they almost said. Where I’m From is a persona poem by Aaron L. Schlossberg.",
+        "breadcrumbLabel": "Where I’m From",
+        "ogType": "article",
+        "mainEntityId": "https://www.aaronschlossberg.com/writings/where-im-from/#poem",
+        "article": {},
+        "extraScripts": [
+            "/assets/js/pages/writing-piece.js"
+        ],
+        "schemaNodes": [
+            {
+                "@type": "CreativeWork",
+                "@id": "https://www.aaronschlossberg.com/writings/where-im-from/#poem",
+                "url": "https://www.aaronschlossberg.com/writings/where-im-from/",
+                "name": "Where I’m From",
+                "headline": "Where I’m From",
+                "description": "A fictional speaker traces where they come from through small objects, remembered sounds, and the things they almost said.",
+                "inLanguage": "en-US",
+                "genre": [
+                    "Persona poem",
+                    "Persona poetry"
+                ],
+                "keywords": [
+                    "Fiction Writing",
+                    "Muhlenberg College",
+                    "Persona poetry"
+                ],
+                "wordCount": 434,
+                "timeRequired": "PT3M",
+                "author": {
+                    "@id": "https://www.aaronschlossberg.com/#person"
+                },
+                "isPartOf": {
+                    "@id": "https://www.aaronschlossberg.com/writings/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.aaronschlossberg.com/writings/where-im-from/#webpage"
+                },
+                "encoding": {
+                    "@type": "MediaObject",
+                    "name": "Where I’m From PDF",
+                    "contentUrl": "https://www.aaronschlossberg.com/assets/files/writings/where-im-from-aaron-schlossberg.pdf",
+                    "encodingFormat": "application/pdf"
+                }
+            }
+        ]
+    },
     "/writings/backrooms-and-liminal-spaces-introduction/": {
         "title": "The Backrooms and Liminal Spaces: Introduction | Aaron Schlossberg’s Universe",
         "description": "Explore what liminal spaces are, how the Backrooms began and evolved, and why these familiar yet unsettling environments resonate so strongly.",
@@ -542,6 +1557,17 @@
         "description": "Browse a human-friendly map of Aaron Schlossberg’s Universe, organized by projects, writings, education, images, personal information, and utilities.",
         "breadcrumbLabel": "Sitemap",
         "schemaType": "CollectionPage"
+    },
+    "/404.html": {
+        "title": "404 Page Not Found | Aaron Schlossberg’s Universe",
+        "description": "This page could not be found. Return to the homepage or browse the sitemap to find your way around Aaron Schlossberg’s Universe.",
+        "breadcrumbLabel": "Page not found",
+        "robots": "noindex, follow",
+        "canonical": false,
+        "breadcrumbs": false,
+        "extraStyles": [
+            "/assets/css/pages/not-found.css"
+        ]
     },
     "/gone/": {
         "title": "410 Gone | Aaron Schlossberg’s Universe",

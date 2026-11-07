@@ -31,6 +31,7 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
   - **[Just This Once](https://www.aaronschlossberg.com/writings/just-this-once/)** | `/writings/just-this-once/`
 - **[Resume](https://www.aaronschlossberg.com/resume/)** | `/resume/`
 - **[Contact](https://www.aaronschlossberg.com/contact/)** | `/contact/`
+- **[Compendium](https://www.aaronschlossberg.com/compendium/)** | `/compendium/`
 - **[Images](https://www.aaronschlossberg.com/images/)** | `/images/`
   - **[Pictures of Me](https://www.aaronschlossberg.com/images/pictures-of-me/)** | `/images/pictures-of-me/`
 - **[Sitemap](https://www.aaronschlossberg.com/site-map/)** | `/site-map/`
@@ -79,8 +80,10 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
 - `npm run heads`: Rebuilds the entire `<head>` of every managed source page from the central configuration and template.
 - `npm run check:heads`: Checks that every source head matches the generated version without changing files. Exits with an error if any head is out of date.
 - `npm run test:heads`: Runs the head-generator regression tests in temporary fixtures.
+- `npm run compendium` generates the Compendium, its entry pages, metadata, and sitemap links, then refreshes page heads.
+- `npm run test:compendium` checks Compendium generation and protects manually maintained pages.
 - `npm run validate`: Runs the website validator and reports structural, content, asset, and linking problems.
-- `npm run build`: Runs head generation first, prepares fonts and images, validates and generates `_site`, and bundles/minifies its CSS.
+- `npm run build` generates the Compendium and page heads, prepares fonts and images, validates and generates `_site`, and bundles/minifies its CSS.
 
 ### Managing the entire HTML head
 
@@ -137,6 +140,27 @@ render successfully before the generator starts writing files.
 This manages the document's `<head>`, which contains browser metadata and
 resources. The visible navigation/header remains in `_partials/header.html`.
 
+## Editing the Compendium
+
+Edit `data/compendium.json` to change definitions, tags, context, examples, and
+references. Each record generates a short list entry and a page at
+`/compendium/<slug>/`. Keep a published slug stable so its links keep working.
+The `related` array contains the slugs of other Compendium entries.
+
+Use an entry’s `links` array for phrases that should link within its definition,
+context, examples, or image caption. Each item has `text` and `href` fields.
+`cite: true` italicizes a work title, `quote: true` adds curly quotation marks,
+and `caseSensitive: true` distinguishes titles such as `Up` from ordinary words.
+The generator escapes the remaining text and links the longest matching phrase.
+
+An optional `image` object supplies a local asset path, alternative text, pixel
+dimensions, caption, credit, and license link when applicable. Images large
+enough for a sharing preview also supply the page’s Open Graph image.
+
+Run `npm run compendium` to refresh the source pages for a local preview.
+`npm run build` also runs this step. Generated entry HTML and metadata are
+rebuilt from the data file. New tags appear in the filters automatically.
+
 ## Site Desk
 
 1. Open a terminal in the project folder. Run `node --version` to check for Node
@@ -145,8 +169,8 @@ resources. The visible navigation/header remains in `_partials/header.html`.
    [http://127.0.0.1:4175](http://127.0.0.1:4175). Leave that terminal running.
 3. Pick **Writing**, **Info Sprawling**, or **General page**. Fill in the title
    and short description. **Page details** holds the URL slug and the fields
-   for the selected page type. For a **General page**, choose **Top level (/)** or
-   an existing registered **Parent page**. For example, selecting **Images**
+   for the selected page type. For a **General page**, search **Parent page** by
+   title or path, then choose a match or **Top level (/)**. Selecting **Images**
    and entering the slug `travel` creates `/images/travel/`. Reload the editor
    to see newly registered parent pages.
 4. Compose in **Body**. The toolbar handles formatting and inserts. You can

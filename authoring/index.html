@@ -57,13 +57,27 @@
                                 <option value="page">General page</option>
                             </select>
                         </label>
-                        <label id="section-field" hidden>
-                            Parent page
-                            <select name="section">
+                        <div id="section-field" class="parent-picker" hidden>
+                            <label for="parent-search">Parent page</label>
+                            <div class="parent-search-control">
+                                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" aria-hidden="true" focusable="false">
+                                    <circle cx="8.5" cy="8.5" r="5"/>
+                                    <path d="m12 12 4 4"/>
+                                </svg>
+                                <input id="parent-search" type="text" role="combobox"
+                                    aria-autocomplete="list" aria-expanded="false" aria-controls="parent-results"
+                                    autocomplete="off" spellcheck="false" placeholder="Search by title or path">
+                                <div class="parent-popup" hidden>
+                                    <ul id="parent-results" role="listbox" aria-label="Parent pages"></ul>
+                                    <p class="parent-empty muted" role="status" hidden>No matching pages.</p>
+                                </div>
+                            </div>
+                            <select name="section" hidden>
                                 <option value="root">Top level (/)</option>
                                 <!-- parent-page-options -->
                             </select>
-                        </label>
+                        </div>
                     </div>
                     <label class="title-field">
                         <span class="visually-hidden">Title</span>

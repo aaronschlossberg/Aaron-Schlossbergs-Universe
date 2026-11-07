@@ -1,5 +1,6 @@
 import { getSchema } from "@tiptap/core";
 import { renderToHTMLString } from "@tiptap/static-renderer/pm/html-string";
+import { normalizeHtmlTypography, normalizeSlashSpacing } from "../scripts/site-typography.mjs";
 import {
     DOCUMENT_ID, IMAGE_FILE, RESERVED_ROOT, SLUG, TYPES, WRITING_TYPES,
     editorExtensions, isPagePath, mathHtml, routeFor, safeHref, sectionPath, sectionValue
@@ -29,7 +30,7 @@ function field(value, label, max) {
     if (typeof value !== "string" || value.length > max) {
         throw new StudioError(`${label} must be ${max} characters or fewer.`);
     }
-    return value.trim();
+    return normalizeSlashSpacing(value.trim());
 }
 
 function dateField(value) {
@@ -198,7 +199,7 @@ export function renderBody(body, { preview = false } = {}) {
                 }).join("\n")}
             </ol>
         </section>` : "";
-    return { html: html + footnotes, images: [...images] };
+    return { html: normalizeHtmlTypography(html + footnotes), images: [...images] };
 }
 
 function breadcrumbs(document, pages) {
@@ -317,7 +318,7 @@ export function renderPage(document, { config, pages = {}, preview = false, head
     <link rel="stylesheet" href="${CONTENT_CSS}">` : "";
     return {
         images,
-        html: `<!DOCTYPE html>
+        html: normalizeHtmlTypography(`<!DOCTYPE html>
 <html lang="${escape(config.language)}">
 <head>${head}
 </head>
@@ -329,7 +330,7 @@ export function renderPage(document, { config, pages = {}, preview = false, head
     ${preview ? footer : '<div id="footer-placeholder"></div>'}
 </body>
 </html>
-`
+`)
     };
 }
 

@@ -1,5 +1,46 @@
 /* === Reusable Utility Classes === */
 
+/* Quotation marks stay outside links and emphasis, including in headings. */
+.typography-quote {
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Preserve the visual card and its full hit area with one accessible link. */
+.typography-link-group {
+    position: relative;
+}
+
+.typography-link-target,
+.typography-link-target:hover {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}
+
+.typography-link-target::after {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    content: "";
+}
+
+.typography-link-group .typography-quote {
+    position: relative;
+    z-index: 2;
+    cursor: text;
+}
+
+.typography-link-group:focus-within {
+    outline: 3px solid var(--accent-light);
+    outline-offset: 3px;
+}
+
+.typography-link-target:focus-visible {
+    outline: none;
+}
+
 /* Visual text sizing only; no semantic meaning. */
 .text-small {
     font-size: var(--text-size-small);

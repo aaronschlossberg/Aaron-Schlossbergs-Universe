@@ -113,6 +113,10 @@
     cursor: not-allowed;
 }
 
+.carousel-btn[hidden] {
+    display: none;
+}
+
 .carousel-btn-prev {
     left: -14px;
 }

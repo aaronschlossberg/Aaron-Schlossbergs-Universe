@@ -167,6 +167,55 @@ input:not([type="checkbox"]), select, textarea {
 }
 input:disabled, select:disabled { background: var(--ground); opacity: 0.8; }
 .fields-top select { width: auto; max-width: 100%; }
+.parent-picker {
+    display: flex;
+    flex: 1 1 19rem;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    max-width: 31rem;
+}
+.parent-search-control { position: relative; flex: 1 1 14rem; min-width: 0; }
+.parent-search-control > svg {
+    position: absolute;
+    top: 50%;
+    left: 0.65rem;
+    width: 1rem;
+    height: 1rem;
+    color: var(--muted);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+#parent-search { padding-left: 2rem; }
+.parent-popup {
+    position: absolute;
+    z-index: 2;
+    inset: calc(100% + 0.3rem) 0 auto;
+    border: 1px solid var(--edge);
+    border-radius: 0.45rem;
+    background: var(--paper);
+    box-shadow: 0 8px 25px rgb(70 39 45 / 12%);
+}
+#parent-results {
+    max-height: min(15rem, 45vh);
+    overflow-y: auto;
+    margin: 0;
+    padding: 0.25rem;
+    list-style: none;
+}
+#parent-results li {
+    padding: 0.4rem 0.55rem;
+    border-radius: 0.3rem;
+    font-size: 0.83rem;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
+#parent-results li[aria-selected="true"], #parent-results li:hover {
+    color: var(--accent-dark);
+    background: var(--wash);
+}
+.parent-empty { padding: 0.55rem 0.65rem; font-size: 0.83rem; }
 textarea { resize: vertical; }
 .title-field input, .subtitle-field input { padding-inline: 0.15rem; border-color: transparent; background: transparent; }
 .title-field input { margin-top: 0.65rem; font: 700 clamp(1.75rem, 4.7vw, 2.8rem) / 1.2 var(--serif); }

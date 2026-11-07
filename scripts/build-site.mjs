@@ -9,6 +9,7 @@ import {
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { load } from "cheerio";
+import { renderRelatedWritings } from "./render-related-writings.mjs";
 
 const SCRIPT_DIRECTORY = path.dirname(
     fileURLToPath(import.meta.url)
@@ -127,6 +128,7 @@ const EXCLUDED_ROOT_ENTRIES = new Set([
     "node_modules",
     "package-lock.json",
     "package.json",
+    "AGENTS.md",
     "README.md",
     "scripts"
 ]);
@@ -357,7 +359,8 @@ async function copyStaticSite() {
             EXCLUDED_ROOT_ENTRIES.has(
                 entry.name
             ) ||
-            entry.name === ".DS_Store"
+            entry.name === ".DS_Store" ||
+            (entry.isFile() && /\.(?:patch|diff)$/i.test(entry.name))
         ) {
             continue;
         }
@@ -463,6 +466,11 @@ async function renderOutputPartials() {
         )
     };
 
+    partials["footer-placeholder"] = partials["footer-placeholder"].replace(
+        /<span id="current-year">[^<]*<\/span>/,
+        `<span id="current-year">${new Date().getFullYear()}</span>`
+    );
+
     const htmlFiles = await htmlFilesIn(OUTPUT_ROOT);
 
     for (const filename of htmlFiles) {
@@ -507,6 +515,7 @@ async function buildWritingsIndex() {
     }
 
     const pieces = [];
+    const relatedPages = [];
     const seenIds = new Set();
     const seenUrls = new Set();
 
@@ -668,7 +677,7 @@ async function buildWritingsIndex() {
             );
         }
 
-        pieces.push({
+        const piece = {
             id,
             url,
             title,
@@ -742,6 +751,13 @@ async function buildWritingsIndex() {
             ),
 
             body
+        };
+
+        pieces.push(piece);
+        relatedPages.push({
+            piece,
+            file: path.join(OUTPUT_ROOT, path.relative(SITE_ROOT, pageFile)),
+            summary: pageDeck || cardSummary
         });
     }
 
@@ -770,6 +786,7 @@ async function buildWritingsIndex() {
         pieces
     };
 
+    await renderRelatedWritings(relatedPages, SITE_ORIGIN);
     await writeGeneratedIndex(
         "writings-search-index.json",
         index

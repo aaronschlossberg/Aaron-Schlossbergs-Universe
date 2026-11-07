@@ -115,15 +115,43 @@
     </url>
     <url>
           <loc>https://www.aaronschlossberg.com/writings/</loc>
-          <lastmod>2026-09-20</lastmod>
+          <lastmod>2026-11-05</lastmod>
     </url>
     <url>
           <loc>https://www.aaronschlossberg.com/writings/1080-paths-of-least-resistance/</loc>
-          <lastmod>2026-09-20</lastmod>
+          <lastmod>2026-11-05</lastmod>
     </url>
     <url>
         <loc>https://www.aaronschlossberg.com/writings/just-this-once/</loc>
-        <lastmod>2026-09-20</lastmod>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/rip-rest-in-progress/</loc>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/1080-rewires/</loc>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/elegant-eats/</loc>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/autumn/</loc>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/the-equation-of-quiet/</loc>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/no-one-else-was-in-the-dream-where-it-happened/</loc>
+        <lastmod>2026-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/writings/where-im-from/</loc>
+        <lastmod>2026-11-05</lastmod>
     </url>
     <url>
         <loc>https://www.aaronschlossberg.com/writings/backrooms-and-liminal-spaces-introduction/</loc>
@@ -170,12 +198,76 @@
           <lastmod>2026-06-22</lastmod>
     </url> -->
     <url>
+        <loc>https://www.aaronschlossberg.com/compendium/</loc>
+        <lastmod>2026-11-06</lastmod>
+    </url>
+    <!-- Compendium sitemap: start -->
+    <url><loc>https://www.aaronschlossberg.com/compendium/anemoia/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/astley-paradox/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/backrooms/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/boots-theory/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/byway/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/cognitive-bias/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/cognitive-dissonance/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/cognitive-economy/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/collective-unconscious/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/compendium/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/creepypasta/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/css/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/deltarune/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/disney/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/disney-world/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/disneyland/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/emoji/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/emoticon/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/enshittification/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/expository-writing/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/felix-felicis/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/forlornness/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/found-footage/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/the-game/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/gift-economy/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/gordian-knot/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/halloweekend/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/html/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/javascript/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/kane-parsons/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/kenopsia/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/level-0/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/liminal-space/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/luminary/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/marvins-friend/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/metanostalgia/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/multipotentialite/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/noclip/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/nostalgia/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/numinous/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/op-original-poster/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/op-overpowered/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/philanthropy/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/pokedex/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/pokemon/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/question-and-answer-site/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/reality-distortion-field/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/sb-129/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/sectumsempra/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/specious/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/spoonerism/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/static-front-end-website/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/technical-writing/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/toby-fox/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/torii/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/undertale/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/worldbuilding/</loc></url>
+    <url><loc>https://www.aaronschlossberg.com/compendium/xp-exp/</loc></url>
+    <!-- Compendium sitemap: end -->
+    <url>
         <loc>https://www.aaronschlossberg.com/favorite-quotes/</loc>
         <lastmod>2026-09-21</lastmod>
     </url>
     <url>
           <loc>https://www.aaronschlossberg.com/site-map/</loc>
-          <lastmod>2026-09-20</lastmod>
+          <lastmod>2026-11-05</lastmod>
     </url>
     <!-- Authoring sitemap: start -->
     <!-- Authoring sitemap: end -->

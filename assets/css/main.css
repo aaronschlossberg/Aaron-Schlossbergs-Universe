@@ -8,11 +8,14 @@
 
 /* Reusable interface components */
 @import url("components/components.css");
+@import url("components/header.css");
+@import url("components/footer.css");
 @import url("components/highlights.css");
 @import url("components/breadcrumbs.css");
 
 /* Page-specific styling */
 @import url("pages/about-me.css");
+@import url("pages/compendium.css");
 @import url("pages/contact.css");
 @import url("pages/education.css");
 @import url("pages/images.css");

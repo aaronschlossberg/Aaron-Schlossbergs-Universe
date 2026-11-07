@@ -1,0 +1,95 @@
+/* 404 page */
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+}
+
+.not-found-main {
+    display: grid;
+    align-items: center;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 48rem;
+    padding: clamp(1rem, 5vw, 3rem) clamp(1rem, 4vw, 1.5rem);
+}
+
+.not-found-panel {
+    margin: 0;
+    padding: clamp(1.75rem, 5vw, 3.25rem) clamp(1rem, 5vw, 3rem);
+    border: 1px solid var(--line);
+    background: radial-gradient(ellipse at top, var(--paper), var(--card) 70%);
+    color: var(--ink);
+    text-align: center;
+}
+
+.not-found-panel h1 {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    line-height: 1.15;
+}
+
+.not-found-code {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--accent);
+    font-size: clamp(3.75rem, 12vw, 7rem);
+    line-height: 1;
+}
+
+.not-found-panel p {
+    max-width: 42ch;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.not-found-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65rem 0.85rem;
+    margin-block: 1.5rem 1rem;
+}
+
+.not-found-panel .cta-button,
+.not-found-sitemap {
+    margin: 0;
+    padding: 0.7rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.not-found-sitemap {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--accent-dark);
+}
+
+.not-found-sitemap:hover {
+    background: var(--paper);
+}
+
+.not-found-report {
+    font-size: 0.9rem;
+}
+
+.not-found-report a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.not-found-panel a:focus-visible {
+    outline: 2px solid var(--accent-dark);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .not-found-panel .cta-button {
+        transition: none;
+        transform: none;
+    }
+}

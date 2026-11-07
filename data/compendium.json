@@ -1,0 +1,2953 @@
+[
+    {
+        "slug": "anemoia",
+        "term": "Anemoia",
+        "definition": "Nostalgia for a time you never lived through.",
+        "tags": [
+            "Emotions",
+            "Liminal Spaces",
+            "Vocabulary"
+        ],
+        "context": [
+            "John Koenig coined anemoia for The Dictionary of Obscure Sorrows. The feeling can come from encountering traces of another era, such as home movies, old radio recordings, or photographs of a neighborhood before it changed.",
+            "In my liminal spaces essay, I use the word for the sense of longing a familiar-looking scene can evoke even when the scene belongs to someone else’s past."
+        ],
+        "examples": [
+            "“Watching footage of a mall in the 1980s, I felt a wave of anemoia for a place I’d only seen on video.”"
+        ],
+        "references": [
+            {
+                "label": "John Koenig’s Anemoia video",
+                "href": "https://www.youtube.com/watch?v=wH6ZCIRjI14"
+            },
+            {
+                "label": "Anemoia in my liminal spaces essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#why-do-liminal-spaces-feel-so-strange"
+            }
+        ],
+        "related": [
+            "kenopsia",
+            "liminal-space"
+        ],
+        "links": [
+            {
+                "text": "Anemoia",
+                "href": "/compendium/anemoia/"
+            },
+            {
+                "text": "Nostalgia",
+                "href": "/compendium/nostalgia/"
+            },
+            {
+                "text": "liminal spaces",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "John Koenig",
+                "href": "https://www.simonandschuster.com/authors/John-Koenig/2110731535"
+            },
+            {
+                "text": "The Dictionary of Obscure Sorrows",
+                "href": "https://www.simonandschuster.com/books/The-Dictionary-of-Obscure-Sorrows/John-Koenig/9781501153648",
+                "cite": true
+            }
+        ]
+    },
+    {
+        "slug": "backrooms",
+        "term": "The Backrooms",
+        "definition": "A fictional maze of seemingly endless rooms and corridors, often entered by slipping out of ordinary reality.",
+        "tags": [
+            "Backrooms",
+            "Horror",
+            "Internet Folklore",
+            "Liminal Spaces"
+        ],
+        "context": [
+            "The Backrooms began as a 2019 internet horror post paired with a photograph of empty yellow rooms. It imagines a place with yellow wallpaper, old carpet, and fluorescent lights that never stop humming. Someone who noclips out of reality can end up there, surrounded by ordinary-looking architecture that repeats on an impossible scale.",
+            "Creators have since built their own versions in stories, wikis, games, and films. Some give the maze named levels and creatures. Others focus on the uncertainty of being alone in a familiar-looking place with no clear way out."
+        ],
+        "examples": [
+            "Fiction2Reality uses the Backrooms as a starting point for 3D environments, animation, and short films.",
+            "In Kane Parsons’s short film The Backrooms (Found Footage), a camera operator falls into the maze and records what happens as he tries to find a way out."
+        ],
+        "references": [
+            {
+                "label": "My introduction to the Backrooms",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#so-what-is-the-backrooms"
+            },
+            {
+                "label": "Fiction2Reality on Aaron Schlossberg’s Universe",
+                "href": "/projects/fiction2reality/"
+            },
+            {
+                "label": "Backrooms origins and fandom at WIRED",
+                "href": "https://www.wired.com/story/what-are-the-backrooms/"
+            }
+        ],
+        "related": [
+            "level-0",
+            "liminal-space",
+            "noclip",
+            "creepypasta"
+        ],
+        "links": [
+            {
+                "text": "The Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Found Footage",
+                "href": "/compendium/found-footage/"
+            },
+            {
+                "text": "Kane Parsons",
+                "href": "/compendium/kane-parsons/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "noclips",
+                "href": "/compendium/noclip/"
+            },
+            {
+                "text": "Fiction2Reality",
+                "href": "/projects/fiction2reality/"
+            },
+            {
+                "text": "The Backrooms (Found Footage)",
+                "href": "https://www.youtube.com/watch?v=H4dGpz6cnHo",
+                "quote": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/writings/backrooms-and-liminal-spaces-original-introduction/original-backrooms-image.jpeg",
+            "alt": "The original photograph of yellow rooms, beige carpet, and fluorescent lights associated with the Backrooms.",
+            "width": 602,
+            "height": 452,
+            "caption": "The yellow-room photograph that became associated with the Backrooms.",
+            "credit": {
+                "label": "Original photograph and image history",
+                "href": "https://commons.wikimedia.org/wiki/File:HobbyTown_USA_Oshkosh_interior_under_construction_2002_(The_Backrooms).jpg"
+            }
+        }
+    },
+    {
+        "slug": "boots-theory",
+        "term": "Boots Theory",
+        "definition": "Sam Vimes’s idea that people with less money upfront can end up paying more over time because they can only afford goods that need frequent replacement.",
+        "aliases": [
+            "Sam Vimes Theory of Socioeconomic Unfairness",
+            "Socio-Economic Unfairness",
+            "Vimes Boots Theory"
+        ],
+        "tags": [
+            "Economics",
+            "Literature"
+        ],
+        "context": [
+            "In Terry Pratchett’s Discworld novel Men at Arms, Vimes compares a durable $50 pair of boots with a $10 pair that wears out quickly. The buyer who can afford the durable pair can spend $50 over ten years. The buyer replacing the cheap pairs spends $100 and still gets wet feet.",
+            "The example turns on when the money is available. The person who can pay more today has access to a lower cost over the life of the product."
+        ],
+        "examples": [
+            "If you have to replace a cheap winter coat every year, several replacements can cost more than a coat that would have lasted through all those winters."
+        ],
+        "references": [
+            {
+                "label": "The original passage from Men at Arms",
+                "href": "https://terrypratchett.com/explore-discworld/sam-vimes-boots-theory-of-socio-economic-unfairness/"
+            },
+            {
+                "label": "The Boots Theory at the Georgetown Journal on Poverty Law & Policy",
+                "href": "https://www.law.georgetown.edu/poverty-journal/blog/the-boots-theory/"
+            }
+        ],
+        "links": [
+            {
+                "text": "Terry Pratchett",
+                "href": "https://terrypratchett.com/"
+            },
+            {
+                "text": "Sam Vimes",
+                "href": "https://wiki.lspace.org/Sam_Vimes"
+            },
+            {
+                "text": "Men at Arms",
+                "href": "https://terrypratchett.com/books/men-at-arms/",
+                "cite": true
+            }
+        ]
+    },
+    {
+        "slug": "collective-unconscious",
+        "term": "Collective Unconscious",
+        "definition": "Carl Jung’s proposed shared layer of the unconscious, containing inherited patterns he called archetypes.",
+        "aliases": [
+            "The Collective Unconscious",
+            "Analytical Psychology",
+            "Jungian Archetypes"
+        ],
+        "tags": [
+            "Psychology",
+            "Storytelling"
+        ],
+        "context": [
+            "In Jung’s analytical psychology, the personal unconscious draws on an individual’s life experiences. He proposed that the collective unconscious is shared across people and that its archetypes can take different forms in dreams, myths, and symbols."
+        ],
+        "examples": [
+            "A Jungian reading might see a mother figure in two different folktales as two expressions of the same archetype."
+        ],
+        "references": [
+            {
+                "label": "APA Dictionary of Psychology",
+                "href": "https://dictionary.apa.org/collective-unconscious"
+            },
+            {
+                "label": "International Association of Analytical Psychology",
+                "href": "https://iaap.org/jung-analytical-psychology/short-articles-on-analytical-psychology/the-collective-unconscious-2/"
+            }
+        ],
+        "links": [
+            {
+                "text": "Collective Unconscious",
+                "href": "/compendium/collective-unconscious/"
+            },
+            {
+                "text": "Carl Jung",
+                "href": "https://en.wikipedia.org/wiki/Carl_Jung"
+            },
+            {
+                "text": "Jung",
+                "href": "https://en.wikipedia.org/wiki/Carl_Jung"
+            },
+            {
+                "text": "archetypes",
+                "href": "https://dictionary.apa.org/archetype"
+            }
+        ]
+    },
+    {
+        "slug": "creepypasta",
+        "term": "Creepypasta",
+        "definition": "A horror story that spreads online through copying, reposting, or retelling.",
+        "aliases": [
+            "Creepy Pasta",
+            "Copypasta"
+        ],
+        "tags": [
+            "Horror",
+            "Internet Folklore",
+            "Storytelling"
+        ],
+        "context": [
+            "The name plays on copypasta, slang for text that people copy and paste across the internet. A short story can circulate well beyond the forum where it appeared, then grow through retellings and adaptations."
+        ],
+        "examples": [
+            "The original Backrooms creepypasta turned a photograph of empty yellow rooms into a premise other people could build on."
+        ],
+        "references": [
+            {
+                "label": "How the Backrooms began in my essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#how-the-backrooms-began"
+            },
+            {
+                "label": "The MIT Press Reader on the Backrooms and creepypasta",
+                "href": "https://thereader.mitpress.mit.edu/backrooms-and-the-rise-of-the-institutional-gothic/"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "found-footage"
+        ],
+        "links": [
+            {
+                "text": "Creepypasta",
+                "href": "/compendium/creepypasta/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            }
+        ]
+    },
+    {
+        "slug": "found-footage",
+        "term": "Found Footage",
+        "definition": "A storytelling technique that presents a film as recordings recovered from within the story.",
+        "tags": [
+            "Film",
+            "Horror",
+            "Storytelling"
+        ],
+        "context": [
+            "In found footage horror, the camera can belong to a character trying to document what’s happening. Security cameras, home movies, and handheld recordings each give the viewer a different reason for seeing only part of the action.",
+            "A filmmaker can build suspense out of those limits. A character might hear something beyond the frame, and the audience has to wait for them to turn the camera."
+        ],
+        "examples": [
+            "Kane Parsons’s The Backrooms (Found Footage) frames a camera operator’s trip into the maze as recovered tape.",
+            "The Blair Witch Project presents footage recorded by a group of student filmmakers searching for a local legend."
+        ],
+        "references": [
+            {
+                "label": "Watch The Backrooms (Found Footage)",
+                "href": "https://www.youtube.com/watch?v=H4dGpz6cnHo"
+            },
+            {
+                "label": "University of Kentucky guide to found footage horror",
+                "href": "https://libguides.uky.edu/horrorfilms/found"
+            },
+            {
+                "label": "Kane Parsons’s work in my Backrooms essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#kane-pixels-and-the-rise-of-backrooms-video"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "creepypasta"
+        ],
+        "links": [
+            {
+                "text": "The Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Found Footage",
+                "href": "/compendium/found-footage/"
+            },
+            {
+                "text": "Kane Parsons",
+                "href": "/compendium/kane-parsons/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "The Blair Witch Project",
+                "href": "https://en.wikipedia.org/wiki/The_Blair_Witch_Project",
+                "cite": true
+            },
+            {
+                "text": "The Backrooms (Found Footage)",
+                "href": "https://www.youtube.com/watch?v=H4dGpz6cnHo",
+                "quote": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/03-kane-pixels-found-footage.png",
+            "alt": "A Lifeform in a yellow room in Kane Pixels’s The Backrooms (Found Footage).",
+            "width": 480,
+            "height": 360,
+            "caption": "A still from The Backrooms (Found Footage), created by Kane Parsons.",
+            "credit": {
+                "label": "Kane Pixels/original short film",
+                "href": "https://www.youtube.com/watch?v=H4dGpz6cnHo"
+            }
+        }
+    },
+    {
+        "slug": "kenopsia",
+        "term": "Kenopsia",
+        "definition": "The eerie feeling of being somewhere that’s usually busy when everyone is gone.",
+        "tags": [
+            "Emotions",
+            "Liminal Spaces",
+            "Vocabulary"
+        ],
+        "context": [
+            "John Koenig coined the word for The Dictionary of Obscure Sorrows. The feeling often comes from the contrast between what a place looks like and what you expect it to sound or feel like when it’s full of people.",
+            "A liminal space describes the setting or the sense of being in between. Kenopsia names a feeling the setting can evoke. The atmosphere can carry a feeling of forlornness."
+        ],
+        "examples": [
+            "“After the last class left, the stillness of the school hallway gave me a feeling of kenopsia.”"
+        ],
+        "references": [
+            {
+                "label": "John Koenig’s Kenopsia entry",
+                "href": "https://dictionaryofobscuresorrows.com/post/27720773573/kenopsia"
+            },
+            {
+                "label": "Kenopsia in my liminal spaces essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#why-do-liminal-spaces-feel-so-strange"
+            }
+        ],
+        "related": [
+            "anemoia",
+            "liminal-space"
+        ],
+        "links": [
+            {
+                "text": "Kenopsia",
+                "href": "/compendium/kenopsia/"
+            },
+            {
+                "text": "Liminal Space",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "Forlornness",
+                "href": "/compendium/forlornness/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "John Koenig",
+                "href": "https://www.simonandschuster.com/authors/John-Koenig/2110731535"
+            },
+            {
+                "text": "The Dictionary of Obscure Sorrows",
+                "href": "https://www.simonandschuster.com/books/The-Dictionary-of-Obscure-Sorrows/John-Koenig/9781501153648",
+                "cite": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/01-liminal-space-example.webp",
+            "alt": "An empty indoor shopping corridor with closed storefronts and fluorescent lighting.",
+            "width": 568,
+            "height": 370,
+            "caption": "An empty shopping corridor, also discussed in my writing about liminal spaces.",
+            "credit": {
+                "label": "Image and discussion in my liminal spaces essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#what-is-a-liminal-space"
+            }
+        }
+    },
+    {
+        "slug": "level-0",
+        "term": "Level 0",
+        "definition": "The familiar yellow-room setting that serves as the first area in many versions of the Backrooms. It is often called “The Lobby.”",
+        "aliases": [
+            "Level Zero",
+            "The Lobby",
+            "Mono-Yellow"
+        ],
+        "tags": [
+            "Backrooms",
+            "Horror",
+            "Liminal Spaces"
+        ],
+        "context": [
+            "Level 0 takes its look from the original Backrooms photograph and story. Yellow wallpaper, old carpet, and buzzing fluorescent lighting are common details.",
+            "The numbered level grew out of fan lore. Its layout, hazards, and exits depend on the version of the Backrooms a story is using."
+        ],
+        "examples": [
+            "A character arrives in Level 0, walks through room after room, and realizes every corridor looks like one they already passed."
+        ],
+        "references": [
+            {
+                "label": "The archived Lobby version of Level 0 at the Backrooms Wiki",
+                "href": "https://backrooms-wiki.wikidot.com/archived:level-0"
+            },
+            {
+                "label": "The original Backrooms post in my essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#how-the-backrooms-began"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "liminal-space",
+            "noclip"
+        ],
+        "links": [
+            {
+                "text": "The Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Level 0",
+                "href": "/compendium/level-0/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/writings/backrooms-and-liminal-spaces-original-introduction/original-backrooms-image.jpeg",
+            "alt": "The yellow rooms that inspired the familiar appearance of Level 0.",
+            "width": 602,
+            "height": 452,
+            "caption": "The original Backrooms photograph provides the familiar look associated with Level 0.",
+            "credit": {
+                "label": "Original photograph and image history",
+                "href": "https://commons.wikimedia.org/wiki/File:HobbyTown_USA_Oshkosh_interior_under_construction_2002_(The_Backrooms).jpg"
+            }
+        }
+    },
+    {
+        "slug": "liminal-space",
+        "term": "Liminal Space",
+        "definition": "A place or state in between. In online photography and art, it often means a familiar place that feels strangely removed from its usual purpose.",
+        "aliases": [
+            "Liminality",
+            "Liminal Spaces",
+            "Threshold"
+        ],
+        "tags": [
+            "Emotions",
+            "Liminal Spaces"
+        ],
+        "context": [
+            "The idea of a threshold applies to places and to changes in life. A stairwell connects two floors. The weeks between finishing school and starting a job can feel like a threshold in time.",
+            "The online aesthetic often comes from seeing a familiar place under unexpected conditions, such as when everyone has gone home. Empty rooms, artificial lighting, and traces of recent activity can make a place feel suspended between its usual uses."
+        ],
+        "examples": [
+            "An airport concourse at night still looks ready for passengers, even when all its gates are closed.",
+            "A school hallway lit after hours can feel different once you no longer expect a class to come through the doors."
+        ],
+        "references": [
+            {
+                "label": "My introduction to liminal spaces",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#what-is-a-liminal-space"
+            },
+            {
+                "label": "Liminal in the Cambridge Dictionary",
+                "href": "https://dictionary.cambridge.org/us/dictionary/english/liminal"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "kenopsia",
+            "anemoia"
+        ],
+        "links": [],
+        "image": {
+            "src": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/01-liminal-space-example.webp",
+            "alt": "An empty indoor shopping corridor with closed storefronts and fluorescent lighting.",
+            "width": 568,
+            "height": 370,
+            "caption": "An empty shopping corridor, also discussed in my writing about liminal spaces.",
+            "credit": {
+                "label": "Image and discussion in my liminal spaces essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#what-is-a-liminal-space"
+            }
+        }
+    },
+    {
+        "slug": "luminary",
+        "term": "Luminary",
+        "definition": "A person distinguished for their influence or achievements in a field. The word can also mean a source of light.",
+        "tags": [
+            "Personal",
+            "Vocabulary"
+        ],
+        "context": [
+            "When it describes a person, luminary often suggests that their work inspires or guides others. Its literal sense can refer to a bright object such as the sun.",
+            "My YouGov membership hub gave me the label “Luminary” under Insights."
+        ],
+        "examples": [
+            "“After decades of teaching and making films, she became a luminary in animation.”"
+        ],
+        "references": [
+            {
+                "label": "Luminary in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/luminary"
+            },
+            {
+                "label": "YouGov membership hub Insights",
+                "href": "https://account.yougov.com/us-en/account/membership-hub/insights"
+            }
+        ],
+        "links": [
+            {
+                "text": "Luminary",
+                "href": "/compendium/luminary/"
+            },
+            {
+                "text": "YouGov",
+                "href": "https://yougov.com/"
+            },
+            {
+                "text": "Insights",
+                "href": "https://account.yougov.com/us-en/account/membership-hub/insights"
+            }
+        ]
+    },
+    {
+        "slug": "multipotentialite",
+        "term": "Multipotentialite",
+        "definition": "Someone who pursues several interests or creative paths, sometimes bringing them together in the same work.",
+        "aliases": [
+            "Multipotentiality",
+            "Multipod",
+            "Multi-Potentialite"
+        ],
+        "tags": [
+            "Personal",
+            "Vocabulary"
+        ],
+        "context": [
+            "Emilie Wapnick popularized the term through Puttylike and their TEDx talk about having more than one calling. Puttylike also uses multipod as a shorter form.",
+            "I use multipotentialite for the way my interests move between web development, entrepreneurship, writing, and creative projects. Fiction2Reality is one place those interests meet through websites, story development, and 3D environments."
+        ],
+        "examples": [
+            "“As a multipotentialite, I get excited about projects that let me draw on several different interests.”"
+        ],
+        "references": [
+            {
+                "label": "How it shows up in my work on About Me",
+                "href": "/about-me/#multipotentialite"
+            },
+            {
+                "label": "Emilie Wapnick’s definition at Puttylike",
+                "href": "https://puttylike.com/terminology/"
+            },
+            {
+                "label": "Wapnick’s talk on having more than one calling",
+                "href": "https://www.ted.com/talks/emilie_wapnick_why_some_of_us_don_t_have_one_true_calling"
+            }
+        ],
+        "related": [
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Multipotentialite",
+                "href": "/compendium/multipotentialite/"
+            },
+            {
+                "text": "Emilie Wapnick",
+                "href": "https://www.ted.com/speakers/emilie_wapnick"
+            },
+            {
+                "text": "Puttylike",
+                "href": "https://puttylike.com/"
+            },
+            {
+                "text": "Fiction2Reality",
+                "href": "/projects/fiction2reality/"
+            }
+        ]
+    },
+    {
+        "slug": "noclip",
+        "term": "Noclip",
+        "definition": "To pass through walls or floors that would normally block a player in a game. In Backrooms stories, it means slipping out of ordinary reality.",
+        "aliases": [
+            "No Clip",
+            "No Clipping",
+            "No-Clip",
+            "Noclipping"
+        ],
+        "tags": [
+            "Backrooms",
+            "Games",
+            "Vocabulary"
+        ],
+        "context": [
+            "Games ordinarily use collision boundaries to keep characters from moving through solid objects. A noclip mode lets a player move past those boundaries, and a collision glitch can sometimes have a similar effect.",
+            "The original Backrooms story imagines that ordinary reality has boundaries someone could cross in much the same way."
+        ],
+        "examples": [
+            "A developer might turn on noclip mode to fly through a wall while testing a level.",
+            "In a Backrooms story, a character might step onto an ordinary floor and noclip into a room that shouldn’t be there."
+        ],
+        "references": [
+            {
+                "label": "Noclipping in the original Backrooms post and my essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#how-the-backrooms-began"
+            },
+            {
+                "label": "How to No-Clip Reality at WIRED",
+                "href": "https://www.wired.com/story/what-are-the-backrooms/"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "level-0"
+        ],
+        "links": [
+            {
+                "text": "Noclip",
+                "href": "/compendium/noclip/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            }
+        ]
+    },
+    {
+        "slug": "numinous",
+        "term": "Numinous",
+        "definition": "Evoking a sense of sacred or mysterious presence, often with awe.",
+        "tags": [
+            "Emotions",
+            "Vocabulary"
+        ],
+        "context": [
+            "Numinous can describe a place, a moment, or a work of art that seems charged with mystery or sacred significance. It often suggests a sense of awe that’s hard to put into words."
+        ],
+        "examples": [
+            "“The sanctuary felt numinous in the silence before dawn.”"
+        ],
+        "references": [
+            {
+                "label": "Numinous in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/numinous"
+            }
+        ],
+        "related": [
+            "liminal-space"
+        ],
+        "links": [
+            {
+                "text": "Numinous",
+                "href": "/compendium/numinous/"
+            }
+        ]
+    },
+    {
+        "slug": "specious",
+        "term": "Specious",
+        "definition": "Superficially plausible, but actually wrong.",
+        "tags": [
+            "Vocabulary"
+        ],
+        "context": [
+            "Specious often describes reasoning or an argument that seems convincing on first hearing. The impression falls apart when you check the assumptions, the evidence, or the comparison."
+        ],
+        "examples": [
+            "“The price comparison was specious. It made one plan look cheaper by comparing a monthly rate with a yearly rate.”"
+        ],
+        "references": [
+            {
+                "label": "Specious in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/specious"
+            }
+        ],
+        "links": [
+            {
+                "text": "Specious",
+                "href": "/compendium/specious/"
+            }
+        ]
+    },
+    {
+        "slug": "worldbuilding",
+        "term": "Worldbuilding",
+        "definition": "Creating a fictional setting and the details that make it feel like a place of its own, such as its geography, history, culture, or rules.",
+        "aliases": [
+            "World Building",
+            "World-Building"
+        ],
+        "tags": [
+            "Games",
+            "Literature",
+            "Storytelling"
+        ],
+        "context": [
+            "Worldbuilding can happen at the scale of a single building or an entire civilization. Even a small choice about how a place works can shape what characters do there, from which routes they can take to whom they expect to meet."
+        ],
+        "examples": [
+            "In Fiction2Reality, worldbuilding can mean deciding how rooms and routes connect so an environment feels like somewhere people could actually explore.",
+            "A town that floods every spring might build elevated walkways and hold its markets on higher ground, giving the story’s characters a setting shaped by its geography."
+        ],
+        "references": [
+            {
+                "label": "Fiction2Reality on Aaron Schlossberg’s Universe",
+                "href": "/projects/fiction2reality/"
+            },
+            {
+                "label": "World-building in the Cambridge Dictionary",
+                "href": "https://dictionary.cambridge.org/us/dictionary/english/world-building"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "level-0"
+        ],
+        "links": [
+            {
+                "text": "Worldbuilding",
+                "href": "/compendium/worldbuilding/"
+            },
+            {
+                "text": "Fiction2Reality",
+                "href": "/projects/fiction2reality/"
+            }
+        ]
+    },
+    {
+        "slug": "nostalgia",
+        "term": "Nostalgia",
+        "definition": "A wistful, often bittersweet longing for the past.",
+        "tags": [
+            "Emotions",
+            "Psychology",
+            "Vocabulary"
+        ],
+        "context": [
+            "Nostalgia can gather around people, places, objects, music, games, or an earlier stage of life. The feeling combines affection for what is remembered with awareness that time has passed.",
+            "In my writing about liminal spaces, nostalgia helps explain why an empty school, an old mall, or a familiar game soundtrack can feel emotionally charged. Anemoia names a related longing for a time someone never personally experienced."
+        ],
+        "examples": [
+            "A song from a childhood Pokémon game can evoke nostalgia for the time and place where someone first played it."
+        ],
+        "references": [
+            {
+                "label": "Nostalgia in the APA Dictionary of Psychology",
+                "href": "https://dictionary.apa.org/nostalgia"
+            },
+            {
+                "label": "My essay on the Backrooms and liminal spaces",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/"
+            }
+        ],
+        "related": [
+            "anemoia",
+            "metanostalgia",
+            "kenopsia"
+        ],
+        "links": [
+            {
+                "text": "Anemoia",
+                "href": "/compendium/anemoia/"
+            },
+            {
+                "text": "Nostalgia",
+                "href": "/compendium/nostalgia/"
+            },
+            {
+                "text": "Pokémon",
+                "href": "/compendium/pokemon/"
+            },
+            {
+                "text": "liminal spaces",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            }
+        ]
+    },
+    {
+        "slug": "metanostalgia",
+        "term": "Metanostalgia",
+        "definition": "Nostalgia for nostalgia itself, or longing for the way an experience once made you feel.",
+        "tags": [
+            "Emotions",
+            "Liminal Spaces",
+            "Vocabulary"
+        ],
+        "context": [
+            "This is the informal sense I use in my original Backrooms introduction. The longing points toward an earlier feeling of remembering, such as missing the wonder an old photograph used to evoke.",
+            "The longing points toward how remembering once felt. Revisiting a familiar place can bring back memories of an earlier return to that place."
+        ],
+        "examples": [
+            "You revisit a favorite game and find yourself missing the nostalgic feeling it gave you the last time you returned to it."
+        ],
+        "references": [
+            {
+                "label": "Metanostalgia in my original introduction",
+                "href": "/writings/backrooms-and-liminal-spaces-original-introduction/"
+            }
+        ],
+        "related": [
+            "nostalgia",
+            "anemoia"
+        ],
+        "links": [
+            {
+                "text": "Nostalgia",
+                "href": "/compendium/nostalgia/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            }
+        ]
+    },
+    {
+        "slug": "forlornness",
+        "term": "Forlornness",
+        "definition": "A feeling or appearance of loneliness, abandonment, or hopeless sadness.",
+        "tags": [
+            "Emotions",
+            "Vocabulary"
+        ],
+        "context": [
+            "Forlornness is the noun form of forlorn. It can describe someone’s emotional state or the atmosphere of a place that seems deserted or neglected.",
+            "In discussions of liminal spaces, forlornness can help describe the absence of the people and activity a setting seems to expect. Kenopsia names a more specific response to a usually busy place becoming empty."
+        ],
+        "examples": [
+            "An overgrown playground with a single broken swing can have an air of forlornness."
+        ],
+        "references": [
+            {
+                "label": "Forlorn in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/forlorn"
+            }
+        ],
+        "related": [
+            "kenopsia",
+            "liminal-space",
+            "nostalgia"
+        ],
+        "links": [
+            {
+                "text": "Kenopsia",
+                "href": "/compendium/kenopsia/"
+            },
+            {
+                "text": "Forlornness",
+                "href": "/compendium/forlornness/"
+            },
+            {
+                "text": "liminal spaces",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            }
+        ]
+    },
+    {
+        "slug": "kane-parsons",
+        "term": "Kane Parsons",
+        "definition": "A filmmaker and visual-effects artist, known online as Kane Pixels, whose Backrooms videos turn familiar spaces into unsettling fictional environments.",
+        "tags": [
+            "People",
+            "Backrooms",
+            "Film",
+            "Horror"
+        ],
+        "aliases": [
+            "Kane Pixels"
+        ],
+        "context": [
+            "His short film The Backrooms (Found Footage) helped bring a moving-camera interpretation of the Backrooms to a wide audience. His videos develop their own characters, organizations, and continuity within the wider internet setting.",
+            "I explore his work in my Backrooms introduction. His use of digital environments and restrained explanations is also relevant to my interests in worldbuilding and Fiction2Reality."
+        ],
+        "examples": [
+            "A camera operator can reveal an impossible space gradually by turning a corner or looking through a doorway, giving viewers the sense that they are discovering it with the character."
+        ],
+        "references": [
+            {
+                "label": "Kane Pixels on YouTube",
+                "href": "https://www.youtube.com/@kanepixels"
+            },
+            {
+                "label": "The Backrooms (Found Footage)",
+                "href": "https://www.youtube.com/watch?v=H4dGpz6cnHo"
+            },
+            {
+                "label": "Kane Parsons in my Backrooms introduction",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#kane-pixels-and-the-rise-of-backrooms-video"
+            },
+            {
+                "label": "Backrooms at A24",
+                "href": "https://a24films.com/films/backrooms"
+            }
+        ],
+        "related": [
+            "backrooms",
+            "found-footage",
+            "marvins-friend"
+        ],
+        "links": [
+            {
+                "text": "The Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Found Footage",
+                "href": "/compendium/found-footage/"
+            },
+            {
+                "text": "Worldbuilding",
+                "href": "/compendium/worldbuilding/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Kane Pixels",
+                "href": "/compendium/kane-parsons/"
+            },
+            {
+                "text": "Fiction2Reality",
+                "href": "/projects/fiction2reality/"
+            },
+            {
+                "text": "The Backrooms (Found Footage)",
+                "href": "https://www.youtube.com/watch?v=H4dGpz6cnHo",
+                "quote": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/aaron-and-kane-parsons.webp",
+            "alt": "Aaron Schlossberg and Kane Parsons together at a Backrooms event.",
+            "width": 750,
+            "height": 1000,
+            "caption": "Aaron Schlossberg with Kane Parsons at a Backrooms event.",
+            "credit": {
+                "label": "From my photo collection",
+                "href": "/images/pictures-of-me/#featured"
+            }
+        }
+    },
+    {
+        "slug": "pokemon",
+        "term": "Pokémon",
+        "definition": "A franchise about discovering, befriending, training, and battling creatures called Pokémon, spanning video games, cards, animation, and more.",
+        "tags": [
+            "Games",
+            "Fandoms"
+        ],
+        "aliases": [
+            "Pokemon"
+        ],
+        "context": [
+            "Many Pokémon games follow a Trainer exploring a region, meeting Pokémon, and developing a team. The Pokédex organizes information about the creatures encountered along the way.",
+            "Pokémon is one of my long-running interests. I founded the Pokémon Club at Muhlenberg College, where members shared the games, cards, and other parts of the franchise."
+        ],
+        "examples": [
+            "A club meeting might include trading Pokémon, playing the Trading Card Game, or discussing a new region."
+        ],
+        "references": [
+            {
+                "label": "Official Pokémon website",
+                "href": "https://www.pokemon.com/"
+            },
+            {
+                "label": "Pokémon games explained by Pokémon",
+                "href": "https://parents.pokemon.com/en-us/video-games-and-apps/"
+            },
+            {
+                "label": "My college clubs and leadership",
+                "href": "/education/muhlenberg/clubs/"
+            }
+        ],
+        "related": [
+            "pokedex",
+            "xp-exp",
+            "nostalgia"
+        ],
+        "links": [
+            {
+                "text": "Pokémon",
+                "href": "/compendium/pokemon/"
+            },
+            {
+                "text": "Pokédex",
+                "href": "/compendium/pokedex/"
+            },
+            {
+                "text": "Muhlenberg College",
+                "href": "/education/muhlenberg/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/pokemon-pikachu.webp",
+            "alt": "Official artwork of Pikachu, a yellow Pokémon with long ears and a lightning-shaped tail.",
+            "width": 475,
+            "height": 475,
+            "caption": "Pikachu, one of the Pokémon in the franchise.",
+            "credit": {
+                "label": "Official Pokémon artwork/screenshot",
+                "href": "https://www.pokemon.com/us/pokedex/pikachu"
+            }
+        }
+    },
+    {
+        "slug": "pokedex",
+        "term": "Pokédex",
+        "definition": "An encyclopedia within Pokémon games that records information about the Pokémon a Trainer encounters or catches.",
+        "tags": [
+            "Games",
+            "Fandoms",
+            "Knowledge"
+        ],
+        "aliases": [
+            "Pokedex"
+        ],
+        "context": [
+            "Depending on the game, the Pokédex can be a dedicated device, a phone application, or an interface for a research record. Entries can include a Pokémon’s number, type, appearance, and descriptive information.",
+            "Regional Pokédexes organize the Pokémon relevant to a particular region or adventure. The official Pokémon website also offers a searchable Pokédex."
+        ],
+        "examples": [
+            "After catching an unfamiliar Pokémon, a player can open its Pokédex entry to read about it."
+        ],
+        "references": [
+            {
+                "label": "Official online Pokédex",
+                "href": "https://www.pokemon.com/pokedex/"
+            },
+            {
+                "label": "Pokédex and Rotom Phone in Pokémon Sword and Shield",
+                "href": "https://swordshield.pokemon.com/en-us/gameplay/about-pokedex-rotom-phone/"
+            }
+        ],
+        "related": [
+            "pokemon",
+            "compendium"
+        ],
+        "links": [
+            {
+                "text": "Pokémon",
+                "href": "/compendium/pokemon/"
+            },
+            {
+                "text": "Pokédex",
+                "href": "/compendium/pokedex/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/pokedex-rotom.webp",
+            "alt": "Official artwork of the red Rotom Phone shown in three orientations.",
+            "width": 547,
+            "height": 307,
+            "caption": "In Pokémon Sword and Shield, the Pokédex is part of the Rotom Phone. Official artwork shows the phone in several orientations.",
+            "credit": {
+                "label": "Official Pokémon artwork/screenshot",
+                "href": "https://swordshield.pokemon.com/en-us/gameplay/about-pokedex-rotom-phone/"
+            }
+        }
+    },
+    {
+        "slug": "compendium",
+        "term": "Compendium",
+        "definition": "A concise collection of information about a subject or a range of subjects.",
+        "tags": [
+            "Knowledge",
+            "Vocabulary"
+        ],
+        "context": [
+            "A compendium gathers material into a form that is convenient to consult. It can bring together definitions, explanations, facts, or selections from a larger body of work.",
+            "The Compendium on Aaron Schlossberg’s Universe uses short definitions as an entry point, with separate pages for context, examples, references, and connections to other ideas."
+        ],
+        "examples": [
+            "A field guide that summarizes local plants, habitats, and identification clues can function as a compendium."
+        ],
+        "references": [
+            {
+                "label": "Compendium in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/compendium"
+            },
+            {
+                "label": "Browse this website’s Compendium",
+                "href": "/compendium/"
+            }
+        ],
+        "related": [
+            "pokedex",
+            "expository-writing"
+        ],
+        "links": [
+            {
+                "text": "Compendium",
+                "href": "/compendium/compendium/"
+            },
+            {
+                "text": "Aaron Schlossberg’s Universe",
+                "href": "/"
+            }
+        ]
+    },
+    {
+        "slug": "byway",
+        "term": "Byway",
+        "definition": "A smaller or less-traveled road, often away from a main route.",
+        "tags": [
+            "Places",
+            "Vocabulary"
+        ],
+        "context": [
+            "A byway can suggest a quieter route through a landscape or community. The word is also used in formal scenic-road designations.",
+            "In the United States, a National Scenic Byway is recognized for at least one of six intrinsic qualities, which include scenic, natural, historic, cultural, recreational, and archaeological value. A designated scenic byway can follow a substantial road."
+        ],
+        "examples": [
+            "A traveler might follow a rural byway through old villages and farmland instead of taking the direct highway."
+        ],
+        "references": [
+            {
+                "label": "Byway in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/byway"
+            },
+            {
+                "label": "America’s Byways at the Federal Highway Administration",
+                "href": "https://fhwaapps.fhwa.dot.gov/bywaysp"
+            }
+        ],
+        "related": [
+            "torii"
+        ],
+        "links": [
+            {
+                "text": "Byway",
+                "href": "/compendium/byway/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/byway.webp",
+            "alt": "Connecticut Route 169 at dusk, shown in an archival road photograph.",
+            "width": 1100,
+            "height": 720,
+            "caption": "Connecticut Route 169 at dusk, from the U.S. National Archives.",
+            "credit": {
+                "label": "U.S. National Archives",
+                "href": "https://commons.wikimedia.org/wiki/File:Connecticut_State_Route_169_-_SR-169_at_Dusk_-_NARA_-_7717764.jpg"
+            },
+            "license": {
+                "label": "Public domain",
+                "href": "https://creativecommons.org/publicdomain/mark/1.0/"
+            }
+        }
+    },
+    {
+        "slug": "html",
+        "term": "HTML",
+        "definition": "HyperText Markup Language, the language used to give web content its structure and meaning.",
+        "tags": [
+            "Web Development",
+            "Technology"
+        ],
+        "aliases": [
+            "HyperText Markup Language"
+        ],
+        "context": [
+            "HTML identifies elements such as headings, paragraphs, links, lists, and images. Its elements tell browsers and assistive technology how those parts of a page fit together.",
+            "On a static front-end website, HTML works alongside CSS for presentation and JavaScript for interactive behavior."
+        ],
+        "examples": [
+            "An HTML paragraph can contain a link that opens a Compendium definition."
+        ],
+        "references": [
+            {
+                "label": "HTML at MDN Web Docs",
+                "href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "related": [
+            "css",
+            "javascript",
+            "static-front-end-website"
+        ],
+        "links": [
+            {
+                "text": "Compendium",
+                "href": "/compendium/"
+            },
+            {
+                "text": "HTML",
+                "href": "/compendium/html/"
+            },
+            {
+                "text": "CSS",
+                "href": "/compendium/css/"
+            },
+            {
+                "text": "JavaScript",
+                "href": "/compendium/javascript/"
+            },
+            {
+                "text": "static front-end website",
+                "href": "/compendium/static-front-end-website/"
+            }
+        ]
+    },
+    {
+        "slug": "css",
+        "term": "CSS",
+        "definition": "Cascading Style Sheets, the language used to control the presentation and layout of web content.",
+        "tags": [
+            "Web Development",
+            "Technology"
+        ],
+        "aliases": [
+            "Cascading Style Sheets"
+        ],
+        "context": [
+            "CSS rules can change typography, color, spacing, alignment, and responsive layout. The cascade determines how applicable style rules combine.",
+            "The smaller tags, circular share buttons, and page layout in this Compendium are examples of presentation controlled with CSS."
+        ],
+        "examples": [
+            "A CSS rule can place two sections beside each other on a wide screen and stack them on a phone."
+        ],
+        "references": [
+            {
+                "label": "CSS at MDN Web Docs",
+                "href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            }
+        ],
+        "related": [
+            "html",
+            "javascript",
+            "static-front-end-website"
+        ],
+        "links": [
+            {
+                "text": "Compendium",
+                "href": "/compendium/"
+            },
+            {
+                "text": "CSS",
+                "href": "/compendium/css/"
+            }
+        ]
+    },
+    {
+        "slug": "javascript",
+        "term": "JavaScript",
+        "definition": "A programming language widely used to add behavior and interactivity to websites.",
+        "tags": [
+            "Web Development",
+            "Technology"
+        ],
+        "aliases": [
+            "JS"
+        ],
+        "context": [
+            "In a browser, JavaScript can respond to user actions, change the displayed content, and communicate with other services. It is also used outside browsers in other runtimes.",
+            "The Compendium’s search, tag filters, and copy-link interaction use JavaScript. The definitions themselves are delivered as HTML."
+        ],
+        "examples": [
+            "Typing a search term causes JavaScript to update the visible entries."
+        ],
+        "references": [
+            {
+                "label": "JavaScript at MDN Web Docs",
+                "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            }
+        ],
+        "related": [
+            "html",
+            "css",
+            "static-front-end-website"
+        ],
+        "links": [
+            {
+                "text": "Compendium",
+                "href": "/compendium/"
+            },
+            {
+                "text": "HTML",
+                "href": "/compendium/html/"
+            },
+            {
+                "text": "JavaScript",
+                "href": "/compendium/javascript/"
+            }
+        ]
+    },
+    {
+        "slug": "static-front-end-website",
+        "term": "Static Front-End Website",
+        "definition": "A website whose pages are delivered as prepared files, with HTML, CSS, JavaScript, and other assets handling what visitors see and use.",
+        "tags": [
+            "Web Development",
+            "Technology"
+        ],
+        "aliases": [
+            "Static Website",
+            "Static Front End Website",
+            "Static Frontend Website"
+        ],
+        "context": [
+            "The files can be written directly or generated during a build. A browser can still run JavaScript to search, filter, animate, or fetch data after loading a static page.",
+            "Aaron Schlossberg’s Universe uses this approach. Its build prepares the Compendium pages, and the browser adds features such as filtering and copying a share link."
+        ],
+        "examples": [
+            "A prebuilt glossary can display every definition immediately and use JavaScript to narrow the list as someone types."
+        ],
+        "references": [
+            {
+                "label": "MDN on static and dynamic websites",
+                "href": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Introduction"
+            },
+            {
+                "label": "Aaron Schlossberg’s Universe",
+                "href": "/"
+            }
+        ],
+        "related": [
+            "html",
+            "css",
+            "javascript"
+        ],
+        "links": [
+            {
+                "text": "Compendium",
+                "href": "/compendium/"
+            },
+            {
+                "text": "HTML",
+                "href": "/compendium/html/"
+            },
+            {
+                "text": "CSS",
+                "href": "/compendium/css/"
+            },
+            {
+                "text": "JavaScript",
+                "href": "/compendium/javascript/"
+            },
+            {
+                "text": "Aaron Schlossberg’s Universe",
+                "href": "/"
+            }
+        ]
+    },
+    {
+        "slug": "technical-writing",
+        "term": "Technical Writing",
+        "definition": "Writing that helps a particular audience understand a technical subject or complete a technical task.",
+        "tags": [
+            "Writing",
+            "Technology"
+        ],
+        "context": [
+            "Technical writing includes instructions, software documentation, API references, and explanations of systems. Good technical writing accounts for what the reader knows and what they need to do.",
+            "A page explaining Blender tools or documenting how a website is built can combine technical writing with expository writing."
+        ],
+        "examples": [
+            "A setup guide explains which prerequisites to install, which command to run, and how to recognize a successful result."
+        ],
+        "references": [
+            {
+                "label": "Google’s technical writing courses",
+                "href": "https://developers.google.com/tech-writing/overview"
+            },
+            {
+                "label": "My Blender Info Sprawling",
+                "href": "/projects/info-sprawlings/blender/"
+            }
+        ],
+        "related": [
+            "expository-writing",
+            "html",
+            "static-front-end-website"
+        ],
+        "links": [
+            {
+                "text": "Technical Writing",
+                "href": "/compendium/technical-writing/"
+            },
+            {
+                "text": "Expository Writing",
+                "href": "/compendium/expository-writing/"
+            },
+            {
+                "text": "Blender",
+                "href": "/projects/info-sprawlings/blender/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/projects/fiction2reality/backrooms-blender-1280.webp",
+            "alt": "A yellow Backrooms environment shown inside Blender.",
+            "width": 1280,
+            "height": 720,
+            "caption": "A Blender environment from Fiction2Reality. Explaining tools like these is one use of technical writing.",
+            "credit": {
+                "label": "Blender in my Info Sprawlings",
+                "href": "/projects/info-sprawlings/blender/"
+            }
+        }
+    },
+    {
+        "slug": "expository-writing",
+        "term": "Expository Writing",
+        "definition": "Writing that explains, informs, or clarifies a subject through organized information and examples.",
+        "tags": [
+            "Writing",
+            "Knowledge"
+        ],
+        "context": [
+            "Expository writing can define a term, describe a process, compare ideas, or examine causes and effects. Its structure helps readers follow how the information fits together.",
+            "My introduction to the Backrooms and liminal spaces uses definitions, examples, history, and references to introduce its subjects."
+        ],
+        "examples": [
+            "An explanation of how the Pokédex organizes information is a piece of expository writing."
+        ],
+        "references": [
+            {
+                "label": "Expository essays at Purdue OWL",
+                "href": "https://owl.purdue.edu/owl/general_writing/academic_writing/essay_writing/expository_essays.html"
+            },
+            {
+                "label": "My Backrooms and liminal spaces introduction",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/"
+            }
+        ],
+        "related": [
+            "technical-writing",
+            "compendium"
+        ],
+        "links": [
+            {
+                "text": "The Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Pokédex",
+                "href": "/compendium/pokedex/"
+            },
+            {
+                "text": "Expository Writing",
+                "href": "/compendium/expository-writing/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "liminal spaces",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            }
+        ]
+    },
+    {
+        "slug": "disney",
+        "term": "Disney",
+        "definition": "The entertainment company and brand associated with animation, films, characters, and themed destinations such as Disneyland and Walt Disney World.",
+        "tags": [
+            "Fandoms",
+            "Film",
+            "Places"
+        ],
+        "aliases": [
+            "The Walt Disney Company"
+        ],
+        "context": [
+            "The Walt Disney Company began with Walt and Roy Disney in 1923. Its name now covers a broad range of entertainment and experiences.",
+            "In this Compendium, Disney refers to the company and its creative worlds. Disneyland in California and Walt Disney World in Florida are separate destinations within that wider brand."
+        ],
+        "examples": [
+            "A conversation about Disney might move between an animated film, a favorite character, and a theme-park attraction."
+        ],
+        "references": [
+            {
+                "label": "The Walt Disney Company",
+                "href": "https://thewaltdisneycompany.com/"
+            },
+            {
+                "label": "The company’s founding story",
+                "href": "https://thewaltdisneycompany.com/news/disney100-anniversary-disney-contract/"
+            }
+        ],
+        "related": [
+            "disney-world",
+            "disneyland",
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Compendium",
+                "href": "/compendium/compendium/"
+            },
+            {
+                "text": "Disney",
+                "href": "/compendium/disney/"
+            },
+            {
+                "text": "Disney World",
+                "href": "/compendium/disney-world/"
+            },
+            {
+                "text": "Walt Disney World",
+                "href": "/compendium/disney-world/"
+            },
+            {
+                "text": "Disneyland",
+                "href": "/compendium/disneyland/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/disney-world.webp",
+            "alt": "Cinderella Castle at Magic Kingdom in Walt Disney World, Florida.",
+            "width": 720,
+            "height": 900,
+            "caption": "Cinderella Castle at Walt Disney World, one of Disney’s themed destinations.",
+            "credit": {
+                "label": "Katie Rommel-Esham, resized",
+                "href": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle.jpg"
+            },
+            "license": {
+                "label": "CC BY-SA 4.0",
+                "href": "https://creativecommons.org/licenses/by-sa/4.0"
+            }
+        }
+    },
+    {
+        "slug": "disney-world",
+        "term": "Disney World",
+        "definition": "Walt Disney World Resort, the Disney resort near Orlando, Florida, with four theme parks and a wider collection of hotels and experiences.",
+        "tags": [
+            "Fandoms",
+            "Places"
+        ],
+        "aliases": [
+            "Walt Disney World",
+            "Walt Disney World Resort"
+        ],
+        "context": [
+            "Its four theme parks are Magic Kingdom, EPCOT, Disney’s Hollywood Studios, and Disney’s Animal Kingdom. Each uses architecture, landscape, attractions, and performances to create a distinctive setting.",
+            "The resort offers an example of worldbuilding at the scale of places that people can physically enter and explore."
+        ],
+        "examples": [
+            "A visitor can move from the futuristic spaces of EPCOT to the storybook atmosphere around Cinderella Castle in Magic Kingdom."
+        ],
+        "references": [
+            {
+                "label": "Walt Disney World’s four theme parks",
+                "href": "https://disneyworld.disney.go.com/destinations/all-parks/"
+            }
+        ],
+        "related": [
+            "disney",
+            "disneyland",
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Worldbuilding",
+                "href": "/compendium/worldbuilding/"
+            },
+            {
+                "text": "Disney",
+                "href": "/compendium/disney/"
+            },
+            {
+                "text": "Disney World",
+                "href": "/compendium/disney-world/"
+            },
+            {
+                "text": "Walt Disney World",
+                "href": "/compendium/disney-world/"
+            },
+            {
+                "text": "Walt Disney World Resort",
+                "href": "/compendium/disney-world/"
+            },
+            {
+                "text": "Magic Kingdom",
+                "href": "https://disneyworld.disney.go.com/destinations/magic-kingdom/"
+            },
+            {
+                "text": "EPCOT",
+                "href": "https://disneyworld.disney.go.com/destinations/epcot/"
+            },
+            {
+                "text": "Disney’s Hollywood Studios",
+                "href": "https://disneyworld.disney.go.com/destinations/hollywood-studios/"
+            },
+            {
+                "text": "Disney’s Animal Kingdom",
+                "href": "https://disneyworld.disney.go.com/destinations/animal-kingdom/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/disney-world.webp",
+            "alt": "Cinderella Castle at Magic Kingdom in Walt Disney World, Florida.",
+            "width": 720,
+            "height": 900,
+            "caption": "Cinderella Castle in Magic Kingdom at Walt Disney World.",
+            "credit": {
+                "label": "Katie Rommel-Esham, resized",
+                "href": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle.jpg"
+            },
+            "license": {
+                "label": "CC BY-SA 4.0",
+                "href": "https://creativecommons.org/licenses/by-sa/4.0"
+            }
+        }
+    },
+    {
+        "slug": "disneyland",
+        "term": "Disneyland (California)",
+        "definition": "Disney’s original theme park in Anaheim, California, which opened in 1955.",
+        "tags": [
+            "Fandoms",
+            "Places"
+        ],
+        "aliases": [
+            "Disneyland",
+            "Disneyland Park",
+            "Disneyland CA"
+        ],
+        "context": [
+            "Disneyland Park is part of Disneyland Resort, which also includes Disney California Adventure Park. The park and the resort are useful distinctions when discussing the California destination.",
+            "Its themed lands use buildings, routes, sound, and attractions to carry visitors between fictional and historical settings."
+        ],
+        "examples": [
+            "Walking through Sleeping Beauty Castle brings a visitor into Disneyland’s Fantasyland."
+        ],
+        "references": [
+            {
+                "label": "Disneyland Park at the official Disneyland Resort website",
+                "href": "https://disneyland.disney.go.com/destinations/disneyland/"
+            },
+            {
+                "label": "The official Disneyland Resort website",
+                "href": "https://disneyland.disney.go.com/"
+            }
+        ],
+        "related": [
+            "disney",
+            "disney-world",
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Disney",
+                "href": "/compendium/disney/"
+            },
+            {
+                "text": "Disneyland",
+                "href": "/compendium/disneyland/"
+            },
+            {
+                "text": "Disneyland Park",
+                "href": "/compendium/disneyland/"
+            },
+            {
+                "text": "Disney California Adventure Park",
+                "href": "https://disneyland.disney.go.com/destinations/disney-california-adventure/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/disneyland.webp",
+            "alt": "Sleeping Beauty Castle at Disneyland in Anaheim, California.",
+            "width": 1046,
+            "height": 900,
+            "caption": "Sleeping Beauty Castle at Disneyland Park in Anaheim, California.",
+            "credit": {
+                "label": "Tuxyso, resized",
+                "href": "https://commons.wikimedia.org/wiki/File:Sleeping_Beauty_Castle_Disneyland_Anaheim_2013.jpg"
+            },
+            "license": {
+                "label": "CC BY-SA 3.0",
+                "href": "https://creativecommons.org/licenses/by-sa/3.0"
+            }
+        }
+    },
+    {
+        "slug": "toby-fox",
+        "term": "Toby Fox",
+        "definition": "A game creator and composer best known for Undertale and Deltarune.",
+        "tags": [
+            "People",
+            "Games",
+            "Music"
+        ],
+        "context": [
+            "His games bring together writing, music, character design, and role-playing mechanics. Humor and unexpected uses of familiar game conventions are important parts of their style.",
+            "The official Undertale and Deltarune websites are the primary places to find his game information and updates."
+        ],
+        "examples": [
+            "A musical theme can return in a new scene and change how a player understands a character or encounter."
+        ],
+        "references": [
+            {
+                "label": "Official Undertale website",
+                "href": "https://undertale.com/"
+            },
+            {
+                "label": "Official Deltarune website",
+                "href": "https://deltarune.com/"
+            },
+            {
+                "label": "Toby Fox’s Deltarune development update",
+                "href": "https://deltarune.com/update-092021/"
+            }
+        ],
+        "related": [
+            "undertale",
+            "deltarune"
+        ],
+        "links": [
+            {
+                "text": "Undertale",
+                "href": "/compendium/undertale/",
+                "cite": true
+            },
+            {
+                "text": "Deltarune",
+                "href": "/compendium/deltarune/",
+                "cite": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/toby-fox-dog.webp",
+            "alt": "The pixel-art Annoying Dog icon from the official Undertale website.",
+            "width": 100,
+            "height": 100,
+            "caption": "The Annoying Dog icon associated with Toby Fox’s games.",
+            "credit": {
+                "label": "Toby Fox/official game website",
+                "href": "https://undertale.com/"
+            }
+        }
+    },
+    {
+        "slug": "undertale",
+        "term": "Undertale",
+        "definition": "A role-playing game by Toby Fox in which a human explores an underground world of monsters, with choices about fighting and showing mercy.",
+        "tags": [
+            "Games",
+            "Fandoms",
+            "Storytelling"
+        ],
+        "context": [
+            "Undertale combines exploration and conversation with battles that ask players to dodge patterns and choose how to respond to opponents. Player choices shape the experience.",
+            "Its music, characters, and awareness of game conventions give the story much of its identity."
+        ],
+        "examples": [
+            "A player can look for a way to resolve an encounter through conversation and actions instead of attacking."
+        ],
+        "references": [
+            {
+                "label": "Undertale’s official description",
+                "href": "https://undertale.com/about/"
+            }
+        ],
+        "related": [
+            "toby-fox",
+            "deltarune",
+            "xp-exp"
+        ],
+        "links": [
+            {
+                "text": "Toby Fox",
+                "href": "/compendium/toby-fox/"
+            },
+            {
+                "text": "Undertale",
+                "href": "/compendium/undertale/",
+                "cite": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/undertale.webp",
+            "alt": "A human character lying among flowers at the beginning of Undertale.",
+            "width": 640,
+            "height": 480,
+            "caption": "An official Undertale screenshot from the game’s introduction.",
+            "credit": {
+                "label": "Toby Fox/official game website",
+                "href": "https://undertale.com/about/"
+            }
+        }
+    },
+    {
+        "slug": "deltarune",
+        "term": "Deltarune",
+        "definition": "A role-playing game by Toby Fox that follows a group of characters through mysterious worlds, combining exploration, dialogue, and patterned battles.",
+        "tags": [
+            "Games",
+            "Fandoms",
+            "Storytelling"
+        ],
+        "context": [
+            "Deltarune has connections to Undertale through familiar faces and ideas. Its official FAQ describes its setting as a different world.",
+            "The game uses a party of characters, music, humor, and encounters that give players decisions about how to proceed."
+        ],
+        "examples": [
+            "A battle can ask the party to coordinate actions while the player dodges incoming patterns."
+        ],
+        "references": [
+            {
+                "label": "Official Deltarune website",
+                "href": "https://deltarune.com/"
+            },
+            {
+                "label": "Deltarune’s official FAQ",
+                "href": "https://deltarune.com/help/"
+            }
+        ],
+        "related": [
+            "toby-fox",
+            "undertale",
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Toby Fox",
+                "href": "/compendium/toby-fox/"
+            },
+            {
+                "text": "Undertale",
+                "href": "/compendium/undertale/",
+                "cite": true
+            },
+            {
+                "text": "Deltarune",
+                "href": "/compendium/deltarune/",
+                "cite": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/deltarune.webp",
+            "alt": "Kris, Susie, and Ralsei silhouetted in front of a fountain in Deltarune key art.",
+            "width": 960,
+            "height": 780,
+            "caption": "Official Deltarune key art featuring Kris, Susie, and Ralsei.",
+            "credit": {
+                "label": "Toby Fox/official game website",
+                "href": "https://deltarune.com/"
+            }
+        }
+    },
+    {
+        "slug": "sectumsempra",
+        "term": "Sectumsempra",
+        "definition": "A harmful spell in Harry Potter that causes severe cuts to its target.",
+        "tags": [
+            "Fandoms",
+            "Literature"
+        ],
+        "context": [
+            "Harry encounters the spell in the annotated copy of Advanced Potion-Making used in Harry Potter and the Half-Blood Prince. Its dangerous effects are central to what he learns about the book’s notes.",
+            "The spell is associated with Severus Snape and illustrates how the story gives individual magic a history and a moral weight."
+        ],
+        "examples": [
+            "A discussion of Sectumsempra can examine what happens when a character uses an unfamiliar spell without understanding its consequences."
+        ],
+        "references": [
+            {
+                "label": "The official Harry Potter site on spell names",
+                "href": "https://www.harrypotter.com/features/the-etymology-of-harry-potter-spells"
+            },
+            {
+                "label": "The official site on Harry’s use of Sectumsempra",
+                "href": "https://www.harrypotter.com/features/harry-potters-worst-decisions"
+            }
+        ],
+        "related": [
+            "felix-felicis",
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Sectumsempra",
+                "href": "/compendium/sectumsempra/"
+            },
+            {
+                "text": "Severus Snape",
+                "href": "https://www.harrypotter.com/fact-file/characters-and-pets/severus-snape"
+            },
+            {
+                "text": "Harry Potter",
+                "href": "https://www.harrypotter.com/"
+            },
+            {
+                "text": "Harry Potter and the Half-Blood Prince",
+                "href": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince",
+                "cite": true
+            },
+            {
+                "text": "Advanced Potion-Making",
+                "href": "https://harrypotter.fandom.com/wiki/Advanced_Potion-Making",
+                "cite": true
+            }
+        ]
+    },
+    {
+        "slug": "reality-distortion-field",
+        "term": "Reality Distortion Field",
+        "definition": "A phrase associated with Steve Jobs for persuasive confidence that can reshape how other people judge what is possible.",
+        "tags": [
+            "People",
+            "Technology",
+            "Vocabulary"
+        ],
+        "aliases": [
+            "RDF",
+            "Steve Jobs’s RDF",
+            "Steve Jobs Reality Distortion Field"
+        ],
+        "context": [
+            "Often abbreviated RDF, the phrase was used by Bud Tribble to describe Steve Jobs in 1981, as recounted by Macintosh team member Andy Hertzfeld. The description combines charisma, insistence, and the ability to make an ambitious outcome feel achievable.",
+            "The phrase is often used when discussing the boundary between motivating people to exceed expectations and persuading them to discount practical limits."
+        ],
+        "examples": [
+            "A team initially calls a deadline impossible, then leaves a presentation convinced that the project can be finished in time."
+        ],
+        "references": [
+            {
+                "label": "Andy Hertzfeld’s account at Folklore.org",
+                "href": "https://www.folklore.org/Reality_Distortion_Field.html"
+            }
+        ],
+        "related": [
+            "cognitive-bias",
+            "specious"
+        ],
+        "links": [
+            {
+                "text": "Steve Jobs",
+                "href": "https://www.apple.com/stevejobs/"
+            },
+            {
+                "text": "Bud Tribble",
+                "href": "https://en.wikipedia.org/wiki/Bud_Tribble"
+            },
+            {
+                "text": "Andy Hertzfeld",
+                "href": "https://www.folklore.org/"
+            }
+        ]
+    },
+    {
+        "slug": "gordian-knot",
+        "term": "Gordian Knot",
+        "definition": "An exceptionally difficult or tangled problem, named for the ancient story of Alexander the Great and an intricate knot.",
+        "tags": [
+            "History",
+            "Vocabulary"
+        ],
+        "context": [
+            "In the legend, the knot was associated with a prediction about the person who could undo it. Alexander the Great is famously said to have solved the challenge by cutting through it.",
+            "To cut the Gordian knot now means to resolve a stubborn problem through a decisive move that changes or bypasses the terms of the puzzle."
+        ],
+        "examples": [
+            "A project might cut its Gordian knot by replacing an unnecessary approval system that keeps every small decision stalled."
+        ],
+        "references": [
+            {
+                "label": "The Gordian knot in the Encyclopaedia Britannica",
+                "href": "https://www.britannica.com/topic/Gordian-knot"
+            }
+        ],
+        "related": [
+            "specious"
+        ],
+        "links": [
+            {
+                "text": "Gordian Knot",
+                "href": "/compendium/gordian-knot/"
+            },
+            {
+                "text": "Alexander the Great",
+                "href": "https://www.britannica.com/biography/Alexander-the-Great"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/gordian-knot.webp",
+            "alt": "A painting of Alexander the Great cutting the Gordian knot.",
+            "width": 1100,
+            "height": 860,
+            "caption": "Jean-Simon Berthélemy’s depiction of Alexander cutting the Gordian knot.",
+            "credit": {
+                "label": "Jean-Simon Berthélemy",
+                "href": "https://commons.wikimedia.org/wiki/File:Alexander_cuts_the_Gordian_Knot.jpg"
+            },
+            "license": {
+                "label": "Public domain",
+                "href": "https://creativecommons.org/publicdomain/mark/1.0/"
+            }
+        }
+    },
+    {
+        "slug": "question-and-answer-site",
+        "term": "Question-and-Answer Site",
+        "definition": "A website organized around people asking questions and receiving answers from other users.",
+        "tags": [
+            "Web Development",
+            "Knowledge",
+            "Internet Culture"
+        ],
+        "aliases": [
+            "Q&A Site",
+            "Question and Answer Site",
+            "Q and A Site"
+        ],
+        "context": [
+            "Often shortened to Q&A site, a question-and-answer site usually gives each question a page where answers can be read together. Features such as topic labels, voting, accepted answers, and moderation help organize the knowledge.",
+            "Stack Overflow is a well-known example focused on programming. My Mayvene project explores questions, answers, and how a community can build useful knowledge."
+        ],
+        "examples": [
+            "Someone asks how a CSS layout works, and the answers explain different approaches with examples."
+        ],
+        "references": [
+            {
+                "label": "Stack Overflow’s explanation of its format",
+                "href": "https://stackoverflow.com/tour"
+            },
+            {
+                "label": "My projects, including Mayvene",
+                "href": "/projects/"
+            }
+        ],
+        "related": [
+            "compendium",
+            "op-original-poster",
+            "expository-writing"
+        ],
+        "links": [
+            {
+                "text": "CSS",
+                "href": "/compendium/css/"
+            },
+            {
+                "text": "question-and-answer site",
+                "href": "/compendium/question-and-answer-site/"
+            },
+            {
+                "text": "Mayvene",
+                "href": "/projects/"
+            },
+            {
+                "text": "Stack Overflow",
+                "href": "https://stackoverflow.com/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/Mayvene_brain_logo.png",
+            "alt": "The brain-shaped logo of Mayvene, Aaron Schlossberg’s question-and-answer project.",
+            "width": 755,
+            "height": 680,
+            "caption": "Mayvene is my question-and-answer project. This image shows its branding.",
+            "credit": {
+                "label": "My projects, including Mayvene",
+                "href": "/projects/"
+            }
+        }
+    },
+    {
+        "slug": "torii",
+        "term": "Torii",
+        "definition": "A traditional Japanese gate that marks an entrance or boundary associated with a Shinto shrine.",
+        "tags": [
+            "Places",
+            "Religion",
+            "Culture"
+        ],
+        "aliases": [
+            "Torii Gate"
+        ],
+        "context": [
+            "A torii often marks a transition between ordinary space and the sacred precincts of a shrine. Gates vary in material and shape, and some shrines have a sequence of them.",
+            "The boundary makes torii relevant to the idea of liminal space. The famous gate at Itsukushima Shrine on Miyajima stands in the tidal waterfront."
+        ],
+        "examples": [
+            "Passing under a torii can signal that a visitor is entering a shrine’s grounds."
+        ],
+        "references": [
+            {
+                "label": "Shrine traditions from the Japan National Tourism Organization",
+                "href": "https://www.japan.travel/en/guide/shrine-and-temple-traditions/"
+            },
+            {
+                "label": "Itsukushima Shrine’s official website",
+                "href": "https://www.itsukushimajinja.jp/en/"
+            }
+        ],
+        "related": [
+            "liminal-space",
+            "numinous"
+        ],
+        "links": [
+            {
+                "text": "Liminal Space",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "Torii",
+                "href": "/compendium/torii/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "Shinto",
+                "href": "https://www.japan.travel/en/guide/shrine-and-temple-traditions/"
+            },
+            {
+                "text": "Itsukushima Shrine",
+                "href": "https://www.itsukushimajinja.jp/en/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/torii.webp",
+            "alt": "The red torii gate of Itsukushima Shrine standing in the tidal waterfront.",
+            "width": 982,
+            "height": 578,
+            "caption": "The torii at Itsukushima Shrine on Miyajima.",
+            "credit": {
+                "label": "Rdsmith4, resized",
+                "href": "https://commons.wikimedia.org/wiki/File:Itsukushima_torii.jpg"
+            },
+            "license": {
+                "label": "CC BY-SA 2.5",
+                "href": "https://creativecommons.org/licenses/by-sa/2.5"
+            }
+        }
+    },
+    {
+        "slug": "astley-paradox",
+        "term": "The Astley Paradox",
+        "definition": "An internet joke about asking Rick Astley for the film Up and treating either possible answer as a broken promise from his best-known song.",
+        "tags": [
+            "Internet Culture",
+            "Music",
+            "Humor"
+        ],
+        "aliases": [
+            "Astley Paradox",
+            "Rick Astley Paradox"
+        ],
+        "context": [
+            "The joke plays on different meanings of the words in the song Never Gonna Give You Up. Handing over a copy of Up seems to contradict one promise, while refusing seems to contradict another.",
+            "Its apparent contradiction comes from wordplay between giving someone a film and giving up on a person."
+        ],
+        "examples": [
+            "Someone asks Rick Astley to lend them Up, then claims that either lending it or refusing will defeat the promises in the song."
+        ],
+        "references": [
+            {
+                "label": "The Astley Paradox in Know Your Meme’s archive",
+                "href": "https://knowyourmeme.com/photos/2064225-rickroll"
+            },
+            {
+                "label": "Up at Pixar",
+                "href": "https://www.pixar.com/upfilm"
+            }
+        ],
+        "related": [
+            "disney",
+            "the-game"
+        ],
+        "links": [
+            {
+                "text": "Rick Astley",
+                "href": "https://rickastley.co.uk/"
+            },
+            {
+                "text": "Up",
+                "href": "https://www.pixar.com/upfilm",
+                "cite": true,
+                "caseSensitive": true
+            },
+            {
+                "text": "Never Gonna Give You Up",
+                "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                "quote": true
+            },
+            {
+                "text": "Astley Paradox",
+                "href": "/compendium/astley-paradox/"
+            }
+        ]
+    },
+    {
+        "slug": "cognitive-dissonance",
+        "term": "Cognitive Dissonance",
+        "definition": "Psychological discomfort associated with holding conflicting beliefs or with acting in a way that conflicts with one’s beliefs.",
+        "tags": [
+            "Psychology"
+        ],
+        "context": [
+            "Cognitive dissonance theory examines how people respond to such inconsistency. A response can involve changing an action, revising a belief, or finding a justification.",
+            "The term is useful when examining a gap between what someone values and what they do."
+        ],
+        "examples": [
+            "A person values saving money but buys an expensive gadget, then emphasizes its usefulness to feel better about the purchase."
+        ],
+        "references": [
+            {
+                "label": "Cognitive dissonance in the APA Dictionary of Psychology",
+                "href": "https://dictionary.apa.org/cognitive-dissonance"
+            },
+            {
+                "label": "Cognitive dissonance theory in the APA Dictionary",
+                "href": "https://dictionary.apa.org/cognitive-dissonance-theory"
+            }
+        ],
+        "related": [
+            "cognitive-bias",
+            "cognitive-economy"
+        ],
+        "links": [
+            {
+                "text": "Cognitive Dissonance",
+                "href": "/compendium/cognitive-dissonance/"
+            }
+        ]
+    },
+    {
+        "slug": "cognitive-bias",
+        "term": "Cognitive Bias",
+        "definition": "A systematic tendency in thinking or judgment that can affect how people interpret information and make decisions.",
+        "tags": [
+            "Psychology"
+        ],
+        "context": [
+            "A cognitive bias can influence which evidence someone notices, how they remember it, or how they weigh it. Confirmation bias, for example, favors information that supports an existing belief.",
+            "Specific biases have different causes and effects. Recognizing a named pattern gives people a way to examine a particular judgment more closely."
+        ],
+        "examples": [
+            "Someone researching a product reads only reviews that support the purchase they already want to make."
+        ],
+        "references": [
+            {
+                "label": "Cognitive bias at the American Psychological Association",
+                "href": "https://dictionary.apa.org/cognitive-bias"
+            },
+            {
+                "label": "Confirmation bias in the APA Dictionary",
+                "href": "https://dictionary.apa.org/confirmation-bias"
+            }
+        ],
+        "related": [
+            "cognitive-dissonance",
+            "cognitive-economy",
+            "specious"
+        ],
+        "links": [
+            {
+                "text": "Cognitive Bias",
+                "href": "/compendium/cognitive-bias/"
+            },
+            {
+                "text": "confirmation bias",
+                "href": "https://dictionary.apa.org/confirmation-bias"
+            }
+        ]
+    },
+    {
+        "slug": "the-game",
+        "term": "The Game",
+        "definition": "A mind game whose goal is to avoid thinking about the Game. Thinking about it counts as a loss, which players commonly announce.",
+        "tags": [
+            "Games",
+            "Internet Culture"
+        ],
+        "aliases": [
+            "I Lost the Game",
+            "The Game Mind Game"
+        ],
+        "context": [
+            "The familiar announcement is “I lost the Game.” After a loss, play continues as people eventually forget about it again.",
+            "Rules and grace periods vary between groups. A conversation or explanation about the Game can itself prompt another loss."
+        ],
+        "examples": [
+            "A friend remembers the Game during an unrelated conversation and announces the loss."
+        ],
+        "references": [
+            {
+                "label": "The Game as a mind game",
+                "href": "https://en.wikipedia.org/wiki/The_Game_(mind_game)"
+            }
+        ],
+        "related": [
+            "astley-paradox"
+        ],
+        "links": [
+            {
+                "text": "The Game",
+                "href": "/compendium/the-game/"
+            }
+        ]
+    },
+    {
+        "slug": "felix-felicis",
+        "term": "Felix Felicis",
+        "definition": "The luck-enhancing potion in Harry Potter, also known as Liquid Luck.",
+        "tags": [
+            "Fandoms",
+            "Literature"
+        ],
+        "aliases": [
+            "Liquid Luck"
+        ],
+        "context": [
+            "Felix Felicis is associated with a period in which events seem to favor the person who drinks it. It features in Harry Potter and the Half-Blood Prince.",
+            "The potion provides a useful story device for exploring confidence, opportunity, and the difference between planning and fortunate circumstances."
+        ],
+        "examples": [
+            "A character who drinks Felix Felicis follows an impulse that leads them toward a needed conversation."
+        ],
+        "references": [
+            {
+                "label": "The official Harry Potter site on spells and potions",
+                "href": "https://www.harrypotter.com/features/which-is-better-potions-spells"
+            },
+            {
+                "label": "Potions in the official Harry Potter encyclopedia",
+                "href": "https://www.harrypotter.com/fact-file/magical-miscellany/potions"
+            }
+        ],
+        "related": [
+            "sectumsempra",
+            "worldbuilding"
+        ],
+        "links": [
+            {
+                "text": "Felix Felicis",
+                "href": "/compendium/felix-felicis/"
+            },
+            {
+                "text": "Harry Potter",
+                "href": "https://www.harrypotter.com/"
+            },
+            {
+                "text": "Harry Potter and the Half-Blood Prince",
+                "href": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince",
+                "cite": true
+            }
+        ]
+    },
+    {
+        "slug": "marvins-friend",
+        "term": "Marvin’s Friend",
+        "definition": "The Lifeform encountered by Marvin Leigh in Kane Pixels’s Backrooms - Pitfalls, later jokingly called “Marvin’s Friend” in the series.",
+        "tags": [
+            "Backrooms",
+            "Horror",
+            "Fandoms"
+        ],
+        "aliases": [
+            "Marvin's Friend",
+            "Pitfalls Lifeform"
+        ],
+        "context": [
+            "In Backrooms - Pitfalls, Marvin Leigh encounters the Lifeform after falling into a different part of the environment. His encounter is the one this nickname refers to.",
+            "Dialogue in Backrooms - Reunion uses “Marvin’s Friend” as a joking name. Fan discussions also use the broader label Lifeform when discussing the creatures in Kane Parsons’s series."
+        ],
+        "examples": [
+            "A fan discussing the Pitfalls encounter might call the Lifeform “Marvin’s Friend.”"
+        ],
+        "references": [
+            {
+                "label": "Backrooms - Pitfalls by Kane Pixels",
+                "href": "https://www.youtube.com/watch?v=0XwlWXtpaCM"
+            },
+            {
+                "label": "Backrooms - Reunion by Kane Pixels",
+                "href": "https://www.youtube.com/watch?v=ye6YpxFE9jk"
+            },
+            {
+                "label": "Discussion of the nickname in r/KanePixelsBackrooms",
+                "href": "https://www.reddit.com/r/KanePixelsBackrooms/comments/1mjvszr/why_iswas_it_named_marvins_friend/"
+            }
+        ],
+        "related": [
+            "kane-parsons",
+            "backrooms",
+            "found-footage"
+        ],
+        "links": [
+            {
+                "text": "Kane Parsons",
+                "href": "/compendium/kane-parsons/"
+            },
+            {
+                "text": "Marvin’s Friend",
+                "href": "/compendium/marvins-friend/"
+            },
+            {
+                "text": "Backrooms",
+                "href": "/compendium/backrooms/"
+            },
+            {
+                "text": "Backrooms - Pitfalls",
+                "href": "https://www.youtube.com/watch?v=0XwlWXtpaCM",
+                "quote": true
+            },
+            {
+                "text": "Backrooms - Reunion",
+                "href": "https://www.youtube.com/watch?v=ye6YpxFE9jk",
+                "quote": true
+            },
+            {
+                "text": "Kane Pixels",
+                "href": "/compendium/kane-parsons/"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/pitfalls-lifeform-hallway.webp",
+            "alt": "A dim corridor from Marvin’s Lifeform encounter in Backrooms - Pitfalls.",
+            "width": 960,
+            "height": 720,
+            "caption": "The corridor sequence from Marvin’s Lifeform encounter in Backrooms - Pitfalls.",
+            "credit": {
+                "label": "Kane Pixels/original episode",
+                "href": "https://www.youtube.com/watch?v=0XwlWXtpaCM"
+            }
+        }
+    },
+    {
+        "slug": "philanthropy",
+        "term": "Philanthropy",
+        "definition": "Efforts to promote other people’s well-being or the public good, often through giving money, time, expertise, or other resources.",
+        "tags": [
+            "Society",
+            "Vocabulary"
+        ],
+        "context": [
+            "Philanthropy can support causes such as education, health, culture, and community life. It can be practiced by individuals, groups, or organizations.",
+            "The word centers the intended benefit to others and can cover both immediate help and long-term support for a cause."
+        ],
+        "examples": [
+            "A donor funds scholarships, while volunteers contribute their time and professional skills to the same educational program."
+        ],
+        "references": [
+            {
+                "label": "Philanthropy in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/philanthropy"
+            }
+        ],
+        "related": [
+            "gift-economy"
+        ],
+        "links": [
+            {
+                "text": "Philanthropy",
+                "href": "/compendium/philanthropy/"
+            }
+        ]
+    },
+    {
+        "slug": "cognitive-economy",
+        "term": "Cognitive Economy",
+        "definition": "The use of mental categories or shortcuts to gain useful information while conserving limited attention and effort.",
+        "tags": [
+            "Psychology",
+            "Knowledge"
+        ],
+        "context": [
+            "In Eleanor Rosch’s account of categorization, categories help people retain useful distinctions while reducing the need to process every individual difference.",
+            "Calling an object a chair can quickly suggest how to use it, even when its shape is unfamiliar. The level of detail needed depends on the task."
+        ],
+        "examples": [
+            "At a glance, a person sorts several unfamiliar objects into “chairs” and “tables” before deciding where to sit."
+        ],
+        "references": [
+            {
+                "label": "Eleanor Rosch’s Principles of Categorization",
+                "href": "https://www2.denizyuret.com/bib/rosch/rosch1999principles/QL-75cadM2D.pdf"
+            }
+        ],
+        "related": [
+            "cognitive-bias",
+            "compendium"
+        ],
+        "links": [
+            {
+                "text": "Eleanor Rosch",
+                "href": "https://psychology.berkeley.edu/people/eleanor-rosch"
+            }
+        ]
+    },
+    {
+        "slug": "gift-economy",
+        "term": "Gift Economy",
+        "definition": "A system in which goods or services circulate through giving and social relationships, often with expectations of reciprocity.",
+        "tags": [
+            "Economics",
+            "Society"
+        ],
+        "context": [
+            "A gift economy can connect people through ongoing obligations, trust, or shared identity. Reciprocity may happen later or take a different form from the original gift.",
+            "Gift exchange can exist alongside markets and other ways of distributing resources. The relationships involved are important to understanding how it works."
+        ],
+        "examples": [
+            "Neighbors share tools, help with repairs, and bring food to one another over time without pricing each favor as a separate transaction."
+        ],
+        "references": [
+            {
+                "label": "Exchange and reciprocity in OpenStax’s anthropology textbook",
+                "href": "https://openstax.org/books/introduction-anthropology/pages/7-6-exchange-value-and-consumption"
+            }
+        ],
+        "related": [
+            "philanthropy",
+            "boots-theory"
+        ],
+        "links": [
+            {
+                "text": "Gift Economy",
+                "href": "/compendium/gift-economy/"
+            }
+        ]
+    },
+    {
+        "slug": "sb-129",
+        "term": "SB-129",
+        "definition": "A SpongeBob SquarePants episode in which Squidward’s attempts to find peace take him through time and into a strangely empty space.",
+        "tags": [
+            "Film",
+            "Fandoms",
+            "Liminal Spaces"
+        ],
+        "aliases": [
+            "SB129",
+            "SpongeBob SB-129"
+        ],
+        "context": [
+            "After being frozen far into the future, Squidward uses a time machine and moves through radically different environments. The episode’s empty, abstract setting has become especially recognizable in discussions of isolation and liminal imagery.",
+            "Its change from familiar cartoon places to an almost featureless environment makes atmosphere part of the joke and the unease."
+        ],
+        "examples": [
+            "A discussion of the episode’s “alone” sequence can connect it to forlornness and liminal space."
+        ],
+        "references": [
+            {
+                "label": "SB-129 at SpongeBob Wiki",
+                "href": "https://spongebobwiki.org/wiki/SB-129"
+            },
+            {
+                "label": "SB-129 at Wikipedia",
+                "href": "https://en.wikipedia.org/wiki/SB-129"
+            }
+        ],
+        "related": [
+            "liminal-space",
+            "forlornness",
+            "kenopsia"
+        ],
+        "links": [
+            {
+                "text": "Liminal Space",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "Forlornness",
+                "href": "/compendium/forlornness/"
+            },
+            {
+                "text": "liminal",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "SpongeBob SquarePants",
+                "href": "https://www.nick.com/shows/spongebob-squarepants",
+                "cite": true
+            }
+        ],
+        "image": {
+            "src": "/assets/img/compendium/sb-129.webp",
+            "width": 1438,
+            "height": 1080,
+            "alt": "The SB-129 episode title card from SpongeBob SquarePants.",
+            "caption": "The title card for the SpongeBob SquarePants episode SB-129.",
+            "credit": {
+                "label": "Nickelodeon, via SpongeBob Wiki",
+                "href": "https://spongebobwiki.org/wiki/SB-129"
+            }
+        }
+    },
+    {
+        "slug": "enshittification",
+        "term": "Enshittification",
+        "definition": "Cory Doctorow’s term for the deterioration of a platform as its operators shift benefits away from users and partners toward extracting more value for themselves.",
+        "tags": [
+            "Internet Culture",
+            "Technology",
+            "Economics"
+        ],
+        "context": [
+            "Doctorow describes a progression in which a platform attracts users, then favors business customers or suppliers, and ultimately captures more of the value for its owners.",
+            "The term is often applied to changes in advertising, visibility, fees, or access that make a once-useful service worse for the people depending on it."
+        ],
+        "examples": [
+            "A service first helps people find relevant posts, then fills the same space with paid placements and increasingly costly access."
+        ],
+        "references": [
+            {
+                "label": "Cory Doctorow’s explanation at Pluralistic",
+                "href": "https://pluralistic.net/2023/01/21/potemkin-ai/"
+            }
+        ],
+        "related": [
+            "question-and-answer-site",
+            "cognitive-bias"
+        ],
+        "links": [
+            {
+                "text": "Cory Doctorow",
+                "href": "https://craphound.com/"
+            }
+        ]
+    },
+    {
+        "slug": "xp-exp",
+        "term": "XP/EXP",
+        "definition": "Common abbreviations for experience points, a game resource used to measure progress and often advance a character’s level or abilities.",
+        "tags": [
+            "Games",
+            "Vocabulary"
+        ],
+        "aliases": [
+            "XP",
+            "EXP",
+            "Experience Points"
+        ],
+        "context": [
+            "Games can award experience for battles, quests, exploration, or other accomplishments. The amount needed for a new level and the benefits of gaining one depend on the game.",
+            "In Pokémon, experience contributes to a Pokémon’s progress toward higher levels. Individual games can also give familiar abbreviations special meanings within their stories."
+        ],
+        "examples": [
+            "A character gains enough XP from a completed quest to reach the next level."
+        ],
+        "references": [
+            {
+                "label": "PlayStation’s gaming glossary",
+                "href": "https://www.playstation.com/en-ca/editorial/playstation-ultimate-gaming-glossary/"
+            },
+            {
+                "label": "Experience in Bulbapedia",
+                "href": "https://bulbapedia.bulbagarden.net/wiki/Experience"
+            }
+        ],
+        "related": [
+            "pokemon",
+            "undertale",
+            "op-overpowered"
+        ],
+        "links": [
+            {
+                "text": "Pokémon",
+                "href": "/compendium/pokemon/"
+            },
+            {
+                "text": "experience points",
+                "href": "/compendium/xp-exp/"
+            },
+            {
+                "text": "XP",
+                "href": "/compendium/xp-exp/"
+            }
+        ]
+    },
+    {
+        "slug": "emoji",
+        "term": "Emoji",
+        "definition": "A pictorial symbol used in digital text to express an idea, object, reaction, or emotion.",
+        "tags": [
+            "Internet Culture",
+            "Technology"
+        ],
+        "context": [
+            "Unicode defines characters and sequences used for many emoji. A device or application supplies the artwork, so the same emoji can look different across platforms.",
+            "An emoticon builds an expression from ordinary text characters. Emoji supply pictorial symbols, sometimes formed from a sequence of several encoded characters."
+        ],
+        "examples": [
+            "A message can end with a smiling-face emoji, such as 🙂, to help convey its tone."
+        ],
+        "references": [
+            {
+                "label": "Unicode’s emoji FAQ",
+                "href": "https://www.unicode.org/faq/emoji_dingbats.html"
+            },
+            {
+                "label": "Unicode Emoji standard",
+                "href": "https://www.unicode.org/reports/tr51/"
+            }
+        ],
+        "related": [
+            "emoticon",
+            "html"
+        ],
+        "links": [
+            {
+                "text": "Emoji",
+                "href": "/compendium/emoji/"
+            },
+            {
+                "text": "Emoticon",
+                "href": "/compendium/emoticon/"
+            },
+            {
+                "text": "Unicode",
+                "href": "https://www.unicode.org/"
+            }
+        ]
+    },
+    {
+        "slug": "emoticon",
+        "term": "Emoticon",
+        "definition": "An expression made from text characters, such as :-) or :-(, to suggest a face or convey a feeling.",
+        "tags": [
+            "Internet Culture",
+            "Technology",
+            "Vocabulary"
+        ],
+        "context": [
+            "Emoticons can use punctuation, letters, and other characters. Some are read sideways, while forms such as ^_^ face the reader directly.",
+            "Emoji use pictorial symbols. Many apps also turn typed emoticons into graphical faces automatically."
+        ],
+        "examples": [
+            "A writer adds :-) to a short message to suggest a friendly tone."
+        ],
+        "references": [
+            {
+                "label": "Emoticons in the Unicode Emoji standard",
+                "href": "https://www.unicode.org/reports/tr51/"
+            },
+            {
+                "label": "Emoticon in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/emoticon"
+            }
+        ],
+        "related": [
+            "emoji"
+        ],
+        "links": [
+            {
+                "text": "Emoji",
+                "href": "/compendium/emoji/"
+            }
+        ]
+    },
+    {
+        "slug": "halloweekend",
+        "term": "Halloweekend",
+        "definition": "An informal name for a weekend of Halloween celebrations.",
+        "tags": [
+            "Culture",
+            "Vocabulary"
+        ],
+        "context": [
+            "Halloweekend often refers to the weekend on or near Halloween, especially when parties and campus events spread the celebration across several days.",
+            "Its exact dates depend on the calendar and on how a group uses the name."
+        ],
+        "examples": [
+            "A college group might schedule a costume party and a game night as two parts of Halloweekend."
+        ],
+        "references": [
+            {
+                "label": "An example of Halloweekend usage at Clark University",
+                "href": "https://www.clarku.edu/events/all-campus-events/list/?hide_subsequent_recurrences=1&tribe-bar-date=2026-10-30"
+            }
+        ],
+        "related": [
+            "the-game"
+        ],
+        "links": [
+            {
+                "text": "Halloweekend",
+                "href": "/compendium/halloweekend/"
+            }
+        ]
+    },
+    {
+        "slug": "spoonerism",
+        "term": "Spoonerism",
+        "definition": "A mix-up in which the opening sounds of two words exchange places, often producing a humorous phrase.",
+        "tags": [
+            "Writing",
+            "Humor",
+            "Vocabulary"
+        ],
+        "context": [
+            "Spoonerisms can happen accidentally or be constructed deliberately. The term is named after William Archibald Spooner.",
+            "The exchange concerns sounds, so a written example may need different spelling to represent the resulting words."
+        ],
+        "examples": [
+            "Switching the initial sounds of “light rain” produces “right lane.”"
+        ],
+        "references": [
+            {
+                "label": "Spoonerism in Merriam-Webster",
+                "href": "https://www.merriam-webster.com/dictionary/spoonerism"
+            }
+        ],
+        "related": [
+            "astley-paradox"
+        ],
+        "links": [
+            {
+                "text": "William Archibald Spooner",
+                "href": "https://en.wikipedia.org/wiki/William_Archibald_Spooner"
+            }
+        ]
+    },
+    {
+        "slug": "op-overpowered",
+        "term": "OP (Overpowered)",
+        "definition": "A description of a character, ability, item, or strategy whose power is unusually high compared with the challenge or its alternatives.",
+        "tags": [
+            "Games",
+            "Fandoms",
+            "Vocabulary"
+        ],
+        "aliases": [
+            "OP",
+            "Overpowered",
+            "Over-Powered"
+        ],
+        "context": [
+            "In games, calling something OP often suggests that it dominates too easily or disrupts the expected balance. In discussions of fiction, the same word can describe a character whose abilities overwhelm most obstacles.",
+            "The judgment depends on the setting, opponents, and rules being discussed."
+        ],
+        "examples": [
+            "A weapon that makes most encounters trivial might be described as OP."
+        ],
+        "references": [
+            {
+                "label": "OP in PlayStation’s gaming glossary",
+                "href": "https://www.playstation.com/en-ca/editorial/playstation-ultimate-gaming-glossary/"
+            }
+        ],
+        "related": [
+            "xp-exp",
+            "op-original-poster"
+        ],
+        "links": [
+            {
+                "text": "OP",
+                "href": "/compendium/op-overpowered/"
+            }
+        ]
+    },
+    {
+        "slug": "op-original-poster",
+        "term": "OP (Original Poster)",
+        "definition": "The person who started an online post or discussion thread.",
+        "tags": [
+            "Internet Culture",
+            "Vocabulary"
+        ],
+        "aliases": [
+            "OP",
+            "Original Poster",
+            "Original Post"
+        ],
+        "context": [
+            "People use OP to refer back to the author of the initial post when a thread has many replies. Depending on the sentence, it can also refer to the original post itself.",
+            "On a question-and-answer site, the question’s author might be called OP in the discussion beneath it."
+        ],
+        "examples": [
+            "“The OP added an example that makes the question easier to understand.”"
+        ],
+        "references": [
+            {
+                "label": "OP in the Cambridge Dictionary",
+                "href": "https://dictionary.cambridge.org/dictionary/english/op?topic=internet-terminology-and-abbreviations"
+            }
+        ],
+        "related": [
+            "question-and-answer-site",
+            "op-overpowered"
+        ],
+        "links": [
+            {
+                "text": "question-and-answer site",
+                "href": "/compendium/question-and-answer-site/"
+            },
+            {
+                "text": "OP",
+                "href": "/compendium/op-original-poster/"
+            }
+        ]
+    }
+]

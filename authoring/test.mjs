@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { load } from "cheerio";
-import { renderBody } from "./documents.mjs";
+import { renderBody, renderPage } from "./documents.mjs";
 import {
     deleteDraft, getDocument, listPageParents, preparePublication, recoverPublication, saveDraft, saveImage
 } from "./repository.mjs";
@@ -67,6 +67,51 @@ function document(fields = {}) {
         ...fields
     };
 }
+
+test("previews paired slashes consistently without changing code, equations or links", () => {
+    const body = { type: "doc", content: [
+        { type: "paragraph", content: [
+            { type: "text", text: "Writer ", marks: [{ type: "bold" }] },
+            { type: "text", text: "/ " },
+            { type: "text", text: "developer", marks: [{ type: "italic" }] },
+            { type: "text", text: " at " },
+            { type: "text", text: "this / site", marks: [{ type: "link", attrs: { href: "/about-me/" } }] },
+            { type: "studioInlineMath", attrs: { latex: "x / y" } },
+            { type: "text", text: "a / b", marks: [{ type: "code" }] }
+        ] },
+        { type: "codeBlock", content: [{ type: "text", text: "a / b" }] }
+    ] };
+    const rendered = renderPage(document({ title: "XP / EXP", body }), {
+        config: { language: "en", personName: "Author" }, preview: true
+    });
+    const $ = load(rendered.html);
+    assert.equal($("title").text(), "XP/EXP");
+    assert.equal($("h1").text(), "XP/EXP");
+    assert.equal($("strong").text(), "Writer");
+    assert.equal($("em").text(), "developer");
+    assert.equal($('.studio-prose a[href="/about-me/"]').text(), "this/site");
+    assert.equal($("code").first().text(), "a / b");
+    assert.equal($("pre code").text(), "a / b");
+    assert.equal($("annotation").text(), "x / y");
+    assert.equal(body.content[0].content[0].text, "Writer ");
+});
+
+test("Site Desk places title quotation marks outside linked and emphasized body text", () => {
+    const body = { type: "doc", content: [{ type: "paragraph", content: [
+        { type: "text", text: '“Marvin’s Friend”', marks: [
+            { type: "bold" }, { type: "italic" }, { type: "underline" },
+            { type: "link", attrs: { href: "/compendium/marvins-friend/" } }
+        ] }
+    ] }] };
+    const rendered = renderBody(body);
+    const $ = load(rendered.html);
+    assert.equal($("p").text(), "“Marvin’s Friend”");
+    assert.equal($("a").attr("href"), "/compendium/marvins-friend/");
+    assert.equal($("a").text(), "Marvin’s Friend");
+    assert.equal($("strong em u").text(), "Marvin’s Friend");
+    assert.equal($(".typography-quote").parents("a, strong, em, u").length, 0);
+    assert.equal(body.content[0].content[0].text, "“Marvin’s Friend”");
+});
 
 test("renders safe text, links, figures, numbered footnotes and MathML", () => {
     const file = "a".repeat(64) + ".png";

@@ -1,0 +1,377 @@
+/* Compendium index and entry pages */
+.compendium-main {
+    max-width: 960px;
+    color: var(--ink);
+    padding-bottom: 3rem;
+}
+
+.compendium-main [hidden] {
+    display: none;
+}
+
+.compendium-main > .breadcrumbs {
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.compendium-heading {
+    max-width: 43rem;
+    margin: 1.75rem auto;
+    text-align: center;
+}
+
+.compendium-heading p {
+    margin: 0.65rem 0 0;
+    color: #5e5053;
+}
+
+.compendium-main a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+}
+
+.compendium-main :is(a, button, input):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.compendium-panel,
+.compendium-detail {
+    padding: clamp(1rem, 4vw, 2rem);
+    border: 1px solid #ead8da;
+    box-shadow: 0 4px 18px rgba(36, 27, 27, 0.04);
+}
+
+.compendium-tools {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ead8da;
+}
+
+.compendium-tools label {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-weight: 700;
+}
+
+.compendium-tools input,
+.compendium-share-dialog input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid #a98389;
+    border-radius: 8px;
+    background: var(--card);
+    color: inherit;
+    font: inherit;
+}
+
+.compendium-filters {
+    min-width: 0;
+    margin: 1rem 0 0;
+    padding: 0;
+    border: 0;
+}
+
+.compendium-filters legend {
+    margin-bottom: 0.25rem;
+    padding: 0;
+    font-weight: 700;
+}
+
+.compendium-filters .compendium-filter-help {
+    margin: 0 0 0.65rem;
+    color: #5e5053;
+    font-size: 0.85rem;
+}
+
+.compendium-filter-options,
+.compendium-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.compendium-main .compendium-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid #dec4c9;
+    border-radius: 999px;
+    background: #fcf8f9;
+    color: var(--accent-dark);
+    font: inherit;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.compendium-tag:hover {
+    background: #f4e5e8;
+}
+
+.compendium-main .compendium-tags .compendium-tag {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.7rem;
+    line-height: 1.35;
+}
+
+.compendium-tag[aria-pressed="true"] {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: white;
+}
+
+.compendium-results {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.35rem 1rem;
+    margin-top: 1rem;
+}
+
+.compendium-results .compendium-result-count {
+    margin: 0;
+    color: #5e5053;
+    font-size: 0.875rem;
+}
+
+.compendium-reset {
+    padding: 0.3rem 0;
+    color: var(--accent-dark);
+    font-size: 0.875rem;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+}
+
+.compendium-panel .compendium-entries {
+    display: block;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.compendium-entry {
+    padding: 1.05rem 0 1.05rem 0.2rem;
+    border-bottom: 1px solid #eee3e5;
+    scroll-margin-top: 1rem;
+}
+
+.compendium-entry:last-child {
+    border-bottom: 0;
+}
+
+.compendium-entry::marker {
+    color: var(--accent);
+}
+
+.compendium-entry:target {
+    background: #fcf4f6;
+}
+
+.compendium-detail-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.65rem;
+}
+
+.compendium-panel .compendium-summary {
+    margin: 0;
+}
+
+.compendium-entry-line {
+    display: flow-root;
+}
+
+.compendium-entry-line .compendium-share-button {
+    float: right;
+    margin: 0.1rem 0 0.3rem 0.65rem;
+}
+
+.compendium-term {
+    font-weight: 700;
+}
+
+.compendium-share-button {
+    flex: none;
+    box-sizing: border-box;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.35rem;
+    border: 1px solid #dec4c9;
+    border-radius: 50%;
+    background: white;
+    color: var(--accent-dark);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.compendium-share-button svg {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    flex: none;
+}
+
+.compendium-share-button:hover {
+    background: #f4e5e8;
+}
+
+.compendium-main .compendium-tags {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.compendium-main .compendium-tags li {
+    margin: 0;
+}
+
+.compendium-detail-heading h1 {
+    flex-shrink: 0;
+    max-width: 100%;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.compendium-detail .compendium-definition {
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.compendium-image {
+    margin: 1.4rem 0;
+}
+
+.compendium-detail .compendium-image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 28rem;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.compendium-image figcaption {
+    margin-top: 0.65rem;
+    color: #5e5053;
+    font-size: 0.825rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.compendium-image-credit {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.75rem;
+}
+
+.compendium-section {
+    margin-top: 1.6rem;
+    padding: 1.35rem 0 0;
+    border-top: 1px solid #ead8da;
+}
+
+.compendium-detail .compendium-section h2 {
+    margin-bottom: 0.65rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.compendium-section ul {
+    display: block;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.compendium-section li + li {
+    margin-top: 0.65rem;
+}
+
+.compendium-section li {
+    line-height: 1.7;
+}
+
+.compendium-detail .compendium-related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.compendium-related li + li {
+    margin-top: 0;
+}
+
+.compendium-related li {
+    margin: 0;
+}
+
+.compendium-detail .compendium-back {
+    margin-top: 1.75rem;
+    font-size: 0.9rem;
+}
+
+.compendium-share-dialog {
+    box-sizing: border-box;
+    width: min(31rem, calc(100% - 2rem));
+    max-height: calc(100% - 2rem);
+    padding: 1.5rem;
+    border: 1px solid #dec4c9;
+    border-radius: 16px;
+    background: white;
+    color: var(--ink);
+    font-family: inherit;
+}
+
+.compendium-share-dialog::backdrop {
+    background: rgba(36, 27, 27, 0.45);
+}
+
+.compendium-share-dialog form {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0.5rem;
+}
+
+.compendium-close {
+    padding: 0.35rem;
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+.compendium-share-dialog h2 {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+.compendium-share-dialog label {
+    display: block;
+    margin-bottom: 0.45rem;
+}
+
+.compendium-share-dialog .cta-button {
+    margin-top: 1rem;
+}
+
+.compendium-share-status {
+    min-height: 1.5em;
+    margin: 0.75rem 0 0;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+    .compendium-main {
+        padding-inline: 0.75rem;
+    }
+
+    .compendium-detail-heading {
+        align-items: flex-start;
+    }
+
+}

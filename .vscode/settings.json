@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5503
+    "liveServer.settings.port": 5503,
+    "liveServer.settings.root": "/_site",
+    "liveServer.settings.file": "404.html"
 }

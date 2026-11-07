@@ -129,9 +129,16 @@
 html,
 body {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
 }
 
 body.iframe-page {
@@ -209,14 +216,6 @@ body.iframe-page iframe {
 
 .back-chip:hover {
     transform: translateY(-2px);
-}
-
-
-/* Footer current year */
-#current-year {
-    display: inline;
-    visibility: visible;
-    opacity: 1;
 }
 
 
@@ -427,57 +426,3 @@ body.iframe-page iframe {
 }
 
 
-/* Main site navigation and dropdown */
-.site-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.site-nav a,
-.nav-dropdown-button {
-    border: none;
-    background: none;
-    color: inherit;
-    font: inherit;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.nav-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.nav-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    z-index: 1000;
-    display: none;
-    min-width: 210px;
-    padding: 0.5rem;
-    border-radius: 12px;
-    background: white;
-    color: #2b1d1d;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-}
-
-.nav-dropdown-menu a {
-    display: block;
-    padding: 0.65rem 0.85rem;
-    border-radius: 8px;
-    color: #2b1d1d;
-}
-
-.nav-dropdown-menu a:hover {
-    background: #f3eeee;
-}
-
-.nav-dropdown:hover .nav-dropdown-menu,
-.nav-dropdown:focus-within .nav-dropdown-menu {
-    display: block;
-}
