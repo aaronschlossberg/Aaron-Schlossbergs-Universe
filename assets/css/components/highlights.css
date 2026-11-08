@@ -5,9 +5,9 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border: 1px solid #dddddd;
+    border: 1px solid light-dark(#dddddd, var(--night-line));
     border-radius: 12px;
-    background: #ffffff;
+    background: var(--card);
     color: inherit;
     text-decoration: none;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -50,7 +50,7 @@
 
 .highlight-card .highlight-card__meta {
     margin: 0;
-    color: #595959;
+    color: light-dark(#595959, var(--night-muted));
     font-size: 0.85rem;
     font-style: italic;
     opacity: 1;
@@ -92,10 +92,10 @@
     z-index: 2;
     width: 38px;
     height: 38px;
-    border: 1px solid #dddddd;
+    border: 1px solid light-dark(#dddddd, var(--night-line));
     border-radius: 50%;
-    background: #ffffff;
-    color: #222222;
+    background: var(--card);
+    color: light-dark(#222222, var(--night-ink));
     font-size: 2rem;
     line-height: 1;
     cursor: pointer;

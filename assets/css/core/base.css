@@ -2,7 +2,8 @@ body {
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    color: var(--ink);
+    background-color: light-dark(#f4f4f4, var(--paper));
 }
 
 header {
@@ -139,7 +140,7 @@ button {
 }
 
 a {
-    color: #0000ee;
+    color: var(--link);
 }
 
 .italic-text {
@@ -198,7 +199,7 @@ blockquote {
     margin-right: 0;
     margin-left: 0;
     padding-left: 10px;
-    border-left: 3px solid #000000;
+    border-left: 3px solid light-dark(#000000, var(--night-line));
 }
 
 #projects p,
@@ -220,15 +221,15 @@ blockquote {
 }
 
 #projects button a {
-    color: black;
-    background-color: white;
-    outline: 2px solid black;
+    color: light-dark(black, var(--night-ink));
+    background-color: var(--card);
+    outline: 2px solid light-dark(black, var(--night-line));
     outline-offset: 1px;
 }
 
 #projects button a:hover {
     transform: scale(1.1);
-    outline: 2px solid black;
+    outline: 2px solid light-dark(black, var(--night-line));
     outline-offset: 1px;
 }
 

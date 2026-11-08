@@ -43,7 +43,7 @@
     max-width: 300px;
     min-height: 210px;
     padding: 1.35rem;
-    border: 1px solid rgba(138, 47, 63, 0.18);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.18), rgba(239, 167, 182, 0.18));
     border-radius: 18px;
     background:
         radial-gradient(
@@ -51,7 +51,7 @@
             rgba(138, 47, 63, 0.13),
             transparent 38%
         ),
-        #ffffff;
+        var(--card);
     color: var(--ink);
     text-align: left;
     text-decoration: none;
@@ -78,7 +78,7 @@
 .image-hub-card p {
     flex-grow: 1;
     margin: 0;
-    color: #3d3333;
+    color: light-dark(#3d3333, var(--night-ink));
     line-height: 1.65;
     text-align: left;
 }
@@ -87,7 +87,7 @@
     display: inline-block;
     align-self: flex-start;
     margin-top: 1rem;
-    color: var(--accent);
+    color: var(--accent-text);
     font-weight: 700;
 }
 
@@ -124,7 +124,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.45rem 0.85rem;
-    border: 1px solid rgba(138, 47, 63, 0.18);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.18), rgba(239, 167, 182, 0.18));
     border-radius: 999px;
     background: rgba(138, 47, 63, 0.1);
     color: var(--accent-dark);
@@ -139,7 +139,7 @@
 
 .gallery-subnav a:hover,
 .gallery-subnav a:focus-visible {
-    border-color: rgba(138, 47, 63, 0.35);
+    border-color: light-dark(rgba(138, 47, 63, 0.35), rgba(239, 167, 182, 0.35));
     background: rgba(138, 47, 63, 0.17);
     color: var(--accent-dark);
     transform: translateY(-1px);
@@ -165,9 +165,9 @@
     max-width: 320px;
     margin: 0;
     overflow: hidden;
-    border: 1px solid rgba(138, 47, 63, 0.16);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.16), rgba(239, 167, 182, 0.16));
     border-radius: 18px;
-    background: #ffffff;
+    background: var(--card);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -178,7 +178,7 @@
     height: 340px;
     margin: 0;
     border-radius: 0;
-    background: #f4eeee;
+    background: light-dark(#f4eeee, var(--night-tint));
     object-fit: contain;
     object-position: center;
     box-shadow: none;
@@ -201,7 +201,7 @@
 .photo-card p {
     max-width: none;
     margin: 0 auto;
-    color: #3d3333;
+    color: light-dark(#3d3333, var(--night-ink));
     line-height: 1.6;
     text-align: center;
 }

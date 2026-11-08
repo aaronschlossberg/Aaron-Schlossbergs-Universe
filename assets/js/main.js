@@ -378,7 +378,7 @@ function initSiteNavigation() {
 
     dropdowns.forEach((dropdown) => {
         const toggle = dropdown.querySelector(".nav-dropdown-toggle");
-        const links = Array.from(dropdown.querySelectorAll(".nav-dropdown-menu a"));
+        const links = Array.from(dropdown.querySelectorAll(".nav-dropdown-menu a, .nav-dropdown-menu button"));
 
         toggle.addEventListener("click", () => {
             if (dropdown.hasAttribute("data-open")) closeMenu(dropdown);
@@ -386,7 +386,11 @@ function initSiteNavigation() {
         });
 
         dropdown.addEventListener("pointerenter", (event) => {
-            if (event.pointerType === "mouse" && hoverPointer.matches) openMenu(dropdown);
+            if (
+                event.pointerType === "mouse" &&
+                hoverPointer.matches &&
+                !dropdown.hasAttribute("data-theme-control")
+            ) openMenu(dropdown);
         });
 
         dropdown.addEventListener("pointerleave", () => {
@@ -432,6 +436,7 @@ function initSiteNavigation() {
 async function init() {
     // 1) Load header/footer/highlights first
     await loadPartials();
+    document.dispatchEvent(new Event("asu:partials-loaded"));
     initSiteNavigation();
     initCarousels();
 

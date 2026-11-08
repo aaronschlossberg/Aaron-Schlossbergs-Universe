@@ -174,17 +174,20 @@ html:has(.site-header :focus-visible) {
 }
 
 .nav-chevron {
+    display: inline-block;
     flex: none;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.7;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    box-sizing: border-box;
+    width: 7px;
+    height: 7px;
+    margin: 0 3px 3px;
+    border: solid currentColor;
+    border-width: 0 1.7px 1.7px 0;
+    transform: rotate(45deg);
     transition: transform 160ms ease;
 }
 
 .nav-dropdown[data-open] .nav-chevron {
-    transform: rotate(180deg);
+    transform: rotate(225deg);
 }
 
 .nav-dropdown-menu {
@@ -223,12 +226,12 @@ html:has(.site-header :focus-visible) {
 
 .nav-dropdown-menu a:hover,
 .nav-dropdown-menu a:focus-visible {
-    background: #f4ebed;
+    background: light-dark(#f4ebed, var(--night-tint));
     color: var(--accent-dark);
 }
 
 .nav-dropdown-menu a[aria-current="page"] {
-    background: #f4ebed;
+    background: light-dark(#f4ebed, var(--night-tint));
     color: var(--accent-dark);
     text-decoration: underline;
     text-underline-offset: 0.25em;
@@ -242,6 +245,80 @@ html:has(.site-header :focus-visible) {
 .nav-option-label {
     display: inline-block;
     transition: transform 160ms ease;
+}
+
+/* Appearance uses the same disclosure behavior as the navigation. */
+.appearance-control[hidden] {
+    display: none;
+}
+
+.appearance-toggle {
+    width: 44px;
+    height: 44px;
+    padding: 0.5rem;
+}
+
+.appearance-icon {
+    display: inline-block;
+    flex: none;
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.8%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M12%203a9%209%200%200%201%200%2018Z%22%20fill%3D%22black%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
+}
+
+/* Show the selected preference, including device mode in either color scheme. */
+:root[data-theme-preference="light"] .appearance-icon {
+    mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%224%22%2F%3E%3Cpath%20d%3D%22M12%202v2M12%2020v2M2%2012h2M20%2012h2M4.9%204.9l1.4%201.4M17.7%2017.7l1.4%201.4M4.9%2019.1l1.4-1.4M17.7%206.3l1.4-1.4%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:root[data-theme-preference="dark"] .appearance-icon {
+    mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M20.9%2013.1A9%209%200%200%201%2010.9%203.1%209%209%200%201%200%2020.9%2013.1Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.appearance-menu {
+    width: min(15.5rem, calc(100vw - 2rem));
+}
+
+.site-nav .appearance-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 44px;
+    padding: 0.65rem 0.8rem;
+    border-radius: 0.45rem;
+    color: var(--ink);
+    text-align: left;
+}
+
+.site-nav .appearance-option:hover,
+.site-nav .appearance-option:focus-visible,
+.site-nav .appearance-option[aria-pressed="true"] {
+    background: light-dark(#f4ebed, var(--night-tint));
+    color: var(--accent-dark);
+}
+
+.site-nav .appearance-option:focus-visible {
+    outline: 2px solid var(--accent-text);
+    outline-offset: -2px;
+}
+
+.appearance-check {
+    visibility: hidden;
+}
+
+.appearance-option[aria-pressed="true"] .appearance-check {
+    visibility: visible;
+}
+
+@media print {
+    .appearance-control {
+        display: none;
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {

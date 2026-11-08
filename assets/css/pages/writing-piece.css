@@ -4,7 +4,7 @@
     color: var(--ink);
     background:
         linear-gradient(rgba(138, 47, 63, 0.025) 1px, transparent 1px),
-        #f4f1ef;
+        light-dark(#f4f1ef, var(--night-soft));
     background-size: 100% 32px;
 }
 
@@ -40,11 +40,11 @@
 }
 
 .writing-progress::-webkit-progress-value {
-    background: linear-gradient(90deg, var(--accent-light), var(--accent-dark));
+    background: linear-gradient(90deg, light-dark(var(--accent-light), #9b4054), var(--accent-strong));
 }
 
 .writing-progress::-moz-progress-bar {
-    background: linear-gradient(90deg, var(--accent-light), var(--accent-dark));
+    background: linear-gradient(90deg, light-dark(var(--accent-light), #9b4054), var(--accent-strong));
 }
 
 /* Piece masthead */
@@ -52,7 +52,7 @@
     position: relative;
     padding: 0.8rem 1rem 1.15rem;
     overflow: hidden;
-    border-bottom: 1px solid rgba(95, 31, 44, 0.14);
+    border-bottom: 1px solid light-dark(rgba(95, 31, 44, 0.14), rgba(239, 167, 182, 0.14));
     background:
         radial-gradient(
             circle at 16% 10%,
@@ -64,7 +64,7 @@
             rgba(138, 47, 63, 0.12),
             transparent 26%
         ),
-        linear-gradient(145deg, #fbf7f5 0%, #ffffff 48%, #f2e2e5 100%);
+        linear-gradient(145deg, light-dark(#fbf7f5, var(--night-soft)) 0%, var(--card) 48%, light-dark(#f2e2e5, var(--night-tint)) 100%);
 }
 
 .writing-piece-hero .breadcrumbs {
@@ -87,7 +87,7 @@
 
 .writing-piece-hero h1 {
     margin: 0 auto;
-    color: #2b1d1d;
+    color: light-dark(#2b1d1d, var(--night-ink));
     font-size: clamp(1.9rem, 4.5vw, 3.9rem);
     letter-spacing: -0.047em;
     line-height: 1.02;
@@ -95,7 +95,7 @@
 
 .writing-piece-deck {
     margin: 0.55rem auto 0;
-    color: #514042;
+    color: light-dark(#514042, var(--night-muted));
     font-size: clamp(1.03rem, 2vw, 1.22rem);
     line-height: 1.55;
     text-align: center;
@@ -103,7 +103,7 @@
 
 .writing-piece-byline {
     margin: 0.35rem auto 0;
-    color: #5e4d50;
+    color: light-dark(#5e4d50, var(--night-muted));
     font-size: 1rem;
     line-height: 1.6;
     text-align: center;
@@ -143,7 +143,7 @@
     gap: 0.55rem var(--writing-meta-gap);
     margin: 0.3rem 0 0;
     padding: 0.65rem 0.35rem;
-    border-top: 1px solid rgba(138, 47, 63, 0.2);
+    border-top: 1px solid light-dark(rgba(138, 47, 63, 0.2), rgba(239, 167, 182, 0.2));
     font-size: 0.875rem;
     line-height: 1.4;
     text-align: center;
@@ -156,7 +156,7 @@
 }
 
 .writing-piece-meta dt {
-    color: #765f64;
+    color: light-dark(#765f64, var(--night-muted));
     font-size: 0.75rem;
     font-weight: 700;
 }
@@ -208,7 +208,7 @@
     max-width: 820px;
     margin: 0.6rem auto 0;
     padding: 0.6rem 0 0;
-    border-top: 1px solid rgba(138, 47, 63, 0.2);
+    border-top: 1px solid light-dark(rgba(138, 47, 63, 0.2), rgba(239, 167, 182, 0.2));
 }
 
 .writing-piece-context h2,
@@ -221,7 +221,7 @@
 .writing-piece-context p,
 .writing-version-notice p {
     margin: 0.25rem auto 0;
-    color: #5b494c;
+    color: light-dark(#5b494c, var(--night-muted));
     font-size: 0.9rem;
     line-height: 1.55;
     text-align: center;
@@ -248,9 +248,9 @@
     padding: clamp(2rem, 4vw, 3.25rem);
     padding-top: clamp(1.35rem, 2.6vw, 2rem);
     overflow: visible;
-    border: 1px solid rgba(95, 31, 44, 0.12);
+    border: 1px solid light-dark(rgba(95, 31, 44, 0.12), rgba(239, 167, 182, 0.12));
     border-radius: 20px;
-    background: #fffdf9;
+    background: light-dark(#fffdf9, var(--night-soft));
     box-shadow: 0 20px 50px rgba(47, 32, 32, 0.12);
 }
 
@@ -264,14 +264,14 @@
 
 .writing-story-header h2 {
     margin: 0;
-    color: #251b1c;
+    color: light-dark(#251b1c, var(--night-ink));
     font-size: clamp(1.65rem, 4.2vw, 2.65rem);
     line-height: 1.15;
 }
 
 .writing-story-author {
     margin: 0.45rem 0 0;
-    color: #675557;
+    color: light-dark(#675557, var(--night-muted));
     font-style: italic;
     text-align: center;
 }
@@ -280,7 +280,7 @@
     width: 100%;
     max-width: var(--writing-content-max);
     margin: 0 auto;
-    color: #2f2626;
+    color: light-dark(#2f2626, var(--night-ink));
     font-size: clamp(1rem, 1.4vw, 1.1rem);
     line-height: 1.9;
 }
@@ -322,7 +322,7 @@
 .writing-display-line {
     margin-top: 1.9em !important;
     margin-bottom: 1.9em !important;
-    color: #241a1b;
+    color: light-dark(#241a1b, var(--night-ink));
     font-size: clamp(1.12rem, 2vw, 1.32rem);
     font-weight: 600;
     line-height: 1.65 !important;
@@ -362,11 +362,11 @@
     height: 0;
     margin: 0.25rem auto 2rem;
     border: 0;
-    border-top: 1px solid #111;
+    border-top: 1px solid light-dark(#111, var(--night-line));
 }
 
 .writing-scene-opener {
-    color: #271c1d;
+    color: light-dark(#271c1d, var(--night-ink));
     font-size: clamp(1.14rem, 2vw, 1.3rem);
     font-weight: 700;
 }
@@ -402,9 +402,9 @@
     width: 100%;
     max-width: none;
     margin: 0;
-    border: 1px solid rgba(95, 31, 44, 0.13);
+    border: 1px solid light-dark(rgba(95, 31, 44, 0.13), rgba(239, 167, 182, 0.13));
     border-radius: 12px;
-    background: #eee8e4;
+    background: light-dark(#eee8e4, var(--night-tint));
     box-shadow: 0 12px 30px rgba(36, 27, 27, 0.12);
 }
 
@@ -422,7 +422,7 @@
     width: 100%;
     max-width: var(--writing-content-max);
     margin: 0.75rem auto 0;
-    color: #716164;
+    color: light-dark(#716164, var(--night-muted));
     font-size: 0.86rem;
     line-height: 1.55;
     text-align: center;
@@ -432,7 +432,7 @@
 /* Long-form essays, citations, and source notes */
 .writing-essay h2 {
     margin: 2.75rem 0 1rem;
-    color: #302124;
+    color: light-dark(#302124, var(--night-ink));
     font-size: clamp(1.55rem, 3.4vw, 2.1rem);
     line-height: 1.25;
     text-align: left;
@@ -481,7 +481,7 @@
 .writing-footnotes {
     margin-top: 3.5rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(138, 47, 63, 0.2);
+    border-top: 1px solid light-dark(rgba(138, 47, 63, 0.2), rgba(239, 167, 182, 0.2));
 }
 
 .writing-footnotes h2 {
@@ -495,7 +495,7 @@
 
 .writing-footnotes li {
     padding-left: 0.35rem;
-    color: #5b4c4e;
+    color: light-dark(#5b4c4e, var(--night-muted));
     font-size: 0.93rem;
     line-height: 1.65;
 }
@@ -513,22 +513,22 @@
     max-width: var(--writing-surface-max);
     margin: 1.5rem auto 0;
     padding: clamp(1.75rem, 5vw, 2.75rem);
-    border: 1px solid rgba(138, 47, 63, 0.16);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.16), rgba(239, 167, 182, 0.16));
     border-radius: 18px;
-    background: #ffffff;
+    background: var(--card);
     text-align: center;
     box-shadow: 0 10px 28px rgba(36, 27, 27, 0.08);
 }
 
 .writing-piece-end h2 {
     margin: 0;
-    color: #332326;
+    color: light-dark(#332326, var(--night-ink));
     text-align: center;
 }
 
 .writing-piece-end p {
     margin: 0.75rem auto 0;
-    color: #5b4c4e;
+    color: light-dark(#5b4c4e, var(--night-muted));
     line-height: 1.75;
     text-align: center;
 }
@@ -588,7 +588,7 @@
 
     .writing-piece-page,
     .writing-piece-article {
-        background: #ffffff;
+        background: var(--card);
     }
 
     .writing-piece-container,
@@ -671,7 +671,7 @@ body.writing-share-open {
     max-height: min(88vh, 760px);
     padding: clamp(1.35rem, 4vw, 2.25rem);
     overflow-y: auto;
-    border: 1px solid rgba(138, 47, 63, 0.17);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.17), rgba(239, 167, 182, 0.17));
     border-radius: 24px;
     background:
         radial-gradient(
@@ -679,7 +679,7 @@ body.writing-share-open {
             rgba(184, 90, 104, 0.16),
             transparent 32%
         ),
-        #fffdfb;
+        light-dark(#fffdfb, var(--night-soft));
     box-shadow: 0 28px 80px rgba(30, 20, 22, 0.28);
 }
 
@@ -710,7 +710,7 @@ body.writing-share-open {
 #writing-share-title,
 [data-share-title] {
     margin: 0.35rem 0 0;
-    color: #2f2022;
+    color: light-dark(#2f2022, var(--night-ink));
     font-size: clamp(1.75rem, 5vw, 2.35rem);
     line-height: 1.18;
     text-align: center;
@@ -721,7 +721,7 @@ body.writing-share-open {
 #writing-share-description,
 [data-share-description] {
     margin: 0.65rem 0 0;
-    color: #655457;
+    color: light-dark(#655457, var(--night-muted));
     line-height: 1.65;
     text-align: center;
 }
@@ -735,10 +735,10 @@ body.writing-share-open {
     width: 42px;
     height: 42px;
     padding: 0;
-    border: 1px solid rgba(138, 47, 63, 0.18);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.18), rgba(239, 167, 182, 0.18));
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.86);
-    color: #4c3639;
+    background: light-dark(rgba(255, 255, 255, 0.86), rgba(36, 33, 38, 0.86));
+    color: light-dark(#4c3639, var(--night-ink));
     font: inherit;
     font-size: 1.5rem;
     line-height: 1;
@@ -771,7 +771,7 @@ body.writing-share-open {
     gap: 0.45rem;
     border: 2px solid var(--accent);
     border-radius: 999px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 0.9rem;
@@ -804,7 +804,7 @@ body.writing-share-open {
 
 .writing-share-native:hover,
 .writing-share-native:focus-visible {
-    background: linear-gradient(135deg, var(--accent-light), var(--accent));
+    background: linear-gradient(135deg, light-dark(var(--accent-light), #9b4054), var(--accent));
     box-shadow: 0 12px 28px var(--accent-glow);
     transform: translateY(-2px);
 }
@@ -818,7 +818,7 @@ body.writing-share-open {
     align-items: center;
     gap: 0.75rem;
     margin: 1.2rem 0;
-    color: #8a767a;
+    color: light-dark(#8a767a, var(--night-muted));
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.09em;
@@ -850,10 +850,10 @@ body.writing-share-open {
     justify-content: center;
     align-items: center;
     gap: 0.45rem;
-    border: 1px solid rgba(138, 47, 63, 0.16);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.16), rgba(239, 167, 182, 0.16));
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.82);
-    color: #493538;
+    background: light-dark(rgba(255, 255, 255, 0.82), rgba(36, 33, 38, 0.82));
+    color: light-dark(#493538, var(--night-ink));
     font: inherit;
     font-size: 0.86rem;
     font-weight: 700;
@@ -873,7 +873,7 @@ body.writing-share-open {
 .writing-share-option:hover,
 .writing-share-option:focus-visible {
     border-color: var(--accent);
-    background: #fff8f7;
+    background: light-dark(#fff8f7, var(--night-tint));
     color: var(--accent-dark);
     box-shadow: 0 11px 25px rgba(95, 31, 44, 0.13);
     transform: translateY(-2px);
@@ -912,12 +912,12 @@ body.writing-share-open {
 
 .writing-share-icon--facebook {
     background: rgba(24, 119, 242, 0.11);
-    color: #1877f2;
+    color: light-dark(#1877f2, var(--night-blue));
 }
 
 .writing-share-icon--linkedin {
     background: rgba(10, 102, 194, 0.11);
-    color: #0a66c2;
+    color: light-dark(#0a66c2, var(--night-blue));
 }
 
 .writing-share-icon--linkedin svg {
@@ -927,12 +927,12 @@ body.writing-share-open {
 
 .writing-share-icon--x {
     background: rgba(15, 20, 25, 0.09);
-    color: #0f1419;
+    color: light-dark(#0f1419, var(--night-ink));
 }
 
 .writing-share-icon--bluesky {
     background: rgba(2, 133, 255, 0.11);
-    color: #0285ff;
+    color: light-dark(#0285ff, var(--night-blue));
 }
 
 .writing-share-status {
@@ -954,11 +954,11 @@ body.writing-share-open {
     max-width: var(--writing-surface-max, 1120px);
     margin: 1.5rem auto 0;
     padding: clamp(1.75rem, 5vw, 3rem);
-    border: 1px solid rgba(138, 47, 63, 0.16);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.16), rgba(239, 167, 182, 0.16));
     border-radius: 18px;
     background:
-        linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)),
-        linear-gradient(135deg, #f6e8eb, #ffffff);
+        linear-gradient(light-dark(rgba(255, 255, 255, 0.93), rgba(36, 33, 38, 0.93)), light-dark(rgba(255, 255, 255, 0.93), rgba(36, 33, 38, 0.93))),
+        linear-gradient(135deg, light-dark(#f6e8eb, var(--night-tint)), var(--card));
     box-shadow: 0 10px 28px rgba(36, 27, 27, 0.08);
 }
 
@@ -983,7 +983,7 @@ body.writing-share-open {
 .writing-related-heading h2,
 .writing-related-section-heading h2 {
     margin: 0.35rem 0 0;
-    color: #332326;
+    color: light-dark(#332326, var(--night-ink));
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     line-height: 1.2;
     text-align: center;
@@ -992,7 +992,7 @@ body.writing-share-open {
 .writing-related-intro,
 .writing-related-description {
     margin: 0.7rem auto 0;
-    color: #66575a;
+    color: light-dark(#66575a, var(--night-muted));
     line-height: 1.7;
     text-align: center;
 }
@@ -1079,10 +1079,10 @@ body.writing-share-open {
     min-height: 280px;
     padding: 1.25rem;
     flex-direction: column;
-    border: 1px solid rgba(138, 47, 63, 0.16);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.16), rgba(239, 167, 182, 0.16));
     border-radius: 15px;
-    background: #ffffff;
-    color: #3d3032;
+    background: var(--card);
+    color: light-dark(#3d3032, var(--night-ink));
     box-shadow: 0 8px 22px rgba(36, 27, 27, 0.07);
     transition:
         border-color 0.2s ease,
@@ -1100,9 +1100,9 @@ body.writing-share-open {
 .writing-related-tags span {
     display: inline-flex;
     padding: 0.3rem 0.55rem;
-    border: 1px solid rgba(138, 47, 63, 0.17);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.17), rgba(239, 167, 182, 0.17));
     border-radius: 999px;
-    background: #f8edef;
+    background: light-dark(#f8edef, var(--night-tint));
     color: var(--accent-dark);
     font-size: 0.67rem;
     font-weight: 700;
@@ -1113,7 +1113,7 @@ body.writing-share-open {
 
 .writing-related-card:hover,
 .writing-related-card:focus-within {
-    border-color: rgba(138, 47, 63, 0.36);
+    border-color: light-dark(rgba(138, 47, 63, 0.36), rgba(239, 167, 182, 0.36));
     box-shadow: 0 14px 30px rgba(95, 31, 44, 0.13);
     transform: translateY(-3px);
 }
@@ -1131,7 +1131,7 @@ body.writing-share-open {
 
 .writing-related-card h3 {
     margin: 0.75rem 0 0;
-    color: #2f2224;
+    color: light-dark(#2f2224, var(--night-ink));
     font-size: 1.25rem;
     line-height: 1.3;
     text-align: left;
@@ -1150,7 +1150,7 @@ body.writing-share-open {
 .writing-related-summary,
 .writing-related-card p:not(.writing-related-type):not(.writing-related-meta) {
     margin: 0.75rem 0 0;
-    color: #65575a;
+    color: light-dark(#65575a, var(--night-muted));
     font-size: 0.94rem;
     line-height: 1.65;
     text-align: left;
@@ -1181,7 +1181,7 @@ body.writing-share-open {
 }
 
 .writing-related-meta dd {
-    color: #5f5053;
+    color: light-dark(#5f5053, var(--night-muted));
     font-size: 0.82rem;
     font-weight: 600;
     letter-spacing: 0;
@@ -1202,16 +1202,16 @@ body.writing-share-open {
     max-width: 760px;
     margin: 0 auto;
     padding: 1.4rem;
-    border: 1px dashed rgba(138, 47, 63, 0.28);
+    border: 1px dashed light-dark(rgba(138, 47, 63, 0.28), rgba(239, 167, 182, 0.28));
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.72);
+    background: light-dark(rgba(255, 255, 255, 0.72), rgba(36, 33, 38, 0.72));
     text-align: center;
 }
 
 .writing-related-empty p,
 .writing-related-fallback p {
     margin: 0;
-    color: #66575a;
+    color: light-dark(#66575a, var(--night-muted));
     line-height: 1.7;
     text-align: center;
 }
@@ -1334,7 +1334,7 @@ body.writing-share-open {
         rgba(29, 91, 122, 0.14) 0 42%,
         transparent 42%
     );
-    color: #174f6c;
+    color: light-dark(#174f6c, var(--night-blue));
     font-weight: 600;
     text-decoration-color: rgba(23, 79, 108, 0.55);
 }
@@ -1342,40 +1342,40 @@ body.writing-share-open {
 .writing-story .writing-knowledge-link:hover,
 .writing-story .writing-knowledge-link:focus-visible {
     background-color: rgba(29, 91, 122, 0.12);
-    color: #103b53;
+    color: light-dark(#103b53, var(--night-blue));
 }
 
 .writing-related-knowledge {
-    border-color: rgba(29, 91, 122, 0.22);
+    border-color: light-dark(rgba(29, 91, 122, 0.22), rgba(155, 210, 235, 0.22));
     background:
         linear-gradient(
-            rgba(255, 255, 255, 0.93),
-            rgba(255, 255, 255, 0.93)
+            light-dark(rgba(255, 255, 255, 0.93), rgba(36, 33, 38, 0.93)),
+            light-dark(rgba(255, 255, 255, 0.93), rgba(36, 33, 38, 0.93))
         ),
-        linear-gradient(135deg, #e8f4f7, #ffffff);
+        linear-gradient(135deg, light-dark(#e8f4f7, var(--night-blue-surface)), var(--card));
 }
 
 .writing-related-knowledge .writing-related-kicker,
 .writing-related-knowledge-card h3 a,
 .writing-related-knowledge-card
     .writing-related-meta dt {
-    color: #174f6c;
+    color: light-dark(#174f6c, var(--night-blue));
 }
 
 .writing-related-knowledge-card {
-    border-color: rgba(29, 91, 122, 0.2);
+    border-color: light-dark(rgba(29, 91, 122, 0.2), rgba(155, 210, 235, 0.2));
     background:
         radial-gradient(
             circle at top right,
             rgba(79, 145, 170, 0.14),
             transparent 34%
         ),
-        #ffffff;
+        var(--card);
 }
 
 .writing-related-knowledge-card
     .writing-related-tags span {
-    border-color: rgba(29, 91, 122, 0.18);
-    background: #eaf4f6;
-    color: #174f6c;
+    border-color: light-dark(rgba(29, 91, 122, 0.18), rgba(155, 210, 235, 0.18));
+    background: light-dark(#eaf4f6, var(--night-blue-surface));
+    color: light-dark(#174f6c, var(--night-blue));
 }

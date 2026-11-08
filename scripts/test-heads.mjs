@@ -153,7 +153,12 @@ test("preserves dollar signs and literal template text while escaping HTML and J
     assert.equal($("title").text(), title);
     assert.equal($("meta[property='og:title']").attr("content"), title);
     assert.equal($("meta[name='twitter:description']").attr("content"), description);
-    assert.equal($("script").length, 4); // Analytics loader, Analytics setup, JSON-LD, main.js.
+    assert.equal($("script").length, 5); // Analytics loader, Analytics setup, theme.js, JSON-LD, main.js.
+    const themeScript = $("script[src='/assets/js/theme.js']");
+    assert.equal(themeScript.length, 1);
+    assert.equal(themeScript.attr("defer"), undefined);
+    assert.equal(themeScript.attr("async"), undefined);
+    assert.ok(html.indexOf('/assets/js/theme.js') < html.indexOf('/assets/css/main.css'));
     assert.ok(!$("script[type='application/ld+json']").text().includes("<"));
     assert.equal(JSON.parse($("script[type='application/ld+json']").text())["@graph"].find(node => node["@type"] === "WebPage").name, title);
 });

@@ -24,7 +24,7 @@
     width: 100%;
     margin: 1.1rem 0;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid light-dark(rgba(0, 0, 0, 0.15), rgba(239, 167, 182, 0.15));
 }
 
 .section p {
@@ -162,7 +162,7 @@ body.iframe-page iframe {
     background: linear-gradient(
         135deg,
         var(--accent),
-        var(--accent-dark)
+        var(--accent-strong)
     );
     color: #ffffff;
     font-family: inherit;
@@ -182,7 +182,7 @@ body.iframe-page iframe {
 .cta-button:focus-visible {
     background: linear-gradient(
         135deg,
-        var(--accent-light),
+        light-dark(var(--accent-light), #9b4054),
         var(--accent)
     );
     box-shadow:
@@ -227,7 +227,7 @@ body.iframe-page iframe {
     background: linear-gradient(
         135deg,
         var(--accent),
-        var(--accent-dark)
+        var(--accent-strong)
     );
     color: #ffffff;
     font-size: 1.1rem;
@@ -245,7 +245,7 @@ body.iframe-page iframe {
 .resume-button:hover {
     background: linear-gradient(
         135deg,
-        var(--accent-light),
+        light-dark(var(--accent-light), #9b4054),
         var(--accent)
     );
     box-shadow:
@@ -281,7 +281,7 @@ body.iframe-page iframe {
 .resume-card {
     padding: 25px;
     border-radius: 18px;
-    background: white;
+    background: var(--card);
     text-align: left;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
@@ -317,7 +317,7 @@ body.iframe-page iframe {
     margin-bottom: 25px;
     padding: 25px;
     border-radius: 18px;
-    background: white;
+    background: var(--card);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition:
         transform 0.2s ease,
@@ -361,7 +361,7 @@ body.iframe-page iframe {
     background: linear-gradient(
         135deg,
         var(--accent),
-        var(--accent-dark)
+        var(--accent-strong)
     );
     color: #ffffff;
     font-size: 0.95rem;
@@ -379,7 +379,7 @@ body.iframe-page iframe {
 .experience-link:hover {
     background: linear-gradient(
         135deg,
-        var(--accent-light),
+        light-dark(var(--accent-light), #9b4054),
         var(--accent)
     );
     box-shadow:

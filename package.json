@@ -8,6 +8,7 @@
         "heads": "npm run typography && node scripts/render-heads.mjs",
         "check:heads": "node scripts/render-heads.mjs --check",
         "test:heads": "node --test scripts/test-heads.mjs",
+        "test:theme": "node --test scripts/test-theme.mjs",
         "compendium": "npm run typography && node scripts/render-compendium.mjs && npm run heads",
         "test:compendium": "node --test scripts/test-compendium.mjs",
         "validate": "npm run check:typography && node scripts/validate-site.mjs",

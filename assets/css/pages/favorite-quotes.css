@@ -3,7 +3,7 @@
 .favorite-quotes-page {
     background:
         radial-gradient(circle at 12% 9%, rgba(138, 47, 63, 0.12), transparent 24rem),
-        linear-gradient(180deg, #f8f4f5 0, #ffffff 31rem);
+        linear-gradient(180deg, light-dark(#f8f4f5, var(--night-soft)) 0, var(--card) 31rem);
 }
 
 .favorite-quotes-shell {
@@ -23,7 +23,7 @@
 
 .favorite-quotes-kicker {
     margin: 0 0 0.65rem;
-    color: #8a2f3f;
+    color: light-dark(#8a2f3f, var(--accent-text));
     font-family: "Lora", serif;
     font-size: 0.78rem;
     font-weight: 700;
@@ -42,7 +42,7 @@
 .favorite-quotes-lede {
     max-width: 760px;
     margin: 1.25rem auto 0;
-    color: #4d4144;
+    color: light-dark(#4d4144, var(--night-muted));
     font-size: clamp(1.05rem, 2.2vw, 1.3rem);
     line-height: 1.75;
 }
@@ -54,9 +54,9 @@
     justify-content: center;
     margin-top: 1.5rem;
     padding: 0.75rem 1.1rem;
-    border: 1px solid rgba(138, 47, 63, 0.35);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.35), rgba(239, 167, 182, 0.35));
     border-radius: 999px;
-    color: #732636;
+    color: light-dark(#732636, var(--accent-text));
     font-family: "Lora", serif;
     font-weight: 700;
     text-decoration: none;
@@ -74,9 +74,9 @@
 .favorite-quotes-panel {
     margin-bottom: clamp(1.25rem, 3vw, 2rem);
     padding: clamp(1.35rem, 3.5vw, 2.6rem);
-    border: 1px solid rgba(80, 50, 58, 0.13);
+    border: 1px solid light-dark(rgba(80, 50, 58, 0.13), rgba(239, 167, 182, 0.13));
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.94);
+    background: light-dark(rgba(255, 255, 255, 0.94), rgba(36, 33, 38, 0.94));
     box-shadow: 0 18px 55px rgba(53, 31, 37, 0.08);
 }
 
@@ -88,14 +88,14 @@
 
 .favorite-quotes-section-heading h2 {
     margin: 0;
-    color: #2d2225;
+    color: light-dark(#2d2225, var(--night-ink));
     font-size: clamp(1.75rem, 4vw, 2.65rem);
     line-height: 1.15;
 }
 
 .favorite-quotes-section-heading > p:last-child:not(.favorite-quotes-kicker) {
     margin: 0.75rem auto 0;
-    color: #66575b;
+    color: light-dark(#66575b, var(--night-muted));
     line-height: 1.65;
 }
 
@@ -110,7 +110,7 @@
 .favorite-quotes-about-grid p,
 .favorite-quotes-sourcing > p {
     margin: 0;
-    color: #473b3e;
+    color: light-dark(#473b3e, var(--night-ink));
     line-height: 1.78;
 }
 
@@ -128,9 +128,9 @@
     flex-direction: column;
     min-width: 0;
     padding: var(--quote-card-padding);
-    border: 1px solid rgba(138, 47, 63, 0.16);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.16), rgba(239, 167, 182, 0.16));
     border-radius: 18px;
-    background: linear-gradient(145deg, #ffffff, #fcf8f9);
+    background: linear-gradient(145deg, var(--card), light-dark(#fcf8f9, var(--night-soft)));
     box-shadow: 0 9px 28px rgba(53, 31, 37, 0.06);
     scroll-margin-top: 6rem;
 }
@@ -140,7 +140,7 @@
 }
 
 .favorite-quote-card:target {
-    border-color: #8a2f3f;
+    border-color: light-dark(#8a2f3f, var(--accent-text));
     box-shadow: 0 0 0 4px rgba(138, 47, 63, 0.13), 0 15px 40px rgba(53, 31, 37, 0.1);
 }
 
@@ -160,13 +160,13 @@
 
 .favorite-quote-card__text {
     margin: 0;
-    color: #2d2225;
+    color: light-dark(#2d2225, var(--night-ink));
     font-size: clamp(1.08rem, 1.7vw, 1.28rem);
     line-height: 1.72;
 }
 
 .favorite-quote-card__mark {
-    color: #8a2f3f;
+    color: light-dark(#8a2f3f, var(--accent-text));
     font-size: 1.15em;
     font-style: normal;
     font-weight: 400;
@@ -179,7 +179,7 @@
 
 .favorite-quote-card__dialogue-line {
     margin: 0;
-    color: #2d2225;
+    color: light-dark(#2d2225, var(--night-ink));
     font-size: 1.06rem;
     line-height: 1.65;
 }
@@ -192,29 +192,29 @@
 
 .favorite-quote-card__attribution {
     margin: 1.2rem 0 0;
-    color: #3d3134;
+    color: light-dark(#3d3134, var(--night-ink));
     font-family: "Lora", serif;
     line-height: 1.55;
 }
 
 .favorite-quote-card__source {
     margin: 0.35rem 0 0;
-    color: #6a5b5f;
+    color: light-dark(#6a5b5f, var(--night-muted));
     font-family: "Lora", serif;
     font-size: 0.9rem;
     line-height: 1.5;
 }
 
 .favorite-quote-card__source a {
-    color: #6d2635;
+    color: light-dark(#6d2635, var(--accent-text));
 }
 
 .favorite-quote-card__note {
     margin: 1.1rem 0 0;
     padding: 0.9rem 1rem;
-    border-left: 4px solid #8a2f3f;
-    background: #f6ecef;
-    color: #493a3e;
+    border-left: 4px solid light-dark(#8a2f3f, var(--accent-text));
+    background: light-dark(#f6ecef, var(--night-tint));
+    color: light-dark(#493a3e, var(--night-ink));
     line-height: 1.62;
 }
 
@@ -234,8 +234,8 @@
 .favorite-quote-card__tags li {
     padding: 0.3rem 0.62rem;
     border-radius: 999px;
-    background: #f2e6e9;
-    color: #69303d;
+    background: light-dark(#f2e6e9, var(--night-tint));
+    color: light-dark(#69303d, var(--accent-text));
     font-family: "Lora", serif;
     font-size: 0.78rem;
     line-height: 1.25;
@@ -253,7 +253,7 @@
 .favorite-quotes-copy-results-link {
     border: 0;
     background: none;
-    color: #713044;
+    color: light-dark(#713044, var(--accent-text));
     cursor: pointer;
     font-family: "Lora", serif;
     font-size: 0.84rem;
@@ -271,10 +271,10 @@
 
 .favorite-quotes-collection-buttons button {
     padding: 0.7rem 1rem;
-    border: 1px solid rgba(138, 47, 63, 0.3);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.3), rgba(239, 167, 182, 0.3));
     border-radius: 999px;
-    background: #ffffff;
-    color: #662635;
+    background: var(--card);
+    color: light-dark(#662635, var(--accent-text));
     cursor: pointer;
     font-family: "Lora", serif;
     font-size: 0.92rem;
@@ -283,7 +283,7 @@
 
 .favorite-quotes-collection-buttons button:hover,
 .favorite-quotes-collection-buttons button[aria-pressed="true"] {
-    border-color: #8a2f3f;
+    border-color: light-dark(#8a2f3f, var(--accent-text));
     background: #8a2f3f;
     color: #ffffff;
 } */
@@ -291,16 +291,16 @@
 .favorite-quotes-controls {
     margin-bottom: 1.4rem;
     padding: clamp(1rem, 3vw, 1.5rem);
-    border: 1px solid rgba(80, 50, 58, 0.14);
+    border: 1px solid light-dark(rgba(80, 50, 58, 0.14), rgba(239, 167, 182, 0.14));
     border-radius: 18px;
-    background: #faf7f8;
+    background: light-dark(#faf7f8, var(--night-soft));
 }
 
 .favorite-quotes-search-field > label,
 .favorite-quotes-filter label {
     display: block;
     margin-bottom: 0.45rem;
-    color: #3c3033;
+    color: light-dark(#3c3033, var(--night-ink));
     font-family: "Lora", serif;
     font-size: 0.9rem;
     font-weight: 700;
@@ -317,10 +317,10 @@
     width: 100%;
     min-height: 46px;
     padding: 0.72rem 0.85rem;
-    border: 1px solid #bdaeb2;
+    border: 1px solid light-dark(#bdaeb2, var(--night-line));
     border-radius: 10px;
-    background: #ffffff;
-    color: #2d2225;
+    background: var(--card);
+    color: light-dark(#2d2225, var(--night-ink));
     font: inherit;
 }
 
@@ -329,7 +329,7 @@
 .favorite-quotes-empty button {
     min-height: 46px;
     padding: 0.7rem 1rem;
-    border: 1px solid #8a2f3f;
+    border: 1px solid light-dark(#8a2f3f, var(--accent-text));
     border-radius: 10px;
     background: #8a2f3f;
     color: #ffffff;
@@ -339,8 +339,8 @@
 }
 
 .favorite-quotes-search-row button:disabled {
-    border-color: #bbb0b3;
-    background: #d7cfd1;
+    border-color: light-dark(#bbb0b3, var(--night-line));
+    background: light-dark(#d7cfd1, var(--night-tint));
     cursor: not-allowed;
 }
 
@@ -364,7 +364,7 @@
     display: inline-flex;
     gap: 0.55rem;
     align-items: center;
-    color: #3d3033;
+    color: light-dark(#3d3033, var(--night-ink));
     cursor: pointer;
     font-family: "Lora", serif;
     font-weight: 700;
@@ -377,9 +377,9 @@
 }
 
 .favorite-quotes-reset {
-    border-color: #8a2f3f;
+    border-color: light-dark(#8a2f3f, var(--accent-text));
     background: transparent;
-    color: #702a39;
+    color: light-dark(#702a39, var(--accent-text));
 }
 
 .favorite-quotes-context-visual {
@@ -418,7 +418,7 @@
 }
 
 .favorite-quotes-context-visual .favorite-quotes-kicker {
-    color: #efbdc8;
+    color: light-dark(#efbdc8, var(--accent-text));
 }
 
 .favorite-quotes-context-visual a {
@@ -436,7 +436,7 @@
 
 .favorite-quotes-results-count {
     margin: 0;
-    color: #4f4145;
+    color: light-dark(#4f4145, var(--night-muted));
     font-family: "Lora", serif;
     font-weight: 700;
 }
@@ -469,7 +469,7 @@
 .favorite-quotes-page input:focus-visible,
 .favorite-quotes-page select:focus-visible,
 .favorite-quotes-page a:focus-visible {
-    outline: 3px solid rgba(138, 47, 63, 0.35);
+    outline: 3px solid light-dark(rgba(138, 47, 63, 0.35), rgba(239, 167, 182, 0.35));
     outline-offset: 3px;
 }
 
@@ -655,7 +655,7 @@
 }
 
 .favorite-quotes-page {
-    background: #ffffff;
+    background: var(--card);
 }
 
 .favorite-quotes-hero {
@@ -667,14 +667,14 @@
         ),
         linear-gradient(
             180deg,
-            #f8f4f5 0%,
-            #ffffff 100%
+            light-dark(#f8f4f5, var(--night-soft)) 0%,
+            var(--card) 100%
         );
     background-repeat: no-repeat;
 }
 
 .favorite-quotes-content {
-    background: #ffffff;
+    background: var(--card);
 }
 
 .favorite-quotes-page,

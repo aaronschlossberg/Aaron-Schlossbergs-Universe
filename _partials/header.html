@@ -9,7 +9,7 @@
             <div class="nav-dropdown-control">
                 <a class="nav-top-link" href="/education/">Education</a>
                 <button class="nav-dropdown-toggle" type="button" aria-label="Education pages" aria-expanded="false" aria-controls="nav-education-menu">
-                    <svg class="nav-chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg>
+                    <span class="nav-chevron" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="nav-dropdown-menu" id="nav-education-menu">
@@ -24,7 +24,7 @@
             <div class="nav-dropdown-control">
                 <a class="nav-top-link" href="/projects/">Projects</a>
                 <button class="nav-dropdown-toggle" type="button" aria-label="Project pages" aria-expanded="false" aria-controls="nav-projects-menu">
-                    <svg class="nav-chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg>
+                    <span class="nav-chevron" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="nav-dropdown-menu" id="nav-projects-menu">
@@ -40,7 +40,7 @@
         <div class="nav-dropdown">
             <button class="nav-dropdown-toggle nav-more-toggle" type="button" aria-expanded="false" aria-controls="nav-more-menu">
                 More
-                <svg class="nav-chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg>
+                <span class="nav-chevron" aria-hidden="true"></span>
             </button>
             <div class="nav-dropdown-menu" id="nav-more-menu">
                 <a href="/favorite-quotes/"><span class="nav-option-label">Favorite Quotes</span></a>
@@ -50,5 +50,18 @@
                 <a href="/site-map/"><span class="nav-option-label">Sitemap</span></a>
             </div>
         </div>
+        <div class="nav-dropdown appearance-control" data-theme-control hidden>
+            <button class="nav-dropdown-toggle nav-more-toggle appearance-toggle" type="button" aria-label="Appearance" title="Appearance" aria-expanded="false" aria-controls="nav-appearance-menu">
+                <span class="appearance-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu appearance-menu" id="nav-appearance-menu">
+                <div role="group" aria-label="Color appearance">
+                    <button class="appearance-option" type="button" data-theme-option="light" aria-pressed="false"><span>Light</span><span class="appearance-check" aria-hidden="true">✓</span></button>
+                    <button class="appearance-option" type="button" data-theme-option="dark" aria-pressed="false"><span>Dark</span><span class="appearance-check" aria-hidden="true">✓</span></button>
+                    <button class="appearance-option" type="button" data-theme-option="system" aria-pressed="false"><span>Use device setting</span><span class="appearance-check" aria-hidden="true">✓</span></button>
+                </div>
+            </div>
+        </div>
     </nav>
+    <span class="sr-only" data-theme-status role="status" aria-live="polite"></span>
 </header>

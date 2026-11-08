@@ -38,7 +38,7 @@
 .faq-intro {
     max-width: none;
     margin: 1.25rem 0 0;
-    color: #57484b;
+    color: light-dark(#57484b, var(--night-muted));
     font-size: 1.075rem;
 }
 
@@ -63,14 +63,14 @@
 
 .faq-list {
     overflow: hidden;
-    border: 1px solid rgba(95, 31, 44, 0.18);
+    border: 1px solid light-dark(rgba(95, 31, 44, 0.18), rgba(239, 167, 182, 0.18));
     border-radius: 16px;
     background: var(--card);
     box-shadow: 0 6px 20px rgba(54, 31, 35, 0.04);
 }
 
 .faq-item + .faq-item {
-    border-top: 1px solid rgba(95, 31, 44, 0.14);
+    border-top: 1px solid light-dark(rgba(95, 31, 44, 0.14), rgba(239, 167, 182, 0.14));
 }
 
 .faq-item summary {
@@ -94,7 +94,7 @@
 .faq-item summary::after {
     content: "+";
     flex: 0 0 1rem;
-    color: var(--accent);
+    color: var(--accent-text);
     font-size: 1.35rem;
     line-height: 1;
     text-align: center;
@@ -106,7 +106,7 @@
 
 .faq-item[open] summary,
 .faq-item summary:hover {
-    background: #fcf8f8;
+    background: light-dark(#fcf8f8, var(--night-soft));
 }
 
 .faq-answer {

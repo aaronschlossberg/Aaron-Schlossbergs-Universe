@@ -22,7 +22,7 @@
 
 .compendium-heading p {
     margin: 0.65rem 0 0;
-    color: #5e5053;
+    color: light-dark(#5e5053, var(--night-muted));
 }
 
 .compendium-main a {
@@ -39,13 +39,13 @@
 .compendium-panel,
 .compendium-detail {
     padding: clamp(1rem, 4vw, 2rem);
-    border: 1px solid #ead8da;
+    border: 1px solid light-dark(#ead8da, var(--night-line));
     box-shadow: 0 4px 18px rgba(36, 27, 27, 0.04);
 }
 
 .compendium-tools {
     padding-bottom: 1rem;
-    border-bottom: 1px solid #ead8da;
+    border-bottom: 1px solid light-dark(#ead8da, var(--night-line));
 }
 
 .compendium-tools label {
@@ -59,7 +59,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 0.7rem 0.85rem;
-    border: 1px solid #a98389;
+    border: 1px solid light-dark(#a98389, var(--night-line));
     border-radius: 8px;
     background: var(--card);
     color: inherit;
@@ -81,7 +81,7 @@
 
 .compendium-filters .compendium-filter-help {
     margin: 0 0 0.65rem;
-    color: #5e5053;
+    color: light-dark(#5e5053, var(--night-muted));
     font-size: 0.85rem;
 }
 
@@ -96,9 +96,9 @@
     display: inline-flex;
     align-items: center;
     padding: 0.3rem 0.65rem;
-    border: 1px solid #dec4c9;
+    border: 1px solid light-dark(#dec4c9, var(--night-line));
     border-radius: 999px;
-    background: #fcf8f9;
+    background: light-dark(#fcf8f9, var(--night-soft));
     color: var(--accent-dark);
     font: inherit;
     font-size: 0.8rem;
@@ -107,7 +107,7 @@
 }
 
 .compendium-tag:hover {
-    background: #f4e5e8;
+    background: light-dark(#f4e5e8, var(--night-tint));
 }
 
 .compendium-main .compendium-tags .compendium-tag {
@@ -133,7 +133,7 @@
 
 .compendium-results .compendium-result-count {
     margin: 0;
-    color: #5e5053;
+    color: light-dark(#5e5053, var(--night-muted));
     font-size: 0.875rem;
 }
 
@@ -153,7 +153,7 @@
 
 .compendium-entry {
     padding: 1.05rem 0 1.05rem 0.2rem;
-    border-bottom: 1px solid #eee3e5;
+    border-bottom: 1px solid light-dark(#eee3e5, var(--night-line));
     scroll-margin-top: 1rem;
 }
 
@@ -162,11 +162,11 @@
 }
 
 .compendium-entry::marker {
-    color: var(--accent);
+    color: var(--accent-text);
 }
 
 .compendium-entry:target {
-    background: #fcf4f6;
+    background: light-dark(#fcf4f6, var(--night-tint));
 }
 
 .compendium-detail-heading {
@@ -200,9 +200,9 @@
     width: 2rem;
     height: 2rem;
     padding: 0.35rem;
-    border: 1px solid #dec4c9;
+    border: 1px solid light-dark(#dec4c9, var(--night-line));
     border-radius: 50%;
-    background: white;
+    background: var(--card);
     color: var(--accent-dark);
     font-size: 0.8rem;
     line-height: 1.4;
@@ -216,7 +216,7 @@
 }
 
 .compendium-share-button:hover {
-    background: #f4e5e8;
+    background: light-dark(#f4e5e8, var(--night-tint));
 }
 
 .compendium-main .compendium-tags {
@@ -257,7 +257,7 @@
 
 .compendium-image figcaption {
     margin-top: 0.65rem;
-    color: #5e5053;
+    color: light-dark(#5e5053, var(--night-muted));
     font-size: 0.825rem;
     line-height: 1.6;
     text-align: center;
@@ -272,7 +272,7 @@
 .compendium-section {
     margin-top: 1.6rem;
     padding: 1.35rem 0 0;
-    border-top: 1px solid #ead8da;
+    border-top: 1px solid light-dark(#ead8da, var(--night-line));
 }
 
 .compendium-detail .compendium-section h2 {
@@ -322,9 +322,9 @@
     width: min(31rem, calc(100% - 2rem));
     max-height: calc(100% - 2rem);
     padding: 1.5rem;
-    border: 1px solid #dec4c9;
+    border: 1px solid light-dark(#dec4c9, var(--night-line));
     border-radius: 16px;
-    background: white;
+    background: var(--card);
     color: var(--ink);
     font-family: inherit;
 }

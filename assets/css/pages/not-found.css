@@ -33,7 +33,7 @@
 .not-found-code {
     display: block;
     margin-bottom: 0.55rem;
-    color: var(--accent);
+    color: var(--accent-text);
     font-size: clamp(3.75rem, 12vw, 7rem);
     line-height: 1;
 }

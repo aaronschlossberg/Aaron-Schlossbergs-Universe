@@ -34,12 +34,12 @@
     align-items: stretch;
     min-height: 145px;
     padding: 1.15rem;
-    border: 1px solid rgba(138, 47, 63, 0.13);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.13), rgba(239, 167, 182, 0.13));
     border-radius: 16px;
     background: linear-gradient(
         145deg,
-        rgba(255, 255, 255, 0.96),
-        rgba(247, 243, 243, 0.96)
+        light-dark(rgba(255, 255, 255, 0.96), rgba(36, 33, 38, 0.96)),
+        light-dark(rgba(247, 243, 243, 0.96), rgba(36, 33, 38, 0.96))
     );
     color: inherit;
     text-align: center;
@@ -55,7 +55,7 @@
 
 .sitemap-card:hover,
 .sitemap-card:focus-visible {
-    border-color: rgba(138, 47, 63, 0.35);
+    border-color: light-dark(rgba(138, 47, 63, 0.35), rgba(239, 167, 182, 0.35));
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
     transform: translateY(-3px);
 }
@@ -93,12 +93,12 @@
     max-width: 320px;
     min-width: 0;
     padding: 1.25rem;
-    border: 1px solid rgba(138, 47, 63, 0.13);
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.13), rgba(239, 167, 182, 0.13));
     border-radius: 18px;
     background: linear-gradient(
         145deg,
-        rgba(255, 255, 255, 0.96),
-        rgba(247, 243, 243, 0.96)
+        light-dark(rgba(255, 255, 255, 0.96), rgba(36, 33, 38, 0.96)),
+        light-dark(rgba(247, 243, 243, 0.96), rgba(36, 33, 38, 0.96))
     );
     text-align: left;
     box-shadow:
@@ -109,7 +109,7 @@
 .sitemap-category h3 {
     margin: 0;
     padding-bottom: 0.65rem;
-    border-bottom: 1px solid rgba(138, 47, 63, 0.24);
+    border-bottom: 1px solid light-dark(rgba(138, 47, 63, 0.24), rgba(239, 167, 182, 0.24));
     color: var(--accent-dark);
     text-align: center;
 }
@@ -142,7 +142,7 @@
 .sitemap-category a:focus-visible,
 .all-pages-list a:hover,
 .all-pages-list a:focus-visible {
-    color: var(--accent);
+    color: var(--accent-text);
     text-decoration: underline;
 }
 

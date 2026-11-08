@@ -17,7 +17,7 @@
         linear-gradient(
             135deg,
             var(--card),
-            #fff7f8
+            light-dark(#fff7f8, var(--night-tint))
         );
 }
 
@@ -93,7 +93,7 @@
 .projects-f2r-gallery figcaption {
     flex: 1;
     padding: 0.9rem 1rem 1rem;
-    color: #574a4c;
+    color: light-dark(#574a4c, var(--night-muted));
     font-size: 0.9rem;
     line-height: 1.55;
     text-align: center;

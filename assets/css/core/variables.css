@@ -1,18 +1,50 @@
 /* Site Variables/Design Tokens */
 :root {
+    /* The browser supplies the initial preference when JavaScript is unavailable. */
+    color-scheme: light dark;
+
     /* Main accent colors */
     --accent: #8a2f3f;
-    --accent-dark: #5f1f2c;
+    --accent-dark: light-dark(#5f1f2c, #f0b8c3);
     --accent-light: #b85a68;
-    --accent-glow: rgba(138, 47, 63, 0.28);
+    --accent-text: light-dark(#8a2f3f, #efa7b6);
+    --accent-strong: #5f1f2c;
+    --accent-glow: light-dark(rgba(138, 47, 63, 0.28), rgba(239, 167, 182, 0.28));
 
     /* General site colors */
-    --ink: #241b1b;
-    --paper: #f6f3f1;
-    --card: #ffffff;
-    --line: rgba(138, 47, 63, 0.35);
+    --ink: light-dark(#241b1b, #f0e9e7);
+    --paper: light-dark(#f6f3f1, #19171b);
+    --card: light-dark(#ffffff, #242126);
+    --line: light-dark(rgba(138, 47, 63, 0.35), rgba(239, 167, 182, 0.3));
+    --link: light-dark(#0000ee, #aabfff);
+
+    /* Dark palette shared by the page-specific light-dark() pairs. */
+    --night-ink: #f0e9e7;
+    --night-muted: #c6b9be;
+    --night-surface: #242126;
+    --night-soft: #2d272e;
+    --night-tint: #382a33;
+    --night-blue: #9bd2eb;
+    --night-blue-surface: #223039;
+    --night-warm-surface: #393124;
+    --night-line: rgba(239, 167, 182, 0.3);
 
     /* Reusable text sizes */
     --text-size-small: 0.825rem;
     --text-size-extra-small: 0.75rem;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+/* Printed articles retain their light palette regardless of the saved setting. */
+@media print {
+    :root[data-theme], :root {
+        color-scheme: light;
+    }
 }
