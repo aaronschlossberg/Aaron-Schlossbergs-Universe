@@ -1,6 +1,7 @@
 import { access, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { load } from "cheerio";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK = process.argv.includes("--check");
@@ -172,11 +173,53 @@ function breadcrumbNode(pathname, absoluteUrl) {
     };
 }
 
+function faqEntities(pathname, html) {
+    const $ = load(html);
+    const items = $("main details[data-faq-item]").toArray();
+    const ids = new Set();
+
+    if (!items.length) {
+        throw new Error(`${pathname}: FAQPage needs visible FAQ questions.`);
+    }
+
+    return items.map(item => {
+        const element = $(item);
+        const id = element.attr("id");
+        const summary = element.children("summary");
+        const name = summary.text().replace(/\s+/g, " ").trim();
+        const answer = element.children("[data-faq-answer]");
+
+        if (!id || /\s|#/.test(id) || ids.has(id)
+            || summary.length !== 1 || !name
+            || answer.length !== 1 || !answer.text().trim()) {
+            throw new Error(`${pathname}: every FAQ needs a unique anchor, one question, and a nonempty answer.`);
+        }
+        ids.add(id);
+
+        const content = answer.clone();
+        content.find("a[href]").each((_, link) => {
+            const anchor = $(link);
+            anchor.attr("href", new URL(anchor.attr("href"), pageUrl(pathname)).href);
+        });
+
+        return {
+            "@type": "Question",
+            "@id": `${pageUrl(pathname)}#${id}`,
+            name,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: content.html().replace(/\s+/g, " ").trim()
+            }
+        };
+    });
+}
+
 function jsonLd(
     pathname,
     page,
     image,
-    extraSchema
+    extraSchema,
+    questions
 ) {
     const absoluteUrl = pageUrl(pathname);
     const breadcrumb = breadcrumbNode(
@@ -251,6 +294,10 @@ function jsonLd(
         webpage.mainEntity = {
             "@id": mainEntityId
         };
+    }
+
+    if (questions.length) {
+        webpage.mainEntity = questions;
     }
 
     if (page.aboutPerson) {
@@ -402,7 +449,8 @@ function analytics() {
 function render(
     pathname,
     page,
-    extraSchema
+    extraSchema,
+    questions
 ) {
     const absoluteUrl =
         pageUrl(pathname);
@@ -495,7 +543,8 @@ function render(
                 pathname,
                 page,
                 image,
-                extraSchema
+                extraSchema,
+                questions
             ),
         EXTRA_SCRIPTS:
             (page.extraScripts || [])
@@ -700,13 +749,17 @@ for (const file of files) {
     }
 
     const extraSchema = pages[pathname].schemaNodes || [];
+    const questions = pages[pathname].schemaType === "FAQPage"
+        ? faqEntities(pathname, html)
+        : [];
 
     const next = html.replace(
         /<head\b[^>]*>[\s\S]*?<\/head>/i,
         () => `<head>\n${render(
             pathname,
             pages[pathname],
-            extraSchema
+            extraSchema,
+            questions
         )}\n</head>`
     );
 

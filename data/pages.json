@@ -21,6 +21,17 @@
             "lastName": "Schlossberg"
         }
     },
+    "/faq/": {
+        "title": "FAQ | Aaron Schlossberg’s Universe",
+        "description": "Find answers about Aaron L. Schlossberg’s background, Muhlenberg education, web development, writing, creative projects, and ways to get in touch.",
+        "breadcrumbLabel": "FAQ",
+        "schemaType": "FAQPage",
+        "aboutPerson": true,
+        "personDetails": true,
+        "extraScripts": [
+            "/assets/js/pages/faq.js"
+        ]
+    },
     "/compendium/": {
         "title": "Compendium | Aaron Schlossberg’s Universe",
         "description": "Browse Aaron Schlossberg’s glossary of terms and ideas, from multipotentialite and liminal space to the Backrooms, Boots Theory, and more.",

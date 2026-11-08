@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
-import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, readFile, rm, symlink, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { promisify } from "node:util";
@@ -25,6 +25,7 @@ async function fixture(t, metadata = {
 }) {
     const root = await mkdtemp(path.join(os.tmpdir(), "asu-heads-"));
     t.after(() => rm(root, { recursive: true, force: true }));
+    await symlink(path.join(ROOT, "node_modules"), path.join(root, "node_modules"), "junction");
 
     async function put(relative, text) {
         const file = path.join(root, relative);
@@ -187,6 +188,69 @@ test("shared template and Analytics changes propagate to every head", async t =>
         const html = await f.html(pathname);
         assert.ok(!html.includes("googletagmanager.com"));
         assert.ok(!html.includes('gtag("config"'));
+    }
+});
+
+test("FAQ schema follows visible answers, links, and edits without changing the body", async t => {
+    const f = await fixture(t, {
+        "/": page("Home | ASU", "Home description."),
+        "/faq/": { ...page("FAQ | ASU", "FAQ description."), schemaType: "FAQPage", aboutPerson: true }
+    });
+    const body = `<body><main>
+        <details id="contact" data-faq-item><summary>How can I contact Aaron?</summary>
+            <div data-faq-answer><p>Use the <a href="/contact/">Contact page</a>.</p></div>
+            <a href="#contact">Link to this answer</a>
+        </details>
+        <details id="education" data-faq-item open><summary>Where did Aaron study?</summary>
+            <div data-faq-answer><p>At Muhlenberg College.</p></div>
+        </details>
+    </main></body>`;
+    await f.put("faq/index.html", `<html><head></head>${body}</html>`);
+    assert.equal((await f.run()).code, 0);
+
+    const html = await f.html("/faq/");
+    const $ = load(html);
+    const graph = JSON.parse($("script[type='application/ld+json']").text())["@graph"];
+    const faq = graph.find(node => node["@type"] === "FAQPage");
+    assert.equal(graph.filter(node => node["@type"] === "FAQPage").length, 1);
+    assert.equal(faq.about["@id"], `${baseConfig.baseUrl}/#person`);
+    assert.equal(faq.mainEntity.length, 2);
+    assert.equal(faq.mainEntity[0]["@id"], `${baseConfig.baseUrl}/faq/#contact`);
+    assert.equal(faq.mainEntity[0].name, "How can I contact Aaron?");
+    const answer = load(faq.mainEntity[0].acceptedAnswer.text);
+    assert.equal(answer("body").text(), "Use the Contact page.");
+    assert.equal(answer("a").attr("href"), `${baseConfig.baseUrl}/contact/`);
+    assert.ok(!faq.mainEntity[0].acceptedAnswer.text.includes("Link to this answer"));
+    assert.equal(html.slice(html.indexOf("</head>") + 7), `${body}</html>`);
+    assert.equal((await f.run("--check")).code, 0);
+
+    await f.put("faq/index.html", html.replace("At Muhlenberg College.</p>", "At Muhlenberg College in Pennsylvania.</p>"));
+    assert.equal((await f.run("--check")).code, 1);
+    assert.equal((await f.run()).code, 0);
+    const updated = load(await f.html("/faq/"));
+    const updatedFaq = JSON.parse(updated("script[type='application/ld+json']").text())["@graph"].find(node => node["@type"] === "FAQPage");
+    assert.match(updatedFaq.mainEntity[1].acceptedAnswer.text, /in Pennsylvania/);
+    assert.equal((await f.run("--check")).code, 0);
+});
+
+test("missing or malformed FAQ answers fail before changing source pages", async t => {
+    const cases = [
+        "<main></main>",
+        '<main><details data-faq-item><summary>Question?</summary><div data-faq-answer>Answer.</div></details></main>',
+        '<main><details id="one" data-faq-item><summary>Question?</summary><div data-faq-answer></div></details></main>',
+        '<main><details id="one" data-faq-item><summary>Question?</summary><div data-faq-answer>Answer.</div></details><details id="one" data-faq-item><summary>Another?</summary><div data-faq-answer>Another answer.</div></details></main>'
+    ];
+    for (const body of cases) {
+        const f = await fixture(t, {
+            "/": page("Home | ASU", "Home description."),
+            "/faq/": { ...page("FAQ | ASU", "FAQ description."), schemaType: "FAQPage" }
+        });
+        const before = await f.html("/");
+        await f.put("faq/index.html", `<html><head></head><body>${body}</body></html>`);
+        const result = await f.run();
+        assert.equal(result.code, 1);
+        assert.match(result.stderr, /FAQ/);
+        assert.equal(await f.html("/"), before);
     }
 });
 

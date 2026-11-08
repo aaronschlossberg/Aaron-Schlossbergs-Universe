@@ -15,6 +15,7 @@
 
 /* Page-specific styling */
 @import url("pages/about-me.css");
+@import url("pages/faq.css");
 @import url("pages/compendium.css");
 @import url("pages/contact.css");
 @import url("pages/education.css");
