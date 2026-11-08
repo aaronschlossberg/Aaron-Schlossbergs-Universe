@@ -152,6 +152,10 @@ context, examples, or image caption. Each item has `text` and `href` fields.
 `cite: true` italicizes a work title, `quote: true` adds curly quotation marks,
 and `caseSensitive: true` distinguishes titles such as `Up` from ordinary words.
 The generator escapes the remaining text and links the longest matching phrase.
+For a longer entry, add a `sections` array. Each section has a unique lowercase
+`id` (such as `research`), a `title`, and a `paragraphs` array, an `items` array,
+or both. These sections appear after Context and use the same inline links.
+Their headings can be linked at `#entry-section-<id>`.
 
 An optional `image` object supplies a local asset path, alternative text, pixel
 dimensions, caption, credit, and license link when applicable. Images large

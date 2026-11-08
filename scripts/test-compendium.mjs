@@ -137,3 +137,43 @@ test("invalid inline URLs and image paths fail before writing source files", asy
     await assert.rejects(f.run(), /valid local image/);
     assert.equal(await f.read('data/pages.json'), registry);
 });
+
+test("long entries have accessible named sections with safe linked text and lists", async t => {
+    const f = await fixture(t);
+    await f.put('data/compendium.json', JSON.stringify([{
+        ...entries[0],
+        links: [{ text: 'Backrooms', href: '/compendium/backrooms/' }],
+        sections: [{
+            id: 'connections', title: 'Connections & <ideas>',
+            paragraphs: ['Read about the Backrooms.'],
+            items: ['A <script> is plain text here.', 'More about the Backrooms.']
+        }]
+    }, entries[1]]));
+    await f.run();
+    const $ = load(await f.read('compendium/anemoia/index.html'));
+    const section = $('section[aria-labelledby="entry-section-connections"]');
+    assert.equal(section.find('h2').attr('id'), 'entry-section-connections');
+    assert.equal(section.find('h2').text(), 'Connections & <ideas>');
+    assert.equal(section.find('a[href="/compendium/backrooms/"]').length, 2);
+    assert.equal(section.find('li').length, 2);
+    assert.equal(section.find('script, ideas').length, 0);
+    assert.equal(section.find('li').first().text(), 'A <script> is plain text here.');
+});
+
+test("malformed or duplicate deep-entry sections fail before any generated content changes", async t => {
+    const f = await fixture(t);
+    const registry = await f.read('data/pages.json');
+    const index = await f.read('compendium/index.html');
+    const section = { id: 'research', title: 'Research', paragraphs: ['Example'] };
+    for (const sections of [
+        [section, section],
+        [{ ...section, id: 'bad id' }],
+        [{ ...section, paragraphs: [''] }],
+        [{ ...section, paragraphs: [] }]
+    ]) {
+        await f.put('data/compendium.json', JSON.stringify([{ ...entries[0], sections }]));
+        await assert.rejects(f.run(), /unique lowercase ids|nonempty strings|at least one paragraph/);
+        assert.equal(await f.read('data/pages.json'), registry);
+        assert.equal(await f.read('compendium/index.html'), index);
+    }
+});

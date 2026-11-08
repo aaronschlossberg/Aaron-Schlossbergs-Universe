@@ -27,7 +27,8 @@
         ],
         "related": [
             "kenopsia",
-            "liminal-space"
+            "liminal-space",
+            "hagioptasia"
         ],
         "links": [
             {
@@ -379,7 +380,8 @@
         ],
         "related": [
             "anemoia",
-            "liminal-space"
+            "liminal-space",
+            "hagioptasia"
         ],
         "links": [
             {
@@ -516,7 +518,8 @@
         "related": [
             "backrooms",
             "kenopsia",
-            "anemoia"
+            "anemoia",
+            "hagioptasia"
         ],
         "links": [],
         "image": {
@@ -696,7 +699,8 @@
             }
         ],
         "related": [
-            "liminal-space"
+            "liminal-space",
+            "hagioptasia"
         ],
         "links": [
             {
@@ -805,7 +809,8 @@
         "related": [
             "anemoia",
             "metanostalgia",
-            "kenopsia"
+            "kenopsia",
+            "hagioptasia"
         ],
         "links": [
             {
@@ -854,7 +859,8 @@
         ],
         "related": [
             "nostalgia",
-            "anemoia"
+            "anemoia",
+            "hagioptasia"
         ],
         "links": [
             {
@@ -2949,5 +2955,205 @@
                 "href": "/compendium/op-original-poster/"
             }
         ]
+    },
+    {
+        "slug": "hagioptasia",
+        "term": "Hagioptasia",
+        "definition": "A proposed psychological process in which a person, place, object, memory, or idea seems to possess an extraordinary significance of its own, whether enchanting, nostalgic, sacred, or uncanny.",
+        "tags": [
+            "Psychology",
+            "Emotions",
+            "Liminal Spaces",
+            "Vocabulary"
+        ],
+        "aliases": [
+            "Hagioptasic Experience",
+            "Perceived Specialness",
+            "Externalised Significance",
+            "Externalized Significance"
+        ],
+        "context": [
+            "Hagioptasia names a particular way something can seem special: its significance feels embedded in the thing itself. An ordinary scene might appear to hold an elusive depth; a familiar object might seem to carry a kind of magic. The person having the experience can still recognize that this impression comes from their own mind. The Hagioptasia website describes this as a proposed perceptual process, rather than a single emotion.",
+            "The proposal connects experiences with very different moods. The same broad pattern might appear as reverence in a sacred place, fascination with a famous person, a nostalgic glow around a memory, or an unsettling atmosphere in an empty room. Whether these experiences share one underlying psychological mechanism remains an open research question."
+        ],
+        "sections": [
+            {
+                "id": "name-and-origins",
+                "title": "Pronunciation and origins",
+                "paragraphs": [
+                    "Pronounced hag-ee-op-TAY-zha. The name combines the Greek hagios, meaning holy, and optasia, meaning vision. Despite that religious root, its proposed scope includes secular art, everyday surroundings, memories, and popular culture.",
+                    "Daniel Laidler originally proposed the concept and later developed it with psychologist John A. Johnson. Their 2020 paper introduced the theory alongside an early attempt to measure differences between people in the tendency to have these experiences."
+                ]
+            },
+            {
+                "id": "experience",
+                "title": "What the experience can feel like",
+                "paragraphs": [
+                    "The phenomenology page describes a set of possible features. These are a working description for research, rather than diagnostic criteria. A person might recognize several of them in one encounter:"
+                ],
+                "items": [
+                    "An apparent aura: the place, person, or object seems to have a special presence that goes beyond its immediately visible qualities.",
+                    "Unspecified depth: there seems to be more to it, but the hidden significance is difficult to explain or even identify.",
+                    "A convincing impression: knowing that the feeling is subjective may leave its force intact.",
+                    "A pull toward or away: the impression can encourage fascination, longing, exploration, vigilance, or retreat.",
+                    "An enduring trace: a brief encounter can leave a lasting association that shapes later memories or visits."
+                ]
+            },
+            {
+                "id": "connections",
+                "title": "Connections to other Compendium entries",
+                "paragraphs": [
+                    "Nostalgia concerns a relationship with the past. In the hagioptasia proposal, the additional feature is that a remembered time or place seems to contain a special quality of its own. Either experience could occur without the other.",
+                    "Anemoia names longing for a time never personally experienced. Metanostalgia, in the informal sense used here, concerns longing for a former feeling of nostalgia. Hagioptasia offers a possible way to discuss the aura that an image or memory acquires within those experiences.",
+                    "Numinous describes a sacred or mysterious presence, often accompanied by awe. Hagioptasia has a wider proposed scope, including glamour and eerie atmospheres. Intense awe alone would not establish the specific impression of significance belonging to the thing itself.",
+                    "Liminal spaces concern thresholds and places removed from their usual context; kenopsia names the eeriness of a normally busy place left empty. Hagioptasia could describe an additional impression that the setting itself holds an unexplained presence. This is an interpretive connection to the atmosphere explored in my liminal spaces essay."
+                ]
+            },
+            {
+                "id": "research",
+                "title": "Research and evidence",
+                "paragraphs": [
+                    "Johnson and Laidler published Measuring hagioptasia: A case study in theory-testing through Internet-based personality scale development in Personality and Individual Differences in 2020. Their online questionnaire collected responses from 2,943 adults. The analysis suggested two related themes: ambition and attraction associated with fame or recognition, and aesthetic wonder associated with a seemingly transcendent reality.",
+                    "The authors also reported measurement problems, including difficulties with negatively worded items and with capturing the specifically illusory aspect of perceived specialness. They presented the work as an initial test of the theory and an unfinished measurement project. A questionnaire study of this kind offers preliminary evidence about patterns in self-reports; it does not by itself demonstrate a distinct perceptual mechanism.",
+                    "The contemporary website emphasizes externalised significance and includes both welcoming and ominous experiences. That broader framing should be distinguished from the particular questionnaire tested in 2020. The research background and the distinction argument explain the continuing questions about measurement and overlap with existing concepts."
+                ]
+            },
+            {
+                "id": "open-questions",
+                "title": "What remains open",
+                "paragraphs": [
+                    "A central question is whether hagioptasia can be separated reliably from awe, nostalgia, aesthetic appreciation, novelty, attention, and responses to status or threat. Researchers would need measures and experiments that distinguish those explanations, rather than relying only on similar descriptions of an experience.",
+                    "For this Compendium, the term provides a useful proposal for describing felt significance. The experience can be recognizable while the claim that it represents one distinct psychological process remains unsettled. The official website treats hagioptasia as an early research programme."
+                ]
+            }
+        ],
+        "examples": [
+            "A worn game cartridge from childhood seems to contain the atmosphere of an entire summer, beyond the memories you can list.",
+            "A plain room in an old building feels quietly enchanted, although a companion sees an unremarkable interior.",
+            "A deserted mall seems to have a watchful or ominous presence, despite no identifiable threat.",
+            "A song seems to promise access to a profound, unreachable feeling that is hard to put into words.",
+            "An admired performer seems to possess an indefinable aura that goes beyond the skills or achievements you can describe."
+        ],
+        "references": [
+            {
+                "label": "Hagioptasia: official overview",
+                "href": "https://hagioptasia.com/"
+            },
+            {
+                "label": "A short introduction to hagioptasia",
+                "href": "https://hagioptasia.com/a-short-introduction-to-hagioptasia/"
+            },
+            {
+                "label": "The phenomenology of hagioptasia",
+                "href": "https://hagioptasia.com/the-phenomenology-of-hagioptasia/"
+            },
+            {
+                "label": "Examples of hagioptasia",
+                "href": "https://hagioptasia.com/examples-of-hagioptasia/"
+            },
+            {
+                "label": "Research background",
+                "href": "https://hagioptasia.com/research-background-the-foundations-and-evidence-for-hagioptasia/"
+            },
+            {
+                "label": "The argument for distinguishing hagioptasia from related concepts",
+                "href": "https://hagioptasia.com/a-conceptual-and-phenomenological-argument-for-the-discriminant-validity-of-hagioptasia/"
+            },
+            {
+                "label": "Johnson and Laidler (2020): journal article and DOI",
+                "href": "https://doi.org/10.1016/j.paid.2020.109919"
+            },
+            {
+                "label": "Read the 2020 study (author-hosted PDF)",
+                "href": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/1/163537/files/2023/07/Hagioptasia2020.pdf"
+            }
+        ],
+        "related": [
+            "numinous",
+            "nostalgia",
+            "anemoia",
+            "metanostalgia",
+            "liminal-space",
+            "kenopsia"
+        ],
+        "links": [
+            {
+                "text": "Hagioptasia website",
+                "href": "https://hagioptasia.com/"
+            },
+            {
+                "text": "official website",
+                "href": "https://hagioptasia.com/"
+            },
+            {
+                "text": "Daniel Laidler",
+                "href": "https://hagioptasia.com/"
+            },
+            {
+                "text": "John A. Johnson",
+                "href": "https://sites.psu.edu/drj5j/"
+            },
+            {
+                "text": "phenomenology page",
+                "href": "https://hagioptasia.com/the-phenomenology-of-hagioptasia/"
+            },
+            {
+                "text": "research background",
+                "href": "https://hagioptasia.com/research-background-the-foundations-and-evidence-for-hagioptasia/"
+            },
+            {
+                "text": "distinction argument",
+                "href": "https://hagioptasia.com/a-conceptual-and-phenomenological-argument-for-the-discriminant-validity-of-hagioptasia/"
+            },
+            {
+                "text": "Measuring hagioptasia: A case study in theory-testing through Internet-based personality scale development",
+                "href": "https://doi.org/10.1016/j.paid.2020.109919",
+                "quote": true
+            },
+            {
+                "text": "Personality and Individual Differences",
+                "href": "https://www.sciencedirect.com/journal/personality-and-individual-differences",
+                "cite": true
+            },
+            {
+                "text": "Numinous",
+                "href": "/compendium/numinous/"
+            },
+            {
+                "text": "Nostalgia",
+                "href": "/compendium/nostalgia/"
+            },
+            {
+                "text": "Anemoia",
+                "href": "/compendium/anemoia/"
+            },
+            {
+                "text": "Metanostalgia",
+                "href": "/compendium/metanostalgia/"
+            },
+            {
+                "text": "Liminal spaces",
+                "href": "/compendium/liminal-space/"
+            },
+            {
+                "text": "kenopsia",
+                "href": "/compendium/kenopsia/"
+            },
+            {
+                "text": "my liminal spaces essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#why-do-liminal-spaces-feel-so-strange"
+            }
+        ],
+        "image": {
+            "src": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/01-liminal-space-example.webp",
+            "alt": "An empty indoor shopping corridor with closed storefronts and fluorescent lighting.",
+            "width": 568,
+            "height": 370,
+            "caption": "A liminal space can seem ordinary, nostalgic, or uncanny to different viewers. The atmosphere helps illustrate the kind of experience the proposal explores.",
+            "credit": {
+                "label": "Image and discussion in my liminal spaces essay",
+                "href": "/writings/backrooms-and-liminal-spaces-introduction/#what-is-a-liminal-space"
+            }
+        }
     }
 ]

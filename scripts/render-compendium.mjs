@@ -59,6 +59,24 @@ for (const entry of entries) {
     for (const key of ["tags", "context", "examples", "aliases", "related"]) {
         requireStrings(entry[key] || [], `${entry.slug}.${key}`);
     }
+    if (!Array.isArray(entry.sections ?? [])) {
+        throw new Error(`${entry.slug}.sections must be an array.`);
+    }
+    const sectionIds = new Set();
+    for (const section of entry.sections || []) {
+        if (!section || typeof section.id !== "string"
+            || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(section.id)
+            || sectionIds.has(section.id)
+            || typeof section.title !== "string" || !section.title.trim()) {
+            throw new Error(`${entry.slug} needs valid sections with unique lowercase ids and nonempty titles.`);
+        }
+        sectionIds.add(section.id);
+        requireStrings(section.paragraphs ?? [], `${entry.slug}.sections.${section.id}.paragraphs`);
+        requireStrings(section.items ?? [], `${entry.slug}.sections.${section.id}.items`);
+        if (!(section.paragraphs?.length || section.items?.length)) {
+            throw new Error(`${entry.slug}.sections.${section.id} needs at least one paragraph or list item.`);
+        }
+    }
     if (!Array.isArray(entry.references || [])) {
         throw new Error(`${entry.slug}.references must be an array.`);
     }
@@ -200,6 +218,12 @@ function renderIndex() {
 
 function renderEntry(entry) {
     const paragraphs = (entry.context || []).map(text => `<p>${linkedText(text, entry)}</p>`).join("\n");
+    const sections = (entry.sections || []).map(section => {
+        const id = `entry-section-${section.id}`;
+        const body = (section.paragraphs || []).map(text => `<p>${linkedText(text, entry)}</p>`).join("\n");
+        const items = (section.items || []).map(text => `<li>${linkedText(text, entry)}</li>`).join("\n");
+        return `<section class="compendium-section" aria-labelledby="${id}"><h2 id="${id}">${escape(section.title)}</h2>\n${body}${items ? `\n<ul>\n${items}\n</ul>` : ""}</section>`;
+    }).join("\n");
     const examples = (entry.examples || []).map(text => `<li>${linkedText(text, entry)}</li>`).join("\n");
     const references = (entry.references || []).map(reference =>
         `<li><a href="${escape(reference.href)}">${escape(reference.label)}</a></li>`
@@ -218,7 +242,7 @@ function renderEntry(entry) {
             <p class="compendium-definition">${linkedText(entry.definition, entry)}</p>
             ${tags(entry)}
             ${renderImage(entry)}
-            ${paragraphs ? `<section class="compendium-section" aria-labelledby="context-title"><h2 id="context-title">Context</h2>\n${paragraphs}</section>` : ""}
+            ${paragraphs ? `<section class="compendium-section" aria-labelledby="context-title"><h2 id="context-title">Context</h2>\n${paragraphs}</section>` : ""}${sections ? `\n            ${sections}` : ""}
             ${examples ? `<section class="compendium-section" aria-labelledby="examples-title"><h2 id="examples-title">Examples</h2><ul>\n${examples}\n</ul></section>` : ""}
             ${references ? `<section class="compendium-section" aria-labelledby="references-title"><h2 id="references-title">References</h2><ul>\n${references}\n</ul></section>` : ""}
             ${related ? `<nav class="compendium-section" aria-labelledby="related-title"><h2 id="related-title">Related entries</h2><ul class="compendium-related">\n${related}\n</ul></nav>` : ""}

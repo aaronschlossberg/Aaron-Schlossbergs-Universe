@@ -331,6 +331,22 @@
         },
         "generatedBy": "compendium"
     },
+    "/compendium/hagioptasia/": {
+        "title": "Hagioptasia | Aaron Schlossberg’s Universe",
+        "description": "A proposed psychological process in which a person, place, object, memory, or idea seems to possess an extraordinary significance of its own, whether enchanting, nostalgic, sacred, or uncanny.",
+        "breadcrumbLabel": "Hagioptasia",
+        "extraScripts": [
+            "/assets/js/pages/compendium.js"
+        ],
+        "image": {
+            "url": "/assets/img/writings/backrooms-and-liminal-spaces-introduction/01-liminal-space-example.webp",
+            "type": "image/webp",
+            "width": 568,
+            "height": 370,
+            "alt": "An empty indoor shopping corridor with closed storefronts and fluorescent lighting."
+        },
+        "generatedBy": "compendium"
+    },
     "/compendium/halloweekend/": {
         "title": "Halloweekend | Aaron Schlossberg’s Universe",
         "description": "An informal name for a weekend of Halloween celebrations.",
