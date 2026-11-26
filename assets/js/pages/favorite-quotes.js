@@ -377,12 +377,8 @@
                 "favorite-quote-card__attribution"
             );
 
-            /*
-            * There is deliberately no space after the em dash.
-            * Output: —Mewtwo
-            */
             attribution.append(
-                document.createTextNode("—")
+                document.createTextNode("-")
             );
 
             appendLinkedText(
@@ -421,7 +417,7 @@
 
         if (quote.note) {
             const note = element("p", "favorite-quote-card__note");
-            note.append(element("strong", "", "Why I saved it: "));
+            note.append(element("span", "bold-text", "Why I saved it: "));
             note.append(document.createTextNode(quote.note));
             card.append(note);
         }

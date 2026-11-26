@@ -87,8 +87,8 @@ test("previews paired slashes consistently without changing code, equations or l
     const $ = load(rendered.html);
     assert.equal($("title").text(), "XP/EXP");
     assert.equal($("h1").text(), "XP/EXP");
-    assert.equal($("strong").text(), "Writer");
-    assert.equal($("em").text(), "developer");
+    assert.equal($("span.bold-text").text(), "Writer");
+    assert.equal($("span.italic-text").text(), "developer");
     assert.equal($('.studio-prose a[href="/about-me/"]').text(), "this/site");
     assert.equal($("code").first().text(), "a / b");
     assert.equal($("pre code").text(), "a / b");
@@ -108,8 +108,9 @@ test("Site Desk places title quotation marks outside linked and emphasized body 
     assert.equal($("p").text(), "“Marvin’s Friend”");
     assert.equal($("a").attr("href"), "/compendium/marvins-friend/");
     assert.equal($("a").text(), "Marvin’s Friend");
-    assert.equal($("strong em u").text(), "Marvin’s Friend");
-    assert.equal($(".typography-quote").parents("a, strong, em, u").length, 0);
+    assert.equal($("span.bold-text span.italic-text span.underlined-text").text(), "Marvin’s Friend");
+    assert.equal($("strong, em, u, b, i").length, 0);
+    assert.equal($(".typography-quote").parents("a, .bold-text, .italic-text, .underlined-text").length, 0);
     assert.equal(body.content[0].content[0].text, "“Marvin’s Friend”");
 });
 
@@ -130,7 +131,7 @@ test("renders safe text, links, figures, numbered footnotes and MathML", () => {
     const rendered = renderBody(body);
     const $ = load(rendered.html);
     assert.deepEqual(rendered.images, [file]);
-    assert.equal($("strong").text(), "<script> & text");
+    assert.equal($("span.bold-text").text(), "<script> & text");
     assert.equal($("script").length, 0);
     assert.equal($('a[href="/about-me/"]').text(), "internal link");
     assert.equal($("figure img").attr("alt"), '"Alt text"');

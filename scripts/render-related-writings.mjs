@@ -44,8 +44,7 @@ function recommendationCard({ piece, summary }, compact) {
 
     if (compact) {
         return `<a class="info-connection-card" data-carousel-item href="${href}">
-            <span>${labels.join(" · ")}</span>
-            <strong>${title}</strong>
+            <span>${labels.join(" · ")}</span> <span class="bold-text">${title}</span>
         </a>`;
     }
 
@@ -101,7 +100,7 @@ export async function renderRelatedWritings(pages, origin) {
         const carousel = $(`<div class="carousel writing-related-carousel${compact ? " writing-related-carousel--compact" : ""}" data-carousel>
             <button class="carousel-btn carousel-btn-prev" type="button" aria-label="Previous recommendation" aria-controls="related-writing-cards" hidden>‹</button>
             <button class="carousel-btn carousel-btn-next" type="button" aria-label="Next recommendation" aria-controls="related-writing-cards" hidden>›</button>
-            <div class="carousel-track${compact ? "" : " writing-related-grid"}" id="related-writing-cards"
+            <div class="carousel-track" id="related-writing-cards"
                 role="group" aria-label="Related writing recommendations" tabindex="0"></div>
         </div>`);
         const track = carousel.find(".carousel-track");

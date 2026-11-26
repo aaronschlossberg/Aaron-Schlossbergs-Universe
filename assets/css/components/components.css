@@ -273,9 +273,8 @@ body.iframe-page iframe {
 }
 
 .resume-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    --card-row-columns: 2;
+    --card-row-gap: 25px;
 }
 
 .resume-card {

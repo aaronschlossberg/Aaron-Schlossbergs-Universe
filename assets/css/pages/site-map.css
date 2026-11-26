@@ -20,10 +20,8 @@
 }
 
 .sitemap-grid {
-    --card-width: 300px;
     --card-row-gap: 1.25rem;
-    --card-row-max-width: 1000px;
-
+    max-width: 940px;
     margin-top: 1.25rem;
 }
 
@@ -76,22 +74,13 @@
 
 /* Browse-by-section category cards. */
 .sitemap-category-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1.5rem;
-    width: 100%;
+    --card-row-gap: 1.5rem;
     max-width: 1100px;
     margin: 1.5rem auto 0;
 }
 
 .sitemap-category {
     box-sizing: border-box;
-    flex: 0 1 320px;
-    width: 100%;
-    max-width: 320px;
-    min-width: 0;
     padding: 1.25rem;
     border: 1px solid light-dark(rgba(138, 47, 63, 0.13), rgba(239, 167, 182, 0.13));
     border-radius: 18px;
@@ -131,17 +120,15 @@
     line-height: 1.5;
 }
 
-.sitemap-category a,
-.all-pages-list a {
+.sitemap-category :is(h3, li) > a,
+.all-pages-list li > a {
     color: var(--accent-dark);
     font-weight: 700;
     text-decoration: none;
 }
 
-.sitemap-category a:hover,
-.sitemap-category a:focus-visible,
-.all-pages-list a:hover,
-.all-pages-list a:focus-visible {
+.sitemap-category :is(h3, li) > a:is(:hover, :focus-visible),
+.all-pages-list li > a:is(:hover, :focus-visible) {
     color: var(--accent-text);
     text-decoration: underline;
 }
@@ -165,33 +152,18 @@
 }
 
 @media (max-width: 1000px) {
-    .sitemap-grid {
-        --card-width: 320px;
-        --card-row-max-width: 700px;
-    }
-
     .sitemap-list {
         grid-template-columns: repeat(2, minmax(0, 320px));
     }
 }
 
 @media (max-width: 700px) {
-    .sitemap-grid {
-        --card-width: 100%;
-        --card-row-max-width: 100%;
-    }
-
     .sitemap-card {
         min-height: 0;
     }
 
     .sitemap-category-grid {
-        gap: 1rem;
-    }
-
-    .sitemap-category {
-        flex-basis: 100%;
-        max-width: 100%;
+        --card-row-gap: 1rem;
     }
 
     .sitemap-list {
@@ -210,28 +182,12 @@
 .sitemap-overview .section-title { text-align: center; }
 .sitemap-overview > p { max-width: 1050px; margin: 0.85rem auto; line-height: 1.75; }
 
-/* Keep three compact cards across, and center incomplete rows. */
-.sitemap-category-grid { max-width: 1100px; justify-content: center; }
-.sitemap-category { flex: 0 1 calc((100% - 3rem) / 3); max-width: none; }
-
-/* Large collections occupy the full row; CSS columns flow downward then across. */
-.sitemap-category--wide { flex: 0 0 100%; max-width: 100%; }
-.sitemap-category--wide > ul { columns: 3; column-gap: 2.5rem; }
-.sitemap-category--wide > ul > li { break-inside: avoid; }
-
 /* One-column master directory, with smaller inline descriptions. */
 .all-pages-list { max-width: 1100px; }
 .all-pages-list li { margin-bottom: 0.7rem; overflow-wrap: anywhere; }
 .sitemap-page-description { font-size: 0.87em; font-weight: 400; line-height: 1.6; color: var(--text-color, inherit); }
 
-@media (max-width: 900px) {
-  .sitemap-category { flex-basis: calc((100% - 1.5rem) / 2); }
-  .sitemap-category--wide { flex-basis: 100%; }
-  .sitemap-category--wide > ul { columns: 2; }
-}
 @media (max-width: 700px) {
-  .sitemap-category { flex-basis: 100%; }
-  .sitemap-category--wide > ul { columns: 1; }
   .sitemap-overview > p { padding-inline: 0.25rem; }
 }
 
@@ -287,7 +243,7 @@
     font-weight: 400;
     vertical-align: baseline;
 }
-.sitemap-site-link { color: var(--accent-dark); }
+.sitemap-site-link { text-decoration: underline; }
 @media (max-width: 900px) {
     .sitemap-category--wide > ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

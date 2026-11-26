@@ -37,7 +37,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     const check = process.argv.includes("--check");
     const changes = await normalizeSiteTypography(ROOT, { check });
     if (check && changes.length) {
-        console.error(`Fix slash spacing or move quotation marks outside links and formatting in:\n${changes.map(file => `  ${file}`).join("\n")}\nRun npm run typography to fix them.`);
+        console.error(`Normalize emphasis, HTML line wrapping, slash spacing or quotation marks in:\n${changes.map(file => `  ${file}`).join("\n")}\nRun npm run typography to fix them.`);
         process.exitCode = 1;
     } else {
         console.log(check ? "Site typography is up to date." : `Applied site typography (${changes.length} files updated).`);

@@ -15,9 +15,7 @@
 
 /* School and educational-chapter card grid */
 .education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
+    --card-row-gap: 1.25rem;
     margin-top: 1.5rem;
 }
 
@@ -184,14 +182,6 @@
     font-size: 1.1rem;
 }
 
-/* Intro and card grids */
-.intro-grid,
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
-}
-
 /* Small informational cards */
 .mini-card {
     background: light-dark(#f7f7f7, var(--night-soft));
@@ -245,4 +235,317 @@
 .placeholder-note {
     font-style: italic;
     opacity: 0.75;
+}
+
+/* Education chapters, school histories, and student organization pages. */
+.education-page main,
+.education-page main * {
+    box-sizing: border-box;
+}
+
+.education-page .edu-hero {
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 2.75rem) 1.25rem 0.75rem;
+    text-align: center;
+}
+
+.education-page .edu-hero h1 {
+    margin: 0.5rem auto 0;
+    line-height: 1.25;
+    text-wrap: balance;
+}
+
+.education-page .edu-eyebrow {
+    margin: 0 0 0.5rem;
+    color: var(--accent-dark);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.education-page .edu-hero .edu-eyebrow {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.education-page .edu-hero-intro {
+    margin: 1rem auto;
+    font-size: 1.08rem;
+    text-align: center;
+}
+
+.education-page .edu-facts {
+    --card-row-gap: 0.6rem;
+    margin: 1.25rem auto;
+}
+
+.education-page .edu-facts > div {
+    max-width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--card);
+}
+
+.education-page .edu-facts dt {
+    margin-bottom: 0.2rem;
+    color: var(--accent-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.education-page .edu-facts dd {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.education-page .edu-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 1.25rem auto 0.25rem;
+}
+
+.education-page .edu-quick-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.education-page .edu-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.education-page .edu-hero-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 340px;
+    aspect-ratio: 3 / 1;
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.education-page .edu-section {
+    padding: clamp(1.25rem, 3vw, 2rem);
+    scroll-margin-top: 1.25rem;
+}
+
+.education-page .edu-section > .edu-list {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.education-page .edu-section a:not(.card-link),
+.education-page .timeline h3 a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+.education-page .timeline h3 a {
+    color: var(--accent-dark);
+}
+
+.education-page main a:focus-visible,
+.education-page main video:focus-visible {
+    border-radius: 4px;
+    outline: 3px solid var(--accent-text);
+    outline-offset: 4px;
+}
+
+.education-page .edu-grid {
+    margin-top: 1.25rem;
+}
+
+.education-page .edu-card {
+    min-width: 0;
+    padding: 1.25rem;
+    border: 1px solid light-dark(rgba(138, 47, 63, 0.12), var(--night-line));
+    border-radius: 14px;
+    background: light-dark(#f8f5f3, var(--night-soft));
+}
+
+.education-page .edu-card h3 {
+    margin: 0 0 0.6rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+}
+
+.education-chapter .edu-card h3 {
+    text-align: center;
+}
+
+.education-page .edu-card p {
+    margin-top: 0.5rem;
+}
+
+.education-page .edu-card .edu-eyebrow {
+    margin: 0 0 0.5rem;
+}
+
+.education-page .edu-text-link {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 1rem;
+    padding: 0.3rem 0;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.education-page .edu-list {
+    display: block;
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.education-page .edu-list li + li {
+    margin-top: 0.3rem;
+}
+
+.education-page .edu-chapter-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-page .edu-chapter-card > img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.education-page .edu-chapter-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.education-page .education-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.education-page .education-card-content h3,
+.education-page .education-card-content .edu-eyebrow {
+    text-align: center;
+}
+
+.education-page .education-card-content .card-link {
+    margin-top: auto;
+}
+
+.education-page .timeline-year {
+    font-size: 0.88rem;
+}
+
+.education-page .edu-gallery {
+    --card-row-columns: 2;
+    --card-row-gap: 1.25rem;
+    align-items: start;
+}
+
+.education-page .edu-gallery .edu-figure {
+    margin-inline: 0;
+}
+
+.education-page .edu-figure {
+    max-width: 850px;
+    margin: 1.25rem auto;
+}
+
+.education-page .edu-figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.education-page .edu-poster img {
+    width: auto;
+    max-width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.education-page .edu-figure figcaption {
+    margin-top: 0.75rem;
+    color: light-dark(#5b4d4f, var(--night-muted));
+    font-size: 0.88rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.education-page .edu-video {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.education-page .edu-explore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.education-page .edu-chapter-nav {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.education-page .edu-explore a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 100%;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: light-dark(#f8f5f3, var(--night-soft));
+    color: var(--accent-dark);
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .education-page .edu-hero {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .education-page .edu-hero-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    .education-page .edu-content {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .education-page .edu-card {
+        padding: 1rem;
+    }
 }

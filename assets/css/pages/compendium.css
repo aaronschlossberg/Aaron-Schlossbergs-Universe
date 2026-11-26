@@ -26,7 +26,6 @@
 }
 
 .compendium-main a {
-    color: var(--accent-dark);
     text-decoration: underline;
     text-underline-offset: 0.16em;
 }
@@ -191,6 +190,7 @@
 }
 
 .compendium-term {
+    color: var(--accent-dark);
     font-weight: 700;
 }
 
@@ -315,6 +315,10 @@
 .compendium-detail .compendium-back {
     margin-top: 1.75rem;
     font-size: 0.9rem;
+}
+
+.compendium-main :is(.compendium-related, .compendium-back) a {
+    color: var(--accent-dark);
 }
 
 .compendium-share-dialog {

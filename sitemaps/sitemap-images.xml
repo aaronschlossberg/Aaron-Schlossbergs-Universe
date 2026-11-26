@@ -287,4 +287,77 @@
     </url> -->
     <!-- Authoring sitemap: start -->
     <!-- Authoring sitemap: end -->
+
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/hebrew-academy/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/Hebrew_Academy_building.jpg</image:loc>
+            <image:caption>The Bess and Paul Sigel Hebrew Academy of Greater Hartford building</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/pathways-academy/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/Pathways_Academy_Building.jpg</image:loc>
+            <image:caption>Pathways Academy of Technology and Design building</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/muhlenberg/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/Muhlenberg_College_campus.jpg</image:loc>
+            <image:caption>Muhlenberg College campus</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/lifelong-learning/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/Lifelong_Learning_visual.png</image:loc>
+            <image:caption>An illustration representing lifelong learning</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/pokemon-club/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/pokemon-club/Pokemon_Club_trifold.png</image:loc>
+            <image:caption>Pokémon Club display board</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/harry-potter-club/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/harry-potter-club/Harry_Potter_Club_trifold.png</image:loc>
+            <image:caption>Harry Potter Club display board</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/fencing-club/Fencing_pic1.png</image:loc>
+            <image:caption>Fencing practice at Muhlenberg College</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/mbga/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/mbga-club/MBGA_trifold.png</image:loc>
+            <image:caption>Muhlenberg Board Game Association display board</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.aaronschlossberg.com/education/muhlenberg/clubs/mac/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <image:image>
+            <image:loc>https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/mac-club/MAC_logo.jpeg</image:loc>
+            <image:caption>Muhlenberg Activities Council logo</image:caption>
+        </image:image>
+    </url>
 </urlset>

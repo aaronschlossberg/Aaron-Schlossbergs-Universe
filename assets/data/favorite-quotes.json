@@ -867,7 +867,7 @@
       "id": "writer-discover-one",
       "order": 20,
       "kind": "quote",
-      "text": "The terrible thing about being a writer is that you don't decide to become one—you discover that you are one.",
+      "text": "The terrible thing about being a writer is that you don't decide to become one; you discover that you are one.",
       "attribution": {
         "speaker": "James Baldwin",
         "speakerType": "person",
@@ -1320,7 +1320,7 @@
       "visibility": "review",
       "verification": "needs-review",
       "note": "",
-      "rawAttribution": "[slightly edited for clarity] —Kosta Vogel, in his Quora answer",
+      "rawAttribution": "[slightly edited for clarity] -Kosta Vogel, in his Quora answer",
       "importStatus": "bulk-imported"
     },
     {
@@ -1354,7 +1354,7 @@
       "visibility": "public",
       "verification": "needs-review",
       "note": "",
-      "rawAttribution": "Hogan Torah {H/Logan Torah — Hogan Torah/Logan Mora}",
+      "rawAttribution": "Hogan Torah {Hogan Torah/Logan Mora}",
       "importStatus": "bulk-imported"
     },
     {
@@ -1768,7 +1768,7 @@
       "id": "motivation-is-a-feeling-it-comes-and-goes-for-that",
       "order": 47,
       "kind": "quote",
-      "text": "Motivation is a feeling, it comes and goes, for that reason I can’t rely [on] my future based on “how I feel.” Motivation very rarely leads to success — vision, passion and sheer determination to make it happen will do.",
+      "text": "Motivation is a feeling, it comes and goes, for that reason I can’t rely [on] my future based on “how I feel”. Motivation very rarely leads to success; vision, passion and sheer determination to make it happen will do.",
       "attribution": {
         "speaker": "Hector Quintanilla",
         "speakerType": "person",
@@ -1996,7 +1996,7 @@
       "id": "if-a-string-is-in-a-knot-patience-will-untie",
       "order": 54,
       "kind": "quote",
-      "text": "If a string is in a knot, Patience will untie it. Patience can do many things — Did you ever try it? If it was sold at any shop I should like to buy it. But you and I must find our own — No other can supply it.",
+      "text": "If a string is in a knot, Patience will untie it. Patience can do many things; Did you ever try it? If it was sold at any shop I should like to buy it. But you and I must find our own; No other can supply it.",
       "attribution": {
         "speaker": "Anna M. Pratt",
         "speakerType": "person"
@@ -2258,7 +2258,7 @@
       "id": "be-excited-for-people-when-they-succeed-when-a-friend",
       "order": 62,
       "kind": "quote",
-      "text": "Be excited for people when they succeed — When a friend or family member reaches an important milestone like getting a promotion or making their first sale or scoring acceptance into their desired program, celebrate it. Buy them a drink. Send them a card. Tell them you're proud to know them — Being thrilled on someone's behalf is a lovely way to be. Winning is better when shared.",
+      "text": "Be excited for people when they succeed: When a friend or family member reaches an important milestone like getting a promotion or making their first sale or scoring acceptance into their desired program, celebrate it. Buy them a drink. Send them a card. Tell them you're proud to know them. Being thrilled on someone's behalf is a lovely way to be. Winning is better when shared.",
       "attribution": {
         "speaker": "James Clear",
         "speakerType": "person"
@@ -2381,7 +2381,7 @@
       "id": "i-apologize-for-such-a-long-letter-i-didn-t",
       "order": 66,
       "kind": "quote",
-      "text": "I apologize for such a long letter — I didn't have time to write a short one.",
+      "text": "I apologize for such a long letter; I didn't have time to write a short one.",
       "attribution": {
         "speaker": "Mark Twain",
         "speakerType": "person",
@@ -3313,7 +3313,7 @@
       "id": "listen-ford-if-you-just-tell-me-that-equation-finally",
       "order": 95,
       "kind": "quote",
-      "text": "Listen, Ford, if you just tell me that equation, finally, your dimension will be free. Anything will be possible. I'll remake a fun world — a better world! A party that never ends with a host that never dies! No more restrictions! No more laws! You'd be one of us. All-powerful. Greater than anything you've imagined! And all I need is your help.",
+      "text": "Listen, Ford, if you just tell me that equation, finally, your dimension will be free. Anything will be possible. I'll remake a fun world... a better world! A party that never ends with a host that never dies! No more restrictions! No more laws! You'd be one of us. All-powerful. Greater than anything you've imagined! And all I need is your help.",
       "attribution": {
         "speaker": "Bill Cipher",
         "speakerType": "character",
@@ -5288,7 +5288,7 @@
       "id": "i-solemnly-swear-that-i-am-up-to-no-good",
       "order": 157,
       "kind": "quote",
-      "text": "I solemnly swear that I am up to no good. — Mischief managed!",
+      "text": "I solemnly swear that I am up to no good. | Mischief managed!",
       "attribution": {
         "speaker": "Harry Potter, Fred Weasley, George Weasley, and the Marauders",
         "speakerType": "character"
@@ -5311,7 +5311,7 @@
       "visibility": "public",
       "verification": "needs-review",
       "note": "",
-      "rawAttribution": "“Mischief managed!” —Harry Potter, Fred Weasley, George Weasley, the Marauders",
+      "rawAttribution": "“Mischief managed!” -Harry Potter, Fred Weasley, George Weasley, the Marauders",
       "importStatus": "bulk-imported"
     },
     {
@@ -7051,11 +7051,11 @@
         },
         {
           "speaker": "Gage",
-          "text": "Okay—no. You don't think I deserve your attention."
+          "text": "Okay- no. You don't think I deserve your attention."
         },
         {
           "speaker": "Mark Zuckerberg",
-          "text": "You have part of my attention—you have the minimum amount. The rest of my attention is back at the offices of Facebook."
+          "text": "You have part of my attention — you have the minimum amount. The rest of my attention is back at the offices of Facebook."
         }
       ],
       "attribution": {},

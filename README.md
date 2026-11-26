@@ -1,5 +1,5 @@
 # Aaron Schlossberg’s Universe
-My evolving personal website and portfolio—bringing together my work in computer science, entrepreneurship, writing, art, education, worldbuilding, and more.
+My evolving personal website and portfolio: Bringing together my work in web development, entrepreneurship, writing, art, education, and more.
 
 **Live website:** [www.aaronschlossberg.com](https://www.aaronschlossberg.com/) 
 
@@ -16,7 +16,8 @@ This is "**[Aaron Schlossberg's Universe](https://www.aaronschlossberg.com/)**";
   - **[Pathways Academy of Technology and Design](https://www.aaronschlossberg.com/education/pathways-academy/)** | `/education/pathways-academy/` _(under construction)_
   - **[Muhlenberg College](https://www.aaronschlossberg.com/education/muhlenberg/)** | `/education/muhlenberg/`
     - **[Clubs & Leadership](https://www.aaronschlossberg.com/education/muhlenberg/clubs/)** | `/education/muhlenberg/clubs/` _(under construction)_
-      - **[Fencing Practice Video](https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-video/)** | `/education/muhlenberg/clubs/fencing-video/`
+      - **[Fencing Club](https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/)** | `/education/muhlenberg/clubs/fencing-club/`
+        - **[Fencing Practice Video](https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/fencing-video/)** | `/education/muhlenberg/clubs/fencing-club/fencing-video/`
     - **[Courses](https://www.aaronschlossberg.com/education/muhlenberg/courses/)** | `/education/muhlenberg/courses/` _(under construction)_
     - **[Experiences](https://www.aaronschlossberg.com/education/muhlenberg/experiences/)** | `/education/muhlenberg/experiences/` _(under construction)_
     - **[Highlights](https://www.aaronschlossberg.com/education/muhlenberg/highlights/)** | `/education/muhlenberg/highlights/` _(under construction)_

@@ -1,4 +1,5 @@
 import { load } from "cheerio";
+import { normalizeHtmlFormatting, preservesHtmlTypography } from "./html-formatting.mjs";
 import { normalizeQuoteTypography } from "./quote-typography.mjs";
 
 // Treat slashes between words as typography. URLs, paths, code and math have
@@ -6,7 +7,6 @@ import { normalizeQuoteTypography } from "./quote-typography.mjs";
 const PAIRED_SLASH = /(?<=[\p{L}\p{N}\p{M})\]’”'"])\s*\/\s*(?=[\p{L}\p{N}(\[‘“'"])/gu;
 const REFERENCE = /(?:[a-z][a-z\d+.-]*:\/\/|mailto:|tel:|www\.)[^\s<>"']*|(?<![\p{L}\p{N}])\/(?:[^\s/<>"']+\/)+[^\s<>"']*|(?<!\S)\.{1,2}\/[^\s<>"']+|(?<![\p{L}\p{N}])\/[^\s<>"']+\.[a-z\d]{1,8}(?=[\s,;.)]|$)/giu;
 const INLINE = new Set("a abbr b bdi bdo cite data del dfn em i ins label mark q ruby rp rt s small span strong sub sup time u var wbr".split(" "));
-const PRESERVE = new Set("script style code pre kbd samp textarea math svg".split(" "));
 const TEXT_ATTRIBUTES = new Set(["alt", "title", "aria-label", "aria-description", "placeholder", "label"]);
 const SYNTAX_KEYS = /^(?:href|src|srcset|url|uri|@id|@context|canonical|baseUrl|slug|latex|file|path|route)$/i;
 
@@ -102,7 +102,7 @@ export function normalizeHtmlTypography(html) {
                 edits.push([location.startOffset, location.endOffset, `${name}="${escapeText(normalized).replace(/"/g, "&quot;")}"`]);
             }
         }
-        if (PRESERVE.has(node.name) || /(?:^|\s)katex(?:\s|$)/.test(attrs.class || "")) {
+        if (preservesHtmlTypography(node)) {
             flush();
             if (node.name === "script" && attrs.type === "application/ld+json") {
                 for (const child of node.children || []) {
@@ -127,5 +127,5 @@ export function normalizeHtmlTypography(html) {
     for (const [start, end, replacement] of edits.sort((a, b) => b[0] - a[0])) {
         html = html.slice(0, start) + replacement + html.slice(end);
     }
-    return normalizeQuoteTypography(html);
+    return normalizeHtmlFormatting(normalizeQuoteTypography(html));
 }

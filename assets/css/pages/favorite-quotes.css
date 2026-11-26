@@ -205,10 +205,6 @@
     line-height: 1.5;
 }
 
-.favorite-quote-card__source a {
-    color: light-dark(#6d2635, var(--accent-text));
-}
-
 .favorite-quote-card__note {
     margin: 1.1rem 0 0;
     padding: 0.9rem 1rem;
@@ -218,7 +214,7 @@
     line-height: 1.62;
 }
 
-.favorite-quote-card__note strong {
+.favorite-quote-card__note .bold-text {
     font-family: "Lora", serif;
 }
 
@@ -711,6 +707,14 @@
     align-self: start;
     box-sizing: border-box;
     width: 100%;
+}
+
+@media (width > 780px) {
+    .favorite-quote-card:only-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc((100% - 0.75rem) / 2);
+    }
 }
 
 @media (max-width: 520px) {

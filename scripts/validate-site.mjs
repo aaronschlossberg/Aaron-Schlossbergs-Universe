@@ -1244,7 +1244,7 @@ function printIssue(
                 `${label} ${number}/${total}`,
                 shade
             )
-        } — ${
+        } - ${
             paint(
                 item.title,
                 "bold"
@@ -1329,7 +1329,7 @@ async function main() {
             )
         }${
             paint(
-                "  🔎 Aaron's Universe — Site Health Check                    ",
+                "  🔎 Aaron Schlossberg's Universe: Site Health Check                    ",
                 "bold"
             )
         }${

@@ -10,7 +10,7 @@ import { quotationParts, quotationPositions, appendFormattedText } from "../asse
 
 function assertPlainQuotes($) {
     $(".typography-quote").each((_, quote) => {
-        assert.equal($(quote).parents("a, strong, b, em, i, u, s, del, ins, mark, cite, .italic-text, .underlined-text").length, 0);
+        assert.equal($(quote).parents("a, strong, b, em, i, u, s, del, ins, mark, cite, .bold-text, .italic-text, .underlined-text").length, 0);
     });
 }
 
@@ -20,7 +20,7 @@ test("moves matched quotation marks outside combined links and formatting", () =
         const normalized = normalizeHtmlTypography(original);
         const $ = load(normalized);
         assert.equal($("p").text(), `Read ${pair[0]}Title${pair[1]}.`);
-        assert.equal($("strong a em u mark").text(), "Title");
+        assert.equal($("span.bold-text a span.italic-text span.underlined-text mark").text(), "Title");
         assert.equal($("a").attr("href"), "/page/");
         assert.equal($("a").attr("title"), 'Keep "this"');
         assertPlainQuotes($);
@@ -33,7 +33,7 @@ test("handles quotes in separate nodes, nested quotations and escaped punctuatio
     const normalized = normalizeHtmlTypography(original);
     const $ = load(normalized);
     assert.equal($("p").text(), load(original)("p").text());
-    assert.equal($("b .italic-text").text(), "Title");
+    assert.equal($(".bold-text .italic-text").text(), "Title");
     assert.equal($(".typography-quote").length, 6);
     assertPlainQuotes($);
     assert.equal(normalizeHtmlTypography(normalized), normalized);
@@ -43,7 +43,7 @@ test("separates interior quotation marks without duplicating IDs or changing wor
     const original = '<p><strong id="label">The “Uncanny” and Marvin’s ‘til tomorrow</strong></p>';
     const $ = load(normalizeHtmlTypography(original));
     assert.equal($("#label").length, 1);
-    assert.equal($("strong").text(), "The Uncanny and Marvin’s ‘til tomorrow");
+    assert.equal($("span.bold-text").text(), "The Uncanny and Marvin’s ‘til tomorrow");
     assert.equal($("p").text(), load(original)("p").text());
     assertPlainQuotes($);
 });
@@ -51,7 +51,7 @@ test("separates interior quotation marks without duplicating IDs or changing wor
 test("keeps layout links as one accessible destination, with quotes outside the link", () => {
     const fixtures = [
         '<a class="highlight-card" data-carousel-item href="/news/" target="_blank"><img src="/photo.png"><div><h3 class="highlight-card__title">“<strong>Aaron</strong> Named Student Leader”</h3><p>News</p></div></a>',
-        '<a class="profile-card" data-config-link="x" data-external href="https://x.com/example"><span class="profile-card__content"><strong>Twitter/“X”</strong><span>Updates</span></span></a>',
+        '<a class="profile-card" data-config-link="x" data-external href="https://x.com/example"><span class="profile-card__content"><span class="bold-text">Twitter/“X”</span><span>Updates</span></span></a>',
         '<a class="writing-share-option" data-share-x href="https://twitter.com/intent/tweet"><span aria-hidden="true">Icon</span><span>Twitter/“X”</span></a>',
         '<a class="new-card" href="/news/"><div><h3>“Another title”</h3></div></a>'
     ];
@@ -126,10 +126,10 @@ test("preserves URLs and path references in prose", () => {
 
 test("preserves markup while joining terms across inline formatting and entities", () => {
     const html = '<!DOCTYPE html>\n<p class="keep">Read <strong>A</strong>&nbsp;&#47;&#32;<em>B</em> &amp; C.</p>\n<!-- Keep / this comment -->';
-    const expected = '<!DOCTYPE html>\n<p class="keep">Read <strong>A</strong>/<em>B</em> &amp; C.</p>\n<!-- Keep / this comment -->';
+    const expected = '<!DOCTYPE html>\n<p class="keep">Read <span class="bold-text">A</span>/<span class="italic-text">B</span> &amp; C.</p>\n<!-- Keep / this comment -->';
     assert.equal(normalizeHtmlTypography(html), expected);
     const split = '<p><b>A </b><span>/</span><i> B</i></p>';
-    assert.equal(normalizeHtmlTypography(split), '<p><b>A</b><span>/</span><i>B</i></p>');
+    assert.equal(normalizeHtmlTypography(split), '<p><span class="bold-text">A</span><span>/</span><span class="italic-text">B</span></p>');
     assert.equal(normalizeHtmlTypography(expected), expected);
 });
 
@@ -152,11 +152,45 @@ test("normalizes accessible text, social metadata, share labels and JSON-LD", ()
 test("leaves code, math, CSS, scripts, explicit exceptions and block boundaries intact", () => {
     const html = `<script>const ratio = left / right;</script><style>.x { grid-column: 1 / -1; }</style>
 <p>Code <code>left / right</code>, <kbd>A / B</kbd>, and <samp>A / B</samp>.</p>
-<pre>A / B</pre><textarea>A / B</textarea><math><mtext>A / B</mtext></math>
+<pre>A / B
+second line</pre><textarea>A / B
+second line</textarea><math><mtext>A / B</mtext></math>
 <span class="katex">A / B</span><svg><text>A / B</text></svg>
 <p data-typography="preserve" title="A / B"><b>A / B</b></p>
 <p>Left </p><p>/ right</p><p>A<br>/ B</p>`;
     assert.equal(normalizeHtmlTypography(html), html);
+});
+
+test("keeps prose on one source line and preserves inline elements, attributes and explicit breaks", () => {
+    const original = `<p>
+    Read <a
+        href="/page/?a=1&amp;b=2"
+        title="First
+second">the project
+        update</a>, then <b class="label" data-kind="note"><u>the
+        notes</u></b>.<br>
+    Continue.
+</p>
+<img
+    src="/photo.png"
+    alt="A photo"
+>
+<a href="/detail/">
+    <h3>A headline</h3>
+    <p>First
+        paragraph.</p>
+</a>`;
+    const normalized = `<p>
+    Read <a href="/page/?a=1&amp;b=2" title="First&#10;second">the project update</a>, then <span class="label bold-text" data-kind="note"><span class="underlined-text">the notes</span></span>.<br> Continue.
+</p>
+<img src="/photo.png" alt="A photo">
+<a href="/detail/">
+    <h3>A headline</h3>
+    <p>First paragraph.</p>
+</a>`;
+    assert.equal(normalizeHtmlTypography(original), normalized);
+    assert.equal(load(normalized)("a").first().attr("title"), "First\nsecond");
+    assert.equal(normalizeHtmlTypography(normalized), normalized);
 });
 
 test("JSON changes only prose values and keeps syntax fields and formatting", () => {

@@ -1,12 +1,12 @@
 import { load } from "cheerio";
 import { quotationPositions } from "../assets/js/quote-punctuation.mjs";
+import { preservesHtmlTypography } from "./html-formatting.mjs";
 
 const INLINE = new Set("a abbr b bdi bdo cite code data del dfn em font i ins kbd label mark q ruby rp rt s samp small span strike strong sub sup time u var wbr".split(" "));
 const FORMATTED = new Set("a abbr b cite del dfn em font i ins mark s strike strong sub sup u".split(" "));
-const PRESERVE = new Set("script style code pre kbd samp textarea math svg".split(" "));
 const LAYOUTS = [
     ["highlight-card", ".highlight-card__title", "div"],
-    ["profile-card", ".profile-card__content strong", "div"],
+    ["profile-card", ".profile-card__content :is(strong, .bold-text)", "div"],
     ["writing-share-option", "span:not([aria-hidden])", "span"]
 ];
 const escapeText = text => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -49,8 +49,7 @@ function normalizeQuotesOnce(html) {
     function visit(node) {
         if (node.type === "text") { run.push(node); return; }
         if (node.type === "comment") return;
-        if (PRESERVE.has(node.name) || node.attribs?.["data-typography"] === "preserve"
-            || /(?:^|\s)katex(?:\s|$)/.test(node.attribs?.class || "")) { flush(); return; }
+        if (preservesHtmlTypography(node)) { flush(); return; }
         const boundary = !INLINE.has(node.name);
         if (boundary) flush();
         for (const child of node.children || []) visit(child);

@@ -278,7 +278,7 @@ textarea { resize: vertical; }
 }
 .tiptap blockquote { margin-inline: 0; padding-left: 1rem; border-left: 2px solid var(--accent); }
 .tiptap pre { padding: 0.8rem; border-radius: 0.4rem; background: var(--ground); white-space: pre-wrap; }
-.tiptap a { color: var(--accent-dark); text-decoration: underline; }
+.tiptap a { color: var(--link); text-decoration: underline; }
 .tiptap .editor-figure { margin: 1rem auto; text-align: center; }
 .tiptap .editor-figure img { display: block; max-width: 100%; max-height: 28rem; margin: auto; }
 .tiptap figcaption { color: var(--muted); font-size: 0.8rem; }

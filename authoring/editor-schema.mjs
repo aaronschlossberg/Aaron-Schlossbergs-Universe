@@ -1,4 +1,4 @@
-import { Node } from "@tiptap/core";
+import { Node, mergeAttributes } from "@tiptap/core";
 import { StarterKit } from "@tiptap/starter-kit";
 import { Subscript } from "@tiptap/extension-subscript";
 import { Superscript } from "@tiptap/extension-superscript";
@@ -175,8 +175,31 @@ function equationNode(display) {
     });
 }
 
+const formattingClasses = {
+    bold: "bold-text",
+    italic: "italic-text",
+    underline: "underlined-text"
+};
+
+const StudioStarterKit = StarterKit.extend({
+    addExtensions() {
+        return this.parent().map(extension => {
+            const className = formattingClasses[extension.name];
+            if (!className) return extension;
+            return extension.extend({
+                parseHTML() {
+                    return [{ tag: `span.${className}`, consuming: false }, ...this.parent()];
+                },
+                renderHTML({ HTMLAttributes }) {
+                    return ["span", mergeAttributes(this.options.HTMLAttributes, HTMLAttributes, { class: className }), 0];
+                }
+            });
+        });
+    }
+});
+
 export const editorExtensions = [
-    StarterKit.configure({
+    StudioStarterKit.configure({
         heading: { levels: [2, 3, 4] },
         link: {
             defaultProtocol: "https",

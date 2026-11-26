@@ -42,9 +42,8 @@
     font-size: 1.075rem;
 }
 
-.faq-main a,
+.faq-main :where(p, li) a,
 .about-faq-preview p a {
-    color: var(--accent-dark);
     text-decoration: underline;
     text-underline-offset: 0.2em;
 }
@@ -124,7 +123,10 @@
     gap: 0.35rem;
     min-height: 44px;
     margin: 0 1.4rem 0.6rem;
+    color: var(--accent-dark);
     font-size: 0.8rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
 }
 
 .faq-item:target {

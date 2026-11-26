@@ -123,7 +123,7 @@ const SOURCE_URLS = {
     "Star Wars":
         "https://www.starwars.com/",
 
-    "Star Wars: Episode I — The Phantom Menace":
+    "Star Wars: Episode I - The Phantom Menace":
         "https://www.starwars.com/films/star-wars-episode-i-the-phantom-menace",
 
     "Stranger Things":

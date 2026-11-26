@@ -73,12 +73,11 @@ figure {
     margin: 1rem 0;
 }
 
-/* Responsive media row */
+/* Paired media */
 .media-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    --card-row-columns: 2;
+    --card-row-gap: 24px;
     align-items: center;
-    gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -139,20 +138,9 @@ button {
     text-decoration: none;
 }
 
+/* Page prose uses this color in both themes. Components can set their own link colors. */
 a {
     color: var(--link);
-}
-
-.italic-text {
-  font-style: italic;
-}
-
-.bold-text {
-  font-weight: bold; 
-}
-
-.underlined-text {
-    text-decoration: underline;
 }
 
 /* Shared link and button reset */

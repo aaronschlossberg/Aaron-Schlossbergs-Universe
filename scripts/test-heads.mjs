@@ -20,8 +20,8 @@ function page(title, description) {
 }
 
 async function fixture(t, metadata = {
-    "/": page("Home | ASU", "Home description."),
-    "/contact/": page("Contact | ASU", "Contact description.")
+    "/": page("Home | Aaron Schlossberg’s Universe", "Home description."),
+    "/contact/": page("Contact | Aaron Schlossberg’s Universe", "Contact description.")
 }) {
     const root = await mkdtemp(path.join(os.tmpdir(), "asu-heads-"));
     t.after(() => rm(root, { recursive: true, force: true }));
@@ -64,9 +64,9 @@ async function fixture(t, metadata = {
 
 test("replaces complete heads and shares one title and description across all formats", async t => {
     const metadata = {
-        "/": page("Home | ASU", "Home description."),
-        "/contact/": { ...page("Contact | ASU", "Contact description."), schemaType: "ContactPage" },
-        "/gone/": { ...page("Gone | ASU", "Gone description."), robots: "noindex, nofollow", canonical: false, breadcrumbs: false }
+        "/": page("Home | Aaron Schlossberg’s Universe", "Home description."),
+        "/contact/": { ...page("Contact | Aaron Schlossberg’s Universe", "Contact description."), schemaType: "ContactPage" },
+        "/gone/": { ...page("Gone | Aaron Schlossberg’s Universe", "Gone description."), robots: "noindex, nofollow", canonical: false, breadcrumbs: false }
     };
     const f = await fixture(t, metadata);
     assert.equal((await f.run()).code, 0);
@@ -105,9 +105,9 @@ test("replaces complete heads and shares one title and description across all fo
 
 test("recreates specialized schema, images, article tags, and assets from configuration alone", async t => {
     const metadata = {
-        "/": page("Home | ASU", "Home description."),
+        "/": page("Home | Aaron Schlossberg’s Universe", "Home description."),
         "/article/": {
-            ...page("Article | ASU", "Article description."),
+            ...page("Article | Aaron Schlossberg’s Universe", "Article description."),
             ogType: "article",
             article: { published: "2026-01-01", modified: "2026-02-02" },
             image: { url: `${baseConfig.baseUrl}/article.png`, type: "image/png", width: 640, height: 480, alt: "Article illustration" },
@@ -132,7 +132,7 @@ test("recreates specialized schema, images, article tags, and assets from config
     assert.equal($("link[href='/article.css']").length, 1);
     assert.equal($("script[src='/article.js'][defer]").length, 1);
 
-    metadata["/article/"].title = "Updated article | ASU";
+    metadata["/article/"].title = "Updated article | Aaron Schlossberg’s Universe";
     metadata["/article/"].description = "Updated article description.";
     metadata["/article/"].schemaNodes[0].wordCount = 1500;
     await f.put("data/pages.json", JSON.stringify(metadata));
@@ -198,8 +198,8 @@ test("shared template and Analytics changes propagate to every head", async t =>
 
 test("FAQ schema follows visible answers, links, and edits without changing the body", async t => {
     const f = await fixture(t, {
-        "/": page("Home | ASU", "Home description."),
-        "/faq/": { ...page("FAQ | ASU", "FAQ description."), schemaType: "FAQPage", aboutPerson: true }
+        "/": page("Home | Aaron Schlossberg’s Universe", "Home description."),
+        "/faq/": { ...page("FAQ | Aaron Schlossberg’s Universe", "FAQ description."), schemaType: "FAQPage", aboutPerson: true }
     });
     const body = `<body><main>
         <details id="contact" data-faq-item><summary>How can I contact Aaron?</summary>
@@ -247,8 +247,8 @@ test("missing or malformed FAQ answers fail before changing source pages", async
     ];
     for (const body of cases) {
         const f = await fixture(t, {
-            "/": page("Home | ASU", "Home description."),
-            "/faq/": { ...page("FAQ | ASU", "FAQ description."), schemaType: "FAQPage" }
+            "/": page("Home | Aaron Schlossberg’s Universe", "Home description."),
+            "/faq/": { ...page("FAQ | Aaron Schlossberg’s Universe", "FAQ description."), schemaType: "FAQPage" }
         });
         const before = await f.html("/");
         await f.put("faq/index.html", `<html><head></head><body>${body}</body></html>`);

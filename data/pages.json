@@ -739,45 +739,73 @@
     },
     "/education/": {
         "title": "Education | Aaron Schlossberg’s Universe",
-        "description": "Explore Aaron Schlossberg’s educational journey through Hebrew Academy, Pathways Academy, Muhlenberg College, and lifelong learning.",
+        "description": "Explore Aaron Schlossberg’s education, from early childhood and Hebrew Academy to Pathways, Muhlenberg College, and lifelong learning.",
         "breadcrumbLabel": "Education",
         "schemaType": "CollectionPage",
         "aboutPerson": true
     },
+    "/education/early-childhood/": {
+        "title": "Early Childhood | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg’s early childhood education at the Bloomfield Early Childhood Center, Little Tykes Playschool, and Kiddie Academy.",
+        "breadcrumbLabel": "Early Childhood",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
+    },
     "/education/hebrew-academy/": {
         "title": "Hebrew Academy | Aaron Schlossberg’s Universe",
-        "description": "This page about Aaron Schlossberg’s elementary and middle school education at Hebrew Academy is currently under construction.",
+        "description": "Aaron Schlossberg’s 2008–2018 years at Hebrew Academy: secular and Judaic studies, childhood learning, teachers, and formative experiences.",
         "breadcrumbLabel": "Hebrew Academy",
-        "robots": "noindex, follow",
-        "canonical": false,
-        "aboutPerson": true
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/education/pathways-academy/": {
-        "title": "Pathways Academy | Aaron Schlossberg’s Universe",
-        "description": "This page about Aaron Schlossberg’s education at Pathways Academy of Technology and Design is currently under construction.",
+        "title": "Pathways Academy of Technology and Design | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg’s 2018–2022 Pathways experience: technology and design, Quora, online exploration, Guitar Club, and the COVID years.",
         "breadcrumbLabel": "Pathways Academy",
-        "robots": "noindex, follow",
-        "canonical": false,
-        "aboutPerson": true
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/education/muhlenberg/": {
         "title": "Muhlenberg College | Aaron Schlossberg’s Universe",
-        "description": "Explore Aaron Schlossberg’s Muhlenberg College experience, including academics, clubs, leadership, internships, campus involvement, and highlights.",
+        "description": "Aaron Schlossberg’s 2022–2026 Muhlenberg years: Computer Science, entrepreneurship, writing, clubs, MILA, Dean’s List, and life in Allentown.",
         "breadcrumbLabel": "Muhlenberg College",
-        "aboutPerson": true
+        "aboutPerson": true,
+        "schemaType": "CollectionPage"
     },
     "/education/muhlenberg/clubs/": {
-        "title": "Clubs & Leadership: Muhlenberg College | Aaron Schlossberg’s Universe",
-        "description": "Explore Aaron Schlossberg’s Muhlenberg College club leadership, including Pokémon, Harry Potter, fencing, board games, campus events, and more.",
+        "title": "Clubs & Campus Leadership | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg’s Muhlenberg student organizations: founding clubs, reviving fencing, leading MBGA, planning MAC events, dance, finance, and jewelry.",
         "breadcrumbLabel": "Clubs & Leadership",
-        "aboutPerson": true
+        "aboutPerson": true,
+        "schemaType": "CollectionPage"
     },
-    "/education/muhlenberg/clubs/fencing-video/": {
+    "/education/muhlenberg/clubs/pokemon-club/": {
+        "title": "Pokémon Club | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg founded and led Muhlenberg’s Pokémon Club, bringing together fans of the video games, TCG, Pokémon GO, Showdown, and more.",
+        "breadcrumbLabel": "Pokémon Club",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
+    },
+    "/education/muhlenberg/clubs/harry-potter-club/": {
+        "title": "Harry Potter Club | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg founded and led Muhlenberg’s Harry Potter Club, establishing it through SGA and organizing meetings with the club’s board.",
+        "breadcrumbLabel": "Harry Potter Club",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
+    },
+    "/education/muhlenberg/clubs/fencing-club/": {
+        "title": "Fencing Club | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg revived Muhlenberg’s Fencing Club in spring 2024, restoring practices with coaching and club-provided equipment.",
+        "breadcrumbLabel": "Fencing Club",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
+    },
+    "/education/muhlenberg/clubs/fencing-club/fencing-video/": {
         "title": "Fencing Practice Video | Aaron Schlossberg’s Universe",
         "description": "Watch a short fencing practice bout from the Muhlenberg College Fencing Club and learn about Aaron Schlossberg’s role in reviving the club.",
         "breadcrumbLabel": "Fencing Practice Video",
         "ogType": "video.other",
-        "mainEntityId": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-video/#video",
+        "mainEntityId": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/fencing-video/#video",
         "aboutPerson": true,
         "twitterCard": "summary",
         "image": {
@@ -804,7 +832,7 @@
                 ],
                 "uploadDate": "2026-02-01T00:00:00-05:00",
                 "contentUrl": "https://www.aaronschlossberg.com/assets/img/education/muhlenberg/clubs/fencing-club/Fencing_video.mp4",
-                "embedUrl": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-video/",
+                "embedUrl": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/fencing-video/",
                 "publisher": {
                     "@type": "Organization",
                     "@id": "https://www.aaronschlossberg.com/#organization",
@@ -814,41 +842,52 @@
                         "url": "https://www.aaronschlossberg.com/assets/img/logo.png"
                     }
                 },
-                "@id": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-video/#video"
+                "@id": "https://www.aaronschlossberg.com/education/muhlenberg/clubs/fencing-club/fencing-video/#video"
             }
-        ]
+        ],
+        "schemaType": "WebPage"
+    },
+    "/education/muhlenberg/clubs/mbga/": {
+        "title": "Muhlenberg Board Game Association | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg’s involvement in MBGA: club communications and social media as Secretary, followed by leading weekly meetings as President.",
+        "breadcrumbLabel": "Muhlenberg Board Game Association",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
+    },
+    "/education/muhlenberg/clubs/mac/": {
+        "title": "Muhlenberg Activities Council | Aaron Schlossberg’s Universe",
+        "description": "Aaron Schlossberg’s work with Muhlenberg Activities Council, including campus events and serving as After Dark Events Coordinator.",
+        "breadcrumbLabel": "Muhlenberg Activities Council",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/education/muhlenberg/courses/": {
         "title": "Muhlenberg College Courses | Aaron Schlossberg’s Universe",
-        "description": "This page about Aaron Schlossberg’s courses at Muhlenberg College is currently under construction.",
-        "breadcrumbLabel": "Courses",
-        "robots": "noindex, follow",
-        "canonical": false,
-        "aboutPerson": true
+        "description": "Explore Aaron Schlossberg’s Muhlenberg coursework in computer science, entrepreneurship, writing, art, humanities, and the Japan MILA experience.",
+        "breadcrumbLabel": "Muhlenberg College Courses",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/education/muhlenberg/experiences/": {
         "title": "Muhlenberg College Experiences | Aaron Schlossberg’s Universe",
-        "description": "This page about Aaron Schlossberg’s academic, professional, and campus experiences at Muhlenberg College is currently under construction.",
-        "breadcrumbLabel": "Experiences",
-        "robots": "noindex, follow",
-        "canonical": false,
-        "aboutPerson": true
+        "description": "Aaron Schlossberg’s Muhlenberg experiences: department social media work, student events, professors, friendships, Japan MILA, and exploring Allentown.",
+        "breadcrumbLabel": "Muhlenberg College Experiences",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/education/muhlenberg/highlights/": {
         "title": "Muhlenberg College Highlights | Aaron Schlossberg’s Universe",
-        "description": "This page featuring highlights from Aaron Schlossberg’s time at Muhlenberg College is currently under construction.",
-        "breadcrumbLabel": "Highlights",
-        "robots": "noindex, follow",
-        "canonical": false,
-        "aboutPerson": true
+        "description": "Highlights from Aaron Schlossberg’s Muhlenberg years: graduation, Dean’s List in the final three semesters, MUSES stories, club leadership, and memories.",
+        "breadcrumbLabel": "Muhlenberg College Highlights",
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/education/lifelong-learning/": {
         "title": "Lifelong Learning | Aaron Schlossberg’s Universe",
-        "description": "This page about Aaron Schlossberg’s continuing education and self-directed learning is currently under construction.",
+        "description": "Aaron Schlossberg’s independent learning through website development, Fiction2Reality, entrepreneurship, Coursera, Khan Academy, and Codecademy.",
         "breadcrumbLabel": "Lifelong Learning",
-        "robots": "noindex, follow",
-        "canonical": false,
-        "aboutPerson": true
+        "aboutPerson": true,
+        "schemaType": "WebPage"
     },
     "/images/": {
         "title": "Images | Aaron Schlossberg’s Universe",

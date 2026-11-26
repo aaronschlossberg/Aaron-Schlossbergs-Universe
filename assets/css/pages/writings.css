@@ -207,7 +207,6 @@
 
 .writings-prose a {
     display: inline;
-    color: var(--accent-dark);
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 0.16em;
@@ -470,17 +469,13 @@
 
 /* Writing-piece cards */
 .writings-piece-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.25rem;
+    --card-row-gap: 1.25rem;
 }
 
 .writings-piece-card {
     position: relative;
     display: flex;
     box-sizing: border-box;
-    flex: 0 1 calc((100% - 2.5rem) / 3);
     flex-direction: column;
     min-width: 0;
     min-height: 340px;
@@ -667,9 +662,7 @@
 
 /* External writing links */
 .writings-external-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.25rem;
+    --card-row-gap: 1.25rem;
 }
 
 .writings-external-card {
@@ -794,14 +787,6 @@
 
 /* Responsive behavior */
 @media (max-width: 900px) {
-    .writings-piece-card {
-        flex-basis: calc((100% - 1.25rem) / 2);
-    }
-
-    .writings-external-grid {
-        grid-template-columns: 1fr;
-    }
-
     .writings-external-card {
         min-height: 0;
     }
@@ -875,11 +860,6 @@
         justify-content: flex-start;
         padding-right: 0;
         padding-left: 0;
-    }
-
-    .writings-piece-card {
-        flex-basis: 100%;
-        min-height: 0;
     }
 
     .writings-piece-card {

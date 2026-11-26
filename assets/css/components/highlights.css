@@ -56,13 +56,14 @@
     opacity: 1;
 }
 
-.highlight-card .highlight-card__meta strong {
+.highlight-card .highlight-card__meta .bold-text {
     font-weight: 400;
 }
 
 /* Source-agnostic horizontal carousel */
 .carousel {
-    --carousel-item-width: 320px;
+    --carousel-gap: 20px;
+    --carousel-item-width: calc((100% - 2 * var(--carousel-gap)) / 3);
 
     position: relative;
     max-width: 100%;
@@ -70,7 +71,9 @@
 
 .carousel-track {
     display: flex;
-    gap: 20px;
+    justify-content: flex-start;
+    justify-content: safe center;
+    gap: var(--carousel-gap);
     overflow-x: auto;
     padding: 4px 8px 12px;
     scroll-behavior: smooth;
@@ -125,11 +128,19 @@
     right: -14px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .carousel {
-        --carousel-item-width: 280px;
+        --carousel-item-width: calc((100% - var(--carousel-gap)) / 2);
     }
+}
 
+@media (max-width: 600px) {
+    .carousel {
+        --carousel-item-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
     .carousel-btn-prev {
         left: -6px;
     }

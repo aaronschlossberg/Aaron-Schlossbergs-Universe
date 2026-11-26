@@ -62,45 +62,60 @@
     font-size: var(--text-size-extra-small);
 }
 
-/*
-   A reusable flex row for card groups.
-
-   Cards wrap onto additional rows as needed. When the final row
-   contains fewer than the maximum number of cards, those cards
-   remain centered instead of aligning to the left.
-*/
-.centered-card-row {
-    --card-width: 320px;
-    --card-row-gap: 1.25rem;
-    --card-row-max-width: 1000px;
-
-    display: flex;
+/* Shared card layout for up to three cards per row, with each row centered. */
+:where(.centered-card-row, .card-grid) {
+    --card-row-columns: 3;
+    --card-row-gap: 1rem;
+    container: card-row / inline-size;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
     gap: var(--card-row-gap);
-
+    box-sizing: border-box;
     width: 100%;
-    max-width: var(--card-row-max-width);
     margin-inline: auto;
 }
 
-.centered-card-row > * {
-    box-sizing: border-box;
-    flex: 0 1 var(--card-width);
-    width: 100%;
-    min-width: 0;
-    max-width: var(--card-width);
+/* Match the default lists' specificity as well as ordinary block containers. */
+:is(.centered-card-row, .card-grid) {
+    display: flex;
 }
 
-/* Allow cards to fill the available width on smaller screens */
-@media (max-width: 700px) {
-    .centered-card-row {
-        max-width: 100%;
-    }
+ul:is(.centered-card-row, .card-grid),
+ol:is(.centered-card-row, .card-grid),
+dl:is(.centered-card-row, .card-grid) {
+    margin-inline: auto;
+    padding-inline: 0;
+}
 
-    .centered-card-row > * {
-        flex-basis: 100%;
-        max-width: 100%;
+:where(.centered-card-row, .card-grid) > * {
+    --cards-across: var(--card-row-columns);
+    box-sizing: border-box;
+    flex: 0 0 calc((100% + var(--card-row-gap)) / var(--cards-across) - var(--card-row-gap));
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+:is(.centered-card-row, .card-grid) > .card-row-full-width {
+    flex-basis: 100%;
+}
+
+:is(.centered-card-row, .card-grid) > .card {
+    margin-top: 0;
+}
+
+:is(.centered-card-row, .card-grid)[hidden],
+:is(.centered-card-row, .card-grid) > [hidden] {
+    display: none;
+}
+
+@container card-row (width < 50rem) {
+    :where(.centered-card-row, .card-grid) > * {
+        --cards-across: min(2, var(--card-row-columns));
+    }
+}
+
+@container card-row (width < 34rem) {
+    :where(.centered-card-row, .card-grid) > * {
+        --cards-across: 1;
     }
 }

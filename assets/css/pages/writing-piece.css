@@ -110,7 +110,6 @@
 }
 
 .writing-piece-page a[rel="author"] {
-    color: var(--accent-dark);
     text-decoration: underline;
     text-underline-offset: 0.16em;
 }
@@ -306,13 +305,8 @@
 
 .writing-story a {
     display: inline;
-    color: var(--accent-dark);
     text-decoration: underline;
     text-underline-offset: 0.17em;
-}
-
-.writing-story em {
-    font-style: italic;
 }
 
 .writing-beat {
@@ -474,6 +468,7 @@
 }
 
 .writing-citation a {
+    color: var(--accent-dark);
     font-weight: 700;
     text-decoration: none;
 }
@@ -502,6 +497,7 @@
 
 .writing-footnote-back {
     margin-left: 0.35rem;
+    color: var(--accent-dark);
     font-weight: 700;
     text-decoration: none !important;
 }
@@ -835,9 +831,15 @@ body.writing-share-open {
 
 .writing-share-grid,
 .writing-share-options {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.75rem;
+}
+
+.writing-share-grid > *,
+.writing-share-options > * {
+    flex: 0 0 calc((100% - 1.5rem) / 3);
 }
 
 .writing-share-option {
@@ -997,21 +999,9 @@ body.writing-share-open {
     text-align: center;
 }
 
-.writing-related-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
-}
-
 .writing-related-carousel .carousel-track {
-    --carousel-item-width: calc((100% - 2rem) / 3);
+    --carousel-gap: 1rem;
 
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    justify-content: safe center;
-    gap: 1rem;
     margin: -4px -8px -12px;
     scroll-padding-inline: 8px;
     scroll-snap-type: x mandatory;
@@ -1074,7 +1064,6 @@ body.writing-share-open {
 .writing-related-card {
     box-sizing: border-box;
     display: flex;
-    flex: 0 0 calc((100% - 2rem) / 3);
     min-width: 0;
     min-height: 280px;
     padding: 1.25rem;
@@ -1219,7 +1208,6 @@ body.writing-share-open {
 .writing-related-empty a,
 .writing-related-fallback a {
     display: inline;
-    color: var(--accent-dark);
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 0.17em;
@@ -1230,16 +1218,6 @@ body.writing-share-open {
     width: fit-content;
     max-width: 100%;
     margin: 1.75rem auto 0;
-}
-
-@media (max-width: 900px) {
-    .writing-related-card {
-        flex-basis: calc((100% - 1rem) / 2);
-    }
-
-    .writing-related-carousel .carousel-track {
-        --carousel-item-width: calc((100% - 1rem) / 2);
-    }
 }
 
 @media (max-width: 600px) {
@@ -1267,9 +1245,9 @@ body.writing-share-open {
         padding-inline: 2.4rem;
     }
 
-    .writing-share-grid,
-    .writing-share-options {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .writing-share-grid > *,
+    .writing-share-options > * {
+        flex-basis: calc((100% - 0.75rem) / 2);
     }
 
     .writing-share-option {
@@ -1283,12 +1261,7 @@ body.writing-share-open {
     }
 
     .writing-related-card {
-        flex-basis: 100%;
         min-height: 0;
-    }
-
-    .writing-related-carousel .carousel-track {
-        --carousel-item-width: 100%;
     }
 
     .writing-related-browse {
@@ -1334,15 +1307,12 @@ body.writing-share-open {
         rgba(29, 91, 122, 0.14) 0 42%,
         transparent 42%
     );
-    color: light-dark(#174f6c, var(--night-blue));
     font-weight: 600;
-    text-decoration-color: rgba(23, 79, 108, 0.55);
 }
 
 .writing-story .writing-knowledge-link:hover,
 .writing-story .writing-knowledge-link:focus-visible {
     background-color: rgba(29, 91, 122, 0.12);
-    color: light-dark(#103b53, var(--night-blue));
 }
 
 .writing-related-knowledge {

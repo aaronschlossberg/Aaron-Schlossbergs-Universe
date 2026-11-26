@@ -77,7 +77,6 @@
 }
 
 .not-found-report a {
-    color: var(--accent-dark);
     text-decoration: underline;
     text-underline-offset: 0.15em;
 }

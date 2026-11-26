@@ -60,9 +60,8 @@
 
 /* Blender and website screenshots */
 .projects-f2r-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
+    --card-row-columns: 2;
+    --card-row-gap: 1.25rem;
 }
 
 .projects-f2r-gallery figure {
@@ -139,8 +138,7 @@
 }
 
 @media (max-width: 760px) {
-    .projects-f2r-intro,
-    .projects-f2r-gallery {
+    .projects-f2r-intro {
         grid-template-columns: 1fr;
     }
 
